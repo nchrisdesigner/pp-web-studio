@@ -1,0 +1,147 @@
+.gridContainer{
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  padding: 12rem 2rem;
+}
+
+
+/* Text Container */
+
+
+.textContainer > h3{
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--purple);
+}
+
+.textContainer > h2{
+  font-size: 9.6rem;
+  line-height: 1;
+  /* width: 18ch; */
+  margin-bottom: 1rem;
+}
+
+.textContainer > p{
+  font-size: 1.6rem;
+  line-height: 1.5;
+  width: min(65ch ,100%);
+  text-wrap: pretty;
+  margin-bottom: 1rem;
+}
+
+.btn{
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  font-size: 2.5rem;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate{
+  from{
+    translate: 0;
+  }
+  to{
+    translate: 5px;
+  }
+}
+
+
+/* Principles Container */
+.principlesContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+.principlesContainer h3{
+  font-size: 2rem;
+  line-height: 1;
+}
+.principleContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.principle{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.principle h4 {
+  font-size: 1.8rem;
+}
+.principle p{
+  font-size: 1.4rem;
+}
+
+
+@media screen and (width < 1280px){
+  .textContainer > h2{
+    font-size: 8rem;
+  }
+}
+
+@media screen and (width < 1080px){
+  .gridContainer{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 6em 2rem;
+  }
+
+  .principleContainer{
+    flex-direction: row;
+  }
+}
+
+@media screen and (width < 800px){
+  .principle h4 {
+    font-size: 1.6rem;
+  }
+  .principle p{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (width < 680px){
+
+  .principleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .textContainer > h2{
+    font-size: 6rem;
+  }
+}
+@media screen and (width < 515px){
+  .textContainer > h2{
+    font-size: 5rem;
+  }
+  .textContainer > p{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (width < 443px){
+  .textContainer > h2{
+    font-size: 4.2rem;
+  }
+  .textContainer > p{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (width < 390px){
+  .textContainer > h2{
+    font-size: 3.8rem;
+  }
+  .textContainer > p{
+    font-size: 1.4rem;
+  }
+}
+

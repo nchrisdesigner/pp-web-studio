@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  margin: 4rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item{
+  font-size: 1.2rem
+}
+
+.title{
+  display: flex;
+  align-items:center;
+  gap: .75rem;;
+}
+.text{
+  width: 20ch;
+}

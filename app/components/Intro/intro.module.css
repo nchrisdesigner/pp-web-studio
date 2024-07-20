@@ -1,0 +1,58 @@
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 9.6rem;
+  line-height: 1;
+  position: relative;
+}
+
+.miniContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (width < 800px) {
+  .container {
+    text-align: left;
+  }
+
+  .miniContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 6.8rem;
+  }
+}
+
+@media screen and (width < 600px) {
+  .title {
+    font-size: 5.8rem;
+  }
+}
+
+
+
+@media screen and (width < 555px){
+  .miniContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
+
+@media screen and (width > 1650px) {
+  .title {
+    font-size: 13rem;
+    line-height: 1;
+  }
+}

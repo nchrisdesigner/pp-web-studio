@@ -1,0 +1,8 @@
+.absoluteTitle{
+  font-size: 24rem;
+  font-weight: 800;
+  line-height: 1;
+  position: absolute;
+  z-index: -10;
+  opacity: 3%;
+}

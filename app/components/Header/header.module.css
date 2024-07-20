@@ -1,0 +1,22 @@
+.headerContainer{
+  /* height: 100vh; */
+  padding: 12rem 2rem;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (width < 800px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .headerContainer{
+    padding: 6rem 2rem;
+  }
+}
