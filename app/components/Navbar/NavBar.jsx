@@ -8,8 +8,6 @@ import { useState } from 'react'
 
 const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false)
-  console.log(openMenu);
-
 
   return (
     <nav className='container flex'>

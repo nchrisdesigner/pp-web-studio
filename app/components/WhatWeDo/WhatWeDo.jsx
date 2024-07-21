@@ -40,7 +40,7 @@ const services = [
 const WhatWeDo = () => {
   return (
     <section className={`container ${styles.container} `}>
-      <TitleContainer miniTitle='WHAT WE DO' title='WE BUILD BRANDS'>
+      <TitleContainer align='left' miniTitle='WHAT WE DO' title='WE BUILD BRANDS'>
         Our task is to change pixels into catchy brand stories and online personalities that attract clients. Our catch phrase, <span className="bold-text">‘From Pixels to Digital Mastery’</span> exemplifies our complete attention to detail and unrivaled knowledge in making perfect digital designs.
       </TitleContainer>
 

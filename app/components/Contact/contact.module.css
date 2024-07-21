@@ -1,0 +1,31 @@
+.sectionContainer{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  text-align: center;
+}
+
+.btn{
+  margin: 1rem auto;
+  padding: 1.2rem 3.6rem;
+  display: inline-block;
+  outline: none;
+  border: none;
+  color: var(--white);
+  background: var(--purple);
+  background: #2c2c99;
+  border: 1px solid var(--white);
+
+  display: flex;
+  /* align-self: center;
+  justify-self: center; */
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.miniTitle{
+  margin: 3.2rem 0 .8rem 0;
+  font-size: clamp(1.2rem , .8rem + 2vw, 1.4rem);
+  color: var(--black);
+  font-weight: 600;
+}

@@ -1,3 +1,4 @@
+import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
 import TheRealMVP from "./components/TheRealMVP/TheRealMVP";
@@ -14,6 +15,7 @@ export default function Home() {
       <TheRealMVP />
       <WhatWeDo />
       <WhatWeDid />
+      <Contact />
     </>
   );
 }

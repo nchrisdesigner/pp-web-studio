@@ -1,6 +1,9 @@
-import {  Poppins } from "next/font/google";
-import "./globals.css";
-import NavBar from "./components/Navbar/NavBar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
+import { Poppins } from "next/font/google"
+import "./globals.css"
+import NavBar from "./components/Navbar/NavBar"
+import Footer from "./components/Footer/Footer"
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700', '800'],
@@ -20,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <NavBar />
         {children}
+        <Footer />
         </body>
     </html>
   );

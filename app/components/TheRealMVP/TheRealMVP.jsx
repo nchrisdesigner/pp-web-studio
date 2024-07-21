@@ -105,18 +105,16 @@ const TheRealMVP = () => {
 
           <div className={styles.images}>
             <div className={styles.imagesContainer}>
-              <figure className={styles.imageContainer}>
                 {images.map(({id, src, alt}, index) => {
                   return (
-                    <>
+                    <figure key={id} className={styles.imageContainer}>
                         {
                       selectedStep === id && 
-                      <Image className={styles.image} src={src} alt={alt} />
+                      <Image  className={styles.image} src={src} alt={alt} />
                     }
-                    </>
+                    </figure>
                   )
                 })}
-              </figure>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ const WhoWeAre = () => {
   return (
     <section className={` container ${styles.gridContainer}`}>
 
-      <TitleContainer miniTitle='WHO WE ARE' title='CREATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS'>
+      <TitleContainer align='left' miniTitle='WHO WE ARE' title='CREATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS'>
         At PixelPerfekt, each pixel has its story. Therefore we are not just web design agency but rather a creative center where we focus on materializing all those digital concepts you have got. As brand architects, we meticulously construct digital presences <span className="bold-text">that reflect your core values and ambitions.</span>
       </TitleContainer>
 

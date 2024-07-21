@@ -6,14 +6,14 @@ const anton = Anton({
   subsets: ['latin'],
 })
 
-const TitleContainer = ({miniTitle, title, children}) => {
+const TitleContainer = ({miniTitle, title, align, children}) => {
   return (
-    <div className={`${styles.titleContainer}`}>
+    <div style={{ textAlign:align}} className={`${styles.titleContainer}`}>
         <h3>{miniTitle}</h3>
         <h2 className={`${anton.className}`}>
           {title}
         </h2>
-        <p>{children}</p>
+        <p style={align === 'center' ? {margin: '0 auto'} : {}}>{children}</p>
       </div>
   )
 }
