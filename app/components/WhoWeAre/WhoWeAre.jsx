@@ -1,18 +1,8 @@
-import { Anton } from 'next/font/google'
-import { Poppins } from 'next/font/google'
 import styles from './whoweare.module.css'
 import Link from 'next/link'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import TitleContainer from '@/app/ui/TitleContainer/TitleContainer';
 
-const poppins = Poppins({ 
-  weight: ['300','400','500','600','700'],
-  subsets: ['latin'],
-  style: ["italic", "normal"],
-})
-const anton = Anton({
-  weight: ['400'],
-  subsets: ['latin'],
-})
 
 const data = [
   {
@@ -35,29 +25,26 @@ const data = [
 const WhoWeAre = () => {
   return (
     <section className={` container ${styles.gridContainer}`}>
-      <div className={`${styles.textContainer}`}>
-        <h3>WHO WE ARE</h3>
-        <h2 className={`${anton.className}`}>
-          CREATIVE THINKERS, <br/> PROBLEM SOLVERS, GAME CHANGERS
-        </h2>
-        <p>At PixelPerfekt, each pixel has its story. Therefore we are not just web design agency but rather a creative center where we focus on materializing all those digital concepts you have got. As brand architects, we meticulously construct digital presences <span className="bold-text">that reflect your core values and ambitions.</span>  </p>
 
-        <Link className={styles.btn} href="#">Learn More <IoIosArrowRoundForward className={styles.icon} /></Link>
-      </div>
+      <TitleContainer miniTitle='WHO WE ARE' title='CREATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS'>
+        At PixelPerfekt, each pixel has its story. Therefore we are not just web design agency but rather a creative center where we focus on materializing all those digital concepts you have got. As brand architects, we meticulously construct digital presences <span className="bold-text">that reflect your core values and ambitions.</span>
+      </TitleContainer>
 
       <div className={styles.principlesContainer}>
         <h3>WE ARE GUIDED BY THREE MAJOR PRINCIPLES</h3>
         <div className={styles.principleContainer}>
-            {data.map(({id, title, text}) => {
-              return (
-                <div className={styles.principle} key={id}>
-                  <h4>{title}</h4>
-                  <p>{text}</p>
-                </div>
-              )
-            })}
+          {data.map(({ id, title, text }) => {
+            return (
+              <div className={styles.principle} key={id}>
+                <h4>{title}</h4>
+                <p>{text}</p>
+              </div>
+            )
+          })}
         </div>
       </div>
+
+      <Link className={styles.btn} href="#">Learn More <IoIosArrowRoundForward className={styles.icon} /></Link>
     </section>
   )
 }

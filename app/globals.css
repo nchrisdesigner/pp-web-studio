@@ -1,12 +1,15 @@
 :root{
   font-size: 62.5%;
 
-  --primary-title: #1a1616;
-  --black: #1a1616;
-  --purple: #5d5ad6;
-  --dark-purple: #130231;
-  --yellow: #ebc337;
-  --white: #fff;
+  --primary-title: hsl(0, 8%, 9%);
+  --text-color: hsl(0, 0%, 20%);
+  --black: hsl(0, 8%, 9%);
+  --purple: hsl(241, 60%, 60%);
+  --dark-purple: hsl(262, 92%, 10%);
+  /* --dark-purple: hsl(263, 94%, 7%); */
+  --yellow: hsl(47, 82%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --white-faint: hsl(0, 0%, 85%);
 }
 
 body{
@@ -28,8 +31,7 @@ a{
 .container{
   width: min(136rem, 100%);
   margin: 0 auto;
-  padding: 2rem;
-
+  padding: 4rem 2rem;
   position: relative;
 }
 
@@ -44,7 +46,6 @@ a{
   display: block;
 }
 
-
 .yellow{
   color: var(--yellow)
 }
@@ -53,11 +54,18 @@ a{
  color: var(--purple);
 }
   
-
 .outline-text{
   color: transparent;
   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: var(--primary-title);
+   -webkit-text-stroke-color: var(--black);
+   position: relative;
+   display: inline-block;
+}
+
+.outline-text-white{
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--white);
    position: relative;
    display: inline-block;
 }

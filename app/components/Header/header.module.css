@@ -1,6 +1,21 @@
 .headerContainer{
   /* height: 100vh; */
   padding: 12rem 2rem;
+  position: relative;
+}
+
+.headerContainer::before{
+  content: 'WE SOLVE PROBLEMS THROUGH REMARKABLE DESIGN';
+  font-size: 25rem;
+  position: absolute;
+  z-index: -10;
+  color: var(--purple);
+  opacity: .03;
+  font-weight: 800;
+  line-height: .75;
+  transform: rotate(-30deg);
+  top: -50rem;
+  left: -30rem;
 }
 
 .flexContainer {

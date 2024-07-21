@@ -3,25 +3,23 @@
   grid-template-columns: 60fr 40fr;
   padding: 12rem 2rem;
 }
+/* Title Container */
 
 
-/* Text Container */
-
-
-.textContainer > h3{
+.titleContainer > h3{
   font-size: 2rem;
   font-style: italic;
   color: var(--purple);
 }
 
-.textContainer > h2{
+.titleContainer > h2{
   font-size: 9.6rem;
   line-height: 1;
   /* width: 18ch; */
   margin-bottom: 1rem;
 }
 
-.textContainer > p{
+.titleContainer > p{
   font-size: 1.6rem;
   line-height: 1.5;
   width: min(65ch ,100%);
