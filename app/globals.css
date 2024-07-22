@@ -31,7 +31,7 @@ a{
 .container{
   width: min(136rem, 100%);
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 3.2rem 2rem;
   position: relative;
 }
 
@@ -91,23 +91,23 @@ a{
 }
 
 .bar{
-  width: 4.6rem;
-  height: .8rem;
+  width: 4.2rem;
+  height: .6rem;
   left: 50%;
   transform: translateX(-50%);
 }
 .bar-half-1,
 .bar-half-2{
-  width: 2.3rem;
-  height: .8rem;
+  width: 2.1rem;
+  height: .6rem;
 }
 .bar-half-1{
-  top: -1rem;
+  top: -.8rem;
   left: 0;
 }
 .bar-half-2{
   right: 0;
-  top: 1rem;
+  top: .8rem;
 }
 
 .bar.open{
@@ -116,11 +116,20 @@ a{
 }
 
 .bar-half-1.open{
-  width: 4.6rem;
-  transform: translateX(-2.3rem) translateY(1rem) rotate(-45deg) ;
+  width: 4.2rem;
+  transform: translateX(-2.1rem) translateY(.8rem) rotate(-45deg) ;
   transform-origin: center;
 }
 .bar-half-2.open{
-  width: 4.6rem;
-  transform:translateX(2.3rem) translateY(-1rem) rotate(45deg) ;
+  width: 4.2rem;
+  transform:translateX(2.1rem) translateY(-.8rem) rotate(45deg) ;
+}
+
+
+
+@media screen and (width < 500px){
+  .container{
+    padding: 3.2rem 1.6rem;
+
+  }
 }
