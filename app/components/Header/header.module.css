@@ -2,9 +2,10 @@
   /* height: 100vh; */
   padding: 12rem 2rem;
   position: relative;
+  overflow: hidden ;
 }
 
-/* .headerContainer::before{
+.headerContainer::before{
   content: 'WE SOLVE PROBLEMS THROUGH REMARKABLE DESIGN';
   font-size: 25rem;
   position: absolute;
@@ -16,7 +17,7 @@
   transform: rotate(-30deg);
   top: -50rem;
   left: -30rem;
-} */
+}
 
 .flexContainer {
   display: flex;

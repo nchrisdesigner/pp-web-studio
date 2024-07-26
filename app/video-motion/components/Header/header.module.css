@@ -1,0 +1,51 @@
+.header{
+  padding-top: 4.8rem ;
+  padding-bottom: 12.8rem ;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.title{
+  font-size: clamp(5rem, 1rem + 14.7783vw, 12.5rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.paragraph{
+  font-size: clamp(1.08rem, 0.9315rem + 0.7423vw, 1.5625rem);
+  line-height: 1.5;
+  width: min(70ch ,100%);
+  text-wrap: balance;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.imageContainer{
+  text-align: center;
+}
+
+.image{
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (width < 1080px){
+  .header{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and ( 600px < width < 1080px){
+  .image{
+    width: 65%;
+  }
+  .header{
+    text-align: center;
+  }
+  .paragraph{
+    margin: 2rem auto;
+  }
+}

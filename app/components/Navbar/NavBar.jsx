@@ -10,7 +10,7 @@ const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <nav className='container flex'>
+    <nav className='navbar-container flex'>
       <div className={styles.logo}>
         <Image src={logo} alt='Pixel Pefekt Logo' width={160} />
       </div>

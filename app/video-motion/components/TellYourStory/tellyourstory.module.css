@@ -1,0 +1,18 @@
+.sectionContainer{
+  padding-top: 12.8rem;
+  padding-bottom: 12.8rem;
+  position: relatice;
+}
+
+.sectionContainer::before{
+  content: 'SHARE YOUR JOURNEY TO THE WORLD';
+  font-size: 16.8rem;
+  color: #0000000e;
+  font-weight: 800;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

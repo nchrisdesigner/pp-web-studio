@@ -5,6 +5,7 @@
   --text-color: hsl(0, 0%, 20%);
   --black: hsl(0, 8%, 9%);
   --purple: hsl(241, 60%, 60%);
+  --purple-faint: hsla(241, 60%, 60%, 0.379);
   --dark-purple: hsl(262, 92%, 10%);
   /* --dark-purple: hsl(263, 94%, 7%); */
   --yellow: hsl(47, 82%, 57%);
@@ -33,6 +34,12 @@ a{
   margin: 0 auto;
   padding: 3.2rem 2rem;
   position: relative;
+}
+
+.navbar-container {
+  width: min(136rem, 100%);
+  margin: 0 auto;
+  padding: 2rem 1.6rem;
 }
 
 .flex{
@@ -124,8 +131,6 @@ a{
   width: 4.2rem;
   transform:translateX(2.1rem) translateY(-.8rem) rotate(45deg) ;
 }
-
-
 
 @media screen and (width < 500px){
   .container{

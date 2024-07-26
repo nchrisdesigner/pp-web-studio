@@ -1,0 +1,5 @@
+.miniTitle{
+  font-size: clamp(1.62rem, 1.5175rem + 0.5125vw, 1.9531rem);
+  font-style: italic;
+  color: var(--purple);
+}

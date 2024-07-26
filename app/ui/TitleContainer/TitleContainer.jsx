@@ -1,20 +1,17 @@
+import MiniTitle from '../MiniTitle/MiniTitle'
+import Paragraph from '../Paragraph/Paragraph'
+import Title from '../Title/Title'
 import styles from './titlecontainer.module.css'
-import { Anton } from 'next/font/google'
 
-const anton = Anton({
-  weight: ['400'],
-  subsets: ['latin'],
-})
 
-const TitleContainer = ({miniTitle, title, align, children}) => {
+const TitleContainer = ({ miniTitle, color, title, align, children }) => {
   return (
-    <div style={{ textAlign:align}} className={`${styles.titleContainer}`}>
-        <h3>{miniTitle}</h3>
-        <h2 className={`${anton.className}`}>
-          {title}
-        </h2>
-        <p style={align === 'center' ? {margin: '0 auto'} : {}}>{children}</p>
-      </div>
+    <div style={{ textAlign: align }} className={`${styles.titleContainer}`}>
+      <MiniTitle>{miniTitle}</MiniTitle>
+      <Title color={color} style={{ color: `var(--${color})` }}>{title}</Title>
+      <Paragraph align={align} color={color} >
+        {children}</Paragraph>
+    </div>
   )
 }
 
