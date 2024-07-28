@@ -64,8 +64,8 @@
 }
 
 .footerContainer p{
-font-weight: 700;
-font-size: 1.6rem;
+font-weight: 500;
+font-size: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
 letter-spacing: 0.02em;
 }
 

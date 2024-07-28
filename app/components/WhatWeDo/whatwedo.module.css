@@ -13,53 +13,6 @@
   gap: 1rem;
 }
 
-.service{
-  /* width: min(430px, 100%); */
-  width: clamp(35rem, 32.5%, 100%);
-  aspect-ratio: 1/1;
-  position: relative;
-  color: var(--white);
-  overflow: hidden;
-}
-
-.miniGrid{
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: clamp(7rem, 30%, 9rem) 1fr 25%;
-  padding: 2rem;
-}
-
-
-.image{
-  position: absolute;
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: all .3s ease;
-}
-.service:hover .image{
-  transform: scale(1.25) rotate(5deg);
-}
-
-.service h3{
-  font-size: clamp(1.6rem, 1.5125rem + 1.4375vw, 2.7344rem);
-  line-height: 1;
-}
-
-.service p{
-  font-size: clamp(1.08rem, 0.9916rem + 0.4418vw, 1.3672rem);
-  line-height: 1.35;
-}
-
-.service h2{
-  font-size: clamp(2.88rem, 2.3238rem + 2.7808vw, 4.6875rem);
-  line-height: 1;
-  align-self: self-end;
-  font-style: italic;
-}
-
 
 @media screen and (width < 750px){
   .servicesContainer{

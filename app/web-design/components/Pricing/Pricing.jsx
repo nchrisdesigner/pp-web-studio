@@ -4,6 +4,7 @@ import { HiOutlineBolt } from "react-icons/hi2"
 import { MdOutlineRocketLaunch } from "react-icons/md"
 import { BiShoppingBag } from "react-icons/bi"
 import { ImCheckmark2 } from "react-icons/im"
+import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
 
 // <HiOutlineBolt /> <MdOutlineRocketLaunch /> <BiShoppingBag /> <ImCheckmark2 />
 
@@ -63,14 +64,14 @@ const Pricing = () => {
   return (
     <section className={`container ${styles.pricingSection}`}>
       <div className={styles.titleContainer}>
-        <MiniTitle>ADVANCED SOLUTIONS</MiniTitle>
-        <h2 className={styles.title}>CHOOSE WHAT YOU NEED</h2>
+        <MiniTitle>CHOOSE WHAT YOU NEED</MiniTitle>
+        <PricingTitle color='black'>Web Design Plans</PricingTitle>
       </div>
 
       <div className={styles.pricingsContainer}>
-        {pricing.map(({ id, title, secondTitle, icon, desc, miniText, price, features }, index) => {
+        {pricing.map(({ id, title, secondTitle, icon, desc, miniText, price, features }) => {
           return (
-            <div className={styles.pricing}>
+            <div key={id} className={styles.pricing}>
               <h3>{secondTitle}</h3>
               <div className={styles.pricingContainer}>
                 <div className={styles.icon}>{icon}</div>
@@ -89,15 +90,12 @@ const Pricing = () => {
                   <div className={styles.featureContainer}>
                     {features.map((feature, index) => {
                       return (
-                        <p className={styles.feature}><ImCheckmark2 style={{ color: 'var(--purple)', fontSize: '2rem' }} /> {feature}</p>
+                        <p key={index} className={styles.feature}><ImCheckmark2 style={{ color: 'var(--purple)', fontSize: '2rem' }} /> {feature}</p>
                       )
                     })}
                   </div>
                 </div>
-
               </div>
-
-
             </div>
           )
         })}

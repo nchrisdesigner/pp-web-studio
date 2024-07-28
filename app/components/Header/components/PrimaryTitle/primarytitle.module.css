@@ -16,6 +16,42 @@
   line-height: 1.3;
 }
 
+@property --stroke-dashoffset {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 20;
+}
+
+.smudge{
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+}
+
+.smudge path {
+  stroke-dasharray: 390;
+  stroke-dashoffset: var(--stroke-dashoffset);
+  animation: smudgeAnimate .35s  ease-in-out forwards;
+}
+
+@keyframes smudgeAnimate {
+  from {
+    stroke-dashoffset: 390;
+  }
+  to {
+    stroke-dashoffset: var(--stroke-dashoffset);
+  }
+}
+
+@media screen and (width < 700px){
+  @property --stroke-dashoffset {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 70;
+  }
+}
+
 @media screen and (width < 585px){
   .flexContainer{
     display: flex;
@@ -23,19 +59,22 @@
     flex-direction: column;
     gap: 2rem;
   }
-
-  /* .primaryTitle{
-    font-size: 8rem;
-    line-height: 1;
-  } */
 }
 
-/* @media screen and (width < 400px){
-  .primaryTitle{
-    font-size: 6.4rem;
-    line-height: 1;
+@media screen and (width < 500px){
+  @property --stroke-dashoffset {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 100;
   }
-} */
+}
+@media screen and (width < 350px){
+  @property --stroke-dashoffset {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 120;
+  }
+}
 
 @media screen and (width > 1650px){
   .primaryTitle{

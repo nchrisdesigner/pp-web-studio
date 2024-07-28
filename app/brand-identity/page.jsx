@@ -1,13 +1,12 @@
-import React from 'react'
 import Header from './components/Header/Header'
-import InfoSection from './components/InfoSection/InfoSection'
 import Pricing from './components/Pricing/Pricing'
+import TellYourStory from './components/TellYourStory/TellYourStory'
 
 const VideoMotionPage = () => {
   return (
     <>
       <Header />
-      <InfoSection />
+      <TellYourStory />
       <Pricing />
     </>
   )

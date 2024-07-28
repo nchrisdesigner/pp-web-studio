@@ -5,6 +5,7 @@
 
 .title {
   font-size: 9.6rem;
+  font-size: clamp(4.8rem, 3.7748rem + 6.2261vw, 9.375rem);
   line-height: 1;
   position: relative;
 }
@@ -15,6 +16,68 @@
   justify-content: center;
   gap: 2rem;
 }
+
+.smudgeOne,
+.smudgeTwo{
+  position: absolute;
+  left: -10%;
+  top: 10%;
+}
+
+@property --stroke-dashoffset-1 {
+  syntax: '<number>';
+  inherits: false;
+  /* initial-value: 0; */
+  initial-value: 204;
+}
+@property --stroke-dashoffset-2 {
+  syntax: '<number>';
+  inherits: false;
+  /* initial-value: 30; */
+  initial-value: 279;
+}
+
+
+.smudgeOne path {
+  stroke-dasharray: 204;
+  stroke-dashoffset: var(--stroke-dashoffset-1);
+
+  animation: smudgeAnimateOne .35s  ease-in-out forwards;
+  /* animation-timeline: view(); */
+  /* animation-range: entry 60%; */
+}
+.smudgeTwo path {
+  stroke-dasharray: 279;
+  stroke-dashoffset: var(--stroke-dashoffset-2);
+
+  animation: smudgeAnimateTwo .35s .75s  ease-in-out forwards;
+  /* animation-timeline: view(); */
+  /* animation-range: entry 60%; */
+}
+
+@keyframes smudgeAnimateOne {
+from{
+  --stroke-dashoffset-1: 204
+    /* stroke-dashoffset: var(--stroke-dashoffset-1); */
+}
+  to {
+    --stroke-dashoffset-1: 0
+    /* stroke-dashoffset: var(--stroke-dashoffset-1); */
+  }
+}
+@keyframes smudgeAnimateTwo {
+  from{
+    --stroke-dashoffset-2: 279
+      /* stroke-dashoffset: var(--stroke-dashoffset-1); */
+  }
+  to {
+    --stroke-dashoffset-2: 30;
+    /* stroke-dashoffset: var(--stroke-dashoffset-2); */
+  }
+}
+
+
+/* Media Queries */
 
 @media screen and (width < 800px) {
   .container {
@@ -27,22 +90,10 @@
     justify-content: flex-start;
   }
 
-  .title {
-    font-size: 6.8rem;
-  }
 }
-
-@media screen and (width < 600px) {
-  .title {
-    font-size: 5.8rem;
-  }
-}
-
-
 
 @media screen and (width < 555px){
   .miniContainer {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;

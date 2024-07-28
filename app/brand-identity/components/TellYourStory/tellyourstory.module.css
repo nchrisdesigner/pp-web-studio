@@ -1,7 +1,8 @@
 .sectionContainer{
   padding-top: 12.8rem;
   padding-bottom: 12.8rem;
-  position: relatice;
+  position: relative;
+  overflow: hidden;
 }
 
 .sectionContainer::before{

@@ -1,7 +1,8 @@
 .container{
   background: var(--dark-purple);
   color: var(--white);
-  padding: 8rem 2rem;
+  padding-top: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem);
+  padding-bottom: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem);
 }
 
 .titleContainer{
@@ -19,13 +20,16 @@
   font-style: italic;
   line-height: 1.5;
 }
-.titleContainer > p{
-  font-size: clamp(1.2rem, .8rem + 0.65vw, 1.6rem);
-  letter-spacing: 0.13em;
-  font-weight: 300;
+.containerMiniTitle{
+  font-size: clamp(1.8rem, 1rem + 0.75vw, 2.4rem);
+  letter-spacing: 0.05em;
+  font-weight: 600;
   color: hsl(0, 0%, 75%);
-}
+  color: var(--purple);
+  text-align: center;
 
+  padding-top: 4.8rem;
+}
 
 .gridContainer{
   display: grid;
@@ -45,7 +49,8 @@
   flex-direction: column;
   gap: 3.2rem;
 }
-.steps h4{
+
+.stepsTitle{
   font-size: 3.2rem;
   font-size: clamp(1.8rem, 1.3rem + 1.8vw, 3.2rem);
   line-height: 1.2;
@@ -63,7 +68,6 @@
   gap: .5rem;
 }
 .step h5{
-  /* font-size: 2rem; */
   font-size: clamp(1.2656rem, 1.0541rem + 1.0577vw, 1.9531rem);
   font-style: italic;
   cursor: pointer;
@@ -71,7 +75,6 @@
 .step p{
   font-size: clamp(0.9492rem, 0.7605rem + 0.9435vw, 1.5625rem);
   width: min(60ch, 100%);
-  /* text-indent: 3rem each-line; */
   padding-left: 3rem;
   color: var(--white-faint);
 }

@@ -65,8 +65,6 @@ const steps = [
 
 const TheRealMVP = () => {
   const [selectedStep, setSelectedStep] = useState(1)
-  // const [selectedImage, setSelectedImage] = useState(step1)
-
 
   const handleSelectStep = (id) => {
     setSelectedStep(id)
@@ -79,13 +77,12 @@ const TheRealMVP = () => {
         <div className={styles.titleContainer}>
           <h3>YOU ARE THE REAL <span className='yellow'>MVP</span></h3>
           <h2 className={anton.className}>YOUR DREAMS MATTER</h2>
-          <p>We hear what our people say</p>
         </div>
 
         <div className={styles.gridContainer}>
 
           <div className={styles.steps}>
-            <h4>Your Goals, <span className='yellow'>Our Game Plan</span></h4>
+            <h4 className={styles.stepsTitle}>Your Goals, <span className='yellow'>Our Game Plan</span></h4>
             <div className={styles.stepsContainer}>
               {steps.map(({ id, title, desc }, index) => {
                 return (
@@ -119,6 +116,7 @@ const TheRealMVP = () => {
           </div>
         </div>
 
+        <p className={styles.containerMiniTitle}>We hear what our people say</p>
       </div>
 
     </section>

@@ -1,0 +1,68 @@
+.service{
+  width: clamp(35rem, 32.5%, 100%);
+  /* flex-grow: 1; */
+  aspect-ratio: 1/1;
+  position: relative;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.miniGrid{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: clamp(6rem, 32%, 9rem) 1fr 25%;
+  padding: 2rem;
+}
+
+.image{
+  position: absolute;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all .3s ease;
+}
+
+.service:hover .image{
+  transform: scale(1.25) rotate(5deg);
+}
+
+.service h3{
+  font-size: clamp(1.4rem, 1.4125rem + 1.4375vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.service p{
+  font-size: clamp(1.2rem, 0.8rem + 0.4vw, 1.3672rem);
+  line-height: 1.35;
+}
+
+.titleContainer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-self: self-end;
+}
+
+.service h2{
+  font-size: clamp(2.8rem, 2.3238rem + 2.8vw, 4.2rem);
+  width: 5ch;
+  line-height: 1;
+  font-style: italic;
+}
+
+.icon{
+  cursor: pointer;
+  border-radius: 50px;
+  width: 4rem;
+  height: 4rem;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+@media screen and (width < 550px){
+  .service{
+    flex-grow: 1;
+  }
+}

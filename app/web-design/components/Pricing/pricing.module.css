@@ -9,13 +9,6 @@
   padding-bottom: 4.8rem ;
 }
 
-.title{
-  font-size: clamp(2.8rem, 2.0935rem + 2.1327vw, 3.9063rem);
-  line-height: 1;
-  font-weight: 700;
-}
-
-
 .pricingsContainer{
   display: grid;
   grid-template-columns: repeat(3,1fr);

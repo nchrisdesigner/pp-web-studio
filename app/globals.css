@@ -7,6 +7,8 @@
   --purple: hsl(241, 60%, 60%);
   --purple-faint: hsla(241, 60%, 60%, 0.379);
   --dark-purple: hsl(262, 92%, 10%);
+  --dark-purple-2 : hsl(241, 60%, 5%);
+  --green: #10b889;
   /* --dark-purple: hsl(263, 94%, 7%); */
   --yellow: hsl(47, 82%, 57%);
   --white: hsl(0, 0%, 100%);
