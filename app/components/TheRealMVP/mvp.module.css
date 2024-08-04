@@ -31,17 +31,12 @@
   padding-top: 4.8rem;
 }
 
+
 .gridContainer{
   display: grid;
   grid-template-columns: 50fr 50fr;
   gap: 4rem;
   padding: 4rem 0;
-}
-
-@media screen and ( width < 1080px){
-  .gridContainer{
-    grid-template-columns: 1fr;
-  }
 }
 
 .steps{
@@ -62,26 +57,11 @@
   gap: 2rem;
 }
 
-.step{
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}
-.step h5{
-  font-size: clamp(1.2656rem, 1.0541rem + 1.0577vw, 1.9531rem);
-  font-style: italic;
-  cursor: pointer;
-}
-.step p{
-  font-size: clamp(0.9492rem, 0.7605rem + 0.9435vw, 1.5625rem);
-  width: min(60ch, 100%);
-  padding-left: 3rem;
-  color: var(--white-faint);
+
+@media screen and ( width < 1080px){
+  .gridContainer{
+    grid-template-columns: 1fr;
+  }
 }
 
-.image{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 

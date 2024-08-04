@@ -1,6 +1,11 @@
-.container {
+.sectionContainer {
   text-align: center;
   padding: 2rem;
+  height: min(100vh, 1000px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .title {

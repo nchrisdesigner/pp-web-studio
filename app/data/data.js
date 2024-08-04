@@ -1,0 +1,319 @@
+import { SiJordan } from "react-icons/si"
+import { MdOutlineBrandingWatermark } from "react-icons/md"
+import { BiImage } from "react-icons/bi"
+import { HiOutlineBolt } from "react-icons/hi2"
+import { MdOutlineRocketLaunch } from "react-icons/md"
+import { BiShoppingBag } from "react-icons/bi"
+import { BsCameraVideo } from "react-icons/bs"
+import { PiDroneFill } from "react-icons/pi"
+import { MdOutlineAnimation } from "react-icons/md"
+
+import dream from '@/app/assets/mini-icons/dream.png'
+import design from '@/app/assets/mini-icons/design.png'
+import show from '@/app/assets/mini-icons/show.png'
+
+import step1 from '@/app/assets/steps/step-1.png'
+import step2 from '@/app/assets/steps/step-2.png'
+import step3 from '@/app/assets/steps/step-3.png'
+import step4 from '@/app/assets/steps/step-4.png'
+
+import web from '@/app/assets/services/service1.jpg'
+import brand from '@/app/assets/services/service2.jpg'
+import motion from '@/app/assets/services/service3.jpg'
+
+import logo from '@/app/assets/logo.png'
+
+// Home Page
+export const miniText = [
+  {
+      title: 'Dream It',
+      desc: 'Think big and imagine what you want.',
+      icon: dream
+  },
+  {
+      title: 'Design It',
+      desc: 'Time to turn your idea into a real thing.',
+      icon: design
+  },
+  {
+      title: 'Show It',
+      desc: 'Let your idea shine everywhere it matters.',
+      icon: show
+  },
+]
+
+export const steps = [
+  {
+    id: 1,
+    title: 'Turning Your Concepts into Champions',
+    desc: 'Your vision is the blueprint for our work. We delve deep into your ideas, shaping them into extraordinary digital experiences that lead to success.',
+    src: step1,
+    alt: 'turning your concepts into champions'
+  },
+  {
+    id: 2,
+    title: 'Game-Changing Designs for You',
+    desc: 'We blend innovation and creativity, ensuring that your project stands out with unique, game-changing elements.',
+    src: step2,
+    alt: 'game-changing designs for you'
+  },
+  {
+    id: 3,
+    title: 'Your Success is Our Victory',
+    desc: 'Your success is the ultimate measure of our achievement. We are committed to exceeding your expectations, ensuring both our victories are aligned.',
+    src: step3,
+    alt: 'your success is our victory'
+  },
+  {
+    id: 4,
+    title: 'Designing MVPs in Every Industry',
+    desc: 'We are always aligned on your industry standards, understanding your specific needs to make your business stand out as a top performer.',
+    src: step4,
+    alt: 'designing mvps in eveery industry'
+  },
+]
+
+export const services = [
+  {
+    id: 1,
+    mainTitle: 'Web Design',
+    title: 'Take your online presence beyond the Average',
+    boldText: 'A poor website equals missed opportunities.',
+    desc: 'We blend fresh design ideas with easy-to-navigate pages, ensuring your website not only looks amazing but also works perfectly.',
+    image: web
+  },
+  {
+    id: 2,
+    mainTitle: 'Brand Identity',
+    title: 'Break the Ordinary with Uniqueness',
+    boldText: 'Bad branding weighing down your company?',
+    desc: 'We mix design principles and our original creativity with your story to take your brand to new heights.',
+    image: brand
+  },
+  {
+    id: 3,
+    mainTitle: 'Video Motion',
+    title: 'Tell your story through Motion ',
+    boldText: 'Text can often be overlooked.',
+    desc: 'Bring your brand to life with video motion, transforming your message into captivating visuals and make your brand stand out.',
+    image: motion
+  },
+]
+
+export const projects = [
+  {
+    id: 1,
+    title: 'Smart Consulting',
+    subtitle: "A complete digital makeover",
+    desc: 'An entire conversion of SmartConsulting was made by us. Right away from designing a modern website ,aligned to industry’s standards, to creating a unique brand identity and making an eye-cathing video, everything has been carefully optimized for their online presence.',
+    url: 'https://smartconsulting.gr/',
+    logo: logo
+  },
+  {
+    id: 2,
+    title: 'Kostaschris Videography',
+    subtitle: "Showcasing high-tech storytelling through tradition",
+    desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
+    url: 'https://kostaschris.gr/',
+    logo: logo
+  },
+  {
+    id: 3,
+    title: 'Wodshop',
+    subtitle: "Enhancing brand and e-commerce",
+    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
+    url: 'https://wodshop.eu/',
+    logo: logo
+  },
+  {
+    id: 4,
+    title: 'Supercharge Your Skills',
+    subtitle: "Enhancing brand and e-commerce",
+    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
+    url: 'https://wodshop.eu/',
+    logo: logo
+  },
+]
+
+
+
+// Brand Identity
+export const brandIdentityPricing = [
+  {
+    id: 1,
+    title: 'LOGO DESIGN',
+    icon: <SiJordan />,
+    desc: 'Creation of a Visual Identity.',
+    price: '500€+',
+    features: [
+      "3 initial logo concepts",
+      "1 round of revisions",
+      "High Resolution Files(JPEG,PNG,PDF)",
+    ]
+  },
+  {
+    id: 2,
+    title: 'GRAPHICS DESIGN',
+    icon: <BiImage />,
+    desc: 'Visual assets aligned with brand aesthetics.',
+    price: '800€+',
+    features: [
+      "10 Custom graphics and images",
+      "1 round of revisions",
+      "High Resolution Files(JPEG,PNG,PDF)",
+    ]
+  },
+  {
+    id: 3,
+    title: 'BRAND DESIGN',
+    icon: <MdOutlineBrandingWatermark />,
+    desc: 'Comprehensive brand identity design.',
+    price: '1500€+',
+    features: [
+      "Logo Design",
+      "10 Custom graphics and images",
+      "Business card",
+      "Social media branding kit (x6 IG Post)",
+      "2 rounds of revisions",
+      "High Resolution Files(JPEG,PNG,PDF)",
+    ]
+  },
+]
+
+// Web Design
+
+export const webDesignFeatures = [
+  {
+    id:1,
+    title: 'Global Accessibility',
+    desc: 'Allows your business to be accessible to potential customers worldwide, breaking down geographical barriers and expanding your market reach beyond local boundaries.'
+  },
+  {
+    id:2,
+    title: '24/7 Availability',
+    desc: 'Additionally, it provides a constant platform where customers can learn about your products or services, make inquiries, and even make purchases day or night.'
+  },
+  {
+    id:3,
+    title: 'Enhanced Credibility and Branding',
+    desc: 'On top of that, a well-designed website adds credibility and professionalism in its own right.'
+  },
+  {
+    id:4 ,
+    title: 'Cost-Effective Marketing',
+    desc: 'Furthermore, websites provide ways of advertising businesses at low rates as compared to traditional methods like print ads or direct mails. '
+  },
+]
+
+export const webDesignPricing = [
+  {
+    id: 1,
+    title: 'ADVANCED',
+    secondTitle: 'MOST STATE-OF-THE-ART',
+    icon: <HiOutlineBolt />,
+    desc: 'Best for Large Business',
+    miniText: "(Take your online presence to the next level)",
+    price: '3600€+',
+    features: [
+      "Next.js + Framer Motion",
+      "Photoshop, Illustrator, Midjourney",
+      "Custom animations and interactive elements",
+      "High Speed Performance",
+      "Best SEO Optimization",
+      "Fully Customized"
+    ]
+  },
+  {
+    id: 2,
+    title: 'BASIC',
+    secondTitle: 'MOST POPULAR',
+    icon: <MdOutlineRocketLaunch />,
+    desc: 'Best for Small Business',
+    miniText: "(Upgrade your online presence)",
+    price: '1800€+',
+    features: [
+      "Wordpress",
+      "Photoshop, Illustrator, Midjourney",
+      "Basic Animations",
+      "High Speed Performance and SEO",
+    ]
+  },
+  {
+    id: 3,
+    title: 'E-COMMERCE',
+    secondTitle: 'MOST PROFITABLE',
+    icon: <BiShoppingBag />,
+    desc: 'Best for e-shops',
+    miniText: "(Increase sales and conversions)",
+    price: '2500€+',
+    features: [
+      "Wordpress + WooCommerce",
+      "Photoshop, Illustrator, Midjourney",
+      "Custom animations and interactive elements",
+      "High Speed Performance",
+      "Best SEO Optimization",
+      "Client-Centered Approach"
+    ]
+  },
+]
+
+// Video Motion
+export const videoMotionFeatures = [
+  {
+    id:1,
+    title:'Visual Demonstration',
+    desc:'Videos allow you to demonstrate your products or services in action, showcasing their features and benefits more effectively than text descriptions. This can help potential customers understand and appreciate your offerings, leading to higher purchase rates.'
+  },
+  {
+    id:2,
+    title:'Emotional Connection',
+    desc:'Videos can evoke emotions through storytelling, music, and visuals, creating a deeper emotional connection with your audience. This connection can lead to increased loyalty and a stronger brand affinity.'
+  },
+  {
+    id:3,
+    title:'Showcases Professionalism',
+    desc:'Brands that invest in high-quality video production demonstrate a commitment to professionalism and excellence. This attention to detail reflects a strong brand identity and reassures customers of the brand\'s reliability and dedication to delivering superior products or services.'
+  },
+]
+
+export const videoMotionPricing = [
+  {
+    id: 1,
+    title: 'ANIMATED PROMO VIDEO',
+    desc: 'Dynamic promotional video with logo, illustrations and text animations.',
+    price: '400€+',
+    icon: <MdOutlineAnimation/>,
+    features: [
+      'Animation video to attract audience’s attention',
+      'Increase brand awareness and customer engagement',
+      'Suitable for online marketing campaigns',
+      'Up to 30 seconds',
+    ]
+  },
+  {
+    id: 2,
+    title: 'PRESENTATIONAL VIDEO',
+    desc: 'Detailed explainer video to present your brand, your services and your products in a professional way.',
+    price: '600€+',
+    icon: <BsCameraVideo/>,
+    features: [
+      'Ideal for showcasing facilities, products or services',
+      'Boost credibility and trust',
+      'Professional cameras, lighting and script',
+      'Up to 60-90 seconds',
+    ]
+  },
+  {
+    id: 3,
+    title: 'DRONE VIDEO',
+    desc: 'Video production including aerial footage with drone cameras.',
+    price: '800€+',
+    icon: <PiDroneFill/>,
+    features: [
+      'Stunning visuals and unique perspectives',
+      'Highlight expansive landscapes, facilities or events',
+      'Cinematic viewing experience',
+      'Up to 45 seconds',
+    ]
+  },
+]

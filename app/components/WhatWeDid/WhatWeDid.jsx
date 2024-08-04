@@ -1,44 +1,9 @@
 import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import styles from './whatwedid.module.css'
 import { IoIosArrowRoundForward } from "react-icons/io";
-import logo from './../../assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
-
-const projects = [
-  {
-    id: 1,
-    title: 'Smart Consulting',
-    subtitle: "A complete digital makeover",
-    desc: 'An entire conversion of SmartConsulting was made by us. Right away from designing a modern website ,aligned to industry’s standards, to creating a unique brand identity and making an eye-cathing video, everything has been carefully optimized for their online presence.',
-    url: 'https://smartconsulting.gr/',
-    logo: logo
-  },
-  {
-    id: 2,
-    title: 'Kostaschris Videography',
-    subtitle: "Showcasing high-tech storytelling through tradition",
-    desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
-    url: 'https://kostaschris.gr/',
-    logo: logo
-  },
-  {
-    id: 3,
-    title: 'Wodshop',
-    subtitle: "Enhancing brand and e-commerce",
-    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
-    url: 'https://wodshop.eu/',
-    logo: logo
-  },
-  {
-    id: 4,
-    title: 'Supercharge Your Skills',
-    subtitle: "Enhancing brand and e-commerce",
-    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
-    url: 'https://wodshop.eu/',
-    logo: logo
-  },
-]
+import { projects } from '@/app/data/data';
 
 const WhatWeDid = () => {
   return (
@@ -49,7 +14,7 @@ const WhatWeDid = () => {
 
       <div className={styles.projects}>
         <div className={styles.projectsContainer}>
-          {projects.map(({ id, title, subtitle, desc, url, logo }, index) => {
+          {projects.map(({ id, title, subtitle, desc, url, logo }) => {
             return (
               <div key={id} className={styles.project}>
                 <figure className={styles.imageContainer}>

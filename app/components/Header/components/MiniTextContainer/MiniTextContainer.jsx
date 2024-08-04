@@ -1,43 +1,52 @@
+'use client'
 import Image from 'next/image'
-import dream from './../../../../assets/mini-icons/dream.png'
-import design from './../../../../assets/mini-icons/design.png'
-import show from './../../../../assets/mini-icons/show.png'
-
 import styles from './minitextcontainer.module.css'
+import { miniText } from '@/app/data/data'
+import { motion } from 'framer-motion'
 
-const data = [
-  {
-      title: 'Dream It',
-      desc: 'Think big and imagine what you want.',
-      icon: dream
+const containerVariants = {
+  hidden: { 
+    opacity: 1
+   },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+      staggerChildren: 0.2
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { 
+    opacity: 0,
+    y:30 
   },
-  {
-      title: 'Design It',
-      desc: 'Time to turn your idea into a real thing.',
-      icon: design
-  },
-  {
-      title: 'Show It',
-      desc: 'Let your idea shine everywhere it matters.',
-      icon: show
-  },
-]
+  show: { 
+    opacity: 1,
+    y:0
+  }
+}
 
 const MiniTextContainer = () => {
   return (
-    <div className={styles.container}>
-    {data.map(({title, desc, icon}, index) => {
-      return (
-        <div className={styles.item}>
-          <h3 className={styles.title}>
-          <Image src={icon} alt='icon' />
-            {title}
+    <motion.div
+      variants={containerVariants}
+      initial='hidden'
+      animate='show'
+      className={styles.container}>
+      {miniText.map(({ title, desc, icon }) => {
+        return (
+          <motion.div variants={itemVariants} className={styles.item}>
+            <h3 className={styles.title}>
+              <Image src={icon} alt='icon' />
+              {title}
             </h3>
-          <p className={styles.text}>{desc}</p>
-        </div>
-      )
-    })}
-  </div>
+            <p className={styles.text}>{desc}</p>
+          </motion.div>
+        )
+      })}
+    </motion.div>
   )
 }
 

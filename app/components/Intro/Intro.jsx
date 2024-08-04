@@ -14,7 +14,7 @@ const anton = Anton({
 
 const Intro = () => {
   return (
-    <section className={`${styles.container} container`}>
+    <section className={`${styles.sectionContainer} container`}>
       <SecondaryTitle>CLIENT IS A BAD, BAD WORD</SecondaryTitle>
 
       <div className={styles.miniContainer}>

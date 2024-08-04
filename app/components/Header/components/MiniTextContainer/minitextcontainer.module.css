@@ -3,6 +3,7 @@
   margin: 4rem 0;
   flex-wrap: wrap;
   gap: 1rem;
+  
 }
 
 .item{
@@ -12,8 +13,11 @@
 .title{
   display: flex;
   align-items:center;
-  gap: .75rem;;
+  gap: .75rem;
+  color: var(--purple);
 }
 .text{
   width: 20ch;
+  color: var(--white);
+  
 }

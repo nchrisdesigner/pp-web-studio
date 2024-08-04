@@ -1,11 +1,24 @@
+'use client'
 import styles from './location.module.css'
+import { motion } from 'framer-motion'
 
 const Location = () => {
   return (
-    <div className={styles.container}>
+    <motion.div
+    initial={{
+      opacity:0
+    }}
+    animate={{
+      opacity:1
+    }}
+    transition={{
+      delay:0,
+      duration: 0.5
+    }}
+    className={styles.container}>
       <h4 className={styles.title}>Your go-to experts</h4>
       <p className={styles.text}>Located in Greece - Available everywhere</p>
-    </div>
+    </motion.div>
   )
 }
 

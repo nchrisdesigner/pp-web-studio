@@ -6,10 +6,11 @@ import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 
 const Header = () => {
   return (
-    <header className={`${styles.headerContainer} container`}>
-
+    <header className={styles.headerContainer}>
+      
+    <section className={`${styles.sectionContainer} container`}>
       <div>
-        <SecondaryTitle>WE DON'T JUST DESIGN WEBSITES</SecondaryTitle>
+        <SecondaryTitle color='white' >WE DON'T JUST DESIGN WEBSITES</SecondaryTitle>
         <PrimaryTitle />
         <div className={styles.flexContainer}>
           <MiniTextContainer />
@@ -17,6 +18,7 @@ const Header = () => {
         </div>
       </div>
 
+    </section>
     </header>
   )
 }

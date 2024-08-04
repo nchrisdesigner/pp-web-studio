@@ -1,52 +1,8 @@
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import styles from './pricing.module.css'
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
-import { BsCameraVideo } from "react-icons/bs"
-import { PiDroneFill } from "react-icons/pi"
-import { MdOutlineAnimation } from "react-icons/md"
 import { FaCheck } from "react-icons/fa"
-
-const plans = [
-  {
-    id: 1,
-    title: 'ANIMATED PROMO VIDEO',
-    desc: 'Dynamic promotional video with logo, illustrations and text animations.',
-    price: '400€+',
-    icon: <MdOutlineAnimation/>,
-    features: [
-      'Animation video to attract audience’s attention',
-      'Increase brand awareness and customer engagement',
-      'Suitable for online marketing campaigns',
-      'Up to 30 seconds',
-    ]
-  },
-  {
-    id: 2,
-    title: 'PRESENTATIONAL VIDEO',
-    desc: 'Detailed explainer video to present your brand, your services and your products in a professional way.',
-    price: '600€+',
-    icon: <BsCameraVideo/>,
-    features: [
-      'Ideal for showcasing facilities, products or services',
-      'Boost credibility and trust',
-      'Professional cameras, lighting and script',
-      'Up to 60-90 seconds',
-    ]
-  },
-  {
-    id: 3,
-    title: 'DRONE VIDEO',
-    desc: 'Video production including aerial footage with drone cameras.',
-    price: '800€+',
-    icon: <PiDroneFill/>,
-    features: [
-      'Stunning visuals and unique perspectives',
-      'Highlight expansive landscapes, facilities or events',
-      'Cinematic viewing experience',
-      'Up to 45 seconds',
-    ]
-  },
-]
+import { videoMotionPricing } from '@/app/data/data'
 
 const Pricing = () => {
   return (
@@ -57,7 +13,7 @@ const Pricing = () => {
           <PricingTitle color='black'>Video Motion Plans</PricingTitle>
         </div>
         <div className={styles.pricingContainer}>
-          {plans.map(({id, title, desc, price, icon, features}) => {
+          {videoMotionPricing.map(({id, title, desc, price, icon, features}) => {
             return (
               <div key={id} className={styles.pricing}>
                 <div className={styles.textContainer}>

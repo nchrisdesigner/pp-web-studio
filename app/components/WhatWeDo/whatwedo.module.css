@@ -8,14 +8,21 @@
 }
 
 .servicesContainer{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-auto-rows: 1fr;
+  gap: 1.2rem;
 }
 
 
-@media screen and (width < 750px){
+@media screen and (width < 950px){
   .servicesContainer{
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (width < 650px){
+  .servicesContainer{
+    grid-template-columns: 1fr;
   }
 }

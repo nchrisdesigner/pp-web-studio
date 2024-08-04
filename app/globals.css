@@ -3,8 +3,11 @@
 
   --primary-title: hsl(0, 8%, 9%);
   --text-color: hsl(0, 0%, 20%);
+  --white-text-color: hsl(0, 0%, 59%);
   --black: hsl(0, 8%, 9%);
+  --dark-bg: hsl(210, 15%, 8%);
   --purple: hsl(241, 60%, 60%);
+  --purple-2: hsla(241, 60%, 60%, 0.338);
   --purple-faint: hsla(241, 60%, 60%, 0.379);
   --dark-purple: hsl(262, 92%, 10%);
   --dark-purple-2 : hsl(241, 60%, 5%);
@@ -42,6 +45,7 @@ a{
   width: min(136rem, 100%);
   margin: 0 auto;
   padding: 2rem 1.6rem;
+ /* background: #0B0C18; */
 }
 
 .flex{

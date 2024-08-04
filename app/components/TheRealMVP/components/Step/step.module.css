@@ -1,0 +1,23 @@
+.step{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding-bottom: 1.6rem;
+  overflow: hidden;
+}
+.step h5{
+  font-size: clamp(1.2656rem, 1.0541rem + 1.0577vw, 1.9531rem);
+  font-style: italic;
+  cursor: pointer;
+}
+.step p{
+  font-size: clamp(0.9492rem, 0.7605rem + 0.9435vw, 1.5625rem);
+  width: min(60ch, 100%);
+  color: var(--white-faint);
+}
+
+.icon{
+  color: var(--purple);
+   font-size: 3.2rem;
+   transition: all .3s ease;
+}

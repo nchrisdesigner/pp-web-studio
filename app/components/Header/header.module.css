@@ -1,22 +1,15 @@
 .headerContainer{
   /* height: 100vh; */
+  height: min(100vh, 900px);
   padding: 12rem 2rem;
   position: relative;
   overflow: hidden ;
-}
 
-.headerContainer::before{
-  content: 'WE SOLVE PROBLEMS THROUGH REMARKABLE DESIGN';
-  font-size: 25rem;
-  position: absolute;
-  z-index: -10;
-  color: var(--purple);
-  opacity: .03;
-  font-weight: 800;
-  line-height: .75;
-  transform: rotate(-30deg);
-  top: -50rem;
-  left: -30rem;
+  /* background: conic-gradient(#130231,#3B0697 );  */
+  background: #0B0C18;
+  background: var(--dark-bg);
+  background-position: 75% center;
+  background-size: 200% 200%;
 }
 
 .flexContainer {

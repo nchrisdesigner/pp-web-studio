@@ -1,145 +1,175 @@
-.gridContainer{
-  display: grid;
-  grid-template-columns: 60fr 40fr;
-  padding: 12rem 2rem;
+.sectionContainer {
+  /* display: grid;
+  grid-template-columns: 60fr 40fr; */
+  padding-bottom: 16.8rem;
+  padding-top: 16.8rem;
+  background: var(--dark-bg);
+
+
 }
+
 /* Title Container */
 
-
-.titleContainer > h3{
+.titleContainer>h3 {
   font-size: 2rem;
   font-style: italic;
   color: var(--purple);
 }
 
-.titleContainer > h2{
-  font-size: 9.6rem;
-  line-height: 1;
-  /* width: 18ch; */
-  margin-bottom: 1rem;
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 6.4rem;
+}
+.lineSVG {
+  grid-column: 4/6;
+  grid-row: 1/2;
 }
 
-.titleContainer > p{
-  font-size: 1.6rem;
+.paragraph {
+  font-size: clamp(1.6rem, 0.9315rem + 0.9423vw, 1.8rem);
   line-height: 1.5;
-  width: min(65ch ,100%);
+  width: min(70ch, 100%);
   text-wrap: pretty;
   margin-bottom: 1rem;
+  color: var(--white);
+  grid-column: 6/-1;
+  grid-row: 2/3;
 }
 
-.btn{
+
+.btn {
   font-weight: 600;
   display: flex;
   align-items: center;
+  gap: .8rem;
+  color: var(--white);
 }
 
-.icon{
-  font-size: 2.5rem;
-  animation: animate 2s infinite;
+.icon {
+  font-size: 2rem;
+  color: var(--purple);
+
 }
 
-@keyframes animate{
-  from{
+/* @keyframes animate {
+  from {
     translate: 0;
   }
-  to{
+
+  to {
     translate: 5px;
   }
-}
+} */
 
 
 /* Principles Container */
-.principlesContainer{
+.principlesContainer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 4rem 0;
+  padding: 6.8rem 0;
 }
-.principlesContainer h3{
+
+.principlesContainer h3 {
   font-size: 2rem;
   line-height: 1;
+  color: var(--white);
 }
-.principleContainer{
+
+.principleContainer {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
-.principle{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: .25rem;
-}
-.principle h4 {
-  font-size: 1.8rem;
-}
-.principle p{
-  font-size: 1.4rem;
+.promiseTitle{
+  color: var(--white);
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 
-@media screen and (width < 1280px){
-  .textContainer > h2{
+@media screen and (width < 1280px) {
+  .textContainer>h2 {
     font-size: 8rem;
   }
 }
 
-@media screen and (width < 1080px){
-  .gridContainer{
-    grid-template-columns: 1fr;
-    gap: 4rem;
-    padding: 6em 2rem;
-  }
-
-  .principleContainer{
+@media screen and (width < 1080px) {
+  .principleContainer {
     flex-direction: row;
   }
 }
 
-@media screen and (width < 800px){
-  .principle h4 {
-    font-size: 1.6rem;
+@media screen and (width < 865px){
+  .principleContainer{
+    flex-direction: column;
   }
-  .principle p{
-    font-size: 1.4rem;
+  .gridContainer{
+    grid-template-rows: 1fr;
   }
 }
 
-@media screen and (width < 680px){
+@media screen and (width < 690px){
+  .gridContainer{
+    margin-top: 4.8rem;
+  }
+  .lineSVG {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    opacity: 0;
+  }
+  
+  .paragraph {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+}
 
-  .principleContainer{
+
+@media screen and (width < 680px) {
+
+  .principleContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .textContainer > h2{
+  .textContainer>h2 {
     font-size: 6rem;
   }
 }
-@media screen and (width < 515px){
-  .textContainer > h2{
+
+@media screen and (width < 515px) {
+  .textContainer>h2 {
     font-size: 5rem;
   }
-  .textContainer > p{
+
+  .textContainer>p {
     font-size: 1.5rem;
-  }
-}
-@media screen and (width < 443px){
-  .textContainer > h2{
-    font-size: 4.2rem;
-  }
-  .textContainer > p{
-    font-size: 1.5rem;
-  }
-}
-@media screen and (width < 390px){
-  .textContainer > h2{
-    font-size: 3.8rem;
-  }
-  .textContainer > p{
-    font-size: 1.4rem;
   }
 }
 
+@media screen and (width < 443px) {
+  .textContainer>h2 {
+    font-size: 4.2rem;
+  }
+
+  .textContainer>p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (width < 390px) {
+  .textContainer>h2 {
+    font-size: 3.8rem;
+  }
+
+  .textContainer>p {
+    font-size: 1.4rem;
+  }
+}

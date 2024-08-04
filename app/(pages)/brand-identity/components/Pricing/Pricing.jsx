@@ -1,53 +1,8 @@
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import styles from './pricing.module.css'
-import { SiJordan } from "react-icons/si"
-import { MdOutlineBrandingWatermark } from "react-icons/md"
-import { BiImage } from "react-icons/bi"
-import { ImCheckmark2 } from "react-icons/im"
 import { FaCheck } from "react-icons/fa";
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
-
-const pricing = [
-  {
-    id: 1,
-    title: 'LOGO DESIGN',
-    icon: <SiJordan />,
-    desc: 'Creation of a Visual Identity.',
-    price: '500€+',
-    features: [
-      "3 initial logo concepts",
-      "1 round of revisions",
-      "High Resolution Files(JPEG,PNG,PDF)",
-    ]
-  },
-  {
-    id: 2,
-    title: 'GRAPHICS DESIGN',
-    icon: <BiImage />,
-    desc: 'Visual assets aligned with brand aesthetics.',
-    price: '800€+',
-    features: [
-      "10 Custom graphics and images",
-      "1 round of revisions",
-      "High Resolution Files(JPEG,PNG,PDF)",
-    ]
-  },
-  {
-    id: 3,
-    title: 'BRAND DESIGN',
-    icon: <MdOutlineBrandingWatermark />,
-    desc: 'Comprehensive brand identity design.',
-    price: '1500€+',
-    features: [
-      "Logo Design",
-      "10 Custom graphics and images",
-      "Business card",
-      "Social media branding kit (x6 IG Post)",
-      "2 rounds of revisions",
-      "High Resolution Files(JPEG,PNG,PDF)",
-    ]
-  },
-]
+import { brandIdentityPricing } from '@/app/data/data'
 
 const Pricing = () => {
   return (
@@ -59,7 +14,7 @@ const Pricing = () => {
         </div>
 
         <div className={styles.pricingContainer}>
-            {pricing.map(({id, title, icon, desc, price, features}) => {
+            {brandIdentityPricing.map(({id, title, icon, desc, price, features}) => {
               return (
                 <div key={id} className={styles.pricing}>
                   <div className={styles.absoluteElement}>

@@ -4,7 +4,7 @@ import Title from '@/app/ui/Title/Title'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
 import Image from 'next/image'
 
-import hero from './../../../assets/hero.jpg'
+import hero from '@/app/assets/hero.jpg'
 
 const Hero = () => {
   return (
