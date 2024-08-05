@@ -1,9 +1,7 @@
 import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import styles from './whatwedid.module.css'
-import { IoIosArrowRoundForward } from "react-icons/io";
-import Image from 'next/image'
-import Link from 'next/link'
 import { projects } from '@/app/data/data';
+import Project from './components/Project/Project';
 
 const WhatWeDid = () => {
   return (
@@ -14,30 +12,13 @@ const WhatWeDid = () => {
 
       <div className={styles.projects}>
         <div className={styles.projectsContainer}>
-          {projects.map(({ id, title, subtitle, desc, url, logo }) => {
+          {projects.map((project) => {
             return (
-              <div key={id} className={styles.project}>
-                <figure className={styles.imageContainer}>
-                  <Image  className={styles.image} src={logo} alt='Project Logo' />
-                </figure>
-                <div className={styles.textContainer}>
-                  <h2>{title}</h2>
-                  <h3>{subtitle}</h3>
-                  <p>{desc}</p>
-                  <Link href={url}>
-                    <span className={styles.visitLink} >
-                      Visit Site <IoIosArrowRoundForward className={styles.icon} />
-                    </span></Link>
-                </div>
-              </div>
+              <Project key={project.id} {...project} />
             )
           })}
         </div>
-
       </div>
-
-
-
       <h4 className={styles.miniTitle}>For us, <span className='bold-text purple'>your project</span> represents another chapter in our story as we continue pursuing excellence.</h4>
     </section>
   )

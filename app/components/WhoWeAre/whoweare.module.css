@@ -1,11 +1,9 @@
 .sectionContainer {
   /* display: grid;
   grid-template-columns: 60fr 40fr; */
-  padding-bottom: 16.8rem;
-  padding-top: 16.8rem;
+  /* padding-bottom: 16.8rem;
+  padding-top: 16.8rem; */
   background: var(--dark-bg);
-
-
 }
 
 /* Title Container */

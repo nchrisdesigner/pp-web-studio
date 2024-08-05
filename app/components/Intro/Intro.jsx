@@ -22,8 +22,8 @@ const Intro = () => {
           <SmudgeOne />
           <SmudgeTwo />
           CLIENT</span>-INSPIRED</h3>
-        <SecondaryTitle>WE PREFER</SecondaryTitle>
       </div>
+        <SecondaryTitle>WE PREFER</SecondaryTitle>
 
       <h3 className={`${anton.className} ${styles.title}`}>PARTNER-IN-CREATION</h3>
       <h3 className={`${anton.className} ${styles.title}`}>STORYTELLERS</h3>

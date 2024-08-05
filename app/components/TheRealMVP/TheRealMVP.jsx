@@ -29,7 +29,7 @@ const TheRealMVP = () => {
         <div className={styles.titleContainer}>
           <h3>YOU ARE THE REAL <span className='yellow'>MVP</span></h3>
           <h2 className={anton.className}>YOUR DREAMS MATTER</h2>
-          {/* <p className={styles.containerMiniTitle}>We hear what our people say</p> */}
+          <p className={styles.containerMiniTitle}>We hear what our people say</p>
         </div>
 
         <div className={styles.gridContainer}>
@@ -39,10 +39,10 @@ const TheRealMVP = () => {
 
             <div className={styles.stepsContainer}>
               <AnimatePresence mode="wait">
-                {steps.map((step) => {
+                {steps.map((step, index) => {
                   const isSelected = selectedStep === step.id;
                   return (
-                    <Step {...step} isSelected={isSelected} handleSelectStep={handleSelectStep} degree={degree} />
+                    <Step key={step.id} {...step} isSelected={isSelected} handleSelectStep={handleSelectStep} degree={degree} />
                   )
                 })}
               </AnimatePresence>

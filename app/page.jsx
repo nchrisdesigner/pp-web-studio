@@ -12,8 +12,8 @@ export default function Home() {
       <Header />
       <Intro />
       <WhoWeAre />
-      <TheRealMVP />
       <WhatWeDo />
+      <TheRealMVP />
       <WhatWeDid />
       <Contact />
     </>

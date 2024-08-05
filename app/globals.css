@@ -6,15 +6,24 @@
   --white-text-color: hsl(0, 0%, 59%);
   --black: hsl(0, 8%, 9%);
   --dark-bg: hsl(210, 15%, 8%);
-  --purple: hsl(241, 60%, 60%);
   --purple-2: hsla(241, 60%, 60%, 0.338);
   --purple-faint: hsla(241, 60%, 60%, 0.379);
   --dark-purple: hsl(262, 92%, 10%);
   --dark-purple-2 : hsl(241, 60%, 5%);
+  --purple: hsl(241, 60%, 60%);
+  --purple-bg: hsla(241, 60%, 60%, 0.557);
   --green: #10b889;
-  /* --dark-purple: hsl(263, 94%, 7%); */
+  --green-bg: #10b88884;
   --yellow: hsl(47, 82%, 57%);
+  --yellow-bg: hsla(47, 82%, 57%, 0.482);
+  --orange: hsl(21, 90%, 48%);
+  --orange-bg: hsla(21, 90%, 48%, 0.5);
+  --blue: hsl(237, 92%, 47%);
+  --blue-bg: hsla(237, 92%, 47%, 0.594);
+  --blue: hsl(237, 70%, 53%);
+  --blue-bg: hsla(237, 92%, 47%, 0.594);
   --white: hsl(0, 0%, 100%);
+  --white-bg: hsla(0, 0%, 100%, 0.406);
   --white-faint: hsl(0, 0%, 85%);
 }
 
@@ -38,6 +47,7 @@ a{
   width: min(136rem, 100%);
   margin: 0 auto;
   padding: 3.2rem 2rem;
+  padding: 12.8rem 2rem;
   position: relative;
 }
 
@@ -45,7 +55,6 @@ a{
   width: min(136rem, 100%);
   margin: 0 auto;
   padding: 2rem 1.6rem;
- /* background: #0B0C18; */
 }
 
 .flex{
@@ -65,6 +74,24 @@ a{
 
 .purple{
  color: var(--purple);
+}
+
+.green{
+  color: var(--green);
+}
+
+/* Tags */
+.green-tag{
+  color: var(--green);
+  background: var(--green-bg)
+}
+.yellow-tag{
+  color: var(--yellow);
+  background: var(--yellow-bg)
+}
+.purple-tag{
+  color: var(--purple);
+  background: var(--purple-bg)
 }
   
 .outline-text{

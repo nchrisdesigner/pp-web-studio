@@ -1,8 +1,8 @@
 .container{
   background: var(--dark-purple);
   color: var(--white);
-  padding-top: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem);
-  padding-bottom: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem);
+  /* padding-top: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem);
+  padding-bottom: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem); */
 }
 
 .titleContainer{
@@ -23,12 +23,13 @@
 .containerMiniTitle{
   font-size: clamp(1.8rem, 1rem + 0.75vw, 2.4rem);
   letter-spacing: 0.05em;
-  font-weight: 600;
+  font-weight: 300;
   color: hsl(0, 0%, 75%);
-  color: var(--purple);
+  color: var(--white);
+  opacity: .8;
   text-align: center;
 
-  padding-top: 4.8rem;
+  padding-top: 2.4rem;
 }
 
 

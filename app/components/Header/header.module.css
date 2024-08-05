@@ -1,6 +1,6 @@
 .headerContainer{
   /* height: 100vh; */
-  height: min(100vh, 900px);
+  height: min(100vh, 1100px);
   padding: 12rem 2rem;
   position: relative;
   overflow: hidden ;

@@ -26,19 +26,22 @@ import logo from '@/app/assets/logo.png'
 // Home Page
 export const miniText = [
   {
-      title: 'Dream It',
-      desc: 'Think big and imagine what you want.',
-      icon: dream
+    id: 1,
+    title: 'Dream It',
+    desc: 'Think big and imagine what you want.',
+    icon: dream
   },
   {
-      title: 'Design It',
-      desc: 'Time to turn your idea into a real thing.',
-      icon: design
+    id: 2,
+    title: 'Design It',
+    desc: 'Time to turn your idea into a real thing.',
+    icon: design
   },
   {
-      title: 'Show It',
-      desc: 'Let your idea shine everywhere it matters.',
-      icon: show
+    id: 3,
+    title: 'Show It',
+    desc: 'Let your idea shine everywhere it matters.',
+    icon: show
   },
 ]
 
@@ -107,7 +110,12 @@ export const projects = [
     subtitle: "A complete digital makeover",
     desc: 'An entire conversion of SmartConsulting was made by us. Right away from designing a modern website ,aligned to industry’s standards, to creating a unique brand identity and making an eye-cathing video, everything has been carefully optimized for their online presence.',
     url: 'https://smartconsulting.gr/',
-    logo: logo
+    logo: logo,
+    tags:[
+      'Logo Design',
+      'Web Design',
+      'Animation Video'
+    ]
   },
   {
     id: 2,
@@ -115,7 +123,11 @@ export const projects = [
     subtitle: "Showcasing high-tech storytelling through tradition",
     desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
     url: 'https://kostaschris.gr/',
-    logo: logo
+    logo: logo,
+    tags:[
+      'Logo Design',
+      'Web Design',
+    ]
   },
   {
     id: 3,
@@ -123,7 +135,12 @@ export const projects = [
     subtitle: "Enhancing brand and e-commerce",
     desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
     url: 'https://wodshop.eu/',
-    logo: logo
+    logo: logo,
+    tags:[
+      'Logo Design',
+      'Web Design',
+
+    ]
   },
   {
     id: 4,
@@ -131,7 +148,36 @@ export const projects = [
     subtitle: "Enhancing brand and e-commerce",
     desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
     url: 'https://wodshop.eu/',
-    logo: logo
+    logo: logo,
+    tags:[
+      'Logo Design',
+      'Web Design',
+      'Animation Video'
+    ]
+  },
+  {
+    id: 5,
+    title: 'Join the Revolution',
+    subtitle: "Enhancing brand and e-commerce",
+    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
+    url: 'https://www.jointherevolution.gr/',
+    logo: logo,
+    tags:[
+      'Web Design',
+      'Presentational Video'
+    ]
+  },
+  {
+    id: 6,
+    title: 'Rebel\'s Way',
+    subtitle: "Enhancing brand and e-commerce",
+    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
+    url: 'https://www.rebelsway.gr/',
+    logo: logo,
+    tags:[
+      'Web Design',
+      'Animation Video'
+    ]
   },
 ]
 
@@ -184,22 +230,22 @@ export const brandIdentityPricing = [
 
 export const webDesignFeatures = [
   {
-    id:1,
+    id: 1,
     title: 'Global Accessibility',
     desc: 'Allows your business to be accessible to potential customers worldwide, breaking down geographical barriers and expanding your market reach beyond local boundaries.'
   },
   {
-    id:2,
+    id: 2,
     title: '24/7 Availability',
     desc: 'Additionally, it provides a constant platform where customers can learn about your products or services, make inquiries, and even make purchases day or night.'
   },
   {
-    id:3,
+    id: 3,
     title: 'Enhanced Credibility and Branding',
     desc: 'On top of that, a well-designed website adds credibility and professionalism in its own right.'
   },
   {
-    id:4 ,
+    id: 4,
     title: 'Cost-Effective Marketing',
     desc: 'Furthermore, websites provide ways of advertising businesses at low rates as compared to traditional methods like print ads or direct mails. '
   },
@@ -260,19 +306,19 @@ export const webDesignPricing = [
 // Video Motion
 export const videoMotionFeatures = [
   {
-    id:1,
-    title:'Visual Demonstration',
-    desc:'Videos allow you to demonstrate your products or services in action, showcasing their features and benefits more effectively than text descriptions. This can help potential customers understand and appreciate your offerings, leading to higher purchase rates.'
+    id: 1,
+    title: 'Visual Demonstration',
+    desc: 'Videos allow you to demonstrate your products or services in action, showcasing their features and benefits more effectively than text descriptions. This can help potential customers understand and appreciate your offerings, leading to higher purchase rates.'
   },
   {
-    id:2,
-    title:'Emotional Connection',
-    desc:'Videos can evoke emotions through storytelling, music, and visuals, creating a deeper emotional connection with your audience. This connection can lead to increased loyalty and a stronger brand affinity.'
+    id: 2,
+    title: 'Emotional Connection',
+    desc: 'Videos can evoke emotions through storytelling, music, and visuals, creating a deeper emotional connection with your audience. This connection can lead to increased loyalty and a stronger brand affinity.'
   },
   {
-    id:3,
-    title:'Showcases Professionalism',
-    desc:'Brands that invest in high-quality video production demonstrate a commitment to professionalism and excellence. This attention to detail reflects a strong brand identity and reassures customers of the brand\'s reliability and dedication to delivering superior products or services.'
+    id: 3,
+    title: 'Showcases Professionalism',
+    desc: 'Brands that invest in high-quality video production demonstrate a commitment to professionalism and excellence. This attention to detail reflects a strong brand identity and reassures customers of the brand\'s reliability and dedication to delivering superior products or services.'
   },
 ]
 
@@ -282,7 +328,7 @@ export const videoMotionPricing = [
     title: 'ANIMATED PROMO VIDEO',
     desc: 'Dynamic promotional video with logo, illustrations and text animations.',
     price: '400€+',
-    icon: <MdOutlineAnimation/>,
+    icon: <MdOutlineAnimation />,
     features: [
       'Animation video to attract audience’s attention',
       'Increase brand awareness and customer engagement',
@@ -295,7 +341,7 @@ export const videoMotionPricing = [
     title: 'PRESENTATIONAL VIDEO',
     desc: 'Detailed explainer video to present your brand, your services and your products in a professional way.',
     price: '600€+',
-    icon: <BsCameraVideo/>,
+    icon: <BsCameraVideo />,
     features: [
       'Ideal for showcasing facilities, products or services',
       'Boost credibility and trust',
@@ -308,7 +354,7 @@ export const videoMotionPricing = [
     title: 'DRONE VIDEO',
     desc: 'Video production including aerial footage with drone cameras.',
     price: '800€+',
-    icon: <PiDroneFill/>,
+    icon: <PiDroneFill />,
     features: [
       'Stunning visuals and unique perspectives',
       'Highlight expansive landscapes, facilities or events',

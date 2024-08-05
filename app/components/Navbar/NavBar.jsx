@@ -10,7 +10,9 @@ const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <nav className='navbar-container flex'>
+    <nav className={styles.navbar}>
+      <div className='navbar-container flex'>
+
       <div className={styles.logo}>
         <Image src={logo} alt='Pixel Pefekt Logo' width={160} />
       </div>
@@ -19,6 +21,7 @@ const NavBar = () => {
         <div className={`bar-half-1 ${openMenu ? 'open' : '' }`}></div>
         <div className={`bar ${openMenu ? 'open' : '' }`}></div>
         <div className={`bar-half-2 ${openMenu ? 'open' : '' }`}></div>
+      </div>
       </div>
     </nav>
   )

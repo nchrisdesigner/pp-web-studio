@@ -35,9 +35,9 @@ const MiniTextContainer = () => {
       initial='hidden'
       animate='show'
       className={styles.container}>
-      {miniText.map(({ title, desc, icon }) => {
+      {miniText.map(({ id, title, desc, icon }) => {
         return (
-          <motion.div variants={itemVariants} className={styles.item}>
+          <motion.div key={id} variants={itemVariants} className={styles.item}>
             <h3 className={styles.title}>
               <Image src={icon} alt='icon' />
               {title}

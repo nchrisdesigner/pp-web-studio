@@ -1,18 +1,17 @@
 .sectionContainer {
   text-align: center;
-  padding: 2rem;
   height: min(100vh, 1000px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .title {
   font-size: 9.6rem;
-  font-size: clamp(4.8rem, 3.7748rem + 6.2261vw, 9.375rem);
+  font-size: clamp(4.8rem, 3.7748rem + 6.2261vw, 12.8rem);
   line-height: 1;
   position: relative;
+  text-align: center;
 }
 
 .miniContainer {
@@ -23,10 +22,10 @@
 }
 
 .smudgeOne,
-.smudgeTwo{
+.smudgeTwo {
   position: absolute;
-  left: -10%;
-  top: 10%;
+  left: 10%;
+  top: 15%;
 }
 
 @property --stroke-dashoffset-1 {
@@ -35,6 +34,7 @@
   /* initial-value: 0; */
   initial-value: 204;
 }
+
 @property --stroke-dashoffset-2 {
   syntax: '<number>';
   inherits: false;
@@ -47,34 +47,38 @@
   stroke-dasharray: 204;
   stroke-dashoffset: var(--stroke-dashoffset-1);
 
-  animation: smudgeAnimateOne .35s  ease-in-out forwards;
+  animation: smudgeAnimateOne .35s ease-in-out forwards;
   /* animation-timeline: view(); */
   /* animation-range: entry 60%; */
 }
+
 .smudgeTwo path {
   stroke-dasharray: 279;
   stroke-dashoffset: var(--stroke-dashoffset-2);
 
-  animation: smudgeAnimateTwo .35s .75s  ease-in-out forwards;
+  animation: smudgeAnimateTwo .35s .75s ease-in-out forwards;
   /* animation-timeline: view(); */
   /* animation-range: entry 60%; */
 }
 
 @keyframes smudgeAnimateOne {
-from{
-  --stroke-dashoffset-1: 204
-    /* stroke-dashoffset: var(--stroke-dashoffset-1); */
-}
+  from {
+    --stroke-dashoffset-1: 204
+      /* stroke-dashoffset: var(--stroke-dashoffset-1); */
+  }
+
   to {
     --stroke-dashoffset-1: 0
-    /* stroke-dashoffset: var(--stroke-dashoffset-1); */
+      /* stroke-dashoffset: var(--stroke-dashoffset-1); */
   }
 }
+
 @keyframes smudgeAnimateTwo {
-  from{
+  from {
     --stroke-dashoffset-2: 279
       /* stroke-dashoffset: var(--stroke-dashoffset-1); */
   }
+
   to {
     --stroke-dashoffset-2: 30;
     /* stroke-dashoffset: var(--stroke-dashoffset-2); */
@@ -97,18 +101,29 @@ from{
 
 }
 
-@media screen and (width < 555px){
+@media screen and (width < 555px) {
   .miniContainer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0;
   }
+  .title {
+    text-align: left;
+  }
 }
 
 @media screen and (width > 1650px) {
   .title {
-    font-size: 13rem;
+    font-size: 16.8rem;
     line-height: 1;
+  }
+
+  .smudgeOne,
+  .smudgeTwo {
+
+    left: 25%;
+    top: 30%;
+    transform: scale(1.5);
   }
 }
