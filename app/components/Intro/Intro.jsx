@@ -25,7 +25,7 @@ const Intro = () => {
       </div>
         <SecondaryTitle>WE PREFER</SecondaryTitle>
 
-      <h3 className={`${anton.className} ${styles.title}`}>PARTNER-IN-CREATION</h3>
+      <h3 className={`${anton.className} ${styles.title}`}>PARTNER-IN-CREATIONS</h3>
       <h3 className={`${anton.className} ${styles.title}`}>STORYTELLERS</h3>
 
     </section>
