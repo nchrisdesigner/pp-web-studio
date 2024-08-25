@@ -10,7 +10,7 @@ const Header = () => {
       
     <section className={`${styles.sectionContainer} container`}>
       <div>
-        <SecondaryTitle color='white' >WE DON'T JUST DESIGN WEBSITES</SecondaryTitle>
+        <SecondaryTitle color='black' >WE DON'T JUST DESIGN WEBSITES</SecondaryTitle>
         <PrimaryTitle />
         <div className={styles.flexContainer}>
           <MiniTextContainer />

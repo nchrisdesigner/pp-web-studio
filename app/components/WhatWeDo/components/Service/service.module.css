@@ -1,38 +1,74 @@
+@property --angle{
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+.borderElement,
+.blurElement{
+  z-index: -10;
+  background-image: conic-gradient(from var(--angle), var(--purple), var(--blue), var(--purple));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1px;
+  box-sizing: unset;
+  animation: autoRotate 4s linear infinite;
+}
+
+.blurElement{
+  filter: blur(70px);
+  width: 70%;
+  height: 70%;
+}
+
+@keyframes autoRotate{
+  to{
+    --angle: 360deg;
+  }
+}
+
 .service{
   aspect-ratio: 1/1;
   position: relative;
   color: var(--white);
-  overflow: hidden;
+  /* overflow: hidden; */
   display: grid;
   height: 100%;
   width: 100%;
   padding: 2.4rem;
   grid-row: span 3;
   grid-template-rows: subgrid;
+  border: 1px solid var(--purple-faint);
+
+  z-index: 10!important;
+  background: var(--dark-bg);
+  background: #010101;
 }
 
 
-.image{
+.svgContainer{
   position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+  left: 1.6rem;
+  top: 1.6rem;
   z-index: -1;
-  transition: all .3s ease;
 }
 
-.service:hover .image{
-  transform: scale(1.25) rotate(5deg);
-}
+
 
 .service h3{
   font-size: clamp(1.6rem, 1.4125rem + 1.4375vw, 3.2rem);
   line-height: 1.2;
+
+  z-index: 10;
 }
 
 .service p{
   font-size: clamp(1.3rem, 0.8rem + 0.4vw, 1.3672rem);
   line-height: 1.35;
+  z-index: 10;
 }
 
 .titleContainer{

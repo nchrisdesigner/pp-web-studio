@@ -1,0 +1,21 @@
+.pixelBackground{
+  display: flex;
+  height: 100vh;
+  overflow:hidden;
+  /* position: fixed; */
+  inset: 0;
+  background: var(--dark-bg);
+  align-items: center;
+  justify-content: center;
+}
+
+.linkContainer{
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+.link{
+  color: var(--white);
+  font-size: 3.6rem;
+}
+

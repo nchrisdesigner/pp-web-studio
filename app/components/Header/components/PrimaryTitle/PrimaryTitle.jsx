@@ -51,7 +51,7 @@ const PrimaryTitle = () => {
       // animate='show'
     >
       <h1 className={` ${styles.primaryTitle} ${anton.className} `}>
-        <span className='block-element'>WE SOLVE <span className='outline-text-white'>
+        <span className='block-element'>WE SOLVE <span className='outline-text'>
           <Smudge />
           PROBLEMS </span></span>
         <span className='block-element'>THROUGH REMARKABLE </span>

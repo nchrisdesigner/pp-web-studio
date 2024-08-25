@@ -17,11 +17,19 @@ import step2 from '@/app/assets/steps/step-2.png'
 import step3 from '@/app/assets/steps/step-3.png'
 import step4 from '@/app/assets/steps/step-4.png'
 
-import web from '@/app/assets/services/service1.jpg'
-import brand from '@/app/assets/services/service2.jpg'
-import motion from '@/app/assets/services/service3.jpg'
 
 import logo from '@/app/assets/logo.png'
+import WebDesign from "../components/WhatWeDo/components/SVG/WebDesign"
+import BrandIdentity from "../components/WhatWeDo/components/SVG/BrandIdentity"
+import VideoMotion from "../components/WhatWeDo/components/SVG/VideoMotion"
+
+
+import smartConsulting from '@/app/assets/projects/smart-consulting-logo.png'
+import kostaschris from '@/app/assets/projects/kostaschris-logo.png'
+import wodshop from '@/app/assets/projects/wodshop-logo.png'
+import jtr from '@/app/assets/projects/jtr-logo.png'
+import rway from '@/app/assets/projects/rway-logo.png'
+import sys from '@/app/assets/projects/sys-logo.png'
 
 // Home Page
 export const miniText = [
@@ -83,7 +91,7 @@ export const services = [
     title: 'Take your online presence beyond the Average',
     boldText: 'A poor website equals missed opportunities.',
     desc: 'We blend fresh design ideas with easy-to-navigate pages, ensuring your website not only looks amazing but also works perfectly.',
-    image: web
+    image: <WebDesign/>
   },
   {
     id: 2,
@@ -91,7 +99,7 @@ export const services = [
     title: 'Break the Ordinary with Uniqueness',
     boldText: 'Bad branding weighing down your company?',
     desc: 'We mix design principles and our original creativity with your story to take your brand to new heights.',
-    image: brand
+    image: <BrandIdentity />
   },
   {
     id: 3,
@@ -99,7 +107,7 @@ export const services = [
     title: 'Tell your story through Motion ',
     boldText: 'Text can often be overlooked.',
     desc: 'Bring your brand to life with video motion, transforming your message into captivating visuals and make your brand stand out.',
-    image: motion
+    image: <VideoMotion />
   },
 ]
 
@@ -110,7 +118,7 @@ export const projects = [
     subtitle: "A complete digital makeover",
     desc: 'An entire conversion of SmartConsulting was made by us. Right away from designing a modern website ,aligned to industry’s standards, to creating a unique brand identity and making an eye-cathing video, everything has been carefully optimized for their online presence.',
     url: 'https://smartconsulting.gr/',
-    logo: logo,
+    logo: smartConsulting,
     tags:[
       'Logo Design',
       'Web Design',
@@ -123,7 +131,7 @@ export const projects = [
     subtitle: "Showcasing high-tech storytelling through tradition",
     desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
     url: 'https://kostaschris.gr/',
-    logo: logo,
+    logo: kostaschris,
     tags:[
       'Logo Design',
       'Web Design',
@@ -135,7 +143,7 @@ export const projects = [
     subtitle: "Enhancing brand and e-commerce",
     desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
     url: 'https://wodshop.eu/',
-    logo: logo,
+    logo: wodshop,
     tags:[
       'Logo Design',
       'Web Design',
@@ -148,11 +156,11 @@ export const projects = [
     subtitle: "Enhancing brand and e-commerce",
     desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
     url: 'https://wodshop.eu/',
-    logo: logo,
+    logo: sys,
     tags:[
       'Logo Design',
-      'Web Design',
-      'Animation Video'
+      // 'Web Design',
+      // 'Animation Video'
     ]
   },
   {
@@ -161,7 +169,7 @@ export const projects = [
     subtitle: "Enhancing brand and e-commerce",
     desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
     url: 'https://www.jointherevolution.gr/',
-    logo: logo,
+    logo: jtr,
     tags:[
       'Web Design',
       'Presentational Video'
@@ -173,7 +181,7 @@ export const projects = [
     subtitle: "Enhancing brand and e-commerce",
     desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
     url: 'https://www.rebelsway.gr/',
-    logo: logo,
+    logo: rway,
     tags:[
       'Web Design',
       'Animation Video'

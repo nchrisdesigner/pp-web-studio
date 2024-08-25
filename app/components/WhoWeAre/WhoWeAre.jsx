@@ -1,15 +1,11 @@
 'use client'
 import styles from './whoweare.module.css'
-import Link from 'next/link'
-import { IoIosArrowRoundForward } from "react-icons/io"
-import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import Principle from './components/Principle/Principle'
 import { useRef } from 'react'
 import { useInView, motion } from 'framer-motion'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Title from '@/app/ui/Title/Title'
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
-import { BsArrowUpRightCircleFill } from "react-icons/bs"
+
 
 
 const principles = [
@@ -29,6 +25,17 @@ const principles = [
     text: 'We design with an eye on the future. Our designs not only meet today’s standards but also anticipate tomorrow’s trends.'
   },
 ]
+const principleVariants = {
+  hidden: {
+    opacity: 0,
+    y: 35
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  }
+}
+
 
 const WhoWeAre = () => {
   const containerRef = useRef(null)
@@ -41,43 +48,12 @@ const WhoWeAre = () => {
     }
   )
 
-  const principleVariants = {
-    hidden: {
-      opacity: 0,
-      y: 35
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-    }
-  }
-
-  const titleVariants = {
-    hidden: {
-      opacity: 0,
-      x: -150
-    },
-    visible: {
-      opacity: 1,
-      x: 0
-    }
-  }
-
   return (
     <section className={` ${styles.sectionContainer}`}>
       <div className='container'>
 
 
-        <motion.div
-          // variants={titleVariants}
-          // initial='hidden'
-          // animate={isInView ? 'visible' : 'hidden'}
-          // transition={{
-          //   duration: .8,
-          //   ease: 'easeOut',
-          //   type: 'spring'
-          // }}
-        >
+        <motion.div>
           <MiniTitle>WHO WE ARE</MiniTitle>
           <Title color='white' style={{ color: `var(--white})` }}>CREATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS</Title>
 
@@ -107,22 +83,22 @@ const WhoWeAre = () => {
             }}
             transition={{
               duration: .5,
-              delay: .7
+              delay: .5
             }}
           >
-            WE ARE GUIDED BY THREE MAJOR PRINCIPLES
+           WE ARE GUIDED BY THREE MAJOR PRINCIPLES
           </motion.h3>
 
           <div ref={containerRef} className={styles.principleContainer}>
             {principles.map((principle, index) => {
               return (
                 <motion.div
-                key={principle.id}
+                  key={principle.id}
                   variants={principleVariants}
                   initial='hidden'
                   animate={isInView ? 'visible' : 'hidden'}
                   transition={{
-                    delay: index * 0.2 + .8, // Adjusted for delay and index
+                    delay: index * 0.2 + .7, // Adjusted for delay and index
                     type: "spring",
                     stiffness: 100,
                     damping: 12
@@ -136,7 +112,7 @@ const WhoWeAre = () => {
         </div>
 
         {/* <Link className={styles.btn} href="/web-design" >About Us <BsArrowUpRightCircleFill className={styles.icon} /></Link> */}
-        {/* <h4 className={styles.promiseTitle}>We don't design boring stuff. Promise.</h4> */}
+        
 
       </div>
     </section>

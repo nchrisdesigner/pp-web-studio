@@ -31,6 +31,10 @@ body{
   overflow-x: hidden;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -55,6 +59,7 @@ a{
   width: min(136rem, 100%);
   margin: 0 auto;
   padding: 2rem 1.6rem;
+  z-index: 1000;
 }
 
 .flex{
@@ -102,6 +107,15 @@ a{
    display: inline-block;
 }
 
+.purple-text{
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--purple);
+   position: relative;
+   display: inline-block;
+}
+
+
 .outline-text-white{
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -113,6 +127,23 @@ a{
 .bold-text{
   font-weight: 700;
 }
+
+/* Hight Light Effect */
+.purple-highlight {
+  display: inline-block;
+  background: linear-gradient(
+      100deg,
+      #afd7ff00 1%,
+      #5e5cd6 2.5%,
+      #5e5cd680 5.7%,
+      #5e5cd61a 93%,
+      #5e5cd6b4 95%,
+      #5e5cd600 98%
+    ),
+    linear-gradient(182deg, #5e5cd600, #5e5cd64d 8%, #5e5cd600 15%);
+}
+
+
 
 /* Menu Icon */
 

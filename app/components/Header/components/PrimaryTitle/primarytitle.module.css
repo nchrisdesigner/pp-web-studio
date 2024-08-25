@@ -8,7 +8,7 @@
   font-size: 9.6rem;
   font-size: clamp(5.76rem, 4.6477rem + 4.5615vw, 9.375rem);
   line-height: 1;
-  color: var(--white);
+  color: var(--black);
 }
 
 .text {

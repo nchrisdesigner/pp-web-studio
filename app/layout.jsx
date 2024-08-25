@@ -4,10 +4,11 @@ import "./globals.css"
 import NavBar from "./components/Navbar/NavBar"
 import Footer from "./components/Footer/Footer"
 import { Poppins } from "next/font/google"
+import {  MenuProvider } from "./context/context"
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700', '800'],
-  subsets:['latin']
+  subsets: ['latin']
 })
 
 export const metadata = {
@@ -21,11 +22,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <NavBar />
-        {children}
-        <Footer />
+        <MenuProvider>
+          <NavBar />
+          {children}
+          <Footer />
+        </MenuProvider>
         <SpeedInsights />
-        </body>
+      </body>
     </html>
   );
 }

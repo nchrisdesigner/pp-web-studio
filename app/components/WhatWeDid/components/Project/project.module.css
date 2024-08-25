@@ -15,8 +15,9 @@
 }
 
 .image {
-  filter: invert(1);
-  width: 80%;
+  /* filter: invert(1); */
+  width: 100%;
+  scale: 1.2;
   object-fit: contain;
 }
 
