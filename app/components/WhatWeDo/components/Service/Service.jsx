@@ -23,9 +23,9 @@ const svgVariants = {
     opacity: 1
   },
   visible: {
-    top: '40%',
-    left: '60%',
-    transform: 'scale(2)',
+    // top: '40%',
+    // left: '60%',
+    transform: 'translate(17.5rem, 10.5rem) scale(2)',
     opacity: .2
   }
 }

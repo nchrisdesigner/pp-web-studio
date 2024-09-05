@@ -1,3 +1,4 @@
+import AnimateTextSection from "./components/AnimateTextSection/AnimateTextSection";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
@@ -13,6 +14,7 @@ export default function Home() {
       <Intro />
       <WhoWeAre />
       <WhatWeDo />
+      <AnimateTextSection />
       <TheRealMVP />
       <WhatWeDid />
       <Contact />
