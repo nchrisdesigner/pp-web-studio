@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <header className={`container ${styles.container}`}>
         <div className={styles.textContainer}>
-          <SecondaryTitle>YOUR 24/7 BUSINESS AMBASSADOR</SecondaryTitle>
+          <SecondaryTitle align='left'>YOUR 24/7 BUSINESS AMBASSADOR</SecondaryTitle>
           <Title>SKYROCKET YOUR BUSINESS  SUCCESS</Title>
           <Paragraph>
             Nowadays, possessing a website is not just a benefit but rather an important aspect that any business looking forward to succeeding must prioritize. An online presence is like a 24/7 storefront accessible to anyone. As more customers turn to the internet for information on goods and services, those businesses without websites will miss out on significant  oppportunities.

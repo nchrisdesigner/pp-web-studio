@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import styles from './navbar.module.css'
 
-import logo from './../../assets/logo.png'
+import logo from './../../assets/white-logo.png'
 import { useContext } from 'react'
 import MenuContext from '@/app/context/context'
 import PixelBg from '../PixelBg/PixelBg'
@@ -12,7 +12,7 @@ const NavBar = () => {
   const { openMenu, setOpenMenu } = useContext(MenuContext)
 
   return (
-    <nav>    
+    <nav style={{backgroundColor: 'var(--black)'}}>    
     <div className={styles.navbar}>
       <div className='navbar-container flex'>
         <div className={styles.logo}>

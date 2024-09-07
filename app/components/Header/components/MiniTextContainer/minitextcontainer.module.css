@@ -1,6 +1,6 @@
 .container{
   display: flex;
-  margin: 4rem 0;
+  margin: 4rem auto;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -17,5 +17,5 @@
 }
 .text{
   width: 20ch;
-  color: var(--text-colo);
+  color: var(--white);
 }

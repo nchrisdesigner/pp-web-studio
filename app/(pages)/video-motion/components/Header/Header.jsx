@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className={`container ${styles.headerContainer}`}>
       <div className={styles.titleContainer}>
-        <SecondaryTitle>STUNNING ANIMATION VIDEOS</SecondaryTitle>
+        <SecondaryTitle align='left'>STUNNING ANIMATION VIDEOS</SecondaryTitle>
         <h2 className={`${anton.className} ${styles.title}`}>
           WE MOVE BRANDS
         </h2>

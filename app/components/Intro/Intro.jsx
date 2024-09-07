@@ -62,10 +62,14 @@ const Intro = () => {
         initial='hidden'
         animate={isInView ? 'visible' : 'hidden'}
       >
-        <SecondaryTitle>CLIENT IS A BAD, BAD WORD</SecondaryTitle>
+        {/* <SecondaryTitle align='center'>CLIENT IS A BAD, BAD WORD</SecondaryTitle> */}
+        <h3 className={styles.secondaryTitle}>
+          CLIENT IS A BAD, BAD WORD
+        </h3>
       </motion.div>
 
       <div className={styles.miniContainer}>
+
         <motion.h3
           variants={titleVariants}
           initial='hidden'
@@ -73,9 +77,9 @@ const Intro = () => {
           transition={{
             delay: .4
           }}
-          className={`${anton.className} ${styles.title}`}><span style={{ position: 'relative' }}>
-
-            <svg
+          className={`${anton.className} ${styles.title}`}>
+          <span style={{ position: 'relative' }}>
+            {/* <svg
               className={styles.smudgeOne} width="206" height="104" viewBox="0 0 206 104" fill="none" xmlns="http://www.w3.org/2000/svg">
               <motion.path
                 variants={smudgeVariants}
@@ -96,7 +100,7 @@ const Intro = () => {
                 delay: 1.62
               }}
               d="M10.1992 85.97C19.7147 84.3299 29.2014 80.4448 38.4395 77.5735C74.0656 66.5006 109.947 56.5673 146.016 47.5861C181.628 38.7187 217.61 31.5196 252.989 21.4498C262.034 18.8751 270.426 16.4717 278.207 10.97" stroke="#5D5AD6" strokeWidth="20" strokeLinecap="round" />
-            </svg>
+            </svg> */}
 
             CLIENT</span>-INSPIRED
         </motion.h3>
@@ -116,11 +120,11 @@ const Intro = () => {
         <h3 className={`${anton.className} ${styles.title}`}>STORYTELLERS</h3>
       </motion.div>
 
-      <motion.h4
+      {/* <motion.h4
       initial={{opacity: 0}}
       animate={isInView ? {opacity: 1} : {opacity: 0} }
       transition={{delay: 2.5}}
-      className={styles.promiseTitle}>We don't design boring stuff. Promise.</motion.h4>
+      className={styles.promiseTitle}>We don't design boring stuff. Promise.</motion.h4> */}
 
     </section>
   )

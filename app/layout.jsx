@@ -11,6 +11,13 @@ const poppins = Poppins({
   subsets: ['latin']
 })
 
+// import localFont from 'next/font/local'
+
+// const myFont = localFont({
+//   src: './fonts/Unaessthetic.ttf',
+//   // display: 'swap'
+// })
+
 export const metadata = {
   title: 'Pixel Perfekt - Web Design Studio',
   description: 'Welcome to Pixel Perfekt - Your Web Design Experts in Thessaloniki, Greece. Elevate your brand with with our client-focused approach, innovative design, and pixel-perfect precision. Discover personalized web design, development, logo, and video motion services crafted for your unique needs.Opt for Pixel Perfekt for a digital adventure that exceeds pixel perfection.',

@@ -5,7 +5,8 @@
   --text-color: hsl(0, 0%, 20%);
   --white-text-color: hsl(0, 0%, 59%);
   --black: hsl(0, 8%, 9%);
-  --dark-bg: hsl(210, 15%, 8%);
+  --black: hsl(216, 12%, 8%);
+  --dark-bg: hsl(210, 15%, 8%); 
   --purple-2: hsla(241, 60%, 60%, 0.338);
   --purple-faint: hsla(241, 60%, 60%, 0.379);
   --dark-purple: hsl(262, 92%, 10%);
@@ -50,7 +51,6 @@ a{
 .container{
   width: min(136rem, 100%);
   margin: 0 auto;
-  padding: 3.2rem 2rem;
   padding: 12.8rem 2rem;
   position: relative;
 }
@@ -58,8 +58,7 @@ a{
 .navbar-container {
   width: min(136rem, 100%);
   margin: 0 auto;
-  padding: 2rem 1.6rem;
-  z-index: 1000;
+  padding: 2rem 2rem;
 }
 
 .flex{
@@ -157,7 +156,7 @@ a{
 .bar-half-1,
 .bar-half-2{
   position: absolute;
-  background: var(--black);
+  background: var(--white);
   transition: all .3s ease;
 }
 
@@ -196,9 +195,14 @@ a{
   transform:translateX(2.1rem) translateY(-.8rem) rotate(45deg) ;
 }
 
+@media screen and (width < 700px){
+  .container{
+    padding: 4.8rem 2rem;
+  }
+}
+
 @media screen and (width < 500px){
   .container{
     padding: 3.2rem 1.6rem;
-
   }
 }
