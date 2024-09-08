@@ -91,7 +91,7 @@ export const services = [
     title: 'Take your online presence beyond the Average',
     boldText: 'A poor website equals missed opportunities.',
     desc: 'We blend fresh design ideas with easy-to-navigate pages, ensuring your website not only looks amazing but also works perfectly.',
-    image: <WebDesign/>
+    image: <WebDesign />
   },
   {
     id: 2,
@@ -116,10 +116,10 @@ export const projects = [
     id: 1,
     title: 'Smart Consulting',
     subtitle: "A complete digital makeover",
-    desc: 'An entire conversion of SmartConsulting was made by us. Right away from designing a modern website ,aligned to industry’s standards, to creating a unique brand identity and making an eye-cathing video, everything has been carefully optimized for their online presence.',
+    desc: 'SmartConsulting, a startup specializing in tax and accounting services, faced challenges due to its minimal online presence. We stepped in to provide a full digital overhaul: designing a sleek, industry-standard website, creating a distinctive brand identity, and producing an engaging video. This transformation has set SmartConsulting on a path to growth.',
     url: 'https://smartconsulting.gr/',
     logo: smartConsulting,
-    tags:[
+    tags: [
       'Logo Design',
       'Web Design',
       'Animation Video'
@@ -129,10 +129,11 @@ export const projects = [
     id: 2,
     title: 'Kostaschris Videography',
     subtitle: "Showcasing high-tech storytelling through tradition",
-    desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
+    // desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
+    desc: 'Kostas Chris needed a website upgrade to reflect the blend of tradition and cutting-edge technology in his wedding videography services. We crafted a visually striking website that highlights his exceptional use of drones and high-end cameras, seamlessly merging classic storytelling with modern innovation. ',
     url: 'https://kostaschris.gr/',
     logo: kostaschris,
-    tags:[
+    tags: [
       'Logo Design',
       'Web Design',
     ]
@@ -141,10 +142,11 @@ export const projects = [
     id: 3,
     title: 'Wodshop',
     subtitle: "Enhancing brand and e-commerce",
-    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
+    // desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market. This transformation has set WodShop up for greater success in the competitive world of sports nutrition. This transformation has set WodShop up for greater success in the competitive world of sports nutrition.',
+    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo to elevate their presence and enhance their online sales. We redesigned their website and logo, creating dynamic identity that not only positioned them more strongly in the market but also optimized their e-commerce platform.',
     url: 'https://wodshop.eu/',
     logo: wodshop,
-    tags:[
+    tags: [
       'Logo Design',
       'Web Design',
 
@@ -153,24 +155,22 @@ export const projects = [
   {
     id: 4,
     title: 'Supercharge Your Skills',
-    subtitle: "Enhancing brand and e-commerce",
-    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
-    url: 'https://wodshop.eu/',
+    subtitle: "Launching with a Bold New Logo",
+    desc: 'For "Supercharge Your Skills," an emerging e-learning platform offering courses in web design, development, and graphic design, we crafted a distinctive logo to mark their entry into the professional world. This foundational design not only establishes their brand identity but also sets the stage for their growth in the online education space.',
+    url: '',
     logo: sys,
-    tags:[
+    tags: [
       'Logo Design',
-      // 'Web Design',
-      // 'Animation Video'
     ]
   },
   {
     id: 5,
     title: 'Join the Revolution',
-    subtitle: "Enhancing brand and e-commerce",
-    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
+    subtitle: "Building a Professional Identity for JTR",
+    desc: 'JTR, a well-known gym, was thriving on social media but lacked a dedicated website. We stepped in to complete their professional identity by creating a robust online presence. This new website was the missing piece in order to create a fully profesional business identity.',
     url: 'https://www.jointherevolution.gr/',
     logo: jtr,
-    tags:[
+    tags: [
       'Web Design',
       'Presentational Video'
     ]
@@ -178,11 +178,11 @@ export const projects = [
   {
     id: 6,
     title: 'Rebel\'s Way',
-    subtitle: "Enhancing brand and e-commerce",
-    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market.',
+    subtitle: "Elevating Rebel’s Way with a Dual-Purpose Website",
+    desc: 'Rebel’s Way, an online coaching team, needed a platform to showcase and sell their programming. We built a versatile website that functions both as a presentation tool and an e-commerce store, streamlining their online sales and enhancing their digital presence.',
     url: 'https://www.rebelsway.gr/',
     logo: rway,
-    tags:[
+    tags: [
       'Web Design',
       'Animation Video'
     ]

@@ -9,11 +9,7 @@ const Header = () => {
         <div>
           <SecondaryTitle color='white' align='center' >WE DON'T JUST DESIGN WEBSITES</SecondaryTitle>
           <PrimaryTitle />
-          {/* <div className={styles.flexContainer}> */}
-            <h2 className={styles.promiseTitle}>We don't design boring stuff. Promise.</h2>
-          {/* </div> */}
         </div>
-
       </section>
     </header>
   )

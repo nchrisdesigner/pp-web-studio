@@ -1,21 +1,22 @@
 .tag{
-  padding: .4rem;
+  padding: .4rem .6rem;
   border-radius: 3px;
+  font-weight: 600;
 }
 
 .greenTag{
   color:var(--green);
-  /* background: var(--green-bg); */
+  background: var(--green-bg);
   border: 1px solid var(--green);
 }
 .purpleTag{
   color:var(--purple);
-  /* background: var(--purple-bg); */
+  background: var(--purple-bg);
   border: 1px solid var(--purple);
 }
 .yellowTag{
   color:var(--yellow);
-  /* background: var(--yellow-bg); */
+  background: var(--yellow-bg);
   border: 1px solid var(--yellow);
 }
 .blueTag{
@@ -25,13 +26,13 @@
 }
 .whiteTag{
   color:var(--white);
-  /* background: var(--white-bg); */
+  background: var(--white-bg);
   border: 1px solid var(--white);
   background: #ffffff63;
 }
 .orangeTag{
   color:var(--orange);
-  /* background: var(--orange-bg); */
+  background: var(--orange-bg);
   border: 1px solid var(--orange);
 
 }

@@ -14,14 +14,21 @@ const Project = ({ id, title, subtitle, desc, url, logo, tags }) => {
         <Image className={styles.image} src={logo} alt='Project Logo' />
       </figure>
       <div className={styles.textContainer}>
-      
+
         <h2>{title}</h2>
         <h3>{subtitle}</h3>
         <p>{desc}</p>
-        <Link href={url}>
-          <span className={styles.visitLink} >
-            Visit Site <IoIosArrowRoundForward className={styles.icon} />
-          </span></Link>
+        {
+          url !== ''
+          &&
+          <Link href={url}>
+            <span className={styles.visitLink} >
+              Visit Site <IoIosArrowRoundForward className={styles.icon} />
+            </span>
+          </Link>
+
+        }
+
       </div>
     </div>
   )

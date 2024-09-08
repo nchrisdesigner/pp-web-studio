@@ -2,8 +2,8 @@
 const BrandIdentity = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    // width={101}
-    // height={101}
+    width={101}
+    height={101}
     fill="none"
     {...props}
   >

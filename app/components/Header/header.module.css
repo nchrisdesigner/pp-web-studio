@@ -3,31 +3,17 @@
   position: relative;
   overflow: hidden ;
   padding: 10rem 2rem;
-
   background-color: var(--black);
 }
 
 
-
-.promiseTitle{
-  color: var(--white);
-  text-align: center;
-  font-size: clamp(1.6rem, 1.2vi + 1.26rem, 1.8rem);
-  margin-top: 6rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-}
-
-
-
 @media screen and (width < 800px) {
-
   .headerContainer{
     padding: 8rem 2rem;
   }
 }
-@media screen and (width < 380px) {
 
+@media screen and (width < 380px) {
   .headerContainer{
     padding: 4rem 2rem;
   }

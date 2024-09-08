@@ -1,40 +1,102 @@
+.sectionContainer{
+  view-timeline: --section-container;
+}
+
 .containerLeft{
   text-align: left;
+  margin: 1.6rem 0;
 }
 .containerRight{
   text-align: right;
-}
-
-.containerLeft  h2,
-.containerRight  h2{
-  font-size: clamp(4.5rem, 1.3098rem + 15.9511vw, 13.6719rem);
-  color: var( --primary-title);
-  line-height: 1;
-  letter-spacing: 0.03em;
-  overflow: hidden;
+  margin: 1.6rem 0;
 }
 
 .overflowContainer{
   overflow: hidden;
 }
-.containerLeft  p,
-.containerRight  p{
+
+.containerLeft  h2,
+.containerRight  h2{
+  font-size: clamp(4.5rem, 1.3098rem + 15.9511vw, 16.6719rem);
   color: var( --primary-title);
-  font-size: clamp(1.6rem, 1.2615rem + 0.8924vw, 1.8rem);
-  line-height: 1.5;
-  max-width: 70ch;
-  /* transform: translateY(40px); */
-}
-.containerRight > p{
-  margin-left: auto;
+  line-height: .9;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  overflow: hidden;
 }
 
-.promiseTitle{
-  color: var(--dark-purple);
-  text-align: center;
-  font-size: clamp(1.6rem, 1.2vi + 1.26rem, 1.82rem);
-  margin-top: 6.8rem;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  font-weight: 600;
+.containerLeft h2{
+  animation: animateLeftTitle ease-in-out;
+  animation-timeline: --section-container;
+  animation-range-start: entry ;
+  animation-range-end: 70%;
 }
+
+.containerRight h2{
+  animation: animateRightTitle ease-in-out;
+  animation-timeline: --section-container;
+  animation-range-start: entry ;
+  animation-range-end: 65%;
+}
+
+@keyframes animateLeftTitle{
+  from{
+    transform: translateY(150px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+@keyframes animateRightTitle{
+  from{
+    transform: translateY(150px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+/* Place ALWAYS the animation above the timeline */
+.containerLeft p{
+  animation: animateLeftText ease-in-out;
+}
+.containerRight p{
+  margin-left: auto;
+  animation: animateRightText ease-in-out;
+}
+
+.containerLeft p,
+.containerRight p{
+  color: var( --primary-title);
+  font-size: clamp(1.6rem, 1.2615rem + 0.8924vw, 1.8rem);
+  opacity: 0;
+  line-height: 1.5;
+  max-width: 70ch;
+  animation-timeline: --section-container;
+  animation-range-start: 100px ;
+  animation-range-end: 70%;
+}
+
+@keyframes animateLeftText{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes animateRightText{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+

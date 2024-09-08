@@ -43,11 +43,6 @@
   color: var(--white);
 }
 
-@property --stroke-dashoffset {
-  syntax: '<number>';
-  inherits: false;
-  initial-value: 390;
-}
 
 .smudge {
   position: absolute;
@@ -56,25 +51,31 @@
   transform: translateY(-50%);
 }
 
+@property --stroke-dashoffset {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 10;
+}
 .smudge path {
   stroke-dasharray: 390;
-  stroke-dashoffset: var(--stroke-dashoffset);
-  stroke-dashoffset: 40;
+  stroke-dashoffset: 390;
   animation: smudgeAnimate .35s ease-in-out forwards;
-  animation-delay: 3.5s;
+  animation-delay: 2.5s;
 }
 
-/* @keyframes smudgeAnimate {
-  from {
-    stroke-dashoffset: 390;
+@media screen and (width < 1180px) {
+  @property --stroke-dashoffset {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 50;
   }
-
-  to {
-    stroke-dashoffset: 40;
+  .smudge path {
+    stroke-dashoffset: 100;
   }
-} */
+}
 
-@media screen and (width < 730px) {
+
+@media screen and (width < 750px) {
   @property --stroke-dashoffset {
     syntax: '<number>';
     inherits: false;
@@ -94,17 +95,6 @@
   }
 }
 
-@media screen and (width < 500px) {
-  @property --stroke-dashoffset {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 130;
-  }
-  .smudge path {
-    stroke-dashoffset: 130;
-  }
-}
-
 @media screen and (width < 550px){
   .titleGrid{
     grid-template-columns: 1fr;
@@ -120,18 +110,27 @@
      margin: -2rem 0 -2rem 0;
      transform: rotate(-5deg) scale(1.05); 
      z-index: 10;
-     /* position: absolute; */
   }
 }
+
+@media screen and (width < 500px) {
+  @property --stroke-dashoffset {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 130;
+  }
+  .smudge path {
+    stroke-dashoffset: 130;
+  }
+}
+
+
 
 @media screen and (width < 360px) {
   @property --stroke-dashoffset {
     syntax: '<number>';
     inherits: false;
-    initial-value: 120;
-  }
-  .smudge path {
-    stroke-dashoffset: 120;
+    initial-value: 150;
   }
 
   .primaryTitle {
@@ -145,7 +144,6 @@
      margin: -2rem 0 -2rem 0;
      transform: rotate(-5deg) scale(1); 
      z-index: 10;
-     /* position: absolute; */
   }
 }
 
@@ -158,7 +156,7 @@
   @property --stroke-dashoffset {
     syntax: '<number>';
     inherits: false;
-    initial-value: 390;
+    initial-value: 60;
   }
 
   .smudge {
@@ -167,3 +165,13 @@
 }
 
 
+/* Animation */
+@keyframes smudgeAnimate {
+  from {
+    stroke-dashoffset: 390;
+  }
+
+  to {
+    stroke-dashoffset: var(--stroke-dashoffset);
+  }
+}

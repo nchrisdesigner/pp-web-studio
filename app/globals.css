@@ -12,19 +12,19 @@
   --dark-purple: hsl(262, 92%, 10%);
   --dark-purple-2 : hsl(241, 60%, 5%);
   --purple: hsl(241, 60%, 60%);
-  --purple-bg: hsla(241, 60%, 60%, 0.557);
+  --purple-bg: hsla(241, 60%, 60%, 0.3);
   --green: #10b889;
   --green-bg: #10b88884;
   --yellow: hsl(47, 82%, 57%);
-  --yellow-bg: hsla(47, 82%, 57%, 0.482);
+  --yellow-bg: hsla(47, 82%, 57%, 0.3);
   --orange: hsl(21, 90%, 48%);
-  --orange-bg: hsla(21, 90%, 48%, 0.5);
+  --orange-bg: hsla(21, 90%, 48%, 0.3);
   --blue: hsl(237, 92%, 47%);
-  --blue-bg: hsla(237, 92%, 47%, 0.594);
+  --blue-bg: hsla(237, 92%, 47%, 0.3);
   --blue: hsl(237, 70%, 53%);
-  --blue-bg: hsla(237, 92%, 47%, 0.594);
+  --blue-bg: hsla(237, 92%, 47%, 0.3);
   --white: hsl(0, 0%, 100%);
-  --white-bg: hsla(0, 0%, 100%, 0.406);
+  --white-bg: hsla(0, 0%, 100%, 0.3);
   --white-faint: hsl(0, 0%, 85%);
 }
 
@@ -197,12 +197,12 @@ a{
 
 @media screen and (width < 700px){
   .container{
-    padding: 4.8rem 2rem;
+    padding: 6rem 2rem;
   }
 }
 
 @media screen and (width < 500px){
   .container{
-    padding: 3.2rem 1.6rem;
+    padding: 4.8rem 1.6rem;
   }
 }

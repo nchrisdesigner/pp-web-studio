@@ -4,6 +4,7 @@ import styles from './contact.module.css'
 import { PiCopy } from "react-icons/pi"
 import { useState } from 'react'
 import { ImCheckmark2 } from "react-icons/im"
+import MiniTextContainer from '../Header/components/MiniTextContainer/MiniTextContainer'
 
 
 const Contact = () => {

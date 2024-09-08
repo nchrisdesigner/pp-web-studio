@@ -4,6 +4,7 @@ import { ReactLenis } from 'lenis/react'
 import styles from './animatetextsection.module.css'
 import { Anton } from 'next/font/google'
 import { useRef } from 'react'
+import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 
 const anton = Anton({
   weight: ['400'],
@@ -36,35 +37,35 @@ const AnimateTextSection = () => {
     containerRef,
     {
       margin: "0px 0px -350px 0px",
-      // once: true
+      once: true
     }
   )
 
 
   return (
-    <section ref={containerRef} className='container'>
+    <section ref={containerRef} className={`${styles.sectionContainer} container`}>
       <ReactLenis root>
         <div className={styles.containerLeft}>
 
           <div className={styles.overflowContainer}>
             <motion.h2
-              variants={titleVariants}
-              initial='hidden'
-              animate={isInView ? 'visible' : 'hidden'}
-              transition={{
-                duration: .3,
-                delay: .4
-              }}
+              // variants={titleVariants}
+              // initial='hidden'
+              // animate={isInView ? 'visible' : 'hidden'}
+              // transition={{
+              //   duration: .3,
+              //   delay: .4
+              // }}
               className={`${anton.className}`}>WHERE</motion.h2></div>
           <div className={styles.overflowContainer}>
             <motion.h2
-              variants={titleVariants}
-              initial='hidden'
-              animate={isInView ? 'visible' : 'hidden'}
-              transition={{
-                duration: .3,
-                delay: .45
-              }}
+              // variants={titleVariants}
+              // initial='hidden'
+              // animate={isInView ? 'visible' : 'hidden'}
+              // transition={{
+              //   duration: .3,
+              //   delay: .45
+              // }}
               className={`${anton.className}`}>IMAGINATION</motion.h2>
           </div>
           <div className={styles.overflowContainer}>
@@ -83,24 +84,24 @@ const AnimateTextSection = () => {
         <div className={styles.containerRight}>
           <div className={styles.overflowContainer}>
             <motion.h2
-              variants={titleVariants}
-              initial='hidden'
-              animate={isInView ? 'visible' : 'hidden'}
-              transition={{
-                duration: .3,
-                delay: .7
-              }}
+              // variants={titleVariants}
+              // initial='hidden'
+              // animate={isInView ? 'visible' : 'hidden'}
+              // transition={{
+              //   duration: .3,
+              //   delay: .7
+              // }}
               className={`${anton.className}`}>MEETS</motion.h2>
           </div>
           <div className={styles.overflowContainer}>
             <motion.h2
-              variants={titleVariants}
-              initial='hidden'
-              animate={isInView ? 'visible' : 'hidden'}
-              transition={{
-                duration: .3,
-                delay: .75
-              }}
+              // variants={titleVariants}
+              // initial='hidden'
+              // animate={isInView ? 'visible' : 'hidden'}
+              // transition={{
+              //   duration: .3,
+              //   delay: .75
+              // }}
               className={`${anton.className}`}>PRECISION</motion.h2>
           </div>
           <div className={styles.overflowContainer}>
@@ -115,7 +116,7 @@ const AnimateTextSection = () => {
                 delay: 1.3
               }}
             >
-              Driven by a passion for perfection and a flair for creative excellence, every pixel in our work tells the story of the results we bring to life. At Pixel Perfekt, your ideas don’t just take shape—they’re transformed into something extraordinary.</motion.p>
+              Driven by a passion for perfection and a flair for creative excellence, every pixel in our work tells the story of the results we bring to life. </motion.p>
           </div>
         </div>
 
@@ -130,7 +131,13 @@ const AnimateTextSection = () => {
         duration: .3,
         delay: 1.6
       }}
-      className={styles.promiseTitle}>Experience the difference when your vision is crafted with our signature precision and artistry.</motion.h3>
+      className={styles.miniTitle}>
+        <PromiseTitle color='dark-purple'>
+        Experience the difference when your vision is crafted with our signature precision and artistry.
+        </PromiseTitle>
+        </motion.h3>
+
+
     </section>
   )
 }
