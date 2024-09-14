@@ -4,14 +4,14 @@ import styles from './contact.module.css'
 import { PiCopy } from "react-icons/pi"
 import { useState } from 'react'
 import { ImCheckmark2 } from "react-icons/im"
-import MiniTextContainer from '../Header/components/MiniTextContainer/MiniTextContainer'
 
 
 const Contact = () => {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('hey@pixelperfekt.gr')
+    // navigator.clipboard.writeText('hey@pixelperfekt.gr')
+    navigator.clipboard.writeText('nchrisdesigner@gmail.com')
     setCopied(true)
   }
 

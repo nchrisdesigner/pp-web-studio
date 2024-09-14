@@ -16,16 +16,14 @@
   border: 1px solid var(--white);
 
   display: flex;
-  /* align-self: center;
-  justify-self: center; */
   align-items: center;
   gap: 1rem;
   font-size: 1.6rem;
 }
 
 .miniTitle{
-  margin: 3.2rem 0 .8rem 0;
-  font-size: clamp(1.2rem , .8rem + 2vw, 1.4rem);
+  margin: 3.2rem 0 1.6rem 0;
+  font-size: clamp(1.4rem , .8rem + 2vw, 1.6rem);
   color: var(--black);
-  font-weight: 600;
+  font-weight: 700;
 }

@@ -29,19 +29,19 @@
   animation: animateLeftTitle ease-in-out;
   animation-timeline: --section-container;
   animation-range-start: entry ;
-  animation-range-end: 70%;
+  animation-range-end: 60%;
 }
 
 .containerRight h2{
   animation: animateRightTitle ease-in-out;
   animation-timeline: --section-container;
   animation-range-start: entry ;
-  animation-range-end: 65%;
+  animation-range-end: 60%;
 }
 
 @keyframes animateLeftTitle{
   from{
-    transform: translateY(150px);
+    transform: translateY(25rem);
   }
   to{
     transform: translateY(0);
@@ -49,7 +49,7 @@
 }
 @keyframes animateRightTitle{
   from{
-    transform: translateY(150px);
+    transform: translateY(25rem);
   }
   to{
     transform: translateY(0);
@@ -57,12 +57,9 @@
 }
 
 /* Place ALWAYS the animation above the timeline */
-.containerLeft p{
-  animation: animateLeftText ease-in-out;
-}
+
 .containerRight p{
   margin-left: auto;
-  animation: animateRightText ease-in-out;
 }
 
 .containerLeft p,
@@ -72,30 +69,42 @@
   opacity: 0;
   line-height: 1.5;
   max-width: 70ch;
+  animation: animateText ease-in-out;
   animation-timeline: --section-container;
   animation-range-start: 100px ;
   animation-range-end: 70%;
 }
 
-@keyframes animateLeftText{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-@keyframes animateRightText{
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
+.miniTitle{
+  animation: animatePromiseTitle ease-in-out;
+  animation-timeline: --section-container;
+  animation-range-start: 100px ;
+  animation-range-end: 70%;
 }
 
 
+@keyframes animateText{
+  0%,
+  30%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
+
+@keyframes animatePromiseTitle{
+  0%,
+  40%{
+    opacity: 0;
+    transform: translateY(15rem)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 

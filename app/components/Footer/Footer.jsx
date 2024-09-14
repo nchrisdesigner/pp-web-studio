@@ -9,9 +9,8 @@ const anton = Anton({
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className='container'>
+      <div className={styles.footerContainer}>
         <div className={styles.titleContainer}>
-          <h3>Let's Talk Business</h3>
           <h4>ONE PIXEL AT A TIME</h4>
         </div>
 
@@ -21,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className={styles.emailContainer}>
+        {/* <div className={styles.emailContainer}>
           <div >
             <p className={styles.query}>Project Queries</p>
             <p className={styles.email}>hey@pixelperfekt.gr</p>
@@ -30,17 +29,14 @@ const Footer = () => {
             <p className={styles.query}>Partnership and Collaborations</p>
             <p className={styles.email}>business@pixelperfekt.gr</p>
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.footerContainer}>
+        <div className={styles.footerLogoContainer}>
           <h2 className={`${anton.className} ${styles.footerLogo}`}>PixelPerfekt</h2>
           <p>We solve problems through remarkable design</p>
         </div>
 
       </div>
-
-
-
     </footer>
   )
 }

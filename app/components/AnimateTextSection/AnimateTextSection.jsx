@@ -123,19 +123,19 @@ const AnimateTextSection = () => {
 
       </ReactLenis>
 
-      <motion.h3 
-      variants={textVariants}
-      initial='hidden'
-      animate={isInView ? 'visible' : 'hidden'}
-      transition={{
-        duration: .3,
-        delay: 1.6
-      }}
-      className={styles.miniTitle}>
+      <div
+        // variants={textVariants}
+        // initial='hidden'
+        // animate={isInView ? 'visible' : 'hidden'}
+        // transition={{
+        //   duration: .3,
+        //   delay: 1.6
+        // }}
+        className={styles.miniTitle}>
         <PromiseTitle color='dark-purple'>
-        Experience the difference when your vision is crafted with our signature precision and artistry.
+          Experience the difference when your vision is crafted with our signature precision and artistry.
         </PromiseTitle>
-        </motion.h3>
+      </div>
 
 
     </section>

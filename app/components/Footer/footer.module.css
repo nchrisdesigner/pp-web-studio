@@ -1,7 +1,14 @@
-.footer{
+.footer {
   background: #111;
   color: var(--white);
   padding-top: 8rem ;
+  padding-bottom: 2rem;
+}
+
+.footerContainer {
+  width: min(136rem, 100%);
+  margin: 0 auto;
+  padding: 6.8rem 2rem 2rem 2rem;
 }
 
 .titleContainer {
@@ -22,7 +29,7 @@
   color: var(--white);
 }
 
-.titleContainer h4::after{
+.titleContainer h4::after {
   content: '';
   height: .4rem;
   width: 5rem;
@@ -31,16 +38,16 @@
   position: absolute;
 }
 
-.textContainer{
-  margin: 2rem 0;
+.textContainer {
+  margin: 1rem 0 6rem 0;
 }
 
 .textContainer p {
-  font-size: 1.8rem;
+  font-size: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
   width: min(45ch, 100%);
 }
 
-.emailContainer{
+.emailContainer {
   display: flex;
   gap: 4rem;
   align-items: flex-start;
@@ -48,30 +55,29 @@
   margin: 4rem 0;
 }
 
-
-.query{
+.query {
   font-weight: 300;
 }
 
-.email{
+.email {
   font-weight: 600;
 }
 
 
-.footerLogo{
-  font-size: clamp(5.76rem, 1.5227rem + 15.1865vw, 19.5313rem);
+.footerLogo {
+  font-size: clamp(5.76rem, 1.5227rem + 14vw, 19.5313rem);
   line-height: 1;
 }
 
-.footerContainer p{
-font-weight: 500;
-font-size: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
-letter-spacing: 0.02em;
+.footerLogoContainer p {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.9122rem + 0.7vw, 1.5625rem);
+  letter-spacing: 0.02em;
 }
 
 
-@media screen and (width < 450px){
-  .emailContainer{
+@media screen and (width < 450px) {
+  .emailContainer {
     flex-direction: column;
     gap: 2rem;
   }

@@ -143,7 +143,6 @@ a{
 }
 
 
-
 /* Menu Icon */
 
 .menu-icon{
@@ -206,3 +205,20 @@ a{
     padding: 4.8rem 1.6rem;
   }
 }
+
+
+/* Scrollbar Styling */
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: var(--purple-bg); */
+  background: #5E5CD6;
+}
+

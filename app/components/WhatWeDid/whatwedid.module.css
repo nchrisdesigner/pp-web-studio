@@ -16,7 +16,6 @@
   gap: 1rem;
 }
 
-
 .projectContainer:nth-of-type(even){
   animation: animateProjectEven ease-in-out;
   animation-timeline: view();
@@ -32,24 +31,20 @@
   from{
     transform: scale(0.9);
     opacity: 0.75;
-    /* transform: translateY(300px); */
   }
   to{
     transform: scale(1);
     opacity: 1;
-    /* transform: translateY(100px); */
   }
 }
 @keyframes animateProjectOdd{
   from{
     transform: scale(0.9);
     opacity: 0.75;
-    /* transform: translateY(40px); */
   }
   to{
     transform: scale(1);
     opacity: 1;
-    /* transform: translateY(0); */
   }
 }
 
