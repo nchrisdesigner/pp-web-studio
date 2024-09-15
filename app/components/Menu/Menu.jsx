@@ -78,9 +78,7 @@ const Menu = () => {
             </Link>
           </div>
         </div>
-        <div className={styles.visitStory}>
-          <Link href="#">Visit Success Stories</Link>
-        </div>
+        
       </div>
     </section>
   );

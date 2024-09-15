@@ -11,7 +11,7 @@ const Project = ({ id, title, subtitle, desc, url, logo, tags }) => {
         <div className={styles.tagContainer}>
           {tags.map((tag, index) => (<Tag key={index} tag={tag} />))}
         </div>
-        <Image className={styles.image} src={logo} alt='Project Logo' />
+        <Image width={200} className={styles.image} src={logo} alt='Project Logo' />
       </figure>
       <div className={styles.textContainer}>
 

@@ -1,13 +1,14 @@
 .menuContainer{
   background: var(--black);
   position: fixed;
-  min-height: 100vh;
-  width: 100%;
+  min-height: 100dvh;
+  width: 100vw;
   top: 0;
   left: 0;
   z-index: 100;
 
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
