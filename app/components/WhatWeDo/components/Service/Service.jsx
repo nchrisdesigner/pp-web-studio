@@ -67,7 +67,6 @@ const Card = ({ id, mainTitle, title, boldText, desc, image }) => {
         </motion.p>
 
         <div className={styles.titleContainer}>
-          {/* <h2 className="outline-text-white">{mainTitle}</h2> */}
           <h2 className={isOpen ? 'purple-text' : 'outline-text-white'}>{mainTitle}</h2>
 
           <GoArrowUpLeft

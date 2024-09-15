@@ -51,14 +51,14 @@ a{
 .container{
   width: min(136rem, 100%);
   margin: 0 auto;
-  padding: 12.8rem 2rem;
+  padding: 12.8rem 2.4rem 8.2rem 2.4rem;
   position: relative;
 }
 
 .navbar-container {
   width: min(136rem, 100%);
   margin: 0 auto;
-  padding: 2rem 2rem;
+  padding: 1.6rem 2.4rem;
 }
 
 .flex{
@@ -145,6 +145,10 @@ a{
 
 /* Menu Icon */
 
+body.menu-open {
+  overflow-y: hidden;
+}
+
 .menu-icon{
   position: relative;
   margin: 1rem;
@@ -209,7 +213,7 @@ a{
 
 /* Scrollbar Styling */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px; 
 }
 
@@ -218,7 +222,16 @@ a{
 }
 
 ::-webkit-scrollbar-thumb {
-  /* background: var(--purple-bg); */
   background: #5E5CD6;
+} */
+/* Hide scrollbar for Chrome, Safari and Edge */
+body::-webkit-scrollbar {
+  display: none;  /* Hide the scrollbar */
+}
+
+/* Hide scrollbar for all elements */
+* {
+  scrollbar-width: none;  /* Firefox hides the scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
 }
 

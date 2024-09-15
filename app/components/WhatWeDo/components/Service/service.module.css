@@ -57,8 +57,6 @@
   z-index: -1;
 }
 
-
-
 .service h3{
   font-size: clamp(1.6rem, 1.4125rem + 1.4375vw, 3.2rem);
   line-height: 1.1;

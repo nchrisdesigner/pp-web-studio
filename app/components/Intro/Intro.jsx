@@ -123,11 +123,9 @@ const Intro = () => {
         </h3>
 
         <h2 className={`${anton.className} ${styles.extraTitle}`}>PARTNER-IN-CREATIONS</h2>
-        {/* <h3 className={`${anton.className} ${styles.title} ${myFont.className}`}>STORYTELLERS</h3>  */}
         <h2 className={` ${styles.customFontTitle} ${myFont.className}`}>
           STORYTELLERS
         </h2>
-        {/* <BrushLine className={styles.brushLine} /> */}
       </motion.div>
 
 

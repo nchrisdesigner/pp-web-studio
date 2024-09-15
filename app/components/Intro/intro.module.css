@@ -54,7 +54,8 @@
 
 
 /* .brushLine{
-  margin-top: -2rem;
+  margin-top: -11rem;
+  transform: scale(.6) rotate(5deg);
   width: min(500px, 100%)
 } */
 
