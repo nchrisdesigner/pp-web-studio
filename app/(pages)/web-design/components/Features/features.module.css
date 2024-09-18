@@ -2,10 +2,12 @@
   padding-top: 12rem;
   padding-bottom: 12rem;
   background: var(--dark-purple);
+
+  view-timeline: --container;
 }
 
 .features{
-  padding: 4.8rem 2.2rem;
+  padding: 4.8rem 2.4rem;
 }
 
 .featuresContainer{
@@ -25,9 +27,9 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  /* height: 24rem; */
   overflow: hidden;
   position: relative;
+  transition: all .3s ease-out;
 }
 
 .feature span{
@@ -45,7 +47,10 @@
 .feature h3{
   font-size: clamp(1.62rem, 1.3973rem + 1.1135vw, 2.2rem);
   z-index: 10;
+  transition: .3s ease;
 }
+
+
 .feature p{
   font-size: clamp(1.2rem, 1.1669rem + 0.4654vw, 1.6rem);
   line-height: 1.35;
@@ -53,6 +58,25 @@
   z-index: 10;
   color: #ffffffc5;;
 }
+
+
+.animatedTitle{
+  animation: animateTitle;
+  animation-timeline: --container;
+}
+
+@keyframes animateTitle{
+  0%,
+  40%{
+    opacity: 0;
+    transform: translateY(30rem);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 @media screen and (width< 900px){

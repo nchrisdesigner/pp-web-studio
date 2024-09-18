@@ -64,7 +64,6 @@ const Intro = () => {
         initial='hidden'
         animate={isInView ? 'visible' : 'hidden'}
       >
-
         <h3 className={styles.secondaryTitle}>
           CLIENT IS A BAD, BAD WORD
         </h3>
@@ -127,7 +126,6 @@ const Intro = () => {
           STORYTELLERS
         </h2>
       </motion.div>
-
 
       <div className={styles.miniTitleContainer}>
         <PromiseTitle color='black'>

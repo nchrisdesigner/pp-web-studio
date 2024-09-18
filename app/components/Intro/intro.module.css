@@ -28,6 +28,11 @@
   margin-top: -3rem;
   color: var(--purple);
   transform: rotate(-5deg);
+  /* display: inline-block;
+  padding: 0 3.2rem;
+
+  background: #5e5ad674;
+  color: #ffffff; */
 }
 
 .miniTitleContainer{
@@ -41,12 +46,11 @@
   0%,
   50%{
     opacity:0;
-    /* transform: scale(.4) translateY(80px) rotate(3deg); */
+
     transform: translateY(12rem);
   }
   100%{
     opacity:1;
-    /* transform: scale(1) translateY(0px) rotate(0); */
     transform: translateY(0px);
   }
 }

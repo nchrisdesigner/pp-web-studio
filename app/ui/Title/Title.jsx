@@ -6,9 +6,23 @@ const anton = Anton({
   subsets: ['latin'],
 })
 
-const Title = ({children, color}) => {
+const Title = ({ children, color, align }) => {
   return (
-    <h2 style={{color: `var(--${color})`}} className={`${anton.className} ${styles.title}`}>{children}</h2>
+    <h2
+      style={
+        align === 'center' 
+        ?
+        {
+          margin: '0 auto',
+          color: `var(--${color})`,
+          textAlign: `${align}`
+        }
+        :
+        {
+          color: `var(--${color})`,
+          textAlign: `${align}`
+        }
+      } className={`${anton.className} ${styles.title}`}>{children}</h2>
   )
 }
 

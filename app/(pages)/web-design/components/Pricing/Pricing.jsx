@@ -3,19 +3,21 @@ import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import { ImCheckmark2 } from "react-icons/im"
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
 import { webDesignPricing } from '@/app/data/data'
+import ContactButton from '@/app/ui/ContactButton/ContactButton'
 
 
 
 const Pricing = () => {
   return (
-    <section className={`container ${styles.pricingSection}`}>
+    <section id="pricing" className={`container ${styles.pricingSection}`}>
       <div className={styles.titleContainer}>
         <MiniTitle>CHOOSE WHAT YOU NEED</MiniTitle>
         <PricingTitle color='black'>Web Design Plans</PricingTitle>
+        <p className={styles.pricingText}>Let's design a sleek and professional website showcasing your brand’s services and answering client queries effortlessly</p>
       </div>
 
       <div className={styles.pricingsContainer}>
-        {webDesignPricing.map(({ id, title, secondTitle, icon, desc, miniText, price, features }) => {
+        {webDesignPricing.map(({ id, title, secondTitle, icon, desc, miniText, price, features, idealFor }) => {
           return (
             <div key={id} className={styles.pricing}>
               <h3>{secondTitle}</h3>
@@ -42,10 +44,19 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
+
+              {
+                idealFor &&
+              <div className={styles.idealForContainer}>
+                <p className={styles.idealFor}>{idealFor}</p>
+              </div>
+              }
             </div>
           )
         })}
       </div>
+
+      <ContactButton />
 
     </section>
   )

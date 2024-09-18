@@ -9,11 +9,19 @@
   padding-bottom: 4.8rem ;
 }
 
+.pricingText{
+  font-size: 1.4rem;
+  width: min(100%, 70ch);
+  margin: 1.2rem auto 0 auto;
+  text-align: center;
+  color: #606060;
+}
+
 .pricingsContainer{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   width: min(100%, 126rem);
-  margin: 3.2rem auto;
+  margin: 3.2rem auto 4.8rem auto;
   gap: 2.4rem;
 }
 
@@ -92,6 +100,18 @@
   gap: 1.2rem;
   align-items: center;
   font-size: 1.4rem;
+}
+
+.idealForContainer{
+  display: flex;
+  justify-content: center;
+}
+.idealFor{
+  background: var(--purple-bg);
+  color: var(--purple);
+  padding: .8rem 1.6rem;
+  border: .5px solid var(--purple);
+  font-weight: 600;
 }
 
 @media screen and (width < 950px){

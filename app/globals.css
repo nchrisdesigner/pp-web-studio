@@ -28,6 +28,10 @@
   --white-faint: hsl(0, 0%, 85%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   overflow-x: hidden;
 }
@@ -114,7 +118,6 @@ a{
    display: inline-block;
 }
 
-
 .outline-text-white{
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -125,6 +128,10 @@ a{
 
 .bold-text{
   font-weight: 700;
+}
+
+.underline-text{
+  text-decoration: underline;
 }
 
 /* Hight Light Effect */
@@ -140,6 +147,34 @@ a{
       #5e5cd600 98%
     ),
     linear-gradient(182deg, #5e5cd600, #5e5cd64d 8%, #5e5cd600 15%);
+}
+
+.green-highlight {
+  display: inline-block;
+  background: linear-gradient(
+      100deg,
+      #b8ffaf00 1%,
+      #b8ffaf 2.5%,
+      #b8ffaf80 5.7%,
+      #b8ffaf1a 93%,
+      #b8ffafb4 95%,
+      #b8ffaf00 98%
+    ),
+    linear-gradient(182deg, #b8ffaf00, #b8ffaf4d 8%, #b8ffaf00 15%);
+}
+
+.yellow-highlight {
+  display: inline-block;
+  background: linear-gradient(
+      100deg,
+      #ffffaf00 1%,
+      #ffffaf 2.5%,
+      #ffffaf80 5.7%,
+      #ffffaf1a 93%,
+      #ffffafb4 95%,
+      #ffffaf00 98%
+    ),
+    linear-gradient(182deg, #ffffaf00, #ffffaf4d 8%, #ffffaf00 15%);
 }
 
 
@@ -224,6 +259,7 @@ body.menu-open {
 ::-webkit-scrollbar-thumb {
   background: #5E5CD6;
 } */
+ 
 /* Hide scrollbar for Chrome, Safari and Edge */
 body::-webkit-scrollbar {
   display: none;  /* Hide the scrollbar */

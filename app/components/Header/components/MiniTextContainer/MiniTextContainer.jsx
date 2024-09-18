@@ -39,7 +39,7 @@ const MiniTextContainer = () => {
         return (
           <motion.div key={id} variants={itemVariants} className={styles.item}>
             <h3 className={styles.title}>
-              <Image src={icon} alt='icon' />
+              {/* <Image src={icon} alt='icon' /> */}
               {title}
             </h3>
             <p className={styles.text}>{desc}</p>

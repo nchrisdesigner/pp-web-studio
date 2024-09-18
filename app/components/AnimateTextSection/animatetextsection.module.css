@@ -76,6 +76,7 @@
 }
 
 .miniTitle{
+  padding: 2.4rem 0 9.6rem 0;
   animation: animatePromiseTitle ease-in-out;
   animation-timeline: --section-container;
   animation-range-start: 100px ;

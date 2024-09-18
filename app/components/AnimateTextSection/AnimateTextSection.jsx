@@ -2,10 +2,10 @@
 import { motion, useInView } from 'framer-motion'
 import { ReactLenis } from 'lenis/react'
 import styles from './animatetextsection.module.css'
-import { Anton } from 'next/font/google'
 import { useRef } from 'react'
 import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 
+import { Anton } from 'next/font/google'
 const anton = Anton({
   weight: ['400'],
   subsets: ['latin'],
@@ -44,29 +44,13 @@ const AnimateTextSection = () => {
 
   return (
     <section ref={containerRef} className={`${styles.sectionContainer} container`}>
-      <ReactLenis root>
+      {/* <ReactLenis root> */}
         <div className={styles.containerLeft}>
-
           <div className={styles.overflowContainer}>
-            <motion.h2
-              // variants={titleVariants}
-              // initial='hidden'
-              // animate={isInView ? 'visible' : 'hidden'}
-              // transition={{
-              //   duration: .3,
-              //   delay: .4
-              // }}
-              className={`${anton.className}`}>WHERE</motion.h2></div>
+            <h2
+              className={`${anton.className}`}>WHERE</h2></div>
           <div className={styles.overflowContainer}>
-            <motion.h2
-              // variants={titleVariants}
-              // initial='hidden'
-              // animate={isInView ? 'visible' : 'hidden'}
-              // transition={{
-              //   duration: .3,
-              //   delay: .45
-              // }}
-              className={`${anton.className}`}>IMAGINATION</motion.h2>
+            <h2 className={`${anton.className}`}>IMAGINATION</h2>
           </div>
           <div className={styles.overflowContainer}>
             <motion.p
@@ -83,26 +67,10 @@ const AnimateTextSection = () => {
         </div>
         <div className={styles.containerRight}>
           <div className={styles.overflowContainer}>
-            <motion.h2
-              // variants={titleVariants}
-              // initial='hidden'
-              // animate={isInView ? 'visible' : 'hidden'}
-              // transition={{
-              //   duration: .3,
-              //   delay: .7
-              // }}
-              className={`${anton.className}`}>MEETS</motion.h2>
+            <h2 className={`${anton.className}`}>MEETS</h2>
           </div>
           <div className={styles.overflowContainer}>
-            <motion.h2
-              // variants={titleVariants}
-              // initial='hidden'
-              // animate={isInView ? 'visible' : 'hidden'}
-              // transition={{
-              //   duration: .3,
-              //   delay: .75
-              // }}
-              className={`${anton.className}`}>PRECISION</motion.h2>
+            <h2 className={`${anton.className}`}>PRECISION</h2>
           </div>
           <div className={styles.overflowContainer}>
             <motion.p style={{
@@ -120,17 +88,8 @@ const AnimateTextSection = () => {
           </div>
         </div>
 
-
-      </ReactLenis>
-
+      {/* </ReactLenis> */}
       <div
-        // variants={textVariants}
-        // initial='hidden'
-        // animate={isInView ? 'visible' : 'hidden'}
-        // transition={{
-        //   duration: .3,
-        //   delay: 1.6
-        // }}
         className={styles.miniTitle}>
         <PromiseTitle color='dark-purple'>
           Experience the difference when your vision is crafted with our signature precision and artistry.
@@ -144,4 +103,3 @@ const AnimateTextSection = () => {
 
 export default AnimateTextSection
 
-// Experience the difference when your vision is crafted with our signature precision and artistry.

@@ -290,7 +290,8 @@ export const webDesignPricing = [
       "Photoshop, Illustrator, Midjourney",
       "Basic Animations",
       "High Speed Performance and SEO",
-    ]
+    ],
+    idealFor: 'Ideal for attracting new clients'
   },
   {
     id: 3,
@@ -299,11 +300,10 @@ export const webDesignPricing = [
     icon: <BiShoppingBag />,
     desc: 'Best for e-shops',
     miniText: "(Increase sales and conversions)",
-    price: '2500€+',
+    price: '2800€+',
     features: [
       "Wordpress + WooCommerce",
       "Photoshop, Illustrator, Midjourney",
-      "Custom animations and interactive elements",
       "High Speed Performance",
       "Best SEO Optimization",
       "Client-Centered Approach"

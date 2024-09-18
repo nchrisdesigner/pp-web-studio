@@ -1,0 +1,32 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.4rem 0;
+}
+
+
+.btn{
+  /* margin: 1rem auto; */
+  padding: 1.2rem 3.6rem;
+  display: inline-block;
+  outline: none;
+  border: none;
+  color: var(--white);
+  background: var(--purple);
+  background: #2c2c99;
+  border: 1px solid var(--white);
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.miniTitle{
+
+  margin: 3.2rem auto 1.6rem auto;
+  font-size: clamp(1.4rem , .8rem + 2vw, 1.6rem);
+  color: var(--black);
+  font-weight: 700;
+}
