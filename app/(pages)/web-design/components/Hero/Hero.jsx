@@ -5,7 +5,6 @@ import Title from '@/app/ui/Title/Title'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
 import MiniTextContainer from '@/app/components/Header/components/MiniTextContainer/MiniTextContainer'
 import { motion } from 'framer-motion'
-import { PiRocketLaunchBold } from "react-icons/pi"
 
 import { useTransform } from "framer-motion"
 import { useScroll } from "framer-motion"

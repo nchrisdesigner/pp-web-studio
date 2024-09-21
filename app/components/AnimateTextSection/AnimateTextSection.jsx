@@ -89,12 +89,12 @@ const AnimateTextSection = () => {
         </div>
 
       {/* </ReactLenis> */}
-      <div
+      {/* <div
         className={styles.miniTitle}>
         <PromiseTitle color='dark-purple'>
           Experience the difference when your vision is crafted with our signature precision and artistry.
         </PromiseTitle>
-      </div>
+      </div> */}
 
 
     </section>

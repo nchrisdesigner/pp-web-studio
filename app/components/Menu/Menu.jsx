@@ -73,12 +73,14 @@ const Menu = () => {
           <div className={styles.textContainer}>
             <h2>We don't design boring stuff.</h2>
             <h2>Promise</h2>
-            <Link href="/" className={styles.successStoriesLink}>
+            {/* <Link href="/" className={styles.successStoriesLink}>
               Check some success stories
-            </Link>
+            </Link> */}
+    
           </div>
+
         </div>
-        
+
       </div>
     </section>
   );

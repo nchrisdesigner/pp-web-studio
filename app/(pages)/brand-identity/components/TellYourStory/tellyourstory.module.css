@@ -3,10 +3,28 @@
   padding-bottom: 12.8rem;
   position: relative;
   overflow: hidden;
+  view-timeline: --section-container;
+  animation: changeBg ease-in-out forwards; 
+  animation-timeline: --section-container;
+
+  animation-range-start: 20%;
+  animation-range-end: 80%;
 }
 
-.sectionContainer::before{
-  content: 'SHARE YOUR JOURNEY TO THE WORLD';
+@keyframes changeBg {
+  0%,
+  25%{
+    background: #fff;
+    color: #000;
+  }
+  100%{
+    background:  hsl(241, 60%, 7%);
+    color: #fff;
+  }
+}
+
+
+.absoluteTitle{
   font-size: 16.8rem;
   color: #0000000e;
   font-weight: 800;
@@ -15,5 +33,50 @@
   white-space: nowrap;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  
+  /* transform: translate(-50%); */
+
+  animation: animateTitle ease-in-out;
+  animation-timeline: --section-container;
+}
+
+@keyframes animateTitle{
+  from{
+    transform: translateX(0) translateY(-6.4rem);
+  }
+  to{
+    transform: translateX(-100%) translateY(-6.4rem);
+  }
+  
+}
+
+.benefitsContainer{
+  margin: 4.8rem auto;
+}
+
+.benefitContainerTitle{
+  text-align: center;
+  font-size: clamp(1.6rem, 1.2615rem + 0.8924vw, 1.9531rem);
+  margin: 1.6rem auto;
+}
+
+.benefits{
+ display: flex;
+ gap: 2rem;
+  justify-content: center;
+}
+
+.benefit h4{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: .8rem;
+}
+
+
+@media screen and (width < 770px){
+  .benefits{
+    flex-direction: column;
+    align-items: center;
+  }
 }

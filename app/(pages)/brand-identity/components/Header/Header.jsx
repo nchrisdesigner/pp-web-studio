@@ -1,7 +1,6 @@
 import styles from './header.module.css'
 import Image from 'next/image'
 import packageImage from '@/app/assets/package.png'
-import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 import { Anton } from 'next/font/google'
 
 const anton = Anton({
@@ -13,7 +12,7 @@ const Header = () => {
   return (
     <header className={`container ${styles.header}`}>
       <div className={styles.textContainer}>
-        <SecondaryTitle align='left'>what other people say about you </SecondaryTitle>
+        <h4 className={styles.secondaryTitle}>what other people say about you </h4>
         <h2 className={`${anton.className} ${styles.title}`}>YOUR ONLINE SIGNATURE</h2>
         <p className={styles.paragraph}>Having strong branding is essential for businesses as it serves as the foundation upon which trust, recognition, and loyalty are built. A well-crafted brand identity communicates your company's story, values and mission. <span className="bold-text"> It distinguishes you from competitors,</span> helping you to stand out in a crowded marketplace.</p>
       </div>

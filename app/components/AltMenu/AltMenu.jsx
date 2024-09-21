@@ -6,6 +6,8 @@ import MenuContext from '@/app/context/context'
 import { useContext } from 'react'
 import { motion } from 'framer-motion'
 import MenuButton from '@/app/ui/MenuButton/MenuButton'
+import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import PixelPerfektExplain from '@/app/ui/PixelPerfektExplain/PixelPerfektExplain'
 
 const anton = Anton({
   weight: ['400'],
@@ -62,10 +64,13 @@ const AltMenu = () => {
           <div className={styles.textContainer}>
             <h2>We don't design boring stuff.</h2>
             <h2>Promise.</h2>
-            <Link href="/" className={styles.successStoriesLink}>
+            {/* <Link href="/" className={styles.successStoriesLink}>
               Check some success stories
-            </Link>
+            </Link> */}
+            <PixelPerfektExplain />
+
           </div>
+
         </div>
 
       </div>

@@ -3,6 +3,7 @@ import styles from './pricing.module.css'
 import { FaCheck } from "react-icons/fa";
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
 import { brandIdentityPricing } from '@/app/data/data'
+import Paragraph from '@/app/ui/Paragraph/Paragraph'
 
 const Pricing = () => {
   return (
@@ -11,6 +12,10 @@ const Pricing = () => {
         <div className={styles.titleContainer}>
           <MiniTitle align='center'>CHOOSE WHAT YOU NEED</MiniTitle>
           <PricingTitle color='white'>Brand Identity Plans</PricingTitle>
+          <Paragraph color='white' align='center'>
+          Tell your story through thoughtful and purposeful design  where every element speaks to who you are and what you stand for. 
+          </Paragraph>
+
         </div>
 
         <div className={styles.pricingContainer}>

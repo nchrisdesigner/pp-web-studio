@@ -5,26 +5,29 @@ import { useRef } from 'react'
 import { useInView, motion } from 'framer-motion'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Title from '@/app/ui/Title/Title'
+import PixelPerfektExplain from '@/app/ui/PixelPerfektExplain/PixelPerfektExplain'
+import { principles } from '@/app/data/data'
 
 
 
-const principles = [
-  {
-    id: 1,
-    title: 'Co-Creation Approach',
-    text: 'Your dreams are at the core of what we do. We listen intently to your ideas, ensuring that your vision guides every step of our creative process.'
-  },
-  {
-    id: 2,
-    title: 'Precision in Every Pixel',
-    text: 'Every detail matters. We meticulously design every pixel to achieve your goals with the precision your brand deserves.'
-  },
-  {
-    id: 3,
-    title: 'Future-Proof Creativity',
-    text: 'We design with an eye on the future. Our designs not only meet today’s standards but also anticipate tomorrow’s trends.'
-  },
-]
+// const principles = [
+//   {
+//     id: 1,
+//     title: 'Co-Creation Approach',
+//     text: 'Your dreams are at the core of what we do. We listen intently to your ideas, ensuring that your vision guides every step of our creative process.'
+//   },
+//   {
+//     id: 2,
+//     title: 'Precision in Every Pixel',
+//     text: 'Every detail matters. We meticulously design every pixel to achieve your goals with the precision your brand deserves.'
+//   },
+//   {
+//     id: 3,
+//     title: 'Future-Proof Creativity',
+//     text: 'We design with an eye on the future. Our designs not only meet today’s standards but also anticipate tomorrow’s trends.'
+//   },
+// ]
+
 const principleVariants = {
   hidden: {
     opacity: 0,
@@ -56,6 +59,7 @@ const WhoWeAre = () => {
         <motion.div>
           <MiniTitle>WHO WE ARE</MiniTitle>
           <Title color='white' style={{ color: `var(--white})` }}>CREATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS</Title>
+          <PixelPerfektExplain />
 
           <div className={`${styles.gridContainer}`}>
             <div className={styles.lineSVG}>

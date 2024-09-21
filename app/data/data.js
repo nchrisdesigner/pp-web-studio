@@ -371,3 +371,39 @@ export const videoMotionPricing = [
     ]
   },
 ]
+
+export const principles = [
+  {
+    id: 1,
+    title: 'Co-Creation Approach',
+    text: 'Your dreams are at the core of what we do. We listen intently to your ideas, ensuring that your vision guides every step of our creative process.'
+  },
+  {
+    id: 2,
+    title: 'Precision in Every Pixel',
+    text: 'Every detail matters. We meticulously design every pixel to achieve your goals with the precision your brand deserves.'
+  },
+  {
+    id: 3,
+    title: 'Future-Proof Creativity',
+    text: 'We design with an eye on the future. Our designs not only meet today’s standards but also anticipate tomorrow’s trends.'
+  },
+]
+
+export const benefitsOfBranding = [
+  {
+    id: 1,
+    title: 'Professionalism',
+    text: 'A cohesive brand signals quality and reliability.'
+  },
+  {
+    id: 2,
+    title: 'Recognition and Memorability',
+    text: 'A well-designed logo and consistent brand elements help customers remember you.'
+  },
+  {
+    id: 3,
+    title: 'Differentiates You from Competitors',
+    text: 'Stand out in a crowded market.'
+  },
+]
