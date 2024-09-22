@@ -1,8 +1,7 @@
 .sectionContainer{
-  padding-top: 9.6rem;
+  padding-top: 12.8rem;
   padding-bottom: 9.6rem;
 }
-
 
 .videoContainer{
   display: grid;
@@ -27,7 +26,6 @@
 .features{
   gap: 1.6rem;
 }
-
 
 .feature h3{
   font-size: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);

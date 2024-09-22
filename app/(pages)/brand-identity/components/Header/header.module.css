@@ -27,6 +27,8 @@
 }
 
 .image{
+  transition: all 1.5s ease-out;
+  transform: scale(1);
   width: 90%;
   height: 100%;
   object-fit: contain;

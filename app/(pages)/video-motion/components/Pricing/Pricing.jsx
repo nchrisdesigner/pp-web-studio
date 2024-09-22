@@ -6,7 +6,7 @@ import { videoMotionPricing } from '@/app/data/data'
 
 const Pricing = () => {
   return (
-    <section className={styles.sectionContainer}>
+    <section id="video-pricing" className={styles.sectionContainer}>
       <div className='container'>
         <div className={styles.titleContainer}>
           <MiniTitle align='center'>CHOOSE WHAT YOU NEED</MiniTitle>

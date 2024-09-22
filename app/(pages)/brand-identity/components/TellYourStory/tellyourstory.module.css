@@ -6,9 +6,11 @@
   view-timeline: --section-container;
   animation: changeBg ease-in-out forwards; 
   animation-timeline: --section-container;
+  animation-range-start: 0 ;
+  animation-range-end: 80%;
 
   animation-range-start: 20%;
-  animation-range-end: 80%;
+  animation-range-end: 70%;
 }
 
 @keyframes changeBg {
@@ -71,6 +73,72 @@
   align-items: center;
   font-size: 1.4rem;
   gap: .8rem;
+}
+
+.relativeContainer{
+  position: relative;
+}
+.animatePromiseTitleOne{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  animation: animateMiniTitleOne forwards;
+  animation-timeline: --section-container;
+  animation-range-start: 10% ;
+  animation-range-end: 80%;
+}
+.animatePromiseTitleTwo{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  animation: animateMiniTitleTwo forwards;
+  animation-timeline: --section-container;
+  animation-range-start: 0% ;
+  animation-range-end: 75%;
+}
+.animatePromiseTitle{
+
+  animation: animateMiniTitle forwards;
+  animation-timeline: --section-container;
+  animation-range-start: 0% ;
+  animation-range-end: 75%;
+}
+
+@keyframes animateMiniTitle{
+  0%,
+  40%{
+    transform: translateX(-40rem) translateY(25rem) scale(1.2);
+  }
+  65%{
+    transform: translateX(-40rem) translateY(0) scale(1.2);
+  }
+  100%{
+    transform: translateX(0) translateY(0) scale(1);
+  }
+}
+@keyframes animateMiniTitleOne{
+  0%,
+  40%{
+    transform: translateX(-40rem) translateY(35rem);
+  }
+  65%{
+    transform: translateX(-40rem) translateY(0) ;
+  }
+  100%{
+    transform: translateX(-50%) translateY(0);
+  }
+}
+@keyframes animateMiniTitleTwo{
+  0%,
+  40%{
+    transform: translateX(40rem) translateY(-35rem) ;
+  }
+  65%{
+    transform: translateX(40rem) translateY(0) ;
+  }
+  100%{
+    transform: translateX(-50%) translateY(0) ;
+  }
 }
 
 

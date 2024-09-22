@@ -130,7 +130,7 @@ export const projects = [
     title: 'Kostaschris Videography',
     subtitle: "Showcasing high-tech storytelling through tradition",
     // desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
-    desc: 'Kostas Chris needed a website upgrade to reflect the blend of tradition and cutting-edge technology in his wedding videography services. We crafted a visually striking website that highlights his exceptional use of drones and high-end cameras, seamlessly merging classic storytelling with modern innovation. ',
+    desc: 'With no time for a photoshoot, we used AI and MidJourney to create high-quality images for wedding videographer Kostas Chris website. The result was a stunning site that seamlessly showcased his blend of traditional storytelling and cutting-edge technology, proving that innovation can overcome any obstacle, even under tight deadlines.',
     url: 'https://kostaschris.gr/',
     logo: kostaschris,
     tags: [
@@ -138,6 +138,18 @@ export const projects = [
       'Web Design',
     ]
   },
+  // {
+  //   id: 2,
+  //   title: 'Kostaschris Videography',
+  //   subtitle: "Showcasing high-tech storytelling through tradition",
+  //   desc: 'Kostas Chris needed a website upgrade to reflect the blend of tradition and cutting-edge technology in his wedding videography services. We crafted a visually striking website that highlights his exceptional use of drones and high-end cameras, seamlessly merging classic storytelling with modern innovation. ',
+  //   url: 'https://kostaschris.gr/',
+  //   logo: kostaschris,
+  //   tags: [
+  //     'Logo Design',
+  //     'Web Design',
+  //   ]
+  // },
   {
     id: 3,
     title: 'Wodshop',
