@@ -1,7 +1,6 @@
 'use client'
 import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 import styles from './hero.module.css'
-import Title from '@/app/ui/Title/Title'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
 import MiniTextContainer from '@/app/components/Header/components/MiniTextContainer/MiniTextContainer'
 import { motion } from 'framer-motion'
@@ -9,19 +8,29 @@ import { motion } from 'framer-motion'
 import { useTransform } from "framer-motion"
 import { useScroll } from "framer-motion"
 import { useRef } from 'react'
+import Image from 'next/image'
+import mobile from './../../../../assets/mobile-mockup-purple.png'
+// import mobile from './../../../../assets/mobile-mockup.png'
+
+import { Anton } from 'next/font/google'
+
+const anton = Anton({
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 const Hero = () => {
   const containerRef= useRef()
   const { scrollY } = useScroll()
-  console.log(scrollY);
   
-
   const y = useTransform(
     scrollY,
     [0, 100],
     [0, 360],
-    { clamp: false }
   )
+
+  console.log(y);
+  
 
 
   return (
@@ -50,7 +59,7 @@ const Hero = () => {
               opacity: 1
             }}
           >
-            <Title color='white' align='left'>SKYROCKET YOUR BUSINESS <span className='purple'>SUCCESS</span></Title>
+            <h1 className={`${styles.title} ${anton.className}`}>SKYROCKET YOUR BUSINESS <span className='purple'>SUCCESS</span></h1>
           </motion.div>
           <motion.div
             initial={{
@@ -66,35 +75,27 @@ const Hero = () => {
             }}
           >
             <Paragraph color='white' align='left'>
-              Nowadays, possessing a website is not just a benefit but rather an important aspect that any business looking forward to succeeding must prioritize. An online presence is like a 24/7 storefront accessible to anyone. As more customers turn to the internet for information on goods and services, <span className='bold-text underline-text'>those businesses without websites will miss out on significant opportunities.</span>
+              Nowadays, <span className='bold-text underline-text'>having a website is essential for any business aiming for success.</span> Think of it as a 24/7 storefront, always accessible to potential customers. With more consumers turning online for products and services, businesses without a website risk losing significant opportunities. 
             </Paragraph>
+            <Paragraph color='white' align='left' ><span className='bold-text yellow'>Don’t let your competitors get ahead.</span></Paragraph>
           </motion.div>
           <MiniTextContainer />
-          {/* <div className={styles.btnContainer}>
-            <div className={styles.absoluteElement}></div>
-            <a href="#pricing" className={styles.btn}>Choose your plan</a>
-          </div> */}
         </div>
-        <motion.p
+
+          <motion.figure 
           initial={{
-            y: 30,
-            opacity: 0
+            opacity:0,
+            scale: 0.3
           }}
           animate={{
-            y: 0,
-            opacity: 1
+            opacity: 1,
+            scale: 1,
+            x:y
           }}
-          transition={{
-            delay: 1
-          }}
-          className={styles.promiseTitle}>Your project deserves more than design — <span className="yellow bold-text">it’s a story waiting to be told.</span></motion.p>
+          className={styles.imageContainer}>
+          <Image className={styles.image} src={mobile} alt="Mobile Mockup Image" />
+          </motion.figure>
       </div>
-
-      {/* <motion.div
-      animate={{y}}
-      className={styles.rocketContainer}>
-        <PiRocketLaunchBold className={styles.rocket} />
-      </motion.div> */}
     </header>
   )
 }

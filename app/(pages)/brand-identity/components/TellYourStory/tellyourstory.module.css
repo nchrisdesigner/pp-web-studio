@@ -1,16 +1,17 @@
 .sectionContainer{
   padding-top: 12.8rem;
   padding-bottom: 12.8rem;
+  min-height: 80vh;
   position: relative;
   overflow: hidden;
   view-timeline: --section-container;
-  animation: changeBg ease-in-out forwards; 
+  /* animation: changeBg ease-in-out forwards; 
   animation-timeline: --section-container;
   animation-range-start: 0 ;
-  animation-range-end: 80%;
+  animation-range-end: 80%; */
 
-  animation-range-start: 20%;
-  animation-range-end: 70%;
+  animation-range-start: 15%;
+  animation-range-end: 65%;
 }
 
 @keyframes changeBg {
@@ -25,7 +26,6 @@
   }
 }
 
-
 .absoluteTitle{
   font-size: 16.8rem;
   color: #0000000e;
@@ -35,9 +35,6 @@
   white-space: nowrap;
   position: absolute;
   left: 50%;
-  
-  /* transform: translate(-50%); */
-
   animation: animateTitle ease-in-out;
   animation-timeline: --section-container;
 }

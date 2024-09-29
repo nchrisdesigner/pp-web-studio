@@ -7,6 +7,7 @@ import logo from './../../assets/white-logo.png'
 import MenuButton from '@/app/ui/MenuButton/MenuButton'
 import AltMenu from '../AltMenu/AltMenu'
 import Link from 'next/link'
+import { AnimatePresence } from 'framer-motion'
 
 
 const NavBar = () => {
@@ -26,7 +27,9 @@ const NavBar = () => {
             <MenuButton onClick={() => setOpenMenu(prev => !prev)}>MENU</MenuButton>
           </div>
         </div>
-        {openMenu && <AltMenu />}
+        <AnimatePresence mode='wait'>
+          {openMenu && <AltMenu />}
+        </AnimatePresence>
       </div>
     </nav>
   )

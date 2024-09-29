@@ -1,0 +1,90 @@
+.sectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  view-timeline: --container;
+  min-height:80vh;
+  animation: changeBg forwards cubic-bezier(.78,-0.28,.28,1.15);
+  animation-timeline: --container;
+  animation-range-start: 15% ;
+  animation-range-end: 55%;
+  background: hsl(241, 60%, 7%);
+  color: var(--white);
+}
+
+@keyframes changeBg {
+  0%,
+  30%{
+    background: hsl(241, 60%, 7%);
+    color: var(--white);
+  }
+  100%{
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+
+.absoluteOne,
+.absoluteTwo,
+.absoluteThree{
+  position: absolute;
+  opacity: 0.05;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--white);
+   z-index: -10;
+   transform: scale(1.2);
+}
+
+.perspectiveContainer{
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.title{
+  font-size: clamp(4.8rem, 2rem + 7vw, 16.8rem);
+  max-width: 20ch;
+  line-height: 1;
+  margin-bottom: 1rem;
+  /* color: var(--black); */
+  transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
+
+  animation: rotate forwards cubic-bezier(.78,-0.28,.28,1.15);
+  animation-timeline: --container;
+}
+
+.text{
+  font-size: 1.6rem;
+  font-weight: 600;
+  transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
+
+  animation: rotate forwards;
+  animation-timeline: --container;
+  animation-range-start: 50% ;
+  animation-range-end: 75%;
+}
+
+.titleOne{
+  animation-range-start: 20% ;
+  animation-range-end: 60%;
+}
+.titleTwo{
+  animation-range-start: 30% ;
+  animation-range-end: 70%;
+}
+.titleThree{
+  animation-range-start: 40% ;
+  animation-range-end: 75%;
+}
+
+@keyframes rotate{
+  0%{
+    transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
+  }
+  100%{
+
+    transform: translate3d(0,0,0) rotateY(0) rotateX(0) translate(0px, 0px);
+  }
+}

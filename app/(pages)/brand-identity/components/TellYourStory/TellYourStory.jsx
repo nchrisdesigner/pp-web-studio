@@ -27,24 +27,13 @@ const TellYourStory = () => {
             })}
           </div>
 
-          {/* <div className={styles.relativeContainer}> */}
-            <div className={styles.animatePromiseTitle}>
-              <PromiseTitle color='purple'>
-                Ready to Build Your Brand?
-              </PromiseTitle>
-            </div>
-            {/* <div className={styles.animatePromiseTitleTwo}>
-              <PromiseTitle color='purple'>
-                Ready to Build Your Brand?
-              </PromiseTitle>
-            </div> */}
+          <div className={styles.animatePromiseTitle}>
+            <PromiseTitle color='purple'>
+              Ready to Build Your Brand?
+            </PromiseTitle>
           </div>
-        {/* </div> */}
-
-
+        </div>
       </div>
-
-
     </section>
   )
 }

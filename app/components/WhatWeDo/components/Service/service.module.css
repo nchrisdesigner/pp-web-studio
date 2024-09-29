@@ -41,14 +41,9 @@
   grid-row: span 3;
   grid-template-rows: subgrid;
   border: 1px solid var(--purple-faint);
-
   z-index: 10!important;
-  background: var(--dark-bg);
-  /* background: #010101; */
-  background: hsl(210, 15%, 8%); 
   background: hsl(216, 14%, 6%); 
 }
-
 
 .svgContainer{
   position: absolute;
@@ -58,9 +53,8 @@
 }
 
 .service h3{
-  font-size: clamp(1.6rem, 1.4125rem + 1.4375vw, 3.2rem);
+  font-size: clamp(1.6rem, 1.4125rem + 1.4375vw, 3rem);
   line-height: 1.1;
-
   z-index: 10;
 }
 

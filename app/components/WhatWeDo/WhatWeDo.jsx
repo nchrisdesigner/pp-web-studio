@@ -1,4 +1,3 @@
-
 import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import styles from './whatwedo.module.css'
 import Card from './components/Service/Service'
@@ -15,17 +14,14 @@ const WhatWeDo = () => {
         </TitleContainer>
         <div className={styles.services}>
           <div className={styles.servicesContainer}>
-            {services.map((service, index) => {
+            {services.map((service) => {
               return (
-                <div key={index} className={styles.relativeContainer}>
-                  <Card {...service} />
-                </div>
+                <Card key={service.id} {...service} />
               )
             })}
           </div>
         </div>
-
-        <h4 style={{ fontSize: '1.6rem', color: 'var(--white)' }}>DISCOVER HOW EVERYTHING FALLS INTO PLACE AND SEE YOUR BRAND'S <span className="bold-text purple"> TRUE POTENTIAL</span></h4>
+        <h3 className={styles.secondaryTitle}>DISCOVER HOW EVERYTHING FALLS INTO PLACE AND SEE YOUR BRAND'S <span className="bold-text purple"> TRUE POTENTIAL</span></h3>
       </div>
 
     </section>

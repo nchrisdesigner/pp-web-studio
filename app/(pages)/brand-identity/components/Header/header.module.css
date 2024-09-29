@@ -1,16 +1,55 @@
 .header{
-  padding-top: 4.8rem ;
-  padding-bottom: 9,6rem ;
+  padding-top: 2.4rem;
+  padding-bottom: 9.6rem;
+  min-height: 80vh;
+  background: var(--black);
+  overflow: hidden;
+}
+
+.gridContainer{
   display: grid;
   grid-template-columns: 60fr 40fr;
   align-items: center;
   gap: 2.4rem;
+  width: min(136rem, 100%);
+    margin: 0 auto;
+  /* min-height: 40vh; */
+  /* height: auto; */
+}
+
+.secondaryTitle{
+  font-size: 1.6rem;
+  font-size: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: .15em;
+  z-index: 10;
+  position: relative;
+  text-transform: uppercase;
+  color: var(--purple);
 }
 
 .title{
-  font-size: clamp(5rem, 1rem + 14.7783vw, 12.5rem);
+  font-size: clamp(5rem, 1rem + 14.7783vw, 13.5rem);
   line-height: 1;
   margin-bottom: 1rem;
+  color: var(--white);
+
+  position: relative;
+}
+
+.title::before{
+  content: 'YOUR ONLINE SIGNATURE';
+  position: absolute;
+  font-size: clamp(5rem, 1rem + 14.7783vw, 14.5rem);
+  transform: scale(1.8);
+  color: #ffffff08;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: var(--white);
+  top: -10%;
+  left: 10%;
+  opacity: 0.05;
 }
 
 .paragraph{
@@ -19,7 +58,7 @@
   width: min(70ch ,100%);
   text-wrap: balance;
   margin-bottom: 1rem;
-  color: var(--text-color);
+  color: var(--white);
 }
 
 .imageContainer{
@@ -27,23 +66,14 @@
 }
 
 .image{
-  transition: all 1.5s ease-out;
-  transform: scale(1);
-  width: 90%;
+  transform: scale(.9);
+  width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: all 1.5s ease-out;
 }
 
-.secondaryTitle{
-  font-size: 1.6rem;
-  font-size: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
-  line-height: 1;
-  font-weight: 300;
-  letter-spacing: .15em;
-  z-index: 10;
-  position: relative;
-  text-transform: uppercase;
-}
+
 
 
 @media screen and (max-width: 600px){
@@ -53,7 +83,7 @@
 }
 
 @media screen and (width < 1080px){
-  .header{
+  .gridContainer{
     grid-template-columns: 1fr;
   }
 }

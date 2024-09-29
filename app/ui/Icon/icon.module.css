@@ -1,0 +1,33 @@
+.iconContainer{
+  display: inline-block;
+  position: relative;
+  width: 4.5rem;
+  height: 4.5rem;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.iconContainer::after{
+  content: '';
+  position: absolute;
+  background: linear-gradient(to bottom, orange, pink, aqua);
+  border-radius: 50%;
+  width: 4.7rem;
+  height: 4.7rem;
+  top: 0;
+  left: 0;
+  transform: translate(-1px,-1px);
+  z-index: -10;
+}
+
+.scrollIcon{
+  color: var(--white);
+  padding: 1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  z-index: 10;
+  background: var(--black);
+}
+

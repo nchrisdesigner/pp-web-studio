@@ -88,7 +88,7 @@ export const services = [
   {
     id: 1,
     mainTitle: 'Web Design',
-    title: 'Take your online presence beyond the Average',
+    title: 'Take your online presence beyond the average',
     boldText: 'A poor website equals missed opportunities.',
     desc: 'We blend fresh design ideas with easy-to-navigate pages, ensuring your website not only looks amazing but also works perfectly.',
     image: <WebDesign />

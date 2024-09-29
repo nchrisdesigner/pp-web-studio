@@ -1,5 +1,43 @@
 .sectionContainer {
   background: var(--dark-bg);
+  perspective: 1000px;
+  view-timeline: --whoweare;
+}
+
+.perspectiveContainer{
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.title{
+  font-size: clamp(4.8rem, 2rem + 7vw, 12.8rem);
+  max-width: 20ch;
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: var(--white);
+
+  animation: rotate 2s;
+  animation-timeline: --whoweare;
+  animation-range-start: 0 ;
+  animation-range-end: 40%;
+}
+
+@keyframes rotate{
+  0%{
+    transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
+  }
+  100%{
+
+    transform: translate3d(0,0,0) rotateY(0) rotateX(0) translate(0px, 0px);
+  }
+}
+
+
+@media screen and (width > 1712px){
+  .title{
+    font-size: 14.2rem;
+    max-width: 20ch;
+  }
 }
 
 /* Title Container */

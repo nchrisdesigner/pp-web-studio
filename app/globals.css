@@ -87,6 +87,9 @@ a{
 .green{
   color: var(--green);
 }
+.black{
+  color: var(--black);
+}
 
 /* Tags */
 .green-tag{
