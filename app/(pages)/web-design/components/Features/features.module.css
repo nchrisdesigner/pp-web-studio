@@ -21,13 +21,14 @@
 
 .feature {
   background: #260462;
-  border: 1px solid var(--purple);
+  border: 1px solid var(--dark-purple);
   padding: 4rem 2.4rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   overflow: hidden;
   position: relative;
+  z-index: 10;
   transition: all .3s ease-out;
 }
 
@@ -65,12 +66,12 @@
 @keyframes animateTitle {
 
   0%,
-  40% {
+  30% {
     opacity: 0;
     transform: translateY(30rem);
   }
 
-  90% {
+  75% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -80,6 +81,10 @@
 @media screen and (width < 900px) {
   .features {
     padding: 3.2rem 0rem;
+  }
+
+  .feature{
+    min-height: 21rem;
   }
 
   .featuresContainer {
@@ -161,3 +166,5 @@
     }
   }
 }
+
+

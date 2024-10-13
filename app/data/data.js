@@ -252,12 +252,12 @@ export const webDesignFeatures = [
   {
     id: 1,
     title: 'Global Accessibility',
-    desc: 'Allows your business to be accessible to potential customers worldwide, breaking down geographical barriers and expanding your market reach beyond local boundaries.'
+    desc: 'Allows your business to be accessible to potential customers worldwide, breaking down geographical barriers and local boundaries.'
   },
   {
     id: 2,
     title: '24/7 Availability',
-    desc: 'Additionally, it provides a constant platform where customers can learn about your products or services, make inquiries, and even make purchases day or night.'
+    desc: 'Additionally, it provides a constant platform where customers can learn about your products or services, make inquiries and make purchases day or night.'
   },
   {
     id: 3,

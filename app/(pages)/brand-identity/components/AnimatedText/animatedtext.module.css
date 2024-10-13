@@ -4,11 +4,11 @@
   justify-content: center;
   overflow: hidden;
   view-timeline: --container;
-  min-height:80vh;
+  min-height:100vh;
   animation: changeBg forwards cubic-bezier(.78,-0.28,.28,1.15);
   animation-timeline: --container;
-  animation-range-start: 15% ;
-  animation-range-end: 55%;
+  animation-range-start: 5% ;
+  animation-range-end: 50%;
   background: hsl(241, 60%, 7%);
   color: var(--white);
 }
@@ -86,5 +86,13 @@
   100%{
 
     transform: translate3d(0,0,0) rotateY(0) rotateX(0) translate(0px, 0px);
+  }
+}
+
+@media screen and (width < 600px){
+  .sectionContainer {
+    min-height:80vh;
+    animation-range-start: 0 ;
+    animation-range-end: 45%;
   }
 }

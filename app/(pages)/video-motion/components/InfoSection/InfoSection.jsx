@@ -1,17 +1,26 @@
-import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import styles from './infosection.module.css'
-import { FaCheck } from "react-icons/fa"
 import { videoMotionFeatures } from '@/app/data/data'
 import Cube from '@/app/ui/Cube/Cube'
+import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
+import Paragraph from '@/app/ui/Paragraph/Paragraph'
+
+import { Anton } from 'next/font/google'
+
+const anton = Anton({
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 const InfoSection = () => {
   return (
     <section className={styles.sectionContainer}>
       <div className='container'>
-
-        <TitleContainer align='center' color='white' miniTitle='VIDEOS EVOKE EMOTIONS' title='STUNNING ANIMATING VIDEOS'>
-          By investing in video motion, animation, and videography, you create dynamic and memorable content <span className="bold-text"> that can significantly boost profitability,</span> drive traffic, and foster stronger connections with your audience.
-        </TitleContainer>
+        <div className={`${styles.titleContainer}`}>
+          <MiniTitle align='center'>VIDEOS EVOKE EMOTIONS</MiniTitle>
+          <h2 className={`${anton.className} ${styles.title}`}>STUNNING ANIMATING VIDEOS</h2>
+          <Paragraph align='center' color='white' >
+            By investing in video motion, animation, and videography, you create dynamic and memorable content <span className="bold-text"> that can significantly boost profitability,</span> drive traffic, and foster stronger connections with your audience.</Paragraph>
+        </div>
 
         <div className={styles.featuresContainer}>
           <div className={styles.videoContainer}>
@@ -21,7 +30,9 @@ const InfoSection = () => {
             {videoMotionFeatures.map(({ id, title, desc }) => {
               return (
                 <div className={styles.feature} key={id}>
-                  <h3><FaCheck className={styles.icon} /> {title}</h3>
+                  <h3>
+                    {title}
+                  </h3>
                   <p>{desc}</p>
                 </div>
               )

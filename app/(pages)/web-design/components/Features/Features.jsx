@@ -25,11 +25,11 @@ const Features = () => {
           </div>
         </div>
 
-      <div className={styles.animatedTitle}>
-        <PromiseTitle color='white'>
-        Let your website tell your story — <span className="yellow underline-text">without saying a word.</span>
-        </PromiseTitle>
-      </div>
+        <div className={styles.animatedTitle}>
+          <PromiseTitle color='white'>
+            Let your website tell your story — <span className="yellow underline-text bold-text">without saying a word.</span>
+          </PromiseTitle>
+        </div>
       </div>
 
 

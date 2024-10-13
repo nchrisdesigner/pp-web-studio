@@ -274,3 +274,15 @@ body::-webkit-scrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
 }
 
+
+/* Page Transition */
+
+body{
+  transition: all .4s ease-in-out;
+}
+
+.page-transition{
+  opacity:0;
+  background: var(--dark-purple-2);
+  background: black;
+}

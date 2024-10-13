@@ -12,3 +12,10 @@
     max-width: 20ch;
   }
 }
+/* @media screen and (width < 400px){
+  .title{
+    font-size: 7rem;
+    max-width: 20ch;
+  }
+} */
+
