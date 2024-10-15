@@ -25,7 +25,7 @@ const svgVariants = {
   visible: {
     // top: '40%',
     // left: '60%',
-    transform: 'translate(13.5rem, 10.5rem) scale(2)',
+    transform: 'translate(10rem, 10rem) scale(1.8)',
     opacity: .1
   }
 }
@@ -38,7 +38,6 @@ const Card = ({ id, mainTitle, title, boldText, desc, image }) => {
       {isOpen && <div className={styles.borderElement}></div>}
       {isOpen && <div className={styles.blurElement}></div>}
       <div key={id} className={`relative ${styles.service}`}>
-
         <motion.div
           variants={svgVariants}
           layout

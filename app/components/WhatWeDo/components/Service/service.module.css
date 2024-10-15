@@ -43,6 +43,7 @@
   border: 1px solid var(--purple-faint);
   z-index: 10!important;
   background: hsl(216, 14%, 6%); 
+  background: hsl(216, 14%, 7.6%); 
 }
 
 .svgContainer{

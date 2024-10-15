@@ -66,7 +66,7 @@
 .containerRight p{
   color: var( --primary-title);
   font-size: clamp(1.6rem, 1.2615rem + 0.8924vw, 1.8rem);
-  opacity: 0;
+  opacity: 1;
   line-height: 1.5;
   max-width: 70ch;
   animation: animateText ease-in-out;
@@ -74,15 +74,6 @@
   animation-range-start: 100px ;
   animation-range-end: 70%;
 }
-
-.miniTitle{
-  padding: 2.4rem 0 9.6rem 0;
-  animation: animatePromiseTitle ease-in-out;
-  animation-timeline: --section-container;
-  animation-range-start: 100px ;
-  animation-range-end: 70%;
-}
-
 
 @keyframes animateText{
   0%,
@@ -93,20 +84,3 @@
     opacity: 1;
   }
 }
-
-
-@keyframes animatePromiseTitle{
-  0%,
-  40%{
-    opacity: 0;
-    transform: translateY(15rem)
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-

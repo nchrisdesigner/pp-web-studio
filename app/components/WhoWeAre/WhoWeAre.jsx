@@ -65,7 +65,6 @@ const WhoWeAre = () => {
         </div>
 
         <div className={styles.principlesContainer}>
-
           <motion.h3
             initial={{
               opacity: 0
@@ -102,8 +101,6 @@ const WhoWeAre = () => {
             })}
           </div>
         </div>
-
-        {/* <Link className={styles.btn} href="/web-design" >About Us <BsArrowUpRightCircleFill className={styles.icon} /></Link> */}
         
 
       </div>

@@ -43,7 +43,7 @@ const Header = () => {
             opacity: 1.5
           }}
           transition={{
-            delay: 0.4
+            delay: 2
           }}
           className={styles.imageContainer}>
           <Image className={styles.image} src={packageImage} alt='Hero image that shows a package' />

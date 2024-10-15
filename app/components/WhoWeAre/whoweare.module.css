@@ -86,9 +86,12 @@
 
 /* Principles Container */
 .principlesContainer {
+  /* display: grid;
+  grid-template-columns: 30rem 1fr; */
+
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   padding: 6.8rem 0;
 }
 
@@ -101,7 +104,9 @@
 }
 
 .principleContainer {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 

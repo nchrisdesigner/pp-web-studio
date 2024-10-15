@@ -28,7 +28,7 @@ const Header = () => {
                 y: -45
               }}
               transition={{
-                delay: 1,
+                delay: 2,
                 ease: 'easeOut'
               }}
               className={`${anton.className} ${styles.absoluteTitle}`}
@@ -45,7 +45,7 @@ const Header = () => {
                 y: 45
               }}
               transition={{
-                delay: 1,
+                delay: 2,
                 ease: 'easeOut'
               }}
               className={`${anton.className} ${styles.absoluteTitle}`}

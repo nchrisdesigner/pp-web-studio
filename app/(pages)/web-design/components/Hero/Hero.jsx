@@ -29,10 +29,6 @@ const Hero = () => {
     [0, 360],
   )
 
-  console.log(y);
-  
-
-
   return (
     <header ref={containerRef} className={styles.header}>
       <div className={styles.sectionContainer}>
@@ -45,7 +41,7 @@ const Hero = () => {
               opacity: 1
             }}
             transition={{
-              delay: .5
+              delay: 1
             }}>
             <SecondaryTitle align='left' color='white'>Your Digital First Impression</SecondaryTitle>
           </motion.div>
@@ -58,6 +54,10 @@ const Hero = () => {
               x: 0,
               opacity: 1
             }}
+            transition={{
+              delay: .5
+            }}
+            
           >
             <h1 className={`${styles.title} ${anton.className}`}>SKYROCKET YOUR BUSINESS <span className='purple'>SUCCESS</span></h1>
           </motion.div>
@@ -71,7 +71,7 @@ const Hero = () => {
               opacity: 1
             }}
             transition={{
-              delay: .15
+              delay: .75
             }}
           >
             <Paragraph color='white' align='left'>
@@ -92,6 +92,7 @@ const Hero = () => {
             scale: 1,
             x:y
           }}
+          
           className={styles.imageContainer}>
           <Image className={styles.image} src={mobile} alt="Mobile Mockup Image" />
           </motion.figure>
