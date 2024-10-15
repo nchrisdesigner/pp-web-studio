@@ -1,4 +1,4 @@
-.menuContainer{
+.menuContainer {
   background: var(--black);
   position: fixed;
   min-height: 100dvh;
@@ -12,7 +12,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.container{
+.container {
   width: min(136rem, 100%);
   margin: 0 auto;
   display: flex;
@@ -21,22 +21,22 @@
   align-items: flex-start;
 }
 
-.menuButtonContainer{
+.menuButtonContainer {
   align-self: flex-end;
   padding: 2.2rem 2.4rem 0 0;
 }
 
-.textContainer{
+.textContainer {
   padding: 0 2.4rem;
 }
 
-.textContainer h2{
+.textContainer h2 {
   font-size: clamp(1.8rem, 1.2033rem + 2.9837vw, 3.2rem);
   color: var(--white);
   line-height: 1.2;
 }
 
-.successStoriesLink{
+.successStoriesLink {
   margin-top: 2.4rem;
   font-size: 1.8rem;
   display: inline-block;
@@ -47,35 +47,35 @@
   border-bottom: 2px solid var(--green);
 }
 
-.successStoriesLink:hover{
+.successStoriesLink:hover {
   filter: brightness(1.5);
 }
 
-.linkContainer{
+.linkContainer {
   padding: 6.8rem 2rem;
 }
 
-.link{
-  font-size:  clamp(5.6rem, 2.4452rem + 12vw, 12.8rem);
+.link {
+  font-size: clamp(5.6rem, 2.4452rem + 12vw, 12.8rem);
   line-height: 1;
   position: relative;
-  letter-spacing: 0.01em; 
+  letter-spacing: 0.01em;
   margin-right: 5rem;
   text-transform: uppercase;
   transition: all .2s ease-in-out;
 }
 
-@media screen and (width > 1712px){
-  .link{
+@media screen and (width > 1712px) {
+  .link {
     font-size: 14.2rem;
   }
 }
 
-.link:hover{
+.link:hover {
   color: var(--white);
 }
 
-.absoluteBlurElement{
+.absoluteBlurElement {
   background: var(--purple);
   position: absolute;
   top: 0;
@@ -89,106 +89,113 @@
   transition: all .2s ease-in-out;
 }
 
-.link:hover .absoluteBlurElement{
+.link:hover .absoluteBlurElement {
   opacity: 1;
 }
 
-.titleElement{
+.titleElement {
   display: block;
   padding-left: .6rem
 }
 
-.hoveredLink{
+.hoveredLink {
   position: absolute;
   inset: 0;
   color: var(--purple);
 }
 
-.outlineText{
+.outlineText {
   color: transparent;
   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: var(--white);
-   position: relative;
-   transition: .5s ease;
+  -webkit-text-stroke-color: var(--white);
+  position: relative;
+  transition: .5s ease;
 }
 
-.webDesign{
+.webDesign {
   color: #6313e6;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: transparent;
 }
-.brandIdentity{
+
+.brandIdentity {
   color: #FBF5F3;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: transparent;
 }
-.videoMotion{
+
+.videoMotion {
   color: #02635b;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: transparent;
 }
 
 
-@media (hover){
-  .webDesign{
-    color: transparent;
-  -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: var(--white);
-   position: relative;
-  }
-  .brandIdentity{
-    color: transparent;
-  -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: var(--white);
-   position: relative;
-  }
-  .videoMotion{
+/* @media (hover) {
+  .webDesign {
     color: transparent;
     -webkit-text-stroke-width: 1px;
-     -webkit-text-stroke-color: var(--white);
-     position: relative;
+    -webkit-text-stroke-color: var(--white);
+    position: relative;
   }
-  .webDesign:hover{
+
+  .brandIdentity {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+    position: relative;
+  }
+
+  .videoMotion {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+    position: relative;
+  }
+
+  .webDesign:hover {
     color: #6313e6;
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: transparent;
   }
-  .brandIdentity:hover{
+
+  .brandIdentity:hover {
     color: #FBF5F3;
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: transparent;
   }
-  .videoMotion:hover{
+
+  .videoMotion:hover {
     color: #02635b;
     -webkit-text-stroke-width: 0;
     -webkit-text-stroke-color: transparent;
-  
+
   }
-}
+} */
 
 
 
 @media screen and (max-width: 1200px) and (max-height: 700px) {
-  .link{
-    font-size:  clamp(5.6rem, 2.4452rem + 12vw, 11.2rem);
+  .link {
+    font-size: clamp(5.6rem, 2.4452rem + 12vw, 11.2rem);
   }
 }
 
-@media screen and (width < 750px){
-  .gridContainer{
+@media screen and (width < 750px) {
+  .gridContainer {
     grid-template-columns: 1fr;
     align-items: center;
     gap: 2.4rem;
   }
 
-  .linkContainer{
+  .linkContainer {
     display: flex;
     flex-direction: column;
     gap: .4rem;
     padding: 3.6rem 2rem;
   }
 
-  .titleElement{
+  .titleElement {
     display: inline-block;
   }
 }
