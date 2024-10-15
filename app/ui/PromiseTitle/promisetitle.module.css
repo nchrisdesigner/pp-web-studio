@@ -3,7 +3,7 @@
   text-align: center;
   font-size: clamp(1.6rem, 1.2vi + 1.26rem, 1.8rem);
   font-weight: 600;
-  margin-top: 6rem;
+  margin-top: 4rem;
   text-wrap: pretty;
   letter-spacing: -0.02em;
 }
