@@ -41,7 +41,7 @@ const InfoSection = () => {
         </div>
 
         <p
-          className={styles.promiseTitle}>Your project deserves more than design — <span className="green bold-text">it’s a story waiting to be told.</span></p>
+          className={styles.promiseTitle}>Your project deserves more than design — <span className="yellow bold-text">it’s a story waiting to be told.</span></p>
       </div>
     </section>
   )

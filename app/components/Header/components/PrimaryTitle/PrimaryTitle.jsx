@@ -2,7 +2,6 @@
 import { Poppins } from 'next/font/google'
 import styles from './primarytitle.module.css'
 import { motion } from 'framer-motion'
-
 import localFont from 'next/font/local'
 import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 
@@ -19,7 +18,6 @@ const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin']
 })
-
 
 const textVariants = {
   hidden: {
@@ -62,7 +60,6 @@ const PrimaryTitle = () => {
             PROBLEMS
           </span>
         </span>
-
         <div className={styles.titleGrid}>
           <span className={styles.through}>THROUGH</span>
           <span className={`${myFont.className} ${styles.remarkable}`} >
@@ -77,10 +74,9 @@ const PrimaryTitle = () => {
         initial='hidden'
         animate='show'>
         <p className={`${styles.text} ${poppins.className}`}>
-          We’re a creative web design studio based in Greece, crafting beautiful and distinctive work for brands that <span className='bold-text'>dare to stand out.</span>
+          We’re a creative web design studio based in Greece, crafting beautiful and distinctive work for brands that <span className='bold-text purple'>dare to stand out.</span>
         </p>
 
-        <p style={{ letterSpacing: '0.04em', color: '#ccc' }}>Located in Greece - Available Everywhere</p>
       </motion.div>
 
       <motion.div

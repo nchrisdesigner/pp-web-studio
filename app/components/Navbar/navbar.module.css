@@ -1,0 +1,12 @@
+.logoContainer{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-top: .4rem;
+}
+
+@media screen and (width < 400px){
+  .textLogo{
+    display: none;
+  }
+}

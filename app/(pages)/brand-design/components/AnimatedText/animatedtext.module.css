@@ -4,11 +4,11 @@
   justify-content: center;
   overflow: hidden;
   view-timeline: --container;
-  min-height:100vh;
+  min-height:75vh;
   animation: changeBg forwards cubic-bezier(.78,-0.28,.28,1.15);
   animation-timeline: --container;
   animation-range-start: 5% ;
-  animation-range-end: 50%;
+  animation-range-end: 45%;
   background: hsl(241, 60%, 7%);
   color: var(--white);
 }

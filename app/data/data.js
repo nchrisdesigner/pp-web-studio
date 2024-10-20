@@ -95,7 +95,7 @@ export const services = [
   },
   {
     id: 2,
-    mainTitle: 'Brand Identity',
+    mainTitle: 'Brand Design',
     title: 'Break the Ordinary with Uniqueness',
     boldText: 'Bad branding weighing down your company?',
     desc: 'We mix design principles and our original creativity with your story to take your brand to new heights.',
@@ -417,5 +417,30 @@ export const benefitsOfBranding = [
     id: 3,
     title: 'Differentiates You from Competitors',
     text: 'Stand out in a crowded market.'
+  },
+]
+
+
+
+// Navigation - Menu Links
+
+export const navigationLinks = [
+  {
+    id: 1,
+    href: '/web-design',
+    title: 'Web Design',
+    identity: 'webDesign'
+  },
+  {
+    id: 2,
+    href: '/brand-design',
+    title: 'Brand Design',
+    identity: 'brandIdentity'
+  },
+  {
+    id: 3,
+    href: '/video-motion',
+    title: 'Video Motion',
+    identity: 'videoMotion'
   },
 ]

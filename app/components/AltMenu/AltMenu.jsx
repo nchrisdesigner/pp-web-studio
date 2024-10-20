@@ -1,39 +1,33 @@
 'use client'
 import styles from './altmenu.module.css'
-import Link from 'next/link'
 import MenuContext from '@/app/context/context'
 import { useContext } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import MenuButton from '@/app/ui/MenuButton/MenuButton'
 import PixelPerfektExplain from '@/app/ui/PixelPerfektExplain/PixelPerfektExplain'
-// import { Anton } from 'next/font/google'
 import TransitionLink from './components/TransitionLink/TransitionLink'
+import { navigationLinks } from '@/app/data/data'
 
-// const anton = Anton({
-//   weight: ['400'],
-//   subsets: ['latin'],
-// })
-
-const links = [
-  {
-    id: 1,
-    href: '/web-design',
-    title: 'Web Design',
-    identity: 'webDesign'
-  },
-  {
-    id: 2,
-    href: '/brand-identity',
-    title: 'Brand Identity',
-    identity: 'brandIdentity'
-  },
-  {
-    id: 3,
-    href: '/video-motion',
-    title: 'Video Motion',
-    identity: 'videoMotion'
-  },
-]
+// const links = [
+//   {
+//     id: 1,
+//     href: '/web-design',
+//     title: 'Web Design',
+//     identity: 'webDesign'
+//   },
+//   {
+//     id: 2,
+//     href: '/brand-design',
+//     title: 'Brand Design',
+//     identity: 'brandIdentity'
+//   },
+//   {
+//     id: 3,
+//     href: '/video-motion',
+//     title: 'Video Motion',
+//     identity: 'videoMotion'
+//   },
+// ]
 
 const AltMenu = () => {
   const { openMenu, setOpenMenu } = useContext(MenuContext);
@@ -51,13 +45,12 @@ const AltMenu = () => {
         </div>
         <div className={styles.gridContainer}>
           <nav className={styles.linkContainer}>
-            {links.map(({ id, href, title, identity }) => (
+            {navigationLinks.map(({ id, href, title, identity }) => (
               <motion.span key={id}>
                 <TransitionLink
                   href={href}
                 >
                   <motion.span className={` ${styles.outlineText} ${styles[identity]}`}>{title}</motion.span>
-                  <motion.div className={styles.absoluteBlurElement}></motion.div>
                 </TransitionLink>
               </motion.span>
             ))}

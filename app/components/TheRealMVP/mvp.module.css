@@ -1,5 +1,6 @@
 .container{
   background: var(--dark-purple);
+  background: hsl(241, 60%, 7%);
   color: var(--white);
   /* padding-top: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem);
   padding-bottom: clamp(4.32rem, 2.5617rem + 8.7913vw, 9.375rem); */

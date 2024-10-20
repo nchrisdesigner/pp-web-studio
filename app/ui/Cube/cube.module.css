@@ -49,7 +49,7 @@
   display: grid;
   place-items: center;
   color: var(--purple);
-  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: var(--white);
   text-shadow: 0 0 30px hsl(241, 60%, 60%), 0 0 10px hsl(241, 85%, 64%);
   padding: 1.6rem;

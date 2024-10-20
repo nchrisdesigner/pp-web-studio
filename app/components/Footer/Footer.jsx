@@ -20,6 +20,8 @@ const Footer = () => {
           </p>
         </div>
 
+        {/* <p style={{ letterSpacing: '0.04em', color: '#ccc' }}>Located in Greece - Available Everywhere</p> */}
+
         {/* <div className={styles.emailContainer}>
           <div >
             <p className={styles.query}>Project Queries</p>

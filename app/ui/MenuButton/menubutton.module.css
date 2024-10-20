@@ -2,7 +2,14 @@
   color: var(--white);
   font-size: 2.4rem;
   letter-spacing: 0.03em;
+  cursor: pointer;
   background: none;
   border: none;
   outline: none;
+
+  transition: all .3s ease-in-out;
+}
+
+.menuButton:hover{
+  color: var(--purple-4);
 }
