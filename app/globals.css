@@ -4,29 +4,29 @@
   --primary-title: hsl(0, 8%, 9%);
   --text-color: hsl(0, 0%, 20%);
   --white-text-color: hsl(0, 0%, 59%);
-  --black: hsl(0, 8%, 9%);
   --black: hsl(216, 12%, 8%);
   --dark-bg: hsl(210, 15%, 8%); 
+  --purple: hsl(241, 60%, 60%);
   --purple-2: hsla(241, 60%, 60%, 0.338);
   --purple-3: hsl(261, 65%, 45%);
   --purple-4: hsl(257, 100%, 74%);
   --purple-faint: hsla(241, 60%, 60%, 0.379);
   --dark-purple: hsl(262, 92%, 10%);
   --dark-purple-2 : hsl(241, 60%, 5%);
-  --purple: hsl(241, 60%, 60%);
   --purple-bg: hsla(241, 60%, 60%, 0.3);
-  --green: #10b889;
-  --green-bg: #10b88884;
+  --cyan: hsl(195, 88%, 60%);
+  --green: hsl(163, 84%, 39%);
+  --green-bg: hsla(163, 84%, 39%, 0.2);
   --yellow: hsl(47, 82%, 57%);
-  --yellow-bg: hsla(47, 82%, 57%, 0.3);
+  --yellow-bg: hsla(47, 82%, 57%, 0.2);
   --orange: hsl(21, 90%, 48%);
-  --orange-bg: hsla(21, 90%, 48%, 0.3);
+  --orange-bg: hsla(21, 90%, 48%, 0.2);
   --blue: hsl(237, 92%, 47%);
-  --blue-bg: hsla(237, 92%, 47%, 0.3);
+  --blue-bg: hsla(237, 92%, 47%, 0.2);
   --blue: hsl(237, 70%, 53%);
-  --blue-bg: hsla(237, 92%, 47%, 0.3);
+  --blue-bg: hsla(237, 92%, 47%, 0.2);
   --white: hsl(0, 0%, 100%);
-  --white-bg: hsla(0, 0%, 100%, 0.3);
+  --white-bg: hsla(0, 0%, 100%, 0.2);
   --white-faint: hsl(0, 0%, 85%);
 }
 
@@ -91,6 +91,10 @@ a{
 }
 .black{
   color: var(--black);
+}
+
+.white{
+  color: var(--white);
 }
 
 /* Tags */

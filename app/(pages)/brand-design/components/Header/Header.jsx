@@ -25,7 +25,7 @@ const Header = () => {
             opacity: 1
           }}
           transition={{
-            delay: 0.1
+            delay: 0.4
           }}
           className={styles.textContainer}>
           <h4 className={styles.secondaryTitle}>what other people say about you </h4>

@@ -8,7 +8,7 @@ const ContactButton = () => {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('nchrisdesigner@gmail.com')
+    navigator.clipboard.writeText('pixelperfektacademy@gmail.com')
     setCopied(true)
   }
 

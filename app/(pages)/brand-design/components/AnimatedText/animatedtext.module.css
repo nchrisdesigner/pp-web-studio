@@ -1,44 +1,25 @@
 .sectionContainer {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  justify-content: center; */
+  /* overflow: hidden; */
+  height:275vh;
+  padding: 6.8rem 0;
   view-timeline: --container;
-  min-height:75vh;
-  animation: changeBg forwards cubic-bezier(.78,-0.28,.28,1.15);
-  animation-timeline: --container;
-  animation-range-start: 5% ;
-  animation-range-end: 45%;
-  background: hsl(241, 60%, 7%);
-  color: var(--white);
+  background: var(--white);
+  color: var(--black);
+  position: relative!important;
 }
 
-@keyframes changeBg {
-  0%,
-  30%{
-    background: hsl(241, 60%, 7%);
-    color: var(--white);
-  }
-  100%{
-    background: var(--white);
-    color: var(--black);
-  }
-}
-
-
-.absoluteOne,
-.absoluteTwo,
-.absoluteThree{
-  position: absolute;
-  opacity: 0.05;
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: var(--white);
-   z-index: -10;
-   transform: scale(1.2);
-}
+.stickyContainer{
+  height: 80vh;
+  width: min(100%, 132rem);
+  position: sticky;
+  top: 0;
+} 
 
 .perspectiveContainer{
+  padding: 9.6rem 0;
   perspective: 1000px;
   transform-style: preserve-3d;
 }
@@ -48,7 +29,6 @@
   max-width: 20ch;
   line-height: 1;
   margin-bottom: 1rem;
-  /* color: var(--black); */
   transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
 
   animation: rotate forwards cubic-bezier(.78,-0.28,.28,1.15);
@@ -62,21 +42,21 @@
 
   animation: rotate forwards;
   animation-timeline: --container;
-  animation-range-start: 50% ;
-  animation-range-end: 75%;
+  animation-range-start: 47% ;
+  animation-range-end: 65%;
 }
 
 .titleOne{
   animation-range-start: 20% ;
-  animation-range-end: 60%;
+  animation-range-end: 55%;
 }
 .titleTwo{
   animation-range-start: 30% ;
-  animation-range-end: 70%;
+  animation-range-end: 65%;
 }
 .titleThree{
   animation-range-start: 40% ;
-  animation-range-end: 75%;
+  animation-range-end: 60%;
 }
 
 @keyframes rotate{
@@ -84,15 +64,29 @@
     transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
   }
   100%{
-
     transform: translate3d(0,0,0) rotateY(0) rotateX(0) translate(0px, 0px);
   }
 }
 
 @media screen and (width < 600px){
-  .sectionContainer {
-    min-height:80vh;
-    animation-range-start: 0 ;
-    animation-range-end: 45%;
+  .sectionContainer{
+    height:200vh;
+    animation-range-start: 10% ;
+    animation-range-end: 95%;
+  }
+  .stickyContainer{
+    height: 80vh;
+    padding: .25rem;
+  }
+
+  .title{
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (width > 1500px){
+  .title{
+    font-size: 18rem;
+    line-height: .9;
   }
 }

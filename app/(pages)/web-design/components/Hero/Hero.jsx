@@ -10,7 +10,6 @@ import { useScroll } from "framer-motion"
 import { useRef } from 'react'
 import Image from 'next/image'
 import mobile from './../../../../assets/mobile-mockup-purple.png'
-// import mobile from './../../../../assets/mobile-mockup.png'
 
 import { Anton } from 'next/font/google'
 
@@ -40,9 +39,10 @@ const Hero = () => {
             animate={{
               opacity: 1
             }}
-            transition={{
-              delay: 1
-            }}>
+            // transition={{
+            //   delay: 1
+            // }}
+            >
             <SecondaryTitle align='left' color='white'>Your Digital First Impression</SecondaryTitle>
           </motion.div>
           <motion.div
@@ -54,9 +54,9 @@ const Hero = () => {
               x: 0,
               opacity: 1
             }}
-            transition={{
-              delay: .5
-            }}
+            // transition={{
+            //   delay: .5
+            // }}
             
           >
             <h1 className={`${styles.title} ${anton.className}`}>SKYROCKET YOUR BUSINESS <span className='purple'>SUCCESS</span></h1>
@@ -70,9 +70,9 @@ const Hero = () => {
               x: 0,
               opacity: 1
             }}
-            transition={{
-              delay: .75
-            }}
+            // transition={{
+            //   delay: .75
+            // }}
           >
             <Paragraph color='white' align='left'>
               Nowadays, <span className='bold-text underline-text'>having a website is essential for any business aiming for success.</span> Think of it as a 24/7 storefront, always accessible to potential customers. With more consumers turning online for products and services, businesses without a website risk losing significant opportunities. 

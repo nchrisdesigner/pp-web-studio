@@ -2,7 +2,9 @@
 import { motion } from 'framer-motion'
 import styles from './service.module.css'
 import { useState } from 'react'
-import { GoArrowUpLeft } from "react-icons/go";
+import { GoArrowUpLeft } from "react-icons/go"
+import { BiRightArrowAlt } from "react-icons/bi"
+import Link from 'next/link';
 
 const textVariants = {
   hidden: {
@@ -30,7 +32,7 @@ const svgVariants = {
   }
 }
 
-const Card = ({ id, mainTitle, title, boldText, desc, image }) => {
+const Card = ({ id, mainTitle, title, boldText, desc, link, image }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -63,11 +65,13 @@ const Card = ({ id, mainTitle, title, boldText, desc, image }) => {
             {boldText}
           </span>
           {desc}
+          <Link className={styles.link} href={link}>Learn More <BiRightArrowAlt className={styles.miniIcon} />
+          </Link>
         </motion.p>
+
 
         <div className={styles.titleContainer}>
           <h2 className={isOpen ? 'purple-text' : 'outline-text-white'}>{mainTitle}</h2>
-
           <GoArrowUpLeft
             className={styles.icon}
             style={

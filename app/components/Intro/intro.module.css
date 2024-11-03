@@ -28,11 +28,19 @@
   margin-top: -3rem;
   color: var(--purple);
   transform: rotate(-5deg);
+  position: relative;
   /* display: inline-block;
   padding: 0 3.2rem;
 
   background: #5e5ad674;
   color: #ffffff; */
+}
+
+.circle{
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%) scaleX(1.2);
 }
 
 .miniTitleContainer{

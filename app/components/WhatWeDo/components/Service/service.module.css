@@ -6,7 +6,7 @@
 .borderElement,
 .blurElement{
   z-index: -10;
-  background-image: conic-gradient(from var(--angle), var(--purple), var(--blue), var(--purple));
+  background-image: conic-gradient(from var(--angle), var(--purple), var(--orange), var(--purple));
   width: 100%;
   height: 100%;
   position: absolute;
@@ -42,7 +42,6 @@
   grid-template-rows: subgrid;
   border: 1px solid var(--purple-faint);
   z-index: 10!important;
-  background: hsl(216, 14%, 6%); 
   background: hsl(216, 14%, 7.6%); 
 }
 
@@ -77,6 +76,21 @@
   width: 5ch;
   line-height: 1;
   font-style: italic;
+}
+
+.link{
+  color: var(--purple);
+  font-size: clamp(1.3rem, 0.8rem + 0.4vw, 1.3672rem);
+  display: block;
+  font-weight: 600;
+  margin-top: .8rem;
+  display: flex;
+  align-items: center;
+}
+
+.miniIcon{
+  transform: rotate(-45deg) translateY(1px);
+  font-size: 2rem;
 }
 
 .icon{

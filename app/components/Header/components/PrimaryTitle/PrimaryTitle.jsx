@@ -2,15 +2,15 @@
 import { Poppins } from 'next/font/google'
 import styles from './primarytitle.module.css'
 import { motion } from 'framer-motion'
-import localFont from 'next/font/local'
 import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
+import localFont from 'next/font/local'
 
-const myFont = localFont({
-  src: './Unaessthetic.ttf',
-  display: 'swap',
-})
 const myFontCondensed = localFont({
   src: './Druk-Heavy-Trial.otf',
+  display: 'swap',
+})
+const myFont = localFont({
+  src: './Unaessthetic.ttf',
   display: 'swap',
 })
 
@@ -56,6 +56,7 @@ const PrimaryTitle = () => {
       <h1 className={` ${styles.primaryTitle} ${myFontCondensed.className} `}>
         <span className='block-element'>WE SOLVE &nbsp;
           <span className='outline-text-white'>
+            {/* <SvgLine /> */}
             <Smudge />
             PROBLEMS
           </span>
@@ -101,3 +102,38 @@ const Smudge = () => {
     </svg>
   )
 }
+
+const drawVariants = {
+  hidden: {
+    pathLength: 0
+  },
+  visible: {
+    pathLength: 1,
+    transition: {
+      duration: 5
+    }
+  }
+}
+
+const SvgLine = () => (
+  <motion.svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={379}
+    height={40}
+    className={styles.smudge}
+    viewBox="0 0 379 40"
+    fill="none"
+    initial="hidden"
+    animate="visible"
+  >
+    <motion.path
+      variants={drawVariants}
+      custom={3}
+      initial="hidden"
+    animate="visible"
+      // className={styles.svgClass}
+      fill="#5E5AD6"
+      d="M376.518 10.671c-1.255-2.642-2.803-5.04-4.914-7.04-.971-.921-3.137-2.885-4.792-2.443C354.971.19 343.061.362 331.177.355c-12.023-.004-24.049.04-36.064.321a1961 1961 0 0 0-71.936 3.01c-47.927 2.87-95.666 7.639-143.262 14.168-13.3 1.829-26.605 3.806-39.938 5.308-6.464.73-12.942 1.35-19.435 1.802-3.322.227-6.648.414-9.97.641-2.538.17-8.004-.558-9.776 1.391.019.022.03.05.048.071-.95.602-.836 2.624-.514 3.861.739 2.82 2.515 5.738 5.014 7.216 2.732 1.608 6.087 1.274 9.178 1.384 3.038.112 6.074.15 9.116.101a435.717 435.717 0 0 0 18.1-.704c12.074-.71 24.08-1.77 36.105-3.05 24.045-2.563 48.094-4.977 72.199-6.84 48.198-3.718 96.423-6.218 144.752-6.738 13.567-.142 27.133-.25 40.695-.195 13.476.048 26.987.694 40.445.025 5.148-.253 1.666-9.17.578-11.463l.006.007Z"
+    />
+  </motion.svg>
+)

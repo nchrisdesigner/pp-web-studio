@@ -14,22 +14,24 @@
 
 .mainTitle{
   font-size: clamp(4.8rem, 2rem + 7vw, 9.6rem);  
+  font-size: clamp(4.8rem, 2rem + 7vw, 8rem);  
   line-height: 1;
   margin: 1rem 0;
   text-wrap: balance;
 }
 
-.mainTitle:nth-of-type(2){
+/* .mainTitle:nth-of-type(2){
   font-size: clamp(4.8rem, 2rem + 7vw, 9.6rem);
-}
+} */
 
 
 .text{
   font-size: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+  font-size: clamp(1.5rem, 0.9315rem + 0.7423vw, 1.5625rem);
   line-height: 1.5;
   text-wrap: pretty;
   margin: 0 auto 1.6rem auto;
-  width: min(90%, 70ch);
+  width: min(100%, 75ch);
 }
 
 .animatedTitle{
@@ -52,8 +54,9 @@
 
 @media screen and (width < 480px){
   .text{
-    width: min(90%, 70ch);
-    text-wrap: balance;
+    /* width: min(100%, 75ch); */
+    width: 100%;
+    text-wrap: pretty;
   }
 }
 

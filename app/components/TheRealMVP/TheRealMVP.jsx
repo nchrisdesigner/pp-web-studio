@@ -7,6 +7,7 @@ import { useState } from 'react'
 import Step from './components/Step/Step'
 import StepImage from './components/StepImage/StepImage'
 import { steps } from '@/app/data/data'
+import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 
 const anton = Anton({
   weight: ['400'],

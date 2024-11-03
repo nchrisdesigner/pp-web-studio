@@ -30,10 +30,12 @@ const titleVariants = {
 
 const containerVariants = {
   hidden: {
-    opacity: 0
+    opacity: 0,
+    y: 20
   },
   visible: {
-    opacity: 1
+    opacity: 1,
+    y: 0
   }
 }
 
@@ -45,6 +47,20 @@ const smudgeVariants = {
     opacity: 1
   }
 }
+
+const circleVariants = {
+  hidden: {
+    pathLength: 0,     // Start with the path invisible
+  },
+  visible: {
+    pathLength: 1,     // Animate to full path length
+    transition: {
+      delay: 0.5,      // Adjust this for timing
+      duration: 2,     // Controls the drawing speed
+      ease: "easeInOut",
+    },
+  },
+};
 
 const Intro = () => {
 
@@ -75,9 +91,9 @@ const Intro = () => {
           variants={titleVariants}
           initial='hidden'
           animate={isInView ? 'visible' : 'hidden'}
-          transition={{
-            delay: .4
-          }}
+          // transition={{
+          //   delay: .4
+          // }}
           className={`${anton.className} ${styles.title}`}>
           <span style={{ position: 'relative' }}>
             <svg
@@ -111,10 +127,10 @@ const Intro = () => {
         variants={containerVariants}
         initial='hidden'
         animate={isInView ? 'visible' : 'hidden'}
-        transition={{
-          delay: 2.2,
-          duration: 0.5
-        }}
+      // transition={{
+      //   delay: 2.2,
+      //   duration: 0.5
+      // }}
       >
 
         <h3 className={styles.secondaryTitle}>
@@ -138,3 +154,4 @@ const Intro = () => {
 }
 
 export default Intro
+

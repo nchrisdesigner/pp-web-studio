@@ -11,20 +11,15 @@ const poppins = Poppins({
   subsets: ['latin']
 })
 
-// import localFont from 'next/font/local'
-
-// const myFont = localFont({
-//   src: './fonts/Unaessthetic.ttf',
-//   // display: 'swap'
-// })
-
 export const metadata = {
-  title: 'Pixel Perfekt - Web Design Studio',
-  description: 'Welcome to Pixel Perfekt - Your Web Design Experts in Thessaloniki, Greece. Elevate your brand with with our client-focused approach, innovative design, and pixel-perfect precision. Discover personalized web design, development, logo, and video motion services crafted for your unique needs.Opt for Pixel Perfekt for a digital adventure that exceeds pixel perfection.',
+  title: 'PixelPerfekt Web Design Studio | Creative Digital Experts',
+  description: 'Welcome to PixelPerfekt, your trusted web design studio in Thessaloniki, Greece. Experience custom web design, development, brand identity, and animation services crafted to elevate your brand. With a client-first approach and unmatched attention to detail, PixelPerfekt brings your digital vision to life with precision and creativity.',
+  alternates: {
+    canonical: 'https://www.pixelperfekt.gr/',
+  },
 }
 
 export default function RootLayout({ children }) {
-
 
   return (
     <html lang="en">

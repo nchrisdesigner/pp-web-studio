@@ -4,6 +4,7 @@ import { FaCheck } from "react-icons/fa";
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
 import { brandIdentityPricing } from '@/app/data/data'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle';
 
 const Pricing = () => {
   return (
@@ -46,6 +47,12 @@ const Pricing = () => {
             })}
         </div>
       </div>
+
+      <div className={styles.animatePromiseTitle}>
+          <PromiseTitle color='purple'>
+            Ready to Build Your Brand?
+          </PromiseTitle>
+        </div>
     </section>
   )
 }

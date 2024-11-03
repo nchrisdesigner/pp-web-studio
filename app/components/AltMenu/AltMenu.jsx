@@ -8,29 +8,8 @@ import PixelPerfektExplain from '@/app/ui/PixelPerfektExplain/PixelPerfektExplai
 import TransitionLink from './components/TransitionLink/TransitionLink'
 import { navigationLinks } from '@/app/data/data'
 
-// const links = [
-//   {
-//     id: 1,
-//     href: '/web-design',
-//     title: 'Web Design',
-//     identity: 'webDesign'
-//   },
-//   {
-//     id: 2,
-//     href: '/brand-design',
-//     title: 'Brand Design',
-//     identity: 'brandIdentity'
-//   },
-//   {
-//     id: 3,
-//     href: '/video-motion',
-//     title: 'Video Motion',
-//     identity: 'videoMotion'
-//   },
-// ]
-
 const AltMenu = () => {
-  const { openMenu, setOpenMenu } = useContext(MenuContext);
+  const { setOpenMenu } = useContext(MenuContext);
 
   return (
 

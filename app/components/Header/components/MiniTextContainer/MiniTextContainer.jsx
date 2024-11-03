@@ -11,8 +11,8 @@ const containerVariants = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.2,
-      staggerChildren: 0.2
+      duration: 0.25,
+      staggerChildren: 0.25
     }
   }
 }
@@ -24,7 +24,7 @@ const itemVariants = {
   },
   show: { 
     opacity: 1,
-    y:0
+    y:0,
   }
 }
 
@@ -39,7 +39,7 @@ const MiniTextContainer = () => {
         return (
           <motion.div key={id} variants={itemVariants} className={styles.item}>
             <h3 className={styles.title}>
-              {/* <Image src={icon} alt='icon' /> */}
+              <Image src={icon} alt='icon' />
               {title}
             </h3>
             <p className={styles.text}>{desc}</p>
