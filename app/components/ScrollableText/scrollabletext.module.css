@@ -1,0 +1,64 @@
+.sectionContainer{
+  /* min-height: 100dvh; */
+  view-timeline: --section-animated;
+}
+
+.containerLeft,
+.containerRight{
+  margin: 1.6rem 0;
+}
+.containerLeft{
+  text-align: left;
+}
+.containerRight{
+  text-align: right;
+}
+
+.overflowContainer{
+  overflow: hidden;
+}
+
+.containerLeft h2,
+.containerRight h2{
+  font-size: clamp(4.5rem, 1.3098rem + 15.7vw, 15.8rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  transform: translateY(25rem);
+}
+
+.containerLeft h2,
+.containerRight h2{
+  animation: animateTitle linear  both;
+  animation-timeline: --section-animated;
+  animation-range-start: 20%;
+  animation-range-end: 48%;
+}
+
+
+@keyframes animateTitle{
+  from{
+    transform: translateY(25rem)
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+.containerLeft p,
+.containerRight p{
+  font-size: clamp(1.6rem, 1.2615rem + 0.8924vw, 1.8rem);
+  transform: translateY(4rem);
+  animation: animateText linear  both;
+  animation-timeline: --section-animated;
+  animation-range-start: 40%;
+  animation-range-end: 50%;
+}
+
+@keyframes animateText{
+  from{
+    transform: translateY(4rem);
+  }
+  to{
+    transform: translateY(0);
+  }
+}

@@ -1,23 +1,22 @@
-import AnimateTextSection from "./components/AnimateTextSection/AnimateTextSection";
-import Contact from "./components/Contact/Contact";
-import Header from "./components/Header/Header";
-import Intro from "./components/Intro/Intro";
-import Mountain from "./components/Mountain/Mountain";
-import WhatWeDid from "./components/WhatWeDid/WhatWeDid";
-import WhatWeDo from "./components/WhatWeDo/WhatWeDo";
-import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
+import Contact from "./components/Contact/Contact"
+import Header from "./components/Header/Header"
+import Intro from "./components/Intro/Intro"
+import ScrollableText from "./components/ScrollableText/ScrollableText"
+import WhatWeDid from "./components/WhatWeDid/WhatWeDid"
+import WhatWeDo from "./components/WhatWeDo/WhatWeDo"
+import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
+import { ReactLenis } from 'lenis/react'
 
 export default function Home() {
   return (
-    <>
+    <ReactLenis root>
       <Header />
       <Intro />
       <WhoWeAre />
-      <Mountain />
       <WhatWeDo />
-      <AnimateTextSection />
+      <ScrollableText />
       <WhatWeDid />
       <Contact />
-    </>
+    </ReactLenis>
   );
 }

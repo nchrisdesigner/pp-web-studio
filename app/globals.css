@@ -1,6 +1,14 @@
 :root{
   font-size: 62.5%;
 
+    /* Layout */
+    --min-width: min(136rem, 100%);
+    --padding-lg: 9.6rem;
+    --padding-md: 7.2rem;
+    --padding-sm: 4.8rem;
+    --padding-xs: 2.4rem;
+    --padding-xx: 1.2rem;
+
   --primary-title: hsl(0, 8%, 9%);
   --text-color: hsl(0, 0%, 20%);
   --white-text-color: hsl(0, 0%, 59%);
@@ -53,6 +61,22 @@ a{
   font-size: 1.6rem;
   color: var(--black);
 }
+
+.section{
+  width: var(--min-width);
+  margin-inline: auto;
+}
+
+.padding{
+  padding: var(--padding-lg) var(--padding-sm);
+}
+
+@media screen and (width < 500px){
+  .padding{
+    padding: var(--padding-md) var(--padding-xx);
+  }
+}
+
 
 .container{
   width: min(136rem, 100%);
