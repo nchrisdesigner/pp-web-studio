@@ -34,7 +34,6 @@
   animation-range-end: 48%;
 }
 
-
 @keyframes animateTitle{
   from{
     transform: translateY(25rem)
