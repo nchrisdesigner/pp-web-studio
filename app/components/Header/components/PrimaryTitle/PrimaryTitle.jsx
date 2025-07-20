@@ -81,7 +81,7 @@ const PrimaryTitle = () => {
         initial='hidden'
         animate='show'>
         <p className={`${styles.text} ${poppins.className}`}>
-          We’re a <Letter textSize="paragraph">K</Letter>reative web design studio based in Greece, <Letter textSize="paragraph">K</Letter>rafting beautiful and distinctive work for brands that <span className='bold-text purple'>dare to stand out.</span>
+          We’re a <Letter textSize="paragraph">K</Letter>reative web design studio based in Greece, &nbsp; <Letter textSize="paragraph">K</Letter>rafting beautiful and distinctive work for brands that <span className='bold-text purple'>dare to stand out.</span>
         </p>
 
       </motion.div>
