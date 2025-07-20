@@ -1,0 +1,315 @@
+.hovermeTextContainer{
+  text-align:center;
+  margin: 0 auto;
+}
+
+.hovermeText{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.miniTitle{
+  text-align: center;
+  margin: 3.2rem auto 1.6rem auto;
+  font-size: clamp(1.4rem , .8rem + 2vw, 1.6rem);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  background: #000;
+  color: white;
+  border: solid 1.5px var(--purple);
+  padding: 1rem 3rem;
+  font-weight: 600;
+  transform: scale(0.89) translateZ(0);
+  position: relative;
+  margin-top: 2rem;
+}
+
+
+
+
+.button:hover {
+  transform: scale(.9) translateZ(0);
+  transform-origin: center;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:not(:hover) .hide,
+.button:not(:hover) .icon::before,
+.button:not(:hover) .icon::after {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.4);
+}
+.hide {
+  transition: all 0.2s ease;
+}
+.button:active {
+  background: linear-gradient(
+    90deg,rgb(255, 255, 255)
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  border-color: #313ed7;
+}
+.icon {
+  position: relative;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -50%);
+  background-color: var(--purple);
+  border-radius: 100%;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-19%, -60%);
+  width: 100px;
+  height: 33px;
+  background-color: transparent;
+  border-radius: 12px 22px 2px 2px;
+  border-right: solid 2px var(--purple);
+  border-top: solid 2px transparent;
+}
+.icon .textIcon {
+  color: var(--purple);
+  position: absolute;
+  font-size: 12px;
+
+  left: -97px;
+  top: -38px;
+}
+.icon svg {
+  width: 20px;
+  height: 20px;
+  border: solid 1.5px transparent;
+  display: flex;
+}
+.button:hover .icon svg {
+  border: solid 1.5px var(--purple);
+}
+.paddingLeft {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--purple);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paddingLeft:before {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: var(--purple);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paddingLeft:after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: var(--purple);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paddingLeftLine {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: var(--purple);
+  left: -24px;
+  top: 11px;
+  transform: rotate(-50deg);
+}
+.paddingLeftLine::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -50%);
+  background-color: var(--purple);
+  border-radius: 100%;
+}
+.paddingLeftText {
+  color: var(--purple);
+  font-size: 12px;
+  position: absolute;
+  white-space: nowrap;
+  transform: rotate(50deg);
+  bottom: 30px;
+  left: -119px;
+}
+
+.paddingRight {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--purple);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paddingRight:before {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: var(--purple);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paddingRight:after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: var(--purple);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paddingRightLine {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: var(--purple);
+  right: -24px;
+  top: 11px;
+  transform: rotate(50deg);
+}
+.paddingRightLine::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -50%);
+  background-color: var(--purple);
+  border-radius: 100%;
+}
+.paddingRightText {
+  color: var(--purple);
+  font-size: 12px;
+  position: absolute;
+  white-space: nowrap;
+  transform: rotate(-50deg);
+  bottom: 34px;
+  left: 21px;
+}
+.background {
+  position: absolute;
+}
+.background::before {
+  content: "";
+  position: absolute;
+  right: 27px;
+  bottom: -70px;
+  width: 100px;
+  height: 53px;
+  background-color: transparent;
+  border-radius: 0px 0px 22px 22px;
+  border-right: solid 2px var(--purple);
+  border-bottom: solid 2px transparent;
+}
+.background::after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  bottom: -20px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--purple);
+  border-radius: 100%;
+}
+.backgroundText {
+  position: absolute;
+  color: var(--purple);
+  font-size: 12px;
+  bottom: -75px;
+  left: -105px;
+}
+.border {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.border:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: solid 2px var(--purple);
+  position: absolute;
+  right: 0%;
+  top: 0;
+  transform: translate(50%, -50%);
+  border-radius: 100%;
+}
+.border:after {
+  content: "";
+  width: 2px;
+  height: 25px;
+  background-color: var(--purple);
+  position: absolute;
+  right: -19px;
+  top: -13px;
+  transform: translate(50%, -50%) rotate(60deg);
+}
+.border .borderText {
+  position: absolute;
+  color: var(--purple);
+  font-size: 12px;
+  right: -132px;
+  top: -30px;
+  white-space: nowrap;
+}
+
+
+.button {
+  will-change: transform;
+}
+.icon,
+.paddingLeft,
+.paddingRight,
+.background {
+  will-change: transform;
+}

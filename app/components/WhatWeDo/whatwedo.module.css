@@ -1,9 +1,6 @@
 .container{
   padding: 0 2rem 12rem 2rem;
   background: var(--dark-bg);
-  background: var(--dark-bg);
-
-  /* background: var(--dark-purple); */
 }
 
 .services {

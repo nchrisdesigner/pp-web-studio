@@ -1,3 +1,4 @@
+import Letter from '@/app/ui/Letter/Letter'
 import styles from './footer.module.css'
 import { Anton } from 'next/font/google'
 
@@ -16,7 +17,7 @@ const Footer = () => {
 
         <div className={styles.textContainer}>
           <p>
-            Every pixel we place is a step towards <span className="bold-text"> your success</span>. Let's create a masterpiece together.
+            Every pixel we place is a step towards <span className="bold-text"> your success</span>. Let's <Letter textSize="paragraph">k</Letter>reate a masterpiece together.
           </p>
         </div>
 
