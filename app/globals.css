@@ -135,29 +135,38 @@ a{
   background: var(--purple-bg)
 }
   
-.outline-text{
+/* .outline-text{
   color: transparent;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: var(--black);
    position: relative;
    display: inline-block;
+} */
+
+.faint-text{
+  @starting-style{
+    opacity:1;
+  }
+  color: #ffffff10;
+  position: relative;
+   display: inline-block;
 }
 
-.purple-text{
+/* .purple-text{
   color: transparent;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: var(--purple);
    position: relative;
    display: inline-block;
-}
+} */
 
-.outline-text-white{
+/* .outline-text-white{
   color: transparent;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: var(--white);
    position: relative;
    display: inline-block;
-}
+} */
 
 .bold-text{
   font-weight: 700;

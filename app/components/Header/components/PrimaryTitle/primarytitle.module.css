@@ -16,6 +16,7 @@
   font-size: clamp(8rem, 5rem + 4.5615vw, 12rem);
   line-height: 1;
   color: var(--white);
+  letter-spacing: 0.03em;
 }
 
 .remarkable{

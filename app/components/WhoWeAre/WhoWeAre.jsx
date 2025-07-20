@@ -5,6 +5,7 @@ import { useInView, motion } from 'framer-motion'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import PixelPerfektExplain from '@/app/ui/PixelPerfektExplain/PixelPerfektExplain'
 import { Anton } from 'next/font/google'
+import Letter from '@/app/ui/Letter/Letter'
 
 const anton = Anton({
   weight: ['400'],
@@ -50,7 +51,7 @@ const WhoWeAre = () => {
           </motion.div>
 
           <h2 className={`${anton.className} ${styles.title}`}>
-            CREATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS
+            <Letter textSize="title">K</Letter>REATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS
           </h2>
           <PixelPerfektExplain />
 

@@ -1,3 +1,4 @@
+import Letter from '@/app/ui/Letter/Letter'
 import styles from './scrollabletext.module.css'
 import { Anton } from "next/font/google"
 
@@ -15,7 +16,7 @@ const ScrollableText = () => {
           <h2 className={anton.className}>IF IT'S</h2>
         </div>
         <div className={styles.overflowContainer}>
-          <h2 className={anton.className}>SCROLLABLE</h2>
+          <h2 className={anton.className}>S<Letter>K</Letter>ROLLABLE</h2>
         </div>
         <div className={styles.overflowContainer}>
           <p>Built to be seen and remembered.</p>

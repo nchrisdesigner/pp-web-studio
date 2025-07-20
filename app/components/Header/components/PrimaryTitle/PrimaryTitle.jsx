@@ -1,9 +1,10 @@
 'use client'
-import { Poppins } from 'next/font/google'
+import { Poppins,Anton } from 'next/font/google'
 import styles from './primarytitle.module.css'
 import { motion } from 'framer-motion'
 import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 import localFont from 'next/font/local'
+import Letter from '@/app/ui/Letter/Letter'
 
 const myFontCondensed = localFont({
   src: './Druk-Heavy-Trial.otf',
@@ -16,6 +17,10 @@ const myFont = localFont({
 
 const poppins = Poppins({
   weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin']
+})
+const anton = Anton({
+  weight: ['400'],
   subsets: ['latin']
 })
 
@@ -54,8 +59,9 @@ const PrimaryTitle = () => {
   return (
     <div className={styles.container}>
       <h1 className={` ${styles.primaryTitle} ${myFontCondensed.className} `}>
+      {/* <h1 className={` ${styles.primaryTitle} ${anton.className} `}> */}
         <span className='block-element'>WE SOLVE &nbsp;
-          <span className='outline-text-white'>
+          <span className='faint-text'>
             {/* <SvgLine /> */}
             <Smudge />
             PROBLEMS
@@ -75,7 +81,7 @@ const PrimaryTitle = () => {
         initial='hidden'
         animate='show'>
         <p className={`${styles.text} ${poppins.className}`}>
-          We’re a creative web design studio based in Greece, crafting beautiful and distinctive work for brands that <span className='bold-text purple'>dare to stand out.</span>
+          We’re a <Letter textSize="paragraph">K</Letter>reative web design studio based in Greece, <Letter textSize="paragraph">K</Letter>rafting beautiful and distinctive work for brands that <span className='bold-text purple'>dare to stand out.</span>
         </p>
 
       </motion.div>
