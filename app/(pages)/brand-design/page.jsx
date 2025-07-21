@@ -3,6 +3,8 @@ import Pricing from './components/Pricing/Pricing'
 import TellYourStory from './components/TellYourStory/TellYourStory'
 import AnimatedText from './components/AnimatedText/AnimatedText'
 import TheRealMVP from '@/app/components/TheRealMVP/TheRealMVP'
+import AnimatedSection from './components/AnimatedSection/AnimatedSection'
+import RotatingSection from './components/RotatingSection/RotatingSection'
 
 
 export const metadata = {
@@ -17,7 +19,8 @@ const VideoMotionPage = () => {
       <TellYourStory />
       <TheRealMVP />
       <Pricing />
-      <AnimatedText />
+      <AnimatedSection />
+      {/* <RotatingSection /> */}
     </>
   )
 }

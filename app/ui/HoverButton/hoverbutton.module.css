@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 14px;
+  font-size: 1.6rem;
   background: linear-gradient(
     90deg,
     rgba(77, 54, 208, 1) 0%,
@@ -37,7 +37,7 @@
   );
   background: #000;
   color: white;
-  border: solid 1.5px var(--purple);
+  border: solid 2px var(--purple);
   padding: 1rem 3rem;
   font-weight: 600;
   transform: scale(0.89) translateZ(0);

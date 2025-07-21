@@ -1,5 +1,6 @@
 .sectionContainer{
   padding: 12.8rem 1.6rem;
+    background: var(--white);
   view-timeline: --container;
 }
 

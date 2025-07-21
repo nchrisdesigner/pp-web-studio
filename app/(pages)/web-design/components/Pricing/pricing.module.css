@@ -1,6 +1,7 @@
 .pricingSection{
   padding-top: 9.6rem;
   padding-bottom: 12.6rem;
+    background: var(--white);
 }
 
 .titleContainer{

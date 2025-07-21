@@ -4,6 +4,7 @@
   min-height: 80vh;
   position: relative;
   overflow: hidden;
+  background: var(--white);
   view-timeline: --section-container;
   /* animation: changeBg ease-in-out forwards; 
   animation-timeline: --section-container;

@@ -1,0 +1,92 @@
+.sectionContainer {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* overflow: hidden; */
+  height:275vh;
+  padding: 6.8rem 0;
+  view-timeline: --container;
+  background: var(--white);
+  color: var(--black);
+  position: relative!important;
+}
+
+.stickyContainer{
+  height: 80vh;
+  width: min(100%, 132rem);
+  position: sticky;
+  top: 0;
+} 
+
+.perspectiveContainer{
+  padding: 9.6rem 0;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.title{
+  font-size: clamp(4.8rem, 2rem + 7vw, 16.8rem);
+  max-width: 20ch;
+  line-height: 1;
+  margin-bottom: 1rem;
+  transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
+
+  animation: rotate forwards cubic-bezier(.78,-0.28,.28,1.15);
+  animation-timeline: --container;
+}
+
+.text{
+  font-size: 1.6rem;
+  font-weight: 600;
+  transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
+
+  animation: rotate forwards;
+  animation-timeline: --container;
+  animation-range-start: 47% ;
+  animation-range-end: 65%;
+}
+
+.titleOne{
+  animation-range-start: 20% ;
+  animation-range-end: 55%;
+}
+.titleTwo{
+  animation-range-start: 30% ;
+  animation-range-end: 65%;
+}
+.titleThree{
+  animation-range-start: 40% ;
+  animation-range-end: 60%;
+}
+
+@keyframes rotate{
+  0%{
+    transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
+  }
+  100%{
+    transform: translate3d(0,0,0) rotateY(0) rotateX(0) translate(0px, 0px);
+  }
+}
+
+@media screen and (width < 600px){
+  .sectionContainer{
+    height:200vh;
+    animation-range-start: 10% ;
+    animation-range-end: 95%;
+  }
+  .stickyContainer{
+    height: 80vh;
+    padding: .25rem;
+  }
+
+  .title{
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (width > 1500px){
+  .title{
+    font-size: 18rem;
+    line-height: .9;
+  }
+}

@@ -1,3 +1,7 @@
+.sectionContainer{
+    background: var(--white);
+}
+
 .pricingContainer{
   width: min(100%, 84rem);
   margin: 4.8rem auto 9.6rem auto;

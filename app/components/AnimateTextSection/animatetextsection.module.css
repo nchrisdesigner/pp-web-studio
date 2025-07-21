@@ -1,5 +1,6 @@
 .sectionContainer{
   view-timeline: --section-container;
+    background: var(--white);
 }
 
 .containerLeft{
