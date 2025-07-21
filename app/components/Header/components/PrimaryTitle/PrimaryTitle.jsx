@@ -70,7 +70,7 @@ const PrimaryTitle = () => {
         <div className={styles.titleGrid}>
           <span className={styles.through}>THROUGH</span>
           <span className={`${myFont.className} ${styles.remarkable}`} >
-            REMARKABLE
+            PIXELPERFEKT
           </span>
           <span className={styles.design}>DESIGN</span>
         </div>
