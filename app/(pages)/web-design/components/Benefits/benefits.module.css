@@ -1,0 +1,56 @@
+.sectionContainer {
+  background: #111;
+  position: relative;
+}
+
+.benefitsContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  gap: 2.4rem;
+}
+
+
+.textContainer {
+  position: relative;
+  margin-top: 2.4rem;
+}
+
+.stickyTitle {
+  position: sticky;
+  top: 7.2rem;
+}
+
+.textContainer h2 {
+  font-size: 5.6rem;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.textContainer h3 {
+  color: var(--purple);
+  letter-spacing: 0.24em;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.textContainer p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+
+@media screen and (width < 760px) {
+  .benefitsContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    height: 150vh;
+  }
+
+  .stickyTitle {
+    position: relative;
+    top: 0;
+  }
+}

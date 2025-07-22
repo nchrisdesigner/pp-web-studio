@@ -8,6 +8,7 @@ import { BsCameraVideo } from "react-icons/bs"
 import { PiDroneFill } from "react-icons/pi"
 import { MdOutlineAnimation } from "react-icons/md"
 
+
 import dream from '@/app/assets/mini-icons/dream.png'
 import design from '@/app/assets/mini-icons/design.png'
 import show from '@/app/assets/mini-icons/show.png'
@@ -30,6 +31,7 @@ import wodshop from '@/app/assets/projects/wodshop-logo.png'
 import jtr from '@/app/assets/projects/jtr-logo.png'
 import rway from '@/app/assets/projects/rway-logo.png'
 import sys from '@/app/assets/projects/sys-logo.png'
+import Letter from "../ui/Letter/Letter"
 
 // Home Page
 export const miniText = [
@@ -390,17 +392,18 @@ export const videoMotionPricing = [
 export const principles = [
   {
     id: 1,
-    title: 'Co-Creation Approach',
+    title: 'Ko-Kreation Approach',
     text: 'Your dreams are at the core of what we do. We listen intently to your ideas, ensuring that your vision guides every step of our creative process.'
   },
   {
     id: 2,
-    title: 'Precision in Every Pixel',
+    // title: 'Precision in Every Pixel',
+    title: 'Klear and Konsistent',
     text: 'Every detail matters. We meticulously design every pixel to achieve your goals with the precision your brand deserves.'
   },
   {
     id: 3,
-    title: 'Future-Proof Creativity',
+    title: 'Future-Proof Kreativity',
     text: 'We design with an eye on the future. Our designs not only meet today’s standards but also anticipate tomorrow’s trends.'
   },
 ]

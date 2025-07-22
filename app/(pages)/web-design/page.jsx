@@ -1,3 +1,4 @@
+import Benefits from './components/Benefits/Benefits'
 import Features from './components/Features/Features'
 import Hero from './components/Hero/Hero'
 import Intro from './components/Intro/Intro'
@@ -14,6 +15,7 @@ const WebDesignPage = () => {
       <Hero />
       <Intro />
       <Features />
+      <Benefits />
       <Pricing />
     </>
   )

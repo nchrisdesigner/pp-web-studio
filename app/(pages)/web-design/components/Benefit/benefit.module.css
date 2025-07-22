@@ -1,0 +1,42 @@
+.lineSection{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 18fr 2fr 80fr;
+  gap: 2.4rem;
+  padding: 3vw;
+  border-bottom:1px dashed var(--purple);
+}
+
+.lineHolder{
+  width: .5rem;
+  height: 20rem;
+  background: #222;
+  overflow: hidden;
+}
+
+.line{
+  width: 100%;
+  height: 100%;
+  background: var(--purple);
+}
+
+.number{
+  color: var(--white);
+  font-size: clamp(7.2rem, 6.4435rem + 3.7826vw, 9.375rem);
+  font-weight: 800;
+}
+
+.titleContainer{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.titleContainer h4{
+  font-size: clamp(1.5rem, 1.2609rem + 1.1957vw, 2.7344rem);
+}
+
+.titleContainer p{
+  font-size: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
+}

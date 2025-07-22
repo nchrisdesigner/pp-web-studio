@@ -68,7 +68,7 @@ const AnimatedText = ({children}) => {
       trigger: containerRef.current,
       start: "top 50%",
       end: "bottom 30%",
-      markers: true,
+      // markers: true,
       // scrub:1,
       toggleActions: "play none none reverse",
       animation: createAnimation(),
