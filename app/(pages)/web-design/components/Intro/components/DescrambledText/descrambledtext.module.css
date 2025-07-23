@@ -1,0 +1,35 @@
+.descrambleText{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 1.6rem;
+}
+
+
+.descrambleText h2 {
+	visibility:hidden;
+	padding:0;
+	font-size: clamp(4rem, 2rem + 7vw, 9.6rem);   
+	/* line-height:0.75; */
+  line-height: 1.05;
+	display:flex;
+  align-items: center;
+  overflow:hidden;
+  letter-spacing: 0.02em;
+	/* padding-bottom:0.5vw; */
+  text-wrap: balance;
+}
+
+.descrambleText h2 div{
+  position: relative;
+	display:inline-block;
+}
+
+.descrambleText h2 div::before {
+	position:absolute;
+	top:0;
+	left:0;
+	content:attr(data-char);
+	transform:translateY(-100%);
+}

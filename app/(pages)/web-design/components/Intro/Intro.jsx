@@ -1,8 +1,9 @@
+'use client'
 import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 import styles from './intro.module.css'
-
-import { Anton } from 'next/font/google'
 import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
+import { Anton } from 'next/font/google'
+import DescrambledText from './components/DescrambledText/DescrambledText'
 
 const anton = Anton({
   weight: ['400'],
@@ -10,19 +11,18 @@ const anton = Anton({
 })
 
 const Intro = () => {
+
   return (
     <section className={`${styles.sectionContainer}`}>
       <div className="container">
 
-
         <div className={styles.gridContainer}>
           <div>
             <SecondaryTitle align='center'>NO WEBSITE, NO VISIBILITY</SecondaryTitle>
-            {/* <Title>
-          YOUR CUSTOMERS ARE ONLINE.
-          </Title> */}
-            <h2 className={`${styles.mainTitle} ${anton.className}`}>YOUR CUSTOMERS <br /> ARE ONLINE.</h2>
-            <h2 style={{ color: 'var(--purple' }} className={`${styles.mainTitle} ${anton.className}`}>IS YOUR BUSINESS?</h2>
+            
+            <DescrambledText />
+
+            <h2 className={`${styles.mainTitle} ${anton.className}`}>IS YOUR BUSINESS?</h2>
           </div>
 
           <div>

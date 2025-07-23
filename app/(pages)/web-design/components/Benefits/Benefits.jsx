@@ -23,12 +23,6 @@ const anton = Anton({
 })
 
 
-const steps = [
-  { number: 1, text: "Lorem ipsum dolor sit amet..." },
-  { number: 2, text: "Lorem ipsum dolor sit amet..." },
-  { number: 3, text: "Lorem ipsum dolor sit amet..." }
-]
-
 const Benefits = () => {
 
   const containerRef = useRef()
@@ -49,9 +43,6 @@ const Benefits = () => {
             </div>
           </div>
 
-
-
-
           <div className={styles.lineSections}>
             {principles.map((step, index) => {
               return (
@@ -59,13 +50,7 @@ const Benefits = () => {
               )
             })}
 
-
-
-
           </div>
-
-
-
         </div>
       </div>
     </section>
