@@ -120,8 +120,9 @@ export const projects = [
   {
     id: 1,
     title: 'Smart Consulting',
-    subtitle: "A complete digital makeover",
-    desc: 'SmartConsulting, a startup specializing in tax and accounting services, faced challenges due to its minimal online presence. We stepped in to provide a full digital overhaul: designing a sleek, industry-standard website, creating a distinctive brand identity, and producing an engaging video. This transformation has set SmartConsulting on a path to growth.',
+    subtitle: "A fresh startup with almost no online presence",
+    // desc: 'SmartConsulting, a startup specializing in tax and accounting services, faced challenges due to its minimal online presence. We stepped in to provide a full digital overhaul: designing a sleek, industry-standard website, creating a distinctive brand identity, and producing an engaging video. This transformation has set SmartConsulting on a path to growth.',
+    desc: 'We gave them the full works — a clean, professional website, a bold new brand, and a sharp intro video that actually holds attention. Now? They\'re looking like the experts they are — and growing fast.',
     url: 'https://smartconsulting.gr/',
     logo: smartConsulting,
     tags: [
@@ -133,9 +134,11 @@ export const projects = [
   {
     id: 2,
     title: 'Kostaschris Videography',
-    subtitle: "Showcasing high-tech storytelling through tradition",
+    // subtitle: "Showcasing high-tech storytelling through tradition",
+    subtitle: "No time for a shoot? No problem.",
     // desc: 'Our primary focus in this project was designing a stunning website to showcase their exceptional videography services using state-of-the-art tools such as drones and high-end cameras, blending tradition with modern innovation in a special way.',
-    desc: 'With no time for a photoshoot, we used AI and MidJourney to create high-quality images for wedding videographer Kostas Chris website. The result was a stunning site that seamlessly showcased his blend of traditional storytelling and cutting-edge technology, proving that innovation can overcome any obstacle, even under tight deadlines.',
+    desc: 'We used AI and MidJourney to craft striking visuals for his new site — bringing his blend of tradition and tech to life without missing a beat. The result? A standout portfolio that looks as sharp as his storytelling.',
+    // desc: 'With no time for a photoshoot, we used AI and MidJourney to create high-quality images for wedding videographer Kostas Chris website. The result was a stunning site that seamlessly showcased his blend of traditional storytelling and cutting-edge technology, proving that innovation can overcome any obstacle, even under tight deadlines.',
     url: 'https://kostaschris.gr/',
     logo: kostaschris,
     tags: [
@@ -160,7 +163,7 @@ export const projects = [
     title: 'Wodshop',
     subtitle: "Enhancing brand and e-commerce",
     // desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo. Not only did this change enable them to better place  themselves as a brand but it also optimized their e-commerce thus  placing them in a position for more success in an increasingly  competitive sports nutrition market. This transformation has set WodShop up for greater success in the competitive world of sports nutrition. This transformation has set WodShop up for greater success in the competitive world of sports nutrition.',
-    desc: 'WodShop, specializing in sports nutrition supplements,  entrusted us with redesigning their website and their logo to elevate their presence and enhance their online sales. We redesigned their website and logo, creating dynamic identity that not only positioned them more strongly in the market but also optimized their e-commerce platform.',
+    desc: 'A bold brand in sports nutrition — but their online game needed a lift. We gave their logo a fresh edge and rebuilt their site to sell smarter and look sharper. Stronger brand. Smoother shop. Bigger results.',
     url: 'https://wodshop.eu/',
     logo: wodshop,
     tags: [
@@ -173,7 +176,7 @@ export const projects = [
     id: 4,
     title: 'Supercharge Your Skills',
     subtitle: "Launching with a Bold New Logo",
-    desc: 'For "Supercharge Your Skills," an emerging e-learning platform offering courses in web design, development, and graphic design, we crafted a distinctive logo to mark their entry into the professional world. This foundational design not only establishes their brand identity but also sets the stage for their growth in the online education space.',
+    desc: 'A new e-learning platform ready to make waves. We created a bold logo that sets them apart and gives their brand a strong start — the perfect launchpad for growth in online education.',
     url: '',
     logo: sys,
     tags: [
@@ -184,7 +187,8 @@ export const projects = [
     id: 5,
     title: 'Join the Revolution',
     subtitle: "Building a Professional Identity for JTR",
-    desc: 'JTR, a well-known gym, was thriving on social media but lacked a dedicated website. We stepped in to complete their professional identity by creating a robust online presence. This new website was the missing piece in order to create a fully profesional business identity.',
+    desc: 'JTR, A gym killing it on social media but missing a key piece — a solid website. We built them a strong online home that completes their professional identity and brings everything together.',
+    // desc: 'JTR, a well-known gym, was thriving on social media but lacked a dedicated website. We stepped in to complete their professional identity by creating a robust online presence. This new website was the missing piece in order to create a fully profesional business identity.',
     url: 'https://www.jointherevolution.gr/',
     logo: jtr,
     tags: [
@@ -196,7 +200,8 @@ export const projects = [
     id: 6,
     title: 'Rebel\'s Way',
     subtitle: "Elevating Rebel’s Way with a Dual-Purpose Website",
-    desc: 'Rebel’s Way, an online coaching team, needed a platform to showcase and sell their programming. We built a versatile website that functions both as a presentation tool and an e-commerce store, streamlining their online sales and enhancing their digital presence.',
+    // desc: 'Rebel’s Way, an online coaching team, needed a platform to showcase and sell their programming. We built a versatile website that functions both as a presentation tool and an e-commerce store, streamlining their online sales and enhancing their digital presence.',
+    desc: 'Rebel’s Way, an online coaching team, needed a platform to showcase and sell their programming. We created a flexible website that shows off their work and makes selling easy. Simple, effective, and built to grow.',
     url: 'https://www.rebelsway.gr/',
     logo: rway,
     tags: [

@@ -9,7 +9,7 @@ const WhatWeDid = () => {
       <div className="container">
 
       <TitleContainer miniTitle='WHAT WE DID' title='SUCCESS STORIES'>
-        <span className='bold-text'>Our portfolio speaks for itself.</span> We create web experiences that converts, brand identities with strong impact and video motions that grip guys on their seats. Whether it's an e-commerce platform that boosts sales by 300%, a rebranding initiative that enhances client acquisition by 40%, or a series of promotional videos that drive a 28% increase in reservations, our projects deliver measurable success.
+        <span className='bold-text'>Our portfolio speaks for itself.</span> We don’t just design — we deliver. From websites that drive real growth to branding and videos that make people stop and pay attention, our work gets results you can see. Sales go up. Bookings increase. Brands get noticed. Simple as that.
       </TitleContainer>
 
       <div className={styles.projects}>
@@ -23,7 +23,7 @@ const WhatWeDid = () => {
           })}
         </div>
       </div>
-      <h4 className={styles.miniTitle}>For us, <span className='bold-text purple'>your project</span> represents another chapter in our story as we continue pursuing excellence.</h4>
+      <h4 className={styles.miniTitle}>For us, <span className='bold-text '>your project</span> represents another chapter in our story as we continue pursuing excellence.</h4>
           </div>
     </section>
   )

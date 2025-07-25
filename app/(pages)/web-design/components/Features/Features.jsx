@@ -7,7 +7,10 @@ const Features = () => {
   return (
     <section className={styles.sectionContainer}>
       <div className={`container`}>
-        <TitleContainer color="white" align="center" miniTitle="YOUR 24/7 BUSINESS AMBASSADOR" title="INVESTING IN A WEBSITE IS NON-NEGOTIABLE" >
+        {/* <TitleContainer color="white" align="center" miniTitle="YOUR 24/7 BUSINESS AMBASSADOR" title="INVESTING IN A WEBSITE IS NON-NEGOTIABLE" >
+          This will be the first impression created on potential customers as well as a very effective tool for converting new visitors into clients who become loyal through time - <span className="bold-text">and you can’t fail.</span>
+        </TitleContainer> */}
+        <TitleContainer color="white" align="center" miniTitle="YOUR 24/7 BUSINESS AMBASSADOR" title="LET YOUR WEBSITE DO THE TALKING" >
           This will be the first impression created on potential customers as well as a very effective tool for converting new visitors into clients who become loyal through time - <span className="bold-text">and you can’t fail.</span>
         </TitleContainer>
 
