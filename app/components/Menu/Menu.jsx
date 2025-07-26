@@ -5,7 +5,7 @@ import { Anton } from 'next/font/google'
 import MenuContext from '@/app/context/context'
 import { useContext, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import MenuButton from '@/app/ui/MenuButton/MenuButton'
+import MenuButton from '@/app/ui/Buttons/MenuButton/MenuButton'
 
 const anton = Anton({
   weight: ['400'],

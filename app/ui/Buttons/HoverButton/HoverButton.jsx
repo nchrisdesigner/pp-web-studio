@@ -3,7 +3,7 @@ import { useState } from "react"
 import styles from './hoverbutton.module.css'
 import { PiCopy } from "react-icons/pi"
 import { ImCheckmark2 } from "react-icons/im"
-import Letter from "../Letter/Letter"
+import Letter from "../../Letter/Letter"
 
 const HoverButton = () => {
   const [isCopied, setIsCopied] = useState(false)

@@ -3,8 +3,8 @@ import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import { ImCheckmark2 } from "react-icons/im"
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
 import { webDesignPricing } from '@/app/data/data'
-import ContactButton from '@/app/ui/ContactButton/ContactButton'
-import HoverButton from '@/app/ui/HoverButton/HoverButton'
+import ContactButton from '@/app/ui/Buttons/ContactButton/ContactButton'
+import HoverButton from '@/app/ui/Buttons/HoverButton/HoverButton'
 
 
 

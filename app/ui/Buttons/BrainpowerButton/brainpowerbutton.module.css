@@ -1,0 +1,83 @@
+.link{
+  position: relative;
+  display: inline-flex;
+  height: 5rem;
+  overflow: hidden;
+  padding: 1.5px;
+  transition: transfrom .2s ease-in-out;
+  will-change: transform;
+
+  outline: 1.5px dashed transparent;
+  outline-offset: 3px;
+}
+
+.link:active{
+  transform: scale(0.97);
+}
+
+.link:focus,
+.link:focus-within{
+  /* outline: none; */
+  outline-color: var(--color-primary);
+}
+
+.spinner{
+  position: absolute;
+  inset: -1000%;
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    #abacff 0%,
+    #7274f4 50%,
+    #5152ae 100%
+  );
+  animation: spin 2s linear infinite
+}
+
+.content {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f1010; 
+  padding: 0 2.4rem; 
+  font-size: 1.4rem; 
+  font-weight: 500; 
+  color: #ffffff; 
+  backdrop-filter: blur(12px); 
+  gap: 0.5rem; 
+  transition: all .25s ease;
+}
+
+.link:hover .content{
+  background: linear-gradient(90deg,
+  rgba(77, 54, 208, 1) 0%,
+  rgba(132, 116, 254, 1) 100%); ;
+}
+
+.link:hover .spinner{
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    #f7f1ff 0%,
+    #7274f4 50%,
+    #4d36d0 100%
+  );
+}
+
+.icon{
+  font-size: 2.4rem;
+  transform: rotate(3deg);
+  background: hsla(237, 100%, 73%, 0.2);
+  border-radius: 3px;
+  color: #fff;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

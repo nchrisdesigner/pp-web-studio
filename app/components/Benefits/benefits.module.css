@@ -1,6 +1,5 @@
 .sectionContainer {
-  background: #111;
-  background: #0a0023;
+  background: var(--dark-bg);
   position: relative;
 }
 

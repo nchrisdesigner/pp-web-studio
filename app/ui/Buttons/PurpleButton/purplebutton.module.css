@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+  color: white;
+  border: solid 2px #ffffff;
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 3px;
+  font-weight: 600;
+  transform: scale(0.89) translateZ(0);
+  position: relative;
+  margin-top: 2rem;
+}
+.button:hover {
+  transform: scale(.9) translateZ(0);
+  transform-origin: center;
+}
+
+.button:focus {
+  outline: none;
+}

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 import localFont from 'next/font/local'
 import Letter from '@/app/ui/Letter/Letter'
+import BrainpowerButton from '@/app/ui/Buttons/BrainpowerButton/BrainpowerButton'
 
 const myFontCondensed = localFont({
   src: './Druk-Heavy-Trial.otf',
@@ -85,6 +86,8 @@ const PrimaryTitle = () => {
         </p>
 
       </motion.div>
+
+      <BrainpowerButton />
 
       <motion.div
         variants={miniTitleVariants}
