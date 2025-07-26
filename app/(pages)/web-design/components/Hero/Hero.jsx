@@ -5,9 +5,22 @@ import Paragraph from '@/app/ui/Paragraph/Paragraph'
 import MiniTextContainer from '@/app/components/Header/components/MiniTextContainer/MiniTextContainer'
 import { motion } from 'framer-motion'
 
+
+
+import { useRef } from 'react'
+
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useGSAP } from '@gsap/react'
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(useGSAP);
+
 import { useTransform } from "framer-motion"
 import { useScroll } from "framer-motion"
-import { useRef } from 'react'
+
 import Image from 'next/image'
 import mobile from './../../../../assets/mobile-mockup-purple.png'
 
@@ -27,6 +40,27 @@ const Hero = () => {
     [0, 100],
     [0, 360],
   )
+
+
+  useGSAP(() => {
+
+    const animation = gsap.fromTo(".textCube h2", 
+      {x:400, xPercent: 0}, 
+      {x:0, xPercent: -100, duration: 8, ease: "none", stagger: 0.87, repeat: -1})
+
+    // ScrollTrigger.create({
+    //   trigger: containerRef.current,
+    //   start: "top 50%",
+    //   end: "bottom 30%",
+    //   // markers: true,
+    //   // scrub:1,
+    //   toggleActions: "play none none reverse",
+    //   animation: createAnimation(),
+    //   invalidateOnRefresh: true
+    // })
+
+
+  }, { scope: containerRef });
 
   return (
     <header ref={containerRef} className={styles.header}>
@@ -82,7 +116,18 @@ const Hero = () => {
           <MiniTextContainer />
         </div>
 
-          <motion.figure 
+        <div className="cubeContainer">
+            <div className="textCube fancy">
+              <div className="face front">
+                <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
+              </div>
+              <div className="face side">
+                <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
+              </div>
+            </div>
+        </div>
+
+          {/* <motion.figure 
           initial={{
             opacity:0,
             scale: 0.3
@@ -95,7 +140,7 @@ const Hero = () => {
           
           className={styles.imageContainer}>
           <Image className={styles.image} src={mobile} alt="Mobile Mockup Image" />
-          </motion.figure>
+          </motion.figure> */}
       </div>
     </header>
   )
