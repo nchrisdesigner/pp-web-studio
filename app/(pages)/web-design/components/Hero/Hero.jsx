@@ -3,28 +3,25 @@ import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 import styles from './hero.module.css'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
 import MiniTextContainer from '@/app/components/Header/components/MiniTextContainer/MiniTextContainer'
-import { motion } from 'framer-motion'
-
-
 
 import { useRef } from 'react'
 
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from '@gsap/react'
-import { SplitText } from "gsap/SplitText";
+import { SplitText } from "gsap/SplitText"
+import { MotionPathPlugin } from 'gsap/all'
 
-gsap.registerPlugin(SplitText);
+
+gsap.registerPlugin(SplitText)
 gsap.registerPlugin(ScrollTrigger)
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(MotionPathPlugin)
+gsap.registerPlugin(useGSAP)
 
-import { useTransform } from "framer-motion"
-import { useScroll } from "framer-motion"
-
-import Image from 'next/image'
-import mobile from './../../../../assets/mobile-mockup-purple.png'
-
+import { ImRocket } from "react-icons/im"
+import { ImUnlocked } from "react-icons/im";
 import { Anton } from 'next/font/google'
+import Letter from '@/app/ui/Letter/Letter'
 
 const anton = Anton({
   weight: ['400'],
@@ -32,115 +29,137 @@ const anton = Anton({
 })
 
 const Hero = () => {
-  const containerRef= useRef()
-  const { scrollY } = useScroll()
-  
-  const y = useTransform(
-    scrollY,
-    [0, 100],
-    [0, 360],
-  )
-
+  const containerRef = useRef()
+  const titleRef = useRef()
+  const iconRef = useRef()
+  const textRef = useRef()
 
   useGSAP(() => {
 
-    const animation = gsap.fromTo(".textCube h2", 
-      {x:400, xPercent: 0}, 
-      {x:0, xPercent: -100, duration: 8, ease: "none", stagger: 0.87, repeat: -1})
+    const animation = gsap.fromTo(".textCube h2",
+      { x: 400, xPercent: 0 },
+      { x: 0, xPercent: -100, duration: 8, ease: "none", stagger: 0.87, repeat: -1 })
+  }, { scope: containerRef })
 
-    // ScrollTrigger.create({
-    //   trigger: containerRef.current,
-    //   start: "top 50%",
-    //   end: "bottom 30%",
-    //   // markers: true,
-    //   // scrub:1,
-    //   toggleActions: "play none none reverse",
-    //   animation: createAnimation(),
-    //   invalidateOnRefresh: true
-    // })
+  useGSAP(() => {
+    gsap.set("h1 div", { yPercent: -100 })
+    gsap.set("h1", { autoAlpha: 1 })
+    const splittedText = SplitText.create(textRef.current, {type: "chars"})
 
+    const tl = gsap.timeline()
+    tl
+      .to("h1 div", { duration: .75, yPercent: 0, stagger: 0.05, ease: "expo.inOut" })
+      .to("h1 div:not([data-char='.'])", { duration: .75, yPercent: 100, stagger: 0.05, ease: "expo.inOut" })
+      .fromTo(splittedText, {opacity:0, y:-2}, {opacity:1 , y:0, stagger: 0.05}, 0)
+      .to(iconRef.current, {
+        keyframes: [
+          { rotation: 10, duration: 0.04 },
+          { rotation: -10, duration: 0.04 },
+          { rotation: 10, duration: 0.04 },
+          { rotation: -10, duration: 0.04 },
+          { rotation: 8, duration: 0.04 },
+          { rotation: -8, duration: 0.04 },
+          { rotation: 8, duration: 0.04 },
+          { rotation: -8, duration: 0.04 },
+          { rotation: 6, duration: 0.04 },
+          { rotation: -6, duration: 0.04 },
+          { rotation: 6, duration: 0.04 },
+          { rotation: -6, duration: 0.04 },
+          { rotation: 0, duration: 0.04 }
+        ],
+        ease: "power1.inOut"
+      })
+      .to(iconRef.current, {
+        y: -150,
+        x: 50,
+        rotate: 5,
+        duration: 1.5,
+        ease: "power3.in"
+      })
 
-  }, { scope: containerRef });
+    ScrollTrigger.create({
+      trigger: titleRef.current,
+      start: "top 50%",
+      animation: tl,
+    })
+
+  }, {})
 
   return (
     <header ref={containerRef} className={styles.header}>
       <div className={styles.sectionContainer}>
         <div className={styles.textContainer}>
-          <motion.div
-            initial={{
-              opacity: 0
-            }}
-            animate={{
-              opacity: 1
-            }}
-            // transition={{
-            //   delay: 1
-            // }}
-            >
-            <SecondaryTitle align='left' color='white'>Your Digital First Impression</SecondaryTitle>
-          </motion.div>
-          <motion.div
-            initial={{
-              x: -30,
-              opacity: 0
-            }}
-            animate={{
-              x: 0,
-              opacity: 1
-            }}
-            // transition={{
-            //   delay: .5
-            // }}
-            
-          >
-            <h1 className={`${styles.title} ${anton.className}`}>SKYROCKET YOUR BUSINESS <span className='purple'>SUCCESS</span></h1>
-          </motion.div>
-          <motion.div
-            initial={{
-              x: -30,
-              opacity: 0
-            }}
-            animate={{
-              x: 0,
-              opacity: 1
-            }}
-            // transition={{
-            //   delay: .75
-            // }}
-          >
-            <Paragraph color='white' align='left'>
-              Nowadays, <span className='bold-text underline-text'>having a website is essential for any business aiming for success.</span> Think of it as a 24/7 storefront, always accessible to potential customers. With more consumers turning online for products and services, businesses without a website risk losing significant opportunities. 
+          <div className={styles.secondaryTitleContainer}>
+            <SecondaryTitle align='left' color='white'>Your Online Handshake</SecondaryTitle>
+            <div ref={iconRef} >
+              <ImRocket className={styles.rocketIcon} />
+            </div>
+          </div>
+
+          <div ref={titleRef} className={` ${styles.descrambleText} ${anton.className}`}>
+
+            <h1>
+              <div data-char=".">S</div>
+              <div data-char=".">K</div>
+              <div data-char="Y">A</div>
+              <div data-char="R">P</div>
+              <div data-char="O">D</div>
+              <div data-char=".">C</div>
+              <div data-char="K">D</div>
+              <div data-char=".">E</div>
+              <div data-char="T">R</div>
+            </h1>
+            <h1>
+              <div data-char=".">Y</div>
+              <div data-char="O">R</div>
+              <div data-char="U">O</div>
+              <div data-char=".">R</div>
+            </h1>
+            <h1>
+              <div data-char="B">D</div>
+              <div data-char="U">R</div>
+              <div data-char="S">P</div>
+              <div data-char=".">I</div>
+              <div data-char="N">R</div>
+              <div data-char=".">E</div>
+              <div data-char="S">P</div>
+              <div data-char="S">P</div>
+            </h1>
+            <h1>
+              <div className='purple' data-char="S">O</div>
+              <div className='purple' data-char="U">R</div>
+              <div className='purple' data-char=".">C</div>
+              <div className='purple' data-char=".">C</div>
+              <div className='purple' data-char=".">E</div>
+              <div className='purple' data-char=".">S</div>
+              <div className='purple' data-char=".">S</div>
+            </h1>
+
+          </div>
+
+          <div>
+            <Paragraph  color='white' align='left'>
+              Your business needs more than just a logo and a social feed. Your website is where your brand shows up — open 24/7, ready to grab attention anytime. If you’re not online, you’re invisible to the people looking for you.
             </Paragraph>
-            <Paragraph color='white' align='left' ><span className='bold-text yellow'>Don’t let your competitors get ahead.</span></Paragraph>
-          </motion.div>
-          <MiniTextContainer />
+            <Paragraph color='white' align='left' ><span className='bold-text green'>Why make it easier for your competitors?</span></Paragraph>
+          </div>
+          <a href="#pricing-web" className={styles.btn}>
+            <ImUnlocked /> Unlock Your <Letter>K</Letter>oncept
+          </a>
+          {/* <MiniTextContainer /> */}
         </div>
 
         <div className="cubeContainer">
-            <div className="textCube fancy">
-              <div className="face front">
-                <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
-              </div>
-              <div className="face side">
-                <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
-              </div>
+          <div className="textCube fancy">
+            <div className="face front">
+              <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
             </div>
+            <div className="face side">
+              <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
+            </div>
+          </div>
         </div>
 
-          {/* <motion.figure 
-          initial={{
-            opacity:0,
-            scale: 0.3
-          }}
-          animate={{
-            opacity: 1,
-            scale: 1,
-            x:y
-          }}
-          
-          className={styles.imageContainer}>
-          <Image className={styles.image} src={mobile} alt="Mobile Mockup Image" />
-          </motion.figure> */}
       </div>
     </header>
   )

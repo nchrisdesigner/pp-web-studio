@@ -9,7 +9,7 @@ import ContactButton from '@/app/ui/ContactButton/ContactButton'
 
 const Pricing = () => {
   return (
-    <section id="pricing" className={`${styles.pricingSection}`}>
+    <section id="pricing-web" className={`${styles.pricingSection}`}>
       <div className="container">
 
         <div className={styles.titleContainer}>

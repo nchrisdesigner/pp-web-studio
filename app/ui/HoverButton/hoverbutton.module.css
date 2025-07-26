@@ -45,9 +45,6 @@
   margin-top: 2rem;
 }
 
-
-
-
 .button:hover {
   transform: scale(.9) translateZ(0);
   transform-origin: center;
