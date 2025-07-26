@@ -49,17 +49,10 @@
   color: var(--white);
 }
 
-/* @media screen and (width< 900px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-} */
-
 
 .secondaryTitleContainer{
   display: flex;
 }
-
 
 .descrambleText{
   display: flex;
@@ -77,7 +70,7 @@
 }
 
 .descrambleText h1 {
-	/* visibility:hidden; */
+	visibility:hidden;
 	padding:0;
 	font-size: clamp(4.8rem, 2rem + 7vw, 9.8rem);  
   line-height: 1.05;

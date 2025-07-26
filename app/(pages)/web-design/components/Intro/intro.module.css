@@ -30,12 +30,22 @@
   line-height: 1.5;
   text-wrap: balance;
   margin: 0 auto 1.6rem auto;
-  width: min(100%, 75ch);
+  width: min(100%, 85ch);
+
 }
 
 .animatedTitle{
   animation: animateTitle;
   animation-timeline: --container;
+}
+
+.secondaryTitle{
+  font-size: clamp(1.4rem, 1.1548rem + 0.5261vw, 1.5625rem);
+  text-align: center;
+  color: var(--white);
+  color: #000;
+  text-transform: uppercase;
+  line-height: 1.25;
 }
 
 @keyframes animateTitle{

@@ -6,18 +6,15 @@
   margin-top: 1.6rem;
 }
 
-
 .descrambleText h2 {
 	visibility:hidden;
 	padding:0;
 	font-size: clamp(4rem, 2rem + 7vw, 9.6rem);   
-	/* line-height:0.75; */
   line-height: 1.05;
 	display:flex;
   align-items: center;
   overflow:hidden;
   letter-spacing: 0.03em;
-	/* padding-bottom:0.5vw; */
   text-wrap: balance;
 }
 

@@ -1,0 +1,5 @@
+.svgContainer{
+  position: absolute;
+  opacity: .05;
+  color: var(--purple);
+}

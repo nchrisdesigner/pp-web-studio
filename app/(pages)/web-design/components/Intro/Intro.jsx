@@ -1,9 +1,9 @@
-'use client'
-import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 import styles from './intro.module.css'
 import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
-import { Anton } from 'next/font/google'
 import DescrambledText from './components/DescrambledText/DescrambledText'
+
+import { Anton } from 'next/font/google'
+import TextPath from './components/TextPath/TextPath'
 
 const anton = Anton({
   weight: ['400'],
@@ -15,25 +15,22 @@ const Intro = () => {
   return (
     <section className={`${styles.sectionContainer}`}>
       <div className="container">
+        <TextPath />
 
         <div className={styles.gridContainer}>
           <div>
             <SecondaryTitle align='center'>NO WEBSITE, NO VISIBILITY</SecondaryTitle>
             <DescrambledText />
-            <h2 className={`${styles.mainTitle} ${anton.className}`}>IS YOUR BUSINESS?</h2>
+            <h3 className={`${styles.mainTitle} ${anton.className}`}>IS YOUR BUSINESS?</h3>
           </div>
 
-          <div>
-            <p className={styles.text}>If your business isn’t online, you’re missing out. A website means your doors are always open, <span className='purple-highlight bold-text'>ready to answer questions,</span> <span className="green-highlight bold-text">showcase your services,</span> and solve your customers’ problems  at the click of a button. A well-designed website is your most powerful tool, building trust, providing vital information, and connecting with potential clients before you even speak a word. </p>
-            {/* <p className={styles.text}>A well-designed website is your most powerful tool, building trust, providing vital information, and connecting with potential clients before you even speak a word.</p> */}
-          </div>
+          <p className={styles.text}>
+            <span className="bold-text">If your business isn’t online, you’re missing out.</span> A website means your doors are always open, <span className='purple-highlight '>ready to answer questions, showcase your services, and solve your customers’ problems</span> at the click of a button. A well-designed website is your most powerful tool, building trust, providing vital information, and connecting with potential clients before you even speak a word. </p>
 
         </div>
 
         <div className={styles.animatedTitle}>
-          <PromiseTitle color='black'>
-            Every moment offline is a missed opportunity. <span className="bold-text purple">Let’s change that.</span>
-          </PromiseTitle>
+          <h3 className={styles.secondaryTitle}>Every moment offline is a missed opportunity. <span className="bold-text purple">Let’s change that.</span></h3>
         </div>
       </div>
 

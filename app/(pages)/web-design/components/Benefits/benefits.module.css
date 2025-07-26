@@ -1,5 +1,6 @@
 .sectionContainer {
   background: #111;
+  background: #0a0023;
   position: relative;
 }
 
@@ -51,6 +52,5 @@
 
   .stickyTitle {
     position: relative;
-    top: 0;
   }
 }

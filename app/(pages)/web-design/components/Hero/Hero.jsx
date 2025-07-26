@@ -2,7 +2,6 @@
 import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 import styles from './hero.module.css'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
-import MiniTextContainer from '@/app/components/Header/components/MiniTextContainer/MiniTextContainer'
 
 import { useRef } from 'react'
 

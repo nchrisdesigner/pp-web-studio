@@ -1,18 +1,29 @@
-import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import styles from './features.module.css'
 import { webDesignFeatures } from '@/app/data/data'
 import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
+import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
+import Paragraph from '@/app/ui/Paragraph/Paragraph'
+
+import { Anton } from 'next/font/google'
+
+const anton = Anton({
+  weight: ['400'],
+  subsets: ['latin'],
+})
+
+// INVESTING IN A WEBSITE IS NON-NEGOTIABLE
 
 const Features = () => {
   return (
     <section className={styles.sectionContainer}>
       <div className={`container`}>
-        {/* <TitleContainer color="white" align="center" miniTitle="YOUR 24/7 BUSINESS AMBASSADOR" title="INVESTING IN A WEBSITE IS NON-NEGOTIABLE" >
-          This will be the first impression created on potential customers as well as a very effective tool for converting new visitors into clients who become loyal through time - <span className="bold-text">and you can’t fail.</span>
-        </TitleContainer> */}
-        <TitleContainer color="white" align="center" miniTitle="YOUR 24/7 BUSINESS AMBASSADOR" title="LET YOUR WEBSITE DO THE TALKING" >
-          This will be the first impression created on potential customers as well as a very effective tool for converting new visitors into clients who become loyal through time - <span className="bold-text">and you can’t fail.</span>
-        </TitleContainer>
+
+        <div className={styles.titleContainer}>
+          <MiniTitle>YOUR 24/7 BUSINESS AMBASSADOR</MiniTitle>
+          <h2 className={`${styles.title} ${anton.className}`}>LET YOUR WEBSITE <span className="purple"> DO THE TALKING</span></h2>
+          <Paragraph align='center' color='white' >
+            This will be the first impression created on potential customers as well as a very effective tool for converting new visitors into clients who become loyal through time - and you can’t fail.</Paragraph>
+        </div>
 
         <div className={styles.features}>
           <div className={styles.featuresContainer}>
@@ -28,11 +39,7 @@ const Features = () => {
           </div>
         </div>
 
-        <div className={styles.animatedTitle}>
-          <PromiseTitle color='white'>
-            Let your website tell your story — <span className="yellow underline-text bold-text">without saying a word.</span>
-          </PromiseTitle>
-        </div>
+        <h3 className={styles.secondaryTitle}>Let your website tell your story <span className="bold-text purple">without saying a word.</span></h3>
       </div>
 
 
