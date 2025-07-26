@@ -49,7 +49,6 @@
   color: var(--white);
 }
 
-
 .secondaryTitleContainer{
   display: flex;
 }
@@ -111,7 +110,6 @@
   position: relative;
   margin-top: 2rem;
 }
-
 
 @media screen and (width< 1080px) {
   .sectionContainer{

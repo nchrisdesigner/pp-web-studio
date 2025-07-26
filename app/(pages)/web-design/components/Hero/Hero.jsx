@@ -43,13 +43,13 @@ const Hero = () => {
   useGSAP(() => {
     gsap.set("h1 div", { yPercent: -100 })
     gsap.set("h1", { autoAlpha: 1 })
-    const splittedText = SplitText.create(textRef.current, {type: "chars"})
+    const splittedText = SplitText.create(textRef.current, { type: "chars" })
 
     const tl = gsap.timeline()
     tl
       .to("h1 div", { duration: .75, yPercent: 0, stagger: 0.05, ease: "expo.inOut" })
       .to("h1 div:not([data-char='.'])", { duration: .75, yPercent: 100, stagger: 0.05, ease: "expo.inOut" })
-      .fromTo(splittedText, {opacity:0, y:-2}, {opacity:1 , y:0, stagger: 0.05}, 0)
+      .fromTo(splittedText, { opacity: 0, y: -2 }, { opacity: 1, y: 0, stagger: 0.05 }, 0)
       .to(iconRef.current, {
         keyframes: [
           { rotation: 10, duration: 0.04 },
@@ -137,15 +137,14 @@ const Hero = () => {
           </div>
 
           <div>
-            <Paragraph  color='white' align='left'>
+            <Paragraph color='white' align='left'>
               Your business needs more than just a logo and a social feed. Your website is where your brand shows up — open 24/7, ready to grab attention anytime. If you’re not online, you’re invisible to the people looking for you.
             </Paragraph>
-            <Paragraph color='white' align='left' ><span className='bold-text green'>Why make it easier for your competitors?</span></Paragraph>
+            <Paragraph color='white' align='left' ><span className='bold-text purple'>Why make it easier for your competitors?</span></Paragraph>
           </div>
           <a href="#pricing-web" className={styles.btn}>
             <ImUnlocked /> Unlock Your <Letter>K</Letter>oncept
           </a>
-          {/* <MiniTextContainer /> */}
         </div>
 
         <div className="cubeContainer">

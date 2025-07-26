@@ -4,6 +4,7 @@ import { ImCheckmark2 } from "react-icons/im"
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
 import { webDesignPricing } from '@/app/data/data'
 import ContactButton from '@/app/ui/ContactButton/ContactButton'
+import HoverButton from '@/app/ui/HoverButton/HoverButton'
 
 
 
@@ -57,8 +58,7 @@ const Pricing = () => {
             )
           })}
         </div>
-
-        <ContactButton />
+        <HoverButton />
 
       </div>
     </section>
