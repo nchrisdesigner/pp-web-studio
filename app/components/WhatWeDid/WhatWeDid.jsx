@@ -2,7 +2,6 @@ import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import styles from './whatwedid.module.css'
 import { projects } from '@/app/data/data'
 import Project from './components/Project/Project'
-import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 
 const WhatWeDid = () => {
   return (
@@ -25,9 +24,10 @@ const WhatWeDid = () => {
           </div>
         </div>
 
-        <SecondaryTitle align='left' >
+          <h3 className={styles.secondaryTitle}>
           No cookie-cutter solutions here. <span className="purple"> Every project gets our full attention</span> - designed with authenticity and a fresh perspective.
-        </SecondaryTitle>
+          </h3>
+          
 
       </div>
     </section>

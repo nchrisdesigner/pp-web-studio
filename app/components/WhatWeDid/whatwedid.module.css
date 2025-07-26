@@ -52,6 +52,13 @@
   }
 }
 
+.secondaryTitle{
+  font-size: clamp(1.4rem, 1.1548rem + 0.5261vw, 1.5625rem);
+  color: var(--text-color);
+  line-height: 1.25;
+  text-transform: uppercase;
+  
+}
 
 .imageContainer{
   width: 100%;
