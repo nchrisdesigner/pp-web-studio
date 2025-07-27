@@ -69,7 +69,14 @@
   color: var(--white);
   grid-column: 6/-1;
   grid-row: 2/3;
+
+  font-size: clamp(1.4rem, 0.9315rem + 0.7423vw, 1.5625rem);
+  line-height: 1.5;
+  width: min(75ch ,100%);
+  text-wrap: pretty;
 }
+
+
 
 .btn {
   font-weight: 600;

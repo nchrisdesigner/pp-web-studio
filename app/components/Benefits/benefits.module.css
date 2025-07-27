@@ -18,7 +18,7 @@
 
 .stickyTitle {
   position: sticky;
-  top: 7.2rem;
+  top: 9.6rem;
 }
 
 .textContainer h2 {
@@ -36,7 +36,7 @@
 
 .textContainer p {
   color: var(--white);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 

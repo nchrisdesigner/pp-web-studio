@@ -31,14 +31,12 @@ const Benefits = () => {
     <section ref={containerRef} className={styles.sectionContainer}>
       <div className="container">
 
-        {/* <div className={styles.spacer}></div> */}
-
         <div className={styles.benefitsContainer}>
 
           <div className={styles.textContainer}>
             <div className={styles.stickyTitle}>
               <h3>OUR GUIDING LIGHTS</h3>
-              <h2 className={anton.className}>OUR 3  <Letter>k</Letter>ORE PRINCIPLES</h2>
+              <h2 className={anton.className}>OUR 3 <Letter textSize='title'>K</Letter>ORE PRINCIPLES</h2>
               <p>The values that shape every pixel, every idea, every decision.</p>
             </div>
           </div>

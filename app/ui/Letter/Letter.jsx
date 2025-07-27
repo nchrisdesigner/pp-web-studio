@@ -8,7 +8,9 @@ const myFont = localFont({
 
 const Letter = ({children, textSize}) => {
   return (
-    <span className={`${styles.letter} ${myFont.className} ${styles[textSize]}`}>{children}</span>
+    <span 
+    className={`${styles.letter} 
+    ${myFont.className} ${styles[textSize]}` }>{children}</span>
   )
 }
 

@@ -1,5 +1,5 @@
 .container{
-  padding: 0 2rem 12rem 2rem;
+  padding: 0 0 12rem 0;
   background: var(--dark-bg);
 }
 
@@ -19,6 +19,7 @@
   font-size: clamp(1.4rem, 1.1548rem + 0.5261vw, 1.5625rem);
   color: var(--white);
   line-height: 1.25;
+  text-transform: uppercase;
 }
 
 @media screen and (width < 950px){
