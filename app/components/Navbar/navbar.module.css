@@ -1,3 +1,7 @@
+.navbar{
+  background: var(--black);
+}
+
 .logoContainer{
   display: flex;
   gap: 1rem;

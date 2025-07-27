@@ -12,6 +12,7 @@ import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { SplitText } from "gsap/SplitText"
 import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
+import Paragraph from '@/app/ui/Paragraph/Paragraph'
 gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(ScrollTrigger)
@@ -93,7 +94,11 @@ const Intro = () => {
 
           <h4 className={styles.secondary}>We <Letter textSize='title'>K</Letter>o-strategize. We <Letter textSize='title'>K</Letter>o-Design. We <Letter textSize='title'>K</Letter>o-win.</h4>
           {/* <h4 className={styles.secondary}>Great ideas deserve more than simple design.</h4> */}
-          {/* <h4 className={styles.secondary}>DIS<Letter textSize='title'>K</Letter>OVER HOW EVERYTHING FALLS INTO PLACE AND SEE YOUR BRAND'S <span className="bold-text purple"> TRUE POTENTIAL</span></h4> */}
+          
+          <Paragraph align='center'>
+          Scroll on to see how every pixel, every idea, and every move clicks into place—revealing the brand you were meant to be
+          </Paragraph >
+          <h4 className={styles.secondary}>DIS<Letter textSize='title'>K</Letter>OVER HOW EVERYTHING FALLS INTO PLACE AND SEE YOUR BRAND'S <span className="bold-text purple"> TRUE POTENTIAL</span></h4>
 
 
           <div className={styles.scrollElementContainer}>

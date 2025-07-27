@@ -22,7 +22,7 @@ const WhatWeDo = () => {
             })}
           </div>
         </div>
-        {/* <h3 className={styles.secondaryTitle}>DISCOVER HOW EVERYTHING FALLS INTO PLACE AND SEE YOUR BRAND'S <span className="bold-text purple"> TRUE POTENTIAL</span></h3> */}
+        
         <h3 className={styles.secondaryTitle}>No <Letter>K</Letter>ookie-<Letter>K</Letter>utter solutions here. &nbsp; <span className="purple"> Every project gets our full attention</span></h3>
       </div>
 
