@@ -8,6 +8,12 @@
   view-timeline:--container;
 }
 
+@media screen and (width < 400px){
+  .sectionContainer{
+    height: 60rem;
+  }
+}
+
 .title {
   font-size: clamp(4.8rem, 3rem + 6.2261vw, 12.8rem);
   line-height: 1;
@@ -16,7 +22,7 @@
 }
 
 .extraTitle{
-  font-size: clamp(6rem, 5rem + 7vw, 12.8rem);
+  font-size: clamp(5.4rem, 4rem + 7vw, 12.8rem);
   line-height: 1;
   position: relative;
   text-align: center;
@@ -27,182 +33,21 @@
   overflow: hidden;
 }
 
-.customFontTitle{
-  font-weight: 400;
-  font-size: clamp(3rem, 4.2rem + 4.5261vw, 12.8rem);
-  margin-top: -3rem;
-  color: var(--purple);
-  transform: rotate(-5deg);
-  position: relative;
-}
-
-.circle{
-  position: absolute;
-  left: 50%;
-  bottom: -10%;
-  transform: translateX(-50%) scaleX(1.2);
+.extraTitleAlt{
+  font-size: clamp(4.8rem, 3rem + 7vw, 12.8rem);
 }
 
 .secondary{
-  font-size: clamp(1.4rem, 1.1548rem + 0.5261vw, 1.5625rem);
+  font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.5625rem);
   color: #111;
   line-height: 1.25;
   text-transform: uppercase;
 }
 
 
-@keyframes animateTitle{
-  0%,
-  50%{
-    opacity:0;
-
-    transform: translateY(12rem);
-  }
-  100%{
-    opacity:1;
-    transform: translateY(0px);
-  }
-}
-
-
-
-/* .brushLine{
-  margin-top: -11rem;
-  transform: scale(.6) rotate(5deg);
-  width: min(500px, 100%)
-} */
-
-@media screen and (width > 1512px){
-  .customFontTitle{
-    margin-top: -5rem;
-    font-size: 13.2rem;
-  }
-
-  /* .brushLine{
-    margin-top: -3rem;
-    width: min(450px, 100%)
-  } */
-}
-
-.secondaryTitle{
-  font-size: clamp(1.2rem, 1.0674rem + 1.1428vw, 1.9rem);
-  font-weight: 300;
-  letter-spacing: .15em;
-  z-index: 10;
-  position: relative;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-
-.miniContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.smudgeOne,
-.smudgeTwo {
-  position: absolute;
-  left: 10%;
-  top: 15%;
-}
-
-.promiseTitle{
-  color: var(--dark-purple);
-  text-align: center;
-  font-size: 1.8rem;
-  font-size: clamp(1.6rem, 1.2vi + 1.26rem, 2rem);
-  margin-top: 3.6rem;
-  font-weight: 400;
-  letter-spacing: 0.09em;
-}
-
-@property --stroke-dashoffset-1 {
-  syntax: '<number>';
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --stroke-dashoffset-2 {
-  syntax: '<number>';
-  inherits: false;
-  initial-value: 40;
-}
-
-.smudgeOne path {
-  stroke-dasharray: 204;
-  stroke-dashoffset: 204;
-  animation: smudgeAnimateOne .35s ease-in-out forwards;
-}
-
-.smudgeTwo path {
-  stroke-dasharray: 279;
-  stroke-dashoffset: 279;
-  animation: smudgeAnimateTwo .35s .75s ease-in-out forwards;
-}
-
 
 /* Media Queries */
 
-@media screen and (width < 800px) {
-  .miniContainer {
-    display: flex;
-    align-items: center;
-  }
-}
-
-
-@media screen and (width < 750px) {
-  @property --stroke-dashoffset-1 {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 50;
-  }
-  @property --stroke-dashoffset-2 {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 90;
-  }
-
-  .smudgeOne,
-  .smudgeTwo{
-    transform: translateY(-20px);
-  }
-}
-
-
-@media screen and (width < 555px) {
-  .miniContainer {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  @property --stroke-dashoffset-1 {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 100;
-  }
-  @property --stroke-dashoffset-2 {
-    syntax: '<number>';
-    inherits: false;
-    initial-value: 140;
-  }
-
-  .path{
-    stroke-width: 12px!important;
-  }
-
-
-  .smudgeOne{
-    transform: translateY(-10px);
-  }
-  
-  .smudgeTwo{
-    transform: translateY(-40px) translateX(-20px);
-  }
-}
 
 @media screen and (width > 1650px) {
   .title {
@@ -210,33 +55,33 @@
     line-height: 1;
   }
 
-  .smudgeOne,
-  .smudgeTwo {
-    left: 25%;
-    top: 30%;
-    transform: scale(1.5);
-  }
 }
 
-/* Animations */
-@keyframes smudgeAnimateOne {
-  from {
-    stroke-dashoffset: 204
-  }
 
-  to {
-    stroke-dashoffset: var(--stroke-dashoffset-1);
-  }
+
+.scrollElementContainer{
+  border: 3px solid var(--purple);
+  height: 3.5rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+  border-radius: 50px;
 }
 
-@keyframes smudgeAnimateTwo {
-  from {
-    stroke-dashoffset: 279
-  }
-
-  to {
-    stroke-dashoffset: var(--stroke-dashoffset-2);
-  }
+.scrollElement{
+  display: flex;
+  padding: .25rem;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
 }
 
+.cursor{
+  width: 1rem;
+  height: 1rem;
+  background: #111;
+  border-radius: 100%;
+  z-index: 1;
+}
 

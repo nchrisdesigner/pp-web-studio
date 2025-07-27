@@ -15,6 +15,7 @@
   --black: hsl(216, 12%, 8%);
   --dark-bg: hsl(210, 15%, 8%);
   --purple: hsl(241, 60%, 60%);
+  /* --purple: #5e5cd6; */
   --purple-2: hsla(241, 60%, 60%, 0.338);
   --purple-3: hsl(261, 65%, 45%);
   --purple-4: hsl(257, 100%, 74%);
@@ -146,6 +147,8 @@ a {
    display: inline-block;
 } */
 
+
+
 .faint-text {
   @starting-style {
     opacity: 1;
@@ -257,6 +260,10 @@ body.menu-open {
   position: relative;
   margin: 1rem;
   cursor: pointer;
+}
+
+.relative{
+  position: relative;
 }
 
 .bar,
@@ -426,4 +433,11 @@ body {
   .cubeContainer {
     display: none;
   }
+}
+
+
+
+.cls-1 {
+  fill: #5e5cd6;
+  fill-rule: evenodd;
 }

@@ -24,10 +24,10 @@ const WhatWeDid = () => {
           </div>
         </div>
 
-          <h3 className={styles.secondaryTitle}>
-          No cookie-cutter solutions here. <span className="purple"> Every project gets our full attention</span> - designed with authenticity and a fresh perspective.
-          </h3>
-          
+        <h3 className={styles.secondaryTitle}>
+          <span className="purple">Just True Stories.</span> Designed with authenticity and a fresh perspective.
+        </h3>
+
 
       </div>
     </section>

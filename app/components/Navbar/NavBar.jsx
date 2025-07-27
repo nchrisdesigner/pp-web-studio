@@ -7,6 +7,7 @@ import MenuContext from '@/app/context/context'
 import logo from './../../assets/logo-pixel-perfekt-lg.png'
 import iconLogo from './../../assets/icon-logo.png'
 import textLogo from './../../assets/text-logo.png'
+import officialLogo from './../../assets/official-logo-white.png'
 import MenuButton from '@/app/ui/Buttons/MenuButton/MenuButton'
 import AltMenu from '../AltMenu/AltMenu'
 import Link from 'next/link'
@@ -27,8 +28,9 @@ const NavBar = () => {
           </figure> */}
           <figure >
             <Link className={styles.logoContainer} href="/">
-              <Image src={iconLogo} alt='Pixel Pefekt Logo' width={36} />
-              <Image className={styles.textLogo} src={textLogo} alt='Pixel Pefekt Logo' width={150} />
+              {/* <Image src={iconLogo} alt='Pixel Pefekt Logo' width={36} /> */}
+              <Image className={styles.textLogo} src={officialLogo} alt='Pixel Perfekt Logo' width={180} />
+
             </Link>
           </figure>
 

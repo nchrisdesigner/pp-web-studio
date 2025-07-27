@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="container">
 
         <TitleContainer align='center' miniTitle='WHAT WE WILL DO' title='YOUR JOURNEY STARTS HERE'>
-          We believe in simplicity and meaningful dialogues where great ideas emerge from conversations, not checkboxes. <span className="bold-text purple-highlight">Your unique story deserves a human touch</span> - it’s not just a project, but a collaborative journey.
+          We believe in simplicity and meaningful dialogues where great ideas emerge from conversations, not checkboxes. Your unique story deserves a human touch - it’s not just a project, but a collaborative journey.
         </TitleContainer>
 
         <HoverButton />
