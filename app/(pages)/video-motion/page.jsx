@@ -3,8 +3,8 @@ import InfoSection from './components/InfoSection/InfoSection'
 import Pricing from './components/Pricing/Pricing'
 
 export const metadata = {
-  title: 'Engaging Animation Videos | PixelPerfekt Web Design Studio',
-  description: 'Bring your brand to life with PixelPerfekt’s animation video services. From explainer videos to social media animations, we create visually compelling stories that capture attention and communicate your message effectively. Transform your brand presence with animations that resonate and engage.',
+  title: 'Professional Animation Videos | PixelPerfekt Studio',
+  description: 'Your brand has a story—let’s set it in motion. We design fun, engaging videos that explain, entertain, and connect. From explainer videos to branded motion content, we help you deliver your message with style and purpose.',
 }
 
 const VideoMotionPage = () => {

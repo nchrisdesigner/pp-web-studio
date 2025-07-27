@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'PixelPerfekt Web Design Studio | Creative Digital Experts',
-  description: 'Welcome to PixelPerfekt, your trusted web design studio in Thessaloniki, Greece. Experience custom web design, development, brand identity, and animation services crafted to elevate your brand. With a client-first approach and unmatched attention to detail, PixelPerfekt brings your digital vision to life with precision and creativity.',
+  title: 'PixelPerfekt | Web & Brand Design Studio',
+  description: 'Ready to stand out? At PixelPerfekt, we’re more than just designers — we’re storytellers, strategists, and creators. We build custom websites and brand identities that feel uniquely you. From sharp design to smooth animations, every pixel is designed with authenticity and precision to help your brand break through the noise.',
   alternates: {
     canonical: 'https://www.pixelperfekt.gr/',
   },
