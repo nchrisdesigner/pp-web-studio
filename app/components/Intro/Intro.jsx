@@ -2,10 +2,19 @@
 
 import { Anton } from 'next/font/google'
 import styles from './intro.module.css'
-import { motion, useInView } from 'framer-motion'
+
 import { useRef } from 'react'
 import localFont from 'next/font/local'
-import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
+import Letter from '@/app/ui/Letter/Letter'
+
+import { gsap } from "gsap"
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { SplitText } from "gsap/SplitText"
+gsap.registerPlugin(useGSAP)
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(SplitText)
 
 const myFont = localFont({
   src: './Unaessthetic.ttf',
@@ -17,142 +26,99 @@ const anton = Anton({
   subsets: ['latin'],
 })
 
-const titleVariants = {
-  hidden: {
-    opacity: 0,
-    y: 20
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  },
-}
-
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-    y: 20
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  }
-}
-
-const smudgeVariants = {
-  hidden: {
-    opacity: 0
-  },
-  visible: {
-    opacity: 1
-  }
-}
-
-const circleVariants = {
-  hidden: {
-    pathLength: 0,     // Start with the path invisible
-  },
-  visible: {
-    pathLength: 1,     // Animate to full path length
-    transition: {
-      delay: 0.5,      // Adjust this for timing
-      duration: 2,     // Controls the drawing speed
-      ease: "easeInOut",
-    },
-  },
-};
 
 const Intro = () => {
 
   const containerRef = useRef()
-  const isInView = useInView(
-    containerRef,
-    {
-      margin: "0px 0px -450px 0px",
-      once: true
-    }
-  )
+  const textRef = useRef()
+  const clientsRef = useRef()
+  const partnerRef = useRef()
+
+  useGSAP(() => {
+    const timeline = gsap.timeline()
+
+    const split = SplitText.create(textRef.current)
+    
+    
+
+    // timeline
+    // .fromTo(clientsRef.current, {y:0,autoAlpha:1}, {y:100,autoAlpha:0})
+    // .fromTo(partnerRef.current, {y:-100, autoAlpha:0}, {y:0,autoAlpha:1})
+
+    // gsap.set("h2 div", { yPercent: -100 })
+    // gsap.set("h2", { autoAlpha: 1 })
+
+    // const tl = gsap.timeline()
+    // tl
+    //   .to("h2 div", { duration: .75, yPercent: 0, stagger: 0.05, ease: "expo.inOut" })
+    //   .to("h2 div:not([data-char='.'])", { duration: .75, yPercent: 100, stagger: 0.05, ease: "expo.inOut" })
+
+    ScrollTrigger.create({
+      trigger: textRef.current,
+      start: "top 30%",
+      animation: gsap.fromTo(split.chars, {opacity:0, yPercent:-100}, {opacity:1, yPercent:0, stagger: 0.02}),
+    })
+
+  }, {});
+
 
   return (
     <section ref={containerRef} className={`${styles.sectionContainer}`}>
       <div className="container">
 
-
-        <motion.div
-          variants={titleVariants}
-          initial='hidden'
-          animate={isInView ? 'visible' : 'hidden'}
-        >
+        <div>
           <h3 className={styles.secondaryTitle}>
-            CLIENT IS A BAD, BAD WORD
+            CLIENT IS A BAD, BAD WORD. WE PREFER
           </h3>
-        </motion.div>
+        </div>
 
-        <div className={styles.miniContainer}>
+        {/* <div className={styles.miniContainer}>
 
-          <motion.h2
-            variants={titleVariants}
-            initial='hidden'
-            animate={isInView ? 'visible' : 'hidden'}
-            // transition={{
-            //   delay: .4
-            // }}
-            className={`${anton.className} ${styles.title}`}>
+          <h2 className={`${anton.className} ${styles.title}`}>
             <span style={{ position: 'relative' }}>
               <svg
                 className={styles.smudgeOne} width="206" height="104" viewBox="0 0 206 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <motion.path
+                <path
                   className={styles.path}
-                  variants={smudgeVariants}
-                  initial='hidden'
-                  animate={isInView ? 'visible' : 'hidden'}
-                  transition={{
-                    delay: 1.2
-                  }}
                   d="M10.0293 10.97C67.1527 47.7891 129.692 75.269 195.029 93.97" stroke="#5D5AD6" strokeWidth="20" strokeLinecap="round" />
               </svg>
               <svg className={styles.smudgeTwo} width="289" height="96" viewBox="0 0 289 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <motion.path
+                <path
                   className={styles.path}
-                  variants={smudgeVariants}
-                  initial='hidden'
-                  animate={isInView ? 'visible' : 'hidden'}
-                  transition={{
-                    delay: 1.62
-                  }}
+ 
                   d="M10.1992 85.97C19.7147 84.3299 29.2014 80.4448 38.4395 77.5735C74.0656 66.5006 109.947 56.5673 146.016 47.5861C181.628 38.7187 217.61 31.5196 252.989 21.4498C262.034 18.8751 270.426 16.4717 278.207 10.97" stroke="#5D5AD6" strokeWidth="20" strokeLinecap="round" />
               </svg>
               CLIENT</span>-INSPIRED
-          </motion.h2>
-        </div>
-
-        <motion.div
-          variants={containerVariants}
-          initial='hidden'
-          animate={isInView ? 'visible' : 'hidden'}
-        // transition={{
-        //   delay: 2.2,
-        //   duration: 0.5
-        // }}
-        >
-
-          <h3 className={styles.secondaryTitle}>
-            WE PREFER
-          </h3>
-
-          <h2 className={`${anton.className} ${styles.extraTitle}`}>PARTNER-IN-CREATIONS</h2>
-          <h2 className={` ${styles.customFontTitle} ${myFont.className}`}>
-            STORYTELLERS
           </h2>
-        </motion.div>
+        </div> */}
+
+
+
+
+
+        <h2
+          className={`${anton.className} ${styles.extraTitle}`}>
+          {/* <div ref={clientsRef}>CLIENTS</div>  */}
+          <div ref={partnerRef}>PARTNER</div> 
+          <div>IN</div> 
+          <div><Letter textSize='title'>K</Letter>REATIONS</div> 
+        </h2>
+
+
+
+
+        <h2 ref={textRef} className={` ${styles.extraTitle} ${anton.className}`}>
+          STORYTELLERS
+        </h2>
 
         <div className={styles.miniTitleContainer}>
-          <PromiseTitle color='black'>
-            Great ideas deserve more than simple design.
-          </PromiseTitle>
+
+          <h4 className={styles.secondary}>We <Letter textSize='title'>K</Letter>o-<Letter textSize='title'>K</Letter>reate. We <Letter textSize='title'>K</Letter>o-strategize. We <Letter textSize='title'>K</Letter>o-win.</h4>
+          {/* <h4 className={styles.secondary}>Great ideas deserve more than simple design.</h4> */}
+          {/* <h4 className={styles.secondary}>DIS<Letter textSize='title'>K</Letter>OVER HOW EVERYTHING FALLS INTO PLACE AND SEE YOUR BRAND'S <span className="bold-text purple"> TRUE POTENTIAL</span></h4> */}
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

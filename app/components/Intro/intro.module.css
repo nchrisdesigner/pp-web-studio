@@ -16,10 +16,15 @@
 }
 
 .extraTitle{
-  font-size: clamp(5rem, 4.7748rem + 6.2261vw, 12.8rem);
+  font-size: clamp(6rem, 5rem + 7vw, 12.8rem);
   line-height: 1;
   position: relative;
   text-align: center;
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .customFontTitle{
@@ -29,11 +34,6 @@
   color: var(--purple);
   transform: rotate(-5deg);
   position: relative;
-  /* display: inline-block;
-  padding: 0 3.2rem;
-
-  background: #5e5ad674;
-  color: #ffffff; */
 }
 
 .circle{
@@ -43,12 +43,13 @@
   transform: translateX(-50%) scaleX(1.2);
 }
 
-.miniTitleContainer{
-  animation: animateTitle ease-in-out;
-  animation-timeline: --container;
-  animation-range-start: 10%;
-  animation-range-end: 60%;
+.secondary{
+  font-size: clamp(1.4rem, 1.1548rem + 0.5261vw, 1.5625rem);
+  color: #111;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
+
 
 @keyframes animateTitle{
   0%,
@@ -237,3 +238,5 @@
     stroke-dashoffset: var(--stroke-dashoffset-2);
   }
 }
+
+

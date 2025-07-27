@@ -74,20 +74,3 @@ const DescrambledText = () => {
 }
 
 export default DescrambledText
-
-
-
-{/* 
-    <div className={`${styles.descrambleText} ${anton.className}`}>
-
-      <h1>
-        <div data-char=".">C</div>
-        <div data-char="R">A</div>
-        <div data-char="E">F</div>
-        <div data-char=".">A</div>
-        <div data-char="T">S</div>
-        <div data-char=".">I</div>
-        <div data-char="V">R</div>
-        <div data-char=".">E</div>
-      </h1>
-    </div> */}

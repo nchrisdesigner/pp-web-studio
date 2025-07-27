@@ -1,15 +1,12 @@
 .letter{
   color: var(--purple);
   z-index: 10;
-  /* margin-right:-3rem; */
   z-index: 2;
   position: relative;
-
-
+  line-height: 0;
 }
 
 .title{
-  /* font-size: clamp(5.8rem, 2rem + 8vw, 13.8rem); */
-    display: inline-block;
+  display: inline-block;
   transform: scale(1.3);
 }
