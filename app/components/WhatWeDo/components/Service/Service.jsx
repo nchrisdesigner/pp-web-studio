@@ -4,7 +4,10 @@ import styles from './service.module.css'
 import { useState } from 'react'
 import { GoArrowUpLeft } from "react-icons/go"
 import { BiRightArrowAlt } from "react-icons/bi"
-import Link from 'next/link';
+import Link from 'next/link'
+
+import { GiCardboardBoxClosed } from "react-icons/gi"
+import { GiCardboardBox } from "react-icons/gi"
 
 const textVariants = {
   hidden: {
@@ -72,21 +75,13 @@ const Card = ({ id, mainTitle, title, boldText, desc, link, image }) => {
 
         <div className={styles.titleContainer}>
           <h2 className={isOpen ? 'purple-text' : 'outline-text-white'}>{mainTitle}</h2>
-          <GoArrowUpLeft
-            className={styles.icon}
-            style={
-              !isOpen
-                ?
-                {
-                  transform: `rotate(0)`
-                }
-                :
-                {
-                  transform: `rotate(-45deg)`
-                }
-
+            {
+              !isOpen 
+              ? 
+              <GiCardboardBoxClosed className={styles.icon} onClick={() => setIsOpen(isOpen => !isOpen)} /> 
+              : 
+              <GiCardboardBox className={styles.icon} onClick={() => setIsOpen(isOpen => !isOpen)} />
             }
-            onClick={() => setIsOpen(isOpen => !isOpen)} />
         </div>
       </div>
     </>

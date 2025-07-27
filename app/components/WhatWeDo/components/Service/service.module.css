@@ -95,12 +95,9 @@
 
 .icon{
   cursor: pointer;
-  border-radius: 50px;
-  width: 4.2rem;
-  height: 4.2rem;
+  font-size: 4.2rem;
   color: var(--purple);
-  background: var(--purple-2);
-  border: 2px solid var(--purple);
+
   transition: all .2s ease-in;
 }
 
