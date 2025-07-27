@@ -7,7 +7,7 @@ const Contact = () => {
     <section className={`${styles.sectionContainer}`}>
       <div className="container">
 
-        <TitleContainer align='center' miniTitle='WHAT WE WILL DO' title='YOUR JOURNEY STARTS HERE'>
+        <TitleContainer align='center' miniTitle='WHAT WE WILL DO' title='YOU ARE ONE STEP FROM BEING AVERAGE'>
           We believe in simplicity and meaningful dialogues where great ideas emerge from conversations, not checkboxes. Your unique story deserves a human touch - it’s not just a project, but a collaborative journey.
         </TitleContainer>
 
