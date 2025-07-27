@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './minitextcontainer.module.css'
 import { miniText } from '@/app/data/data'
-import { motion } from 'framer-motion'
+import { motion } from "motion/react"
 
 const containerVariants = {
   hidden: { 

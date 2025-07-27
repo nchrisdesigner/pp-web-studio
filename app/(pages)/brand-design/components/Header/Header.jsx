@@ -4,7 +4,7 @@ import styles from './header.module.css'
 import Image from 'next/image'
 import packageImage from '@/app/assets/mockup-large.png'
 import { Anton } from 'next/font/google'
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 const anton = Anton({
   weight: ['400'],

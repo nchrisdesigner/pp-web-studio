@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Anton } from 'next/font/google'
 import MenuContext from '@/app/context/context'
 import { useContext, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { motion } from "motion/react"
 import MenuButton from '@/app/ui/Buttons/MenuButton/MenuButton'
 
 const anton = Anton({

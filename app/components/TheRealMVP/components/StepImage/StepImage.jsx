@@ -1,5 +1,5 @@
 import styles from './stepimage.module.css'
-import { motion } from 'framer-motion'
+import { motion } from "motion/react"
 import Image from 'next/image'
 
 const StepImage = ({selectedStep, steps}) => {

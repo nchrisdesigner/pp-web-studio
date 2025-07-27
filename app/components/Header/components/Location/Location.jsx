@@ -1,6 +1,6 @@
 'use client'
 import styles from './location.module.css'
-import { motion } from 'framer-motion'
+import { motion } from "motion/react"
 
 const Location = () => {
   return (

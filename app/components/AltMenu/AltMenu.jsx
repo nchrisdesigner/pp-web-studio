@@ -2,7 +2,7 @@
 import styles from './altmenu.module.css'
 import MenuContext from '@/app/context/context'
 import { useContext } from 'react'
-import { motion } from 'framer-motion'
+import { motion } from "motion/react"
 import MenuButton from '@/app/ui/Buttons/MenuButton/MenuButton'
 import PixelPerfektExplain from '@/app/ui/PixelPerfektExplain/PixelPerfektExplain'
 import TransitionLink from './components/TransitionLink/TransitionLink'

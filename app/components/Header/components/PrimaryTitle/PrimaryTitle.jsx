@@ -1,7 +1,7 @@
 'use client'
 import { Anton } from 'next/font/google'
 import styles from './primarytitle.module.css'
-import { motion } from 'framer-motion'
+import { motion } from "motion/react"
 import { gsap } from "gsap"
 
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin"

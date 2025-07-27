@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'framer-motion'
+import { motion } from "motion/react"
 import styles from './service.module.css'
 import { useState } from 'react'
 import { GoArrowUpLeft } from "react-icons/go"
