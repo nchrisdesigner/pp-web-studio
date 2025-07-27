@@ -102,6 +102,9 @@ a {
 .block-element {
   display: block;
 }
+.inline-element {
+  display: inline-block;
+}
 
 .yellow {
   color: var(--yellow)

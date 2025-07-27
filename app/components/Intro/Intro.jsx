@@ -4,41 +4,32 @@ import { Anton } from 'next/font/google'
 import styles from './intro.module.css'
 
 import { useRef } from 'react'
-import localFont from 'next/font/local'
 import Letter from '@/app/ui/Letter/Letter'
-
 import { gsap } from "gsap"
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { SplitText } from "gsap/SplitText"
-import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
 gsap.registerPlugin(useGSAP)
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(SplitText)
 
-const myFont = localFont({
-  src: './Unaessthetic.ttf',
-  display: 'swap',
-})
 
 const anton = Anton({
   weight: ['400'],
   subsets: ['latin'],
 })
 
-
 const Intro = () => {
 
   const containerRef = useRef()
   const textRef = useRef()
   const scrollElementRef = useRef()
-
   const secondaryTitleOneRef = useRef()
-  const secondaryTitleRefOneContainer = useRef()
-  const secondaryTitleTwoRef = useRef()
-  const secondaryTitleRefTwoContainer = useRef()
+  const miniTitleRef = useRef()
+  const paragraphRef = useRef()
+ 
 
 
   useGSAP(() => {
@@ -52,19 +43,20 @@ const Intro = () => {
 
     gsap.set("h2 div", { yPercent: -100 })
     gsap.set("h2", { autoAlpha: 1 })
-    gsap.set(secondaryTitleRefOneContainer.current, {yPercent:100})
-    gsap.set(secondaryTitleRefTwoContainer.current, {yPercent:100})
+    gsap.set(secondaryTitleOneRef.current, { opacity: 0 })
+    gsap.set(miniTitleRef.current, { opacity: 0 })
+    gsap.set(paragraphRef.current, { opacity: 0 })
+
 
     const tl = gsap.timeline()
+
     tl
       .to("h2 div", { duration: .75, yPercent: 0, stagger: 0.05, ease: "expo.inOut" })
       .to("h2 div:not([data-char='.'])", { duration: .75, yPercent: 100, stagger: 0.05, ease: "expo.inOut" })
-      .to(secondaryTitleOneRef.current,
-        { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" })
-      .to(secondaryTitleRefOneContainer.current, { yPercent: 0 }, "<")
-      .to(secondaryTitleTwoRef.current,
-        { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" })
-      .to(secondaryTitleRefTwoContainer.current, { yPercent: 0 }, "<")
+      .to(secondaryTitleOneRef.current, { opacity: 1 })
+      .to(miniTitleRef.current, { opacity: 1 })
+      .to(paragraphRef.current, { opacity: 1 })
+
 
     ScrollTrigger.create({
       trigger: textRef.current,
@@ -79,7 +71,7 @@ const Intro = () => {
   return (
     <section ref={containerRef} className={`${styles.sectionContainer}`}>
       <div className="container">
-        <h4 className={styles.secondary}>We <Letter textSize='title'>K</Letter>o-strategize. We <Letter textSize='title'>K</Letter>o-Design. We <Letter textSize='title'>K</Letter>o-win.</h4>
+        <h4 ref={miniTitleRef} className={styles.secondary}>We <Letter textSize='title'>K</Letter>o-strategize. We <Letter textSize='title'>K</Letter>o-Design. We <Letter textSize='title'>K</Letter>o-win.</h4>
 
         <div ref={textRef} className={`${styles.descrambleText} ${anton.className}`}>
           <h2>
@@ -101,7 +93,7 @@ const Intro = () => {
             <div data-char="B">R</div>
             <div data-char="A">V</div>
             <div data-char="D">Y</div>
-            <div data-char=".">,</div>
+            <div data-char=",">.</div>
           </h2>
           <h2>
             <div data-char=".">B</div>
@@ -131,39 +123,19 @@ const Intro = () => {
         <div className={styles.animationTitleContainer}>
 
 
-          <h2 ref={secondaryTitleOneRef} className={`${anton.className} ${styles.extraTitle} ${styles.animationTitle}`}>
-            <span ref={secondaryTitleRefOneContainer}>
-              PARTNER IN <Letter textSize='title'>K</Letter>REATION
-            </span>
-          </h2>
-          <h2 ref={secondaryTitleTwoRef} className={`${anton.className} ${styles.extraTitle} ${styles.animationTitle}`}>
-            <span ref={secondaryTitleRefTwoContainer}>
-              STORYTELLERS
-            </span>
+          <h2 ref={secondaryTitleOneRef} className={`${anton.className} ${styles.extraTitle}`}>
+            PARTNER IN
+            <span className='inline-element'> <Letter textSize='title'>K</Letter>REATION</span>
+            STORYTELLERS
           </h2>
 
         </div>
-        {/* <h2
-          className={`${anton.className} ${styles.extraTitle}`}>
-          <span>PARTNER</span>
-          <span>IN</span>
-          <span><Letter textSize='title'>K</Letter>REATION</span>
-        </h2>
-
-        <h2 ref={textRef} className={` ${styles.extraTitle} ${styles.extraTitleAlt} ${anton.className}`}>
-          STORYTELLERS
-        </h2> */}
-
-        <div className={styles.miniTitleContainer}>
 
 
-          {/* <h4 className={styles.secondary}>Great ideas deserve more than simple design.</h4> */}
-
+        <div ref={paragraphRef} className={styles.miniTitleContainer}>
           <Paragraph align='center'>
-            Scroll on to see how every pixel, every idea, and every move clicks into place—revealing the brand you were meant to be
+            Through creative thinking, sharp strategy, and bold design, the ordinary becomes impossible to ignore. Keep scrolling to watch everything fall into place and see how your brand’s true potential can come to life.
           </Paragraph >
-          <h4 className={styles.secondary}>DIS<Letter textSize='title'>K</Letter>OVER HOW EVERYTHING FALLS INTO PLACE AND SEE YOUR BRAND'S <span className="bold-text purple"> TRUE POTENTIAL</span></h4>
-
 
           <div className={styles.scrollElementContainer}>
             <div className={styles.scrollElement}>

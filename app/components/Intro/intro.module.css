@@ -118,11 +118,3 @@
 	transform:translateY(-100%);
 }
 
-.animationTitleContainer{
-
-}
-
-.animationTitle{
-  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
-  /* background: var(--purple-faint); */
-}
