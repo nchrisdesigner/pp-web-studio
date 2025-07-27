@@ -85,3 +85,44 @@
   z-index: 1;
 }
 
+.descrambleText{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 1.6rem;
+}
+
+.descrambleText h2 {
+	visibility:hidden;
+	padding:0;
+	font-size: clamp(3.2rem, 2rem + 5vw, 6.8rem);   
+  line-height: 1.05;
+	display:flex;
+  align-items: center;
+  overflow:hidden;
+  letter-spacing: 0.03em;
+  text-wrap: balance;
+}
+
+.descrambleText h2 div{
+  position: relative;
+	display:inline-block;
+}
+
+.descrambleText h2 div::before {
+	position:absolute;
+	top:0;
+	left:0;
+	content:attr(data-char);
+	transform:translateY(-100%);
+}
+
+.animationTitleContainer{
+
+}
+
+.animationTitle{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+  /* background: var(--purple-faint); */
+}

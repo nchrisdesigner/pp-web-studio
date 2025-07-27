@@ -16,8 +16,8 @@ const WhatWeDid = () => {
           <div className={styles.projectsContainer}>
             {projects.map((project) => {
               return (
-                <div className={styles.projectContainer}>
-                  <Project key={project.id} {...project} />
+                <div key={project.id} className={styles.projectContainer}>
+                  <Project  {...project} />
                 </div>
               )
             })}
