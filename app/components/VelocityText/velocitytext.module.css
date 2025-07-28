@@ -1,6 +1,7 @@
 .sectionContainer{
   background: var(--dark-bg);
-  padding: 14.6rem 0 9.6rem 0;
+  padding: 12.6rem 0 9.6rem 0;
+  overflow-x: hidden;
 }
 
 .sectionContainer h2{

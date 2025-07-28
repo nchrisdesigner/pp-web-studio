@@ -99,6 +99,26 @@ It should move people, start conversations, make things happen.
 
 
 
+Your website isn’t just a page — it’s where your story begins. We make sure it’s one worth reading.
+
+We don’t just design things that look good. We build stuff that works, tells the truth, and feels like you.
+
+Every brand has a story — we help you tell yours in a way people remember.
+
+You don’t need flashy. You need klarity, konsistency, and something that actually konneks.
+
+From the first scroll to the last klik, we make sure every part of your site feels right.
+
+We take raw ideas, ask the right questions, and shape them into brands that mean something.
+
+It’s not about being trendy — it’s about being true to what your brand really is.
+
+A strong brand doesn’t shout. It speaks clearly, with konfidence. That’s what we build.
+
+Design pulls them in. Strategy keeps them there. Story makes them care.
+
+We’re not here to impress. We’re here to help you show up as your real, bold, unforgettable self.
+
 
 
 
