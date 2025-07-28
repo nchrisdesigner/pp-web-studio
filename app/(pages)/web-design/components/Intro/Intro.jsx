@@ -23,7 +23,7 @@ const Intro = () => {
             <h3 className={`${styles.mainTitle} ${anton.className}`}>IS YOUR BUSINESS?</h3>
           </div>
           <p className={styles.text}>
-            <span className="bold-text">If your business isn’t online, you’re missing out.</span> A website means your doors are always open, <span className='purple-highlight semibold-text'>ready to answer questions, </span> <span className='purple-highlight-2 semibold-text'>showcase your services,</span> and <span className='purple-highlight-3 semibold-text'>solve your customers’ problems</span> at the click of a button. A well-designed website is your most powerful tool, building trust, providing vital information, and connecting with potential clients before you even speak a word. </p>
+            <span className="bold-text purple-highlight">If your business isn’t online, you’re missing out.</span> A website means your doors are always open, <span className='semibold-text'>ready to answer questions, </span> <span className='semibold-text'>showcase your services,</span> and <span className='semibold-text'>solve your customers’ problems</span> at the click of a button. A well-designed website is your most powerful tool, building trust, providing vital information, and connecting with potential clients before you even speak a word. </p>
         </div>
         <div className={styles.animatedTitle}>
           <h3 className={styles.secondaryTitle}>Every moment offline is a missed opportunity. <span className="bold-text purple">Let’s change that.</span></h3>

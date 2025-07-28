@@ -21,6 +21,7 @@ import { ImRocket } from "react-icons/im"
 import { ImUnlocked } from "react-icons/im";
 import { Anton } from 'next/font/google'
 import Letter from '@/app/ui/Letter/Letter'
+import TextPath from '../Intro/components/TextPath/TextPath'
 
 const anton = Anton({
   weight: ['400'],
