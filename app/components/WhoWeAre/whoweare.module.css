@@ -24,6 +24,25 @@
   animation-range-end: 40%;
 }
 
+.comment{
+  color: var(--purple);
+  width: 30ch;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 10%;
+  transform: rotate(20deg);
+}
+
+.secondary{
+  font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.5625rem);
+  color: var(--white);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
 @keyframes rotate{
   0%{
     transform: translate3d(-407.977px, 51.303px, 100px) rotateY(-40deg) rotateX(-10deg);
@@ -59,6 +78,8 @@
   grid-column: 4/6;
   grid-row: 1/2;
 }
+
+
 
 .paragraph {
   font-size: clamp(1.6rem, 0.9315rem + 0.9423vw, 1.8rem);

@@ -63,8 +63,9 @@ const PrimaryTitle = () => {
           </span>
         </span>
         <div>
-          WITH <span className={styles.noWrapWord}> PIXELPERFE<Letter textSize='title'>K</Letter>T</span> DESIGN
+          THROUGH <span className={styles.noWrapWord}> <Letter textSize='title'>K</Letter>REATIVITY</span> 
         </div>
+
       </h1>
 
       <motion.div
@@ -72,7 +73,7 @@ const PrimaryTitle = () => {
         initial='hidden'
         animate='show'>
         <p className={`${styles.text} `}>
-          We’re a <Letter textSize="paragraph">K</Letter>reative web design studio based in Greece, &nbsp; <Letter textSize="paragraph">K</Letter>rafting beautiful and distinctive work for brands that <span className='bold-text'>dare to stand out.</span>
+          We’re a <Letter textSize="paragraph">K</Letter>reative web design studio based in Greece, designing beautiful and distinctive work for brands that <span className='bold-text'>dare to stand out.</span>
         </p>
 
       </motion.div>

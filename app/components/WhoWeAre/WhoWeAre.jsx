@@ -3,25 +3,26 @@ import styles from './whoweare.module.css'
 import { useRef } from 'react'
 import { useInView, motion } from 'framer-motion'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
-import PixelPerfektExplain from '@/app/ui/PixelPerfektExplain/PixelPerfektExplain'
-import { Anton } from 'next/font/google'
+
+import { Anton, Rock_Salt } from 'next/font/google'
 import Letter from '@/app/ui/Letter/Letter'
 
 const anton = Anton({
   weight: ['400'],
   subsets: ['latin'],
 })
+const rocksalt = Rock_Salt({
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
-const principleVariants = {
-  hidden: {
-    opacity: 0,
-    y: 35
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-  }
+
+const variants = {
+  initial: { opacity: 0, x: -15 },
+  whileInView: { opacity: 1, x: 0 },
+  transition: { duration: 0.1 }
 }
+
 
 const WhoWeAre = () => {
   const containerRef = useRef(null)
@@ -39,21 +40,27 @@ const WhoWeAre = () => {
       <div className='container'>
         <div className={styles.perspectiveContainer}>
           <motion.div
-          initial={{
-            opacity:0
-          }}
-          whileInView={{
-            opacity:1,
-            delay:1
-          }}
+            initial={{
+              opacity: 0
+            }}
+            whileInView={{
+              opacity: 1,
+              delay: 1
+            }}
           >
             <MiniTitle>WHO WE ARE</MiniTitle>
           </motion.div>
 
+          <motion.h5 whileInView={{opacity:1}} initial={{opacity:0}} transition={{delay:2}} className={`${rocksalt.className} ${styles.comment}`}>Client is a bad,bad word. We prefer partner-in-kreation storytellers</motion.h5>
           <h2 className={`${anton.className} ${styles.title}`}>
             <Letter textSize="title">K</Letter>REATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS
           </h2>
-          <PixelPerfektExplain />
+          <motion.h4 variants={variants} initial='initial'
+            whileInView='whileInView'
+            transition={{
+              duration: 0.1,
+              delay: 0.3
+            }} className={styles.secondary}>We <Letter textSize='title'>K</Letter>o-strategize. We <Letter textSize='title'>K</Letter>o-Design. We <Letter textSize='title'>K</Letter>o-win.</motion.h4>
 
           <div className={`${styles.gridContainer}`}>
             <div className={styles.lineSVG}>
@@ -87,6 +94,7 @@ const WhoWeAre = () => {
               </motion.svg>
             </div>
 
+
             <motion.p
               className={styles.paragraph}
               initial={{
@@ -100,12 +108,12 @@ const WhoWeAre = () => {
               transition={{
                 delay: 0.25
               }}>
-              <span className='purple bold-text'>Every pixel we place tells part of your story.</span> We’re not just another web design studio—we’re a <Letter>K</Letter>reative partner turning raw <Letter>K</Letter>oncepts into bold, living brands. Every site we build is a mix of strategy, story, and style <span className="bold-text"> — designed to refle<Letter>K</Letter>t who you are, with authenticity and a fresh perspective.</span>
+              Here’s the thing — <span className='purple bold-text'>every brand faces hurdles.</span> Maybe it’s getting your message right or making sure your site works for visitors. That’s where we step in. We listen, figure out what’s going on, and fix it with <Letter>K</Letter>reative solutions. The result? A website that tells your story clearly and helps your business grow. No fluff. Just real, honest work that makes a difference.
             </motion.p>
 
           </div>
         </div>
-        
+
       </div>
     </section>
   )
@@ -113,4 +121,3 @@ const WhoWeAre = () => {
 
 export default WhoWeAre
 
- 
