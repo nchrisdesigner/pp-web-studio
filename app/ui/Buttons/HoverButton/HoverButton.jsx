@@ -14,34 +14,39 @@ const HoverButton = () => {
   }
   return (
     <>
-      <div className={styles.hovermeTextContainer}>
+      {/* <div className={styles.hovermeTextContainer}>
         <h4 className={styles.hovermeText}>(Hover Me)</h4>
-      </div>
+      </div> */}
       <div className={styles.buttonContainer}>
         <button onClick={handleCopy} className={styles.button}>
-
+          {/* 
           <div className={styles.icon}>
             <span className={`${styles.textIcon} ${styles.hide}`}>Visual Trigger</span>
             <span>
 
-              {isCopied ? <ImCheckmark2 /> : <PiCopy />}
+              
             </span>
-          </div>
+          </div> */}
 
           <span className={styles.title}>
-            {isCopied
-              ?
-              (<>
-                Email <Letter>k</Letter>opied
-              </>)
-              :
-              (<>
-                <Letter>k</Letter>opy email
-              </>)}
+            <span>{isCopied ? <ImCheckmark2 /> : <PiCopy />}</span>
+            <span>
+              {isCopied
+                ?
+                (<>
+                  Email <Letter>k</Letter>opied
+                </>)
+                :
+                (<>
+                  <Letter>k</Letter>opy email
+                </>)}
+            </span>
+
+
 
           </span>
 
-          <div className={`${styles.paddingLeft} ${styles.hide}`}>
+          {/* <div className={`${styles.paddingLeft} ${styles.hide}`}>
             <div className={styles.paddingLeftLine}>
               <span className={styles.paddingLeftText}>Breathing Room / Left</span>
             </div>
@@ -59,7 +64,7 @@ const HoverButton = () => {
 
           <div className={`${styles.border} ${styles.hide}`}>
             <span className={styles.borderText} >Smooth Corners</span>
-          </div>
+          </div> */}
         </button>
       </div>
     </>

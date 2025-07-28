@@ -4,7 +4,7 @@ import { MdBolt } from "react-icons/md"
 const BrainpowerButton = () => {
   return (
     <div>
-      <a href="#contact" className={styles.link}>
+      <a href="#projects" className={styles.link}>
         <span className={styles.spinner}></span>
         <span className={styles.content}>
           <MdBolt className={styles.icon} />

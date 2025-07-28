@@ -3,6 +3,7 @@ import { useState } from 'react'
 import styles from './contactbutton.module.css'
 import { PiCopy } from "react-icons/pi"
 import { ImCheckmark2 } from "react-icons/im"
+import Letter from '../../Letter/Letter'
 
 const ContactButton = () => {
   const [copied, setCopied] = useState(false)
@@ -14,10 +15,19 @@ const ContactButton = () => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.miniTitle}>You are one step away from being average</p>
       <button onClick={handleCopy} className={styles.btn}>
-        {copied ? 'Email copied' : 'Copy email '}
-        {copied ? <ImCheckmark2 /> : <PiCopy />}
+        {copied ? <ImCheckmark2 className={styles.icon} /> : <PiCopy className={styles.icon} />}
+        <span>
+          {copied
+            ?
+            (<>
+              Email <Letter textSize='title'>K</Letter>opied
+            </>)
+            :
+            (<>
+              <Letter textSize='title'>K</Letter>opy email
+            </>)}
+        </span>
       </button>
     </div>
 

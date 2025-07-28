@@ -14,7 +14,7 @@ const Intro = () => {
 
   return (
     <section className={`${styles.sectionContainer}`}>
-      {/* <TextPath /> */}
+      <TextPath />
       <div className="container">
         <div className={styles.gridContainer}>
           <div>

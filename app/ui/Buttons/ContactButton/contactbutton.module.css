@@ -10,20 +10,13 @@
   display: inline-block;
   outline: none;
   border: none;
-  color: var(--white);
-  background: var(--purple);
-  background: #2c2c99;
-  border: 1px solid var(--white);
+  cursor: pointer;
+  border: 2px solid var(--purple);
+  background: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 1.6rem;
-}
-
-.miniTitle{
-  text-align: center;
-  margin: 3.2rem auto 1.6rem auto;
-  font-size: clamp(1.4rem , .8rem + 2vw, 1.6rem);
-  color: var(--black);
-  font-weight: 700;
+  font-weight: 600;
 }

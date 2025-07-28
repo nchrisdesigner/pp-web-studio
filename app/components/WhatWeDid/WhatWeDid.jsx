@@ -5,7 +5,7 @@ import Project from './components/Project/Project'
 
 const WhatWeDid = () => {
   return (
-    <section className={`${styles.sectionContainer}`}>
+    <section id='projects' className={`${styles.sectionContainer}`}>
       <div className="container">
 
         <TitleContainer miniTitle='WHAT WE DID' title='SUCCESS STORIES'>

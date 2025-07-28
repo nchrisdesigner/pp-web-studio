@@ -143,7 +143,7 @@ const Hero = () => {
             <Paragraph color='white' align='left' ><span className='bold-text purple'>Why make it easier for your competitors?</span></Paragraph>
           </div>
           <a href="#pricing-web" className={styles.btn}>
-            <ImUnlocked /> Unlock Your <Letter>K</Letter>oncept
+            <ImUnlocked /> Unlock Your <Letter textSize='title' >K</Letter>oncept
           </a>
         </div>
 

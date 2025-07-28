@@ -1,6 +1,5 @@
 import styles from './features.module.css'
 import { webDesignFeatures } from '@/app/data/data'
-import PromiseTitle from '@/app/ui/PromiseTitle/PromiseTitle'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
 
@@ -30,7 +29,7 @@ const Features = () => {
             {webDesignFeatures.map(({ id, title, desc }) => {
               return (
                 <div key={id} className={styles.feature}>
-                  {/* <span>{id}</span> */}
+                  <span>{id}</span>
                   <h3>{title}</h3>
                   <p>{desc}</p>
                 </div>

@@ -6,11 +6,13 @@ const myFont = localFont({
   display: 'swap',
 })
 
-const Letter = ({children, textSize}) => {
+const Letter = ({children, textSize, color = '#5e5cd6'}) => {
   return (
     <span 
-    className={`${styles.letter} 
-    ${myFont.className} ${styles[textSize]}` }>{children}</span>
+    style={{color:color}}
+    className={`${styles.letter} ${myFont.className} ${styles[textSize]}` }>
+      {children}
+    </span>
   )
 }
 
