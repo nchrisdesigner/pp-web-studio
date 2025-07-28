@@ -21,7 +21,7 @@
 }
 
 .textContainer h2 {
-  font-size: clamp(6.2rem, 4.5rem + 8vw, 9.6rem);;
+  font-size: clamp(5.6rem, 4.5rem + 7vw, 9.6rem);;
   line-height: 1.2;
   color: var(--white);
 }
@@ -36,6 +36,7 @@
 .textContainer p {
   color: var(--white);
   font-size: 1.4rem;
+  width: 38ch;
 }
 
 

@@ -19,7 +19,6 @@ import step3 from '@/app/assets/steps/step-3.png'
 import step4 from '@/app/assets/steps/step-4.png'
 
 
-import logo from '@/app/assets/logo.png'
 import WebDesign from "../components/WhatWeDo/components/SVG/WebDesign"
 import BrandIdentity from "../components/WhatWeDo/components/SVG/BrandIdentity"
 import VideoMotion from "../components/WhatWeDo/components/SVG/VideoMotion"
@@ -31,7 +30,7 @@ import wodshop from '@/app/assets/projects/wodshop-logo.png'
 import jtr from '@/app/assets/projects/jtr-logo.png'
 import rway from '@/app/assets/projects/rway-logo.png'
 import sys from '@/app/assets/projects/sys-logo.png'
-import Letter from "../ui/Letter/Letter"
+
 
 // Home Page
 export const miniText = [

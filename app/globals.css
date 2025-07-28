@@ -44,8 +44,14 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
   width: 100vw;
+}
+
+section,
+header,
+footer{
+  overflow-x: hidden!important;
 }
 
 body.no-scroll {

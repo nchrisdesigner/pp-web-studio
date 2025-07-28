@@ -57,7 +57,8 @@ const PrimaryTitle = () => {
   return (
     <div className={styles.container}>
       <h1 className={` ${styles.primaryTitle} ${anton.className} `}>
-        <span className='block-element'>WE SOLVE&nbsp;
+        <span className='block-element'>
+          WE SOLVE&nbsp;
           <span className='faint-text'>
             PROBLEMS
           </span>
