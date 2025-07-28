@@ -10,7 +10,6 @@
   gap: 2.4rem;
 }
 
-
 .textContainer {
   position: relative;
   margin-top: 2.4rem;
@@ -22,7 +21,7 @@
 }
 
 .textContainer h2 {
-  font-size: 5.6rem;
+  font-size: clamp(6.2rem, 4.5rem + 8vw, 9.6rem);;
   line-height: 1.2;
   color: var(--white);
 }
