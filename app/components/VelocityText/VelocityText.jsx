@@ -28,26 +28,52 @@ const VelocityText = () => {
 
   const x1 = useTransform(scrollYProgress, [0, 1], ['100%', '-100%'])
   const x2 = useTransform(scrollYProgress, [0, 1], ['-100%', '100%'])
-  const skewFactor1 = useTransform(smoothVelocity, [-1000, 1000], [10, -10])
-  const skew1 = useSpring(0, {
-    bounce: 0,
-    visualDuration: 0
-  })
 
-  useAnimationFrame(() => {
-    skew1.set(skewFactor1.get())
-  })
+const velocityThreshold = 10;
+const clampedVelocity = useTransform(smoothVelocity, v =>
+  Math.abs(v) < velocityThreshold ? 0 : v
+);
+
+const skewFactor1 = useTransform(clampedVelocity, [-1000, 1000], [10, -10]);
+const skew1 = useSpring(0, {
+  bounce: 0,
+  visualDuration: 0
+});
+
+useAnimationFrame(() => {
+  skew1.set(skewFactor1.get());
+});
+
+const skewFactor2 = useTransform(clampedVelocity, [-1000, 1000], [-10, 10]);
+const skew2 = useSpring(0, {
+  bounce: 0,
+  visualDuration: 0
+});
+
+useAnimationFrame(() => {
+  skew2.set(skewFactor2.get());
+});
+
+  // const skewFactor1 = useTransform(smoothVelocity, [-1000, 1000], [10, -10])
+  // const skew1 = useSpring(0, {
+  //   bounce: 0,
+  //   visualDuration: 0
+  // })
+
+  // useAnimationFrame(() => {
+  //   skew1.set(skewFactor1.get())
+  // })
 
 
-  const skewFactor2 = useTransform(smoothVelocity, [-1000, 1000], [-10, 10])
-  const skew2 = useSpring(0, {
-    bounce: 0,
-    visualDuration: 0
-  })
+  // const skewFactor2 = useTransform(smoothVelocity, [-1000, 1000], [-10, 10])
+  // const skew2 = useSpring(0, {
+  //   bounce: 0,
+  //   visualDuration: 0
+  // })
 
-  useAnimationFrame(() => {
-    skew2.set(skewFactor2.get())
-  })
+  // useAnimationFrame(() => {
+  //   skew2.set(skewFactor2.get())
+  // })
 
 
   return (
