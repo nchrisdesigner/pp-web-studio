@@ -54,6 +54,13 @@
   animation: move .7s 3s forwards ease-in-out
 } */
 
+.secondary{
+    font-size: clamp(1.4rem, 1.1548rem + 0.5261vw, 1.5625rem);
+  color: var(--white);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
 @keyframes move {
   from {
     transform: translateX(-150rem) scale(1.8);

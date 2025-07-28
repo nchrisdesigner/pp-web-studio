@@ -30,7 +30,14 @@ const Header = () => {
           className={styles.textContainer}>
           <h4 className={styles.secondaryTitle}>what other people say about you </h4>
           <h2 className={`${anton.className} ${styles.title}`}>YOUR ONLINE SIGNATURE</h2>
-          <p className={styles.paragraph}>Having strong branding is essential for businesses as it serves as the foundation upon which trust, recognition, and loyalty are built. A well-crafted brand identity communicates your company's story, values and mission. <span className="bold-text purple"> It distinguishes you from competitors,</span> helping you to stand out in a crowded marketplace.</p>
+          <p className={styles.paragraph}>Strong branding isn’t just a nice-to-have — it’s the foundation of trust, recognition, and loyalty.<span className="bold-text"> It tells people who you are, what you stand for, and why they should choose you.</span>
+          </p>
+
+          <h3 className={styles.secondary}>
+            In a sea of sameness, <span className="purple">choose to stand out.</span>
+          </h3>
+
+          {/* In a sea of sameness, it’s what makes your brand feel real — and worth remembering.   */}
         </motion.div>
         <motion.figure
           initial={{
