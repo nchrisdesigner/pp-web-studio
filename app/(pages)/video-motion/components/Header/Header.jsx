@@ -57,7 +57,8 @@ const Header = () => {
             </motion.span>
             WE MOVE BRANDS</h1>
           <Paragraph color='white'>
-            In a fast-paced world, <strong className='green'>videos capture attention instantly</strong> and  communicate complex ideas quickly, engaging viewers far more effectively than text. Videos can evoke emotions through storytelling, music, and visuals, creating a deeper emotional connection with your audience and  making your message memorable, cutting through the noise and connecting with your audience right away.
+
+            In a busy world, video gets eyes on you right away. It tells your story quick and clear — no extra fluff, just feeling. With the right visuals, people get your message instantly and, more important, they remember it. When it’s done right, video connects with people and gets them to take action. 
           </Paragraph>
           <div className={styles.shapeContainer}>
             <motion.svg
