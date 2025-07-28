@@ -31,10 +31,10 @@ const Pricing = () => {
                     <p className={styles.description}>{desc}</p>
                     <p className={styles.miniText}>{miniText}</p>
                   </div>
-                  <div className={styles.priceContainer}>
+                  {/* <div className={styles.priceContainer}>
                     <div style={{ fontWeight: '700', fontSize: '1.8rem' }}>{price}</div>
                     <div style={{ fontWeight: '300', fontSize: '1.2rem' }}>Taxes Inc.</div>
-                  </div>
+                  </div> */}
 
                   <div>
                     <p style={{ fontWeight: '700', fontSize: '1.6rem', borderBottom: '1px solid var(--purple)', paddingBottom: '1rem' }}>What includes</p>

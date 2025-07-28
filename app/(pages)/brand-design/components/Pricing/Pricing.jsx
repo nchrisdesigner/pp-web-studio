@@ -33,7 +33,7 @@ const Pricing = () => {
                     </h3>
                   </div>
                   <p className={styles.desc}>{desc}</p>
-                  <p className={styles.price}>{price}</p>
+                  {/* <p className={styles.price}>{price}</p> */}
                   <p style={{ fontWeight: '700', color: 'var(--white)', fontSize: '1.6rem', borderBottom: '1px solid #ffffff5d', paddingBottom: '1rem' }}>What includes</p>
                   <div className={styles.featuresContainer}>
                     {features.map((feature, index) => {

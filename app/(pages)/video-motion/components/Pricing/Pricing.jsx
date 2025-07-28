@@ -22,7 +22,7 @@ const Pricing = () => {
                     <h3>{title}</h3>
                   </div>
                   <p className={styles.desc}>{desc}</p>
-                  <h4 className={styles.price}>{price}</h4>
+                  {/* <h4 className={styles.price}>{price}</h4> */}
                 </div>
                 <div className={styles.features}>
                   <h4 className={styles.whatIncludes}>What includes</h4>
