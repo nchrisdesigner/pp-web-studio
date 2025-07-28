@@ -1,6 +1,7 @@
 .sectionContainer {
   /* min-height: 100dvh; */
   background: var(--white);
+  padding: 9.6rem 0;
   view-timeline: --section-animated;
 }
 
@@ -67,7 +68,7 @@
   }
 }
 
-@media screen and(width < 500px) {
+@media screen and (width < 500px) {
   .containerRight {
     text-align: left;
   }
