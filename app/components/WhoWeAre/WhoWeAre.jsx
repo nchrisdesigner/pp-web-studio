@@ -1,9 +1,9 @@
 'use client'
 import styles from './whoweare.module.css'
 import { motion } from 'motion/react'
-import { Anton } from 'next/font/google'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Letter from '@/app/ui/Letter/Letter'
+import { Anton } from 'next/font/google'
 
 const anton = Anton({
   weight: ['400'],

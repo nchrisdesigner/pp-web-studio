@@ -3,6 +3,7 @@ import Contact from "./components/Contact/Contact"
 import Header from "./components/Header/Header"
 
 import ScrollableText from "./components/ScrollableText/ScrollableText"
+import VelocityText from "./components/VelocityText/VelocityText"
 import WhatWeDid from "./components/WhatWeDid/WhatWeDid"
 import WhatWeDo from "./components/WhatWeDo/WhatWeDo"
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre"
@@ -15,6 +16,7 @@ export default function Home() {
       <ScrollableText />
 
       <WhoWeAre />
+      <VelocityText />
       <WhatWeDo />
       <Benefits />
       <WhatWeDid />

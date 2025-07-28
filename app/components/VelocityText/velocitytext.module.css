@@ -1,0 +1,12 @@
+.sectionContainer{
+  background: var(--dark-bg);
+  padding: 14.6rem 0;
+}
+
+.sectionContainer h2{
+  font-size: clamp(8rem, 6rem + 5.5vw, 12rem);
+  color: var(--white);
+  line-height: 1.2;
+  /* transform: rotate(-5deg); */
+  white-space: nowrap;
+}
