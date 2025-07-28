@@ -12,7 +12,7 @@ const anton = Anton({
 
 const Benefits = () => {
   return (
-    <section className={styles.sectionContainer}>
+    <section id="benefits" className={styles.sectionContainer}>
       <div className="container">
         <div className={styles.benefitsContainer}>
           <div className={styles.textContainer}>

@@ -21,7 +21,7 @@ const NavBar = () => {
 
           <figure >
             <Link className={styles.logoContainer} href="/">
-              <Image className={styles.textLogo} src={officialLogo} alt='Pixel Perfekt Logo' width={180} />
+              <Image className={styles.textLogo} src={officialLogo} alt='Pixel Perfekt Logo' width={150} />
             </Link>
           </figure>
 

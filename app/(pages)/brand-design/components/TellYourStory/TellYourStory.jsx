@@ -8,7 +8,7 @@ const TellYourStory = () => {
   return (
     <section className={styles.sectionContainer}>
       <div className='container'>
-        <h3 className={styles.absoluteTitle}>SHARE YOUR JOURNEY TO THE WORLD</h3>
+        {/* <h3 className={styles.absoluteTitle}>SHARE YOUR JOURNEY TO THE WORLD</h3> */}
         <TitleContainer align='center' miniTitle='SHARE YOUR JOURNEY TO THE WORLD' title='TELL YOUR STORY'>
           <span className="bold-text">Your story is unique.</span> Share it openly and authentically, not only to inform but also to inspire your audience. Embrace the opportunity to tell your story to the world and leave a lasting impression and a positive impact on those who listen.
         </TitleContainer>
@@ -27,11 +27,11 @@ const TellYourStory = () => {
             })}
           </div>
 
-          <div className={styles.animatePromiseTitle}>
+          {/* <div className={styles.animatePromiseTitle}>
             <PromiseTitle color='purple'>
               Ready to Build Your Brand?
             </PromiseTitle>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
