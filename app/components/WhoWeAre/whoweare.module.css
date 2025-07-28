@@ -53,20 +53,6 @@
   }
 }
 
-@media screen and (width > 1712px){
-  .title{
-    font-size: 14.2rem;
-    max-width: 20ch;
-  }
-}
-
-/* Title Container */
-
-.titleContainer>h3 {
-  font-size: 2rem;
-  font-style: italic;
-  color: var(--purple);
-}
 
 .gridContainer{
   display: grid;
@@ -78,8 +64,6 @@
   grid-column: 4/6;
   grid-row: 1/2;
 }
-
-
 
 .paragraph {
   font-size: clamp(1.6rem, 0.9315rem + 0.9423vw, 1.8rem);
@@ -97,65 +81,7 @@
   text-wrap: pretty;
 }
 
-
-
-.btn {
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: .8rem;
-  color: var(--white);
-}
-
-.icon {
-  font-size: 2rem;
-  color: var(--purple);
-
-}
-
-/* Principles Container */
-.principlesContainer {
-  /* display: grid;
-  grid-template-columns: 30rem 1fr; */
-
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 6.8rem 0;
-}
-
-.principlesContainer h3 {
-  font-size: 1.8rem;
-  margin: 2.4rem 0;
-  line-height: 1;
-  color: var(--white);
-  letter-spacing: 0.03em;
-}
-
-.principleContainer {
-  /* display: flex; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-
-@media screen and (width < 1280px) {
-  .textContainer>h2 {
-    font-size: 8rem;
-  }
-}
-
-@media screen and (width < 1080px) {
-  .principleContainer {
-    flex-direction: row;
-  }
-}
-
 @media screen and (width < 865px){
-  .principleContainer{
-    flex-direction: column;
-  }
   .gridContainer{
     grid-template-rows: 1fr;
   }
@@ -165,6 +91,7 @@
   .gridContainer{
     margin-top: 4.8rem;
   }
+
   .lineSVG {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -177,46 +104,9 @@
   }
 }
 
-
-@media screen and (width < 680px) {
-
-  .principleContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .textContainer>h2 {
-    font-size: 6rem;
-  }
-}
-
-@media screen and (width < 515px) {
-  .textContainer>h2 {
-    font-size: 5rem;
-  }
-
-  .textContainer>p {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (width < 443px) {
-  .textContainer>h2 {
-    font-size: 4.2rem;
-  }
-
-  .textContainer>p {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (width < 390px) {
-  .textContainer>h2 {
-    font-size: 3.8rem;
-  }
-
-  .textContainer>p {
-    font-size: 1.4rem;
+@media screen and (width > 1712px){
+  .title{
+    font-size: 14.2rem;
+    max-width: 20ch;
   }
 }

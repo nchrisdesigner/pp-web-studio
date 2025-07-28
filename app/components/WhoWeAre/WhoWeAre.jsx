@@ -1,21 +1,14 @@
 'use client'
 import styles from './whoweare.module.css'
-import { useRef } from 'react'
-import { useInView, motion } from 'framer-motion'
+import { motion } from 'motion/react'
+import { Anton } from 'next/font/google'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
-
-import { Anton, Rock_Salt } from 'next/font/google'
 import Letter from '@/app/ui/Letter/Letter'
 
 const anton = Anton({
   weight: ['400'],
   subsets: ['latin'],
 })
-const rocksalt = Rock_Salt({
-  weight: ['400'],
-  subsets: ['latin'],
-})
-
 
 const variants = {
   initial: { opacity: 0, x: -15 },
@@ -23,35 +16,13 @@ const variants = {
   transition: { duration: 0.1 }
 }
 
-
 const WhoWeAre = () => {
-  const containerRef = useRef(null)
-  const isInView = useInView(
-    containerRef,
-    {
-      margin: "0px 0px -200px 0px",
-      // threshold: 0.5,
-      once: true
-    }
-  )
 
   return (
     <section className={` ${styles.sectionContainer}`}>
       <div className='container'>
         <div className={styles.perspectiveContainer}>
-          <motion.div
-            initial={{
-              opacity: 0
-            }}
-            whileInView={{
-              opacity: 1,
-              delay: 1
-            }}
-          >
-            <MiniTitle>WHO WE ARE</MiniTitle>
-          </motion.div>
-
-          <motion.h5 whileInView={{opacity:1}} initial={{opacity:0}} transition={{delay:2}} className={`${rocksalt.className} ${styles.comment}`}>Client is a bad,bad word. We prefer partner-in-kreation storytellers</motion.h5>
+          <MiniTitle>WHO WE ARE</MiniTitle>
           <h2 className={`${anton.className} ${styles.title}`}>
             <Letter textSize="title">K</Letter>REATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS
           </h2>
@@ -93,7 +64,6 @@ const WhoWeAre = () => {
                   strokeLinecap="butt" />
               </motion.svg>
             </div>
-
 
             <motion.p
               className={styles.paragraph}
