@@ -4,7 +4,7 @@
 }
 
 .sectionContainer h2{
-  font-size: clamp(8rem, 6rem + 5.5vw, 12rem);
+  font-size: clamp(7.2rem, 5rem + 4vw, 12rem);
   color: var(--white);
   line-height: 1.2;
   /* transform: rotate(-5deg); */

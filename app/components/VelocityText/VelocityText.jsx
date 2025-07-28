@@ -26,8 +26,8 @@ const VelocityText = () => {
     stiffness: 500
   })
 
-  const x1 = useTransform(scrollYProgress, [0, 1], ['60%', '-100%'])
-  const x2 = useTransform(scrollYProgress, [0, 1], ['-80%', '100%'])
+  const x1 = useTransform(scrollYProgress, [0, 1], ['100%', '0%'])
+  const x2 = useTransform(scrollYProgress, [0, 1], ['-100%', '0%'])
   const skewFactor1 = useTransform(smoothVelocity, [-1000, 1000], [10, -10])
   const skew1 = useSpring(0, {
     bounce: 0,
