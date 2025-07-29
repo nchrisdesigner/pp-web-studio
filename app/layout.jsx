@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'PixelPerfekt | Web & Brand Design Studio',
-  description: 'Ready to stand out? At PixelPerfekt, we’re more than just designers — we’re storytellers, strategists, and creators. We build custom websites and brand identities that feel uniquely you. From sharp design to smooth animations, every pixel is designed with authenticity and precision to help your brand break through the noise.',
+  title: 'PixelPerfekt | Web Design Studio',
+  description: 'Ready to stand out? At PixelPerfekt, we’re more than just designers — we’re storytellers, strategists, and creators. We build custom websites and brand identities that feel uniquely you. From sharp design to smooth animations, every pixel is designed with authenticity and precision to help your brand stand out.',
   alternates: {
     canonical: 'https://www.pixelperfekt.gr/',
   },

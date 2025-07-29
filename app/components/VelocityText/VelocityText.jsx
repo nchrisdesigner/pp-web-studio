@@ -20,7 +20,7 @@ const VelocityText = () => {
     offset: ["start center", "end center"]
   })
 
-  const x = useTransform(scrollYProgress, [0, 1], ['100%', '-120%'])
+  const x = useTransform(scrollYProgress, [0, 1], ['100%', '-150%'])
 
   return (
     <section ref={containerRef} className={styles.sectionContainer}>
