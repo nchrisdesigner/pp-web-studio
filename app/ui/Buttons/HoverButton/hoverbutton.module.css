@@ -6,6 +6,7 @@
 .hovermeText{
   font-size: 1rem;
   text-align: center;
+  color: var(--white);
 }
 
 .buttonContainer{
@@ -34,16 +35,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
   font-size: 1.6rem;
   background: linear-gradient(
     90deg,
     rgba(77, 54, 208, 1) 0%,
     rgba(132, 116, 254, 1) 100%
   );
-  background: #000;
+
   color: white;
-  border: solid 2px var(--purple);
+  border: solid 2px var(--white);
   padding: 1rem 3rem;
   font-weight: 600;
   transform: scale(0.89) translateZ(0);
@@ -89,7 +90,7 @@
   width: 6px;
   height: 6px;
   transform: translate(-50%, -50%);
-  background-color: var(--purple);
+  background-color: var(--white);
   border-radius: 100%;
 }
 .icon::after {
@@ -102,11 +103,11 @@
   height: 33px;
   background-color: transparent;
   border-radius: 12px 22px 2px 2px;
-  border-right: solid 2px var(--purple);
+  border-right: solid 2px var(--white);
   border-top: solid 2px transparent;
 }
 .icon .textIcon {
-  color: var(--purple);
+  color: var(--white);
   position: absolute;
   font-size: 12px;
 
@@ -120,13 +121,13 @@
   display: flex;
 }
 .button:hover .icon svg {
-  border: solid 1.5px var(--purple);
+  border: solid 1.5px var(--white);
 }
 .paddingLeft {
   position: absolute;
   width: 20px;
   height: 2px;
-  background-color: var(--purple);
+  background-color: var(--white);
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -135,7 +136,7 @@
   content: "";
   width: 2px;
   height: 10px;
-  background-color: var(--purple);
+  background-color: var(--white);
   position: absolute;
   left: 0;
   top: 50%;
@@ -145,7 +146,7 @@
   content: "";
   width: 2px;
   height: 10px;
-  background-color: var(--purple);
+  background-color: var(--white);
   position: absolute;
   right: 0;
   top: 50%;
@@ -155,7 +156,7 @@
   position: absolute;
   width: 30px;
   height: 2px;
-  background-color: var(--purple);
+  background-color: var(--white);
   left: -24px;
   top: 11px;
   transform: rotate(-50deg);
@@ -168,11 +169,11 @@
   width: 6px;
   height: 6px;
   transform: translate(-50%, -50%);
-  background-color: var(--purple);
+  background-color: var(--white);
   border-radius: 100%;
 }
 .paddingLeftText {
-  color: var(--purple);
+  color: var(--white);
   font-size: 12px;
   position: absolute;
   white-space: nowrap;
@@ -185,7 +186,7 @@
   position: absolute;
   width: 20px;
   height: 2px;
-  background-color: var(--purple);
+  background-color: var(--white);
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -194,7 +195,7 @@
   content: "";
   width: 2px;
   height: 10px;
-  background-color: var(--purple);
+  background-color: var(--white);
   position: absolute;
   left: 0;
   top: 50%;
@@ -204,7 +205,7 @@
   content: "";
   width: 2px;
   height: 10px;
-  background-color: var(--purple);
+  background-color: var(--white);
   position: absolute;
   right: 0;
   top: 50%;
@@ -214,7 +215,7 @@
   position: absolute;
   width: 30px;
   height: 2px;
-  background-color: var(--purple);
+  background-color: var(--white);
   right: -24px;
   top: 11px;
   transform: rotate(50deg);
@@ -227,11 +228,11 @@
   width: 6px;
   height: 6px;
   transform: translate(-50%, -50%);
-  background-color: var(--purple);
+  background-color: var(--white);
   border-radius: 100%;
 }
 .paddingRightText {
-  color: var(--purple);
+  color: var(--white);
   font-size: 12px;
   position: absolute;
   white-space: nowrap;
@@ -251,7 +252,7 @@
   height: 53px;
   background-color: transparent;
   border-radius: 0px 0px 22px 22px;
-  border-right: solid 2px var(--purple);
+  border-right: solid 2px var(--white);
   border-bottom: solid 2px transparent;
 }
 .background::after {
@@ -261,12 +262,12 @@
   bottom: -20px;
   width: 6px;
   height: 6px;
-  background-color: var(--purple);
+  background-color: var(--white);
   border-radius: 100%;
 }
 .backgroundText {
   position: absolute;
-  color: var(--purple);
+  color: var(--white);
   font-size: 12px;
   bottom: -75px;
   left: -105px;
@@ -280,7 +281,7 @@
   content: "";
   width: 15px;
   height: 15px;
-  border: solid 2px var(--purple);
+  border: solid 2px var(--white);
   position: absolute;
   right: 0%;
   top: 0;
@@ -291,7 +292,7 @@
   content: "";
   width: 2px;
   height: 25px;
-  background-color: var(--purple);
+  background-color: var(--white);
   position: absolute;
   right: -19px;
   top: -13px;
@@ -299,7 +300,7 @@
 }
 .border .borderText {
   position: absolute;
-  color: var(--purple);
+  color: var(--white);
   font-size: 12px;
   right: -132px;
   top: -30px;
@@ -315,4 +316,16 @@
 .paddingRight,
 .background {
   will-change: transform;
+}
+
+
+
+@media screen and (width < 550px){
+  .icon,
+  .paddingLeft,
+  .paddingRight,
+  .background,
+  .border{
+    display: none;
+  }
 }

@@ -1,11 +1,9 @@
-'use client'
-
 import Link from 'next/link'
-import styles from './purplebutton.module.css'
+import styles from './darkbutton.module.css'
 
-const PurpleButton = ({ children, icon, id = '' }) => {
+const DarkButton = ({ children, icon, id }) => {
 
-  return (
+    return (
       <div>
         <Link href={id} className={styles.link}>
           <span className={styles.spinner}></span>
@@ -16,6 +14,7 @@ const PurpleButton = ({ children, icon, id = '' }) => {
         </Link>
       </div>
     )
+
 }
 
-export default PurpleButton
+export default DarkButton

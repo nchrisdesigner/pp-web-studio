@@ -6,19 +6,19 @@ import { ImCheckmark2 } from "react-icons/im"
 import Letter from '../../Letter/Letter'
 
 const ContactButton = () => {
-  const [copied, setCopied] = useState(false)
+  const [isCopied, setIsCopied] = useState(false)
 
   const handleCopy = () => {
     navigator.clipboard.writeText('pixelperfektacademy@gmail.com')
-    setCopied(true)
+    setIsCopied(true)
   }
 
   return (
     <div className={styles.container}>
       <button onClick={handleCopy} className={styles.btn}>
-        {copied ? <ImCheckmark2 className={styles.icon} /> : <PiCopy className={styles.icon} />}
+        {isCopied ? <ImCheckmark2 className={styles.icon} /> : <PiCopy className={styles.icon} />}
         <span>
-          {copied
+          {isCopied
             ?
             (<>
               Email <Letter textSize='title'>K</Letter>opied

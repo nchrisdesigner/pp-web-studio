@@ -3,28 +3,113 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  font-size: 14px;
+  gap: 1rem;
   background: linear-gradient(
     90deg,
     rgba(77, 54, 208, 1) 0%,
     rgba(132, 116, 254, 1) 100%
   );
-  color: white;
-  border: solid 2px #ffffff;
-  height: 50px;
-  padding: 0px 20px;
-  border-radius: 3px;
-  font-weight: 600;
-  transform: scale(0.89) translateZ(0);
+  color: #fff;
+  border: solid 1.5px #ffffff;
+  height: 5rem;
+
   position: relative;
   margin-top: 2rem;
+  padding: 0 2.4rem; 
+  font-size: 1.4rem; 
+  font-weight: 600; 
 }
+
 .button:hover {
-  transform: scale(.9) translateZ(0);
-  transform-origin: center;
+  /* transform: scale(.9) translateZ(0); */
+  /* transform-origin: center; */
 }
 
 .button:focus {
   outline: none;
+}
+
+.link{
+  position: relative;
+  display: inline-flex;
+  height: 5rem;
+  overflow: hidden;
+  padding: 1.5px;
+  transition: transfrom .2s ease-in-out;
+  will-change: transform;
+  outline: 1.5px dashed transparent;
+  outline-offset: 3px;
+}
+
+.link:active{
+  transform: scale(0.97);
+}
+
+.link:focus,
+.link:focus-within{
+  outline-color: var(--color-primary);
+}
+
+.spinner{
+  position: absolute;
+  inset: -1000%;
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    #e3e4ff 0%,
+    #7f80ed 50%,
+    #5152ae 100%
+  );
+  animation: spin 2s linear infinite
+}
+
+.content {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg,
+  rgba(77, 54, 208, 1) 0%,
+  rgba(132, 116, 254, 1) 100%); ;
+  padding: 0 2.4rem; 
+  font-size: 1.4rem; 
+  font-weight: 600; 
+  color: #ffffff; 
+  backdrop-filter: blur(12px); 
+  gap: 1rem; 
+  transition: all .25s ease;
+}
+
+.link:hover .content{
+  background: #0f1010; 
+}
+
+.link:hover .spinner{
+  background: conic-gradient(
+    from 90deg at 50% 50%,
+    #d1c1f6 0%,
+    #7274f4 50%,
+    #4d36d0 100%
+  );
+}
+
+.icon{
+  font-size: 2.4rem;
+  transform: rotate(3deg);
+  background: hsla(237, 100%, 73%, 0.2);
+  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }

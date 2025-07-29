@@ -1,5 +1,7 @@
 'use client'
-import { Anton } from 'next/font/google'
+import { MdBolt } from "react-icons/md"
+import DarkButton from '@/app/ui/Buttons/DarkButton/DarkButton'
+
 import styles from './primarytitle.module.css'
 import { motion } from 'framer-motion'
 import { gsap } from "gsap"
@@ -10,9 +12,11 @@ gsap.registerPlugin(DrawSVGPlugin)
 
 
 import Letter from '@/app/ui/Letter/Letter'
-import BrainpowerButton from '@/app/ui/Buttons/BrainpowerButton/BrainpowerButton'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
+import { Anton } from 'next/font/google'
+import PurpleButton from '@/app/ui/Buttons/PurpleButton/PurpleButton'
+import HoverButton from "@/app/ui/Buttons/HoverButton/HoverButton"
 
 
 const anton = Anton({
@@ -64,7 +68,7 @@ const PrimaryTitle = () => {
           </span>
         </span>
         <div>
-          THROUGH <span className={styles.noWrapWord}> <Letter textSize='title'>K</Letter>REATIVITY</span> 
+          THROUGH <span className={styles.noWrapWord}> <Letter textSize='title'>K</Letter>REATIVITY</span>
         </div>
 
       </h1>
@@ -79,10 +83,7 @@ const PrimaryTitle = () => {
 
       </motion.div>
 
-      <BrainpowerButton />
-      
-
-
+      <DarkButton id='#projects' icon={<MdBolt />}>View Our Work</DarkButton>
     </div>
   )
 }
@@ -91,9 +92,9 @@ export default PrimaryTitle
 
 const Smudge = () => {
   return (
-     <svg className={styles.smudge} width="406" height="36" viewBox="0 0 406 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <path className={styles.svgClass} d="M8.70966 27.2071C120.597 8.91137 233.052 5.17311 345.624 12.2245C361.316 13.2074 377.207 14.8046 392.971 13.9068C394.84 13.8004 395.541 13.3257 396.717 11.893" stroke="#5E5AD6" strokeWidth="15" strokeLinecap="round" />
-     </svg>
+    <svg className={styles.smudge} width="406" height="36" viewBox="0 0 406 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path className={styles.svgClass} d="M8.70966 27.2071C120.597 8.91137 233.052 5.17311 345.624 12.2245C361.316 13.2074 377.207 14.8046 392.971 13.9068C394.84 13.8004 395.541 13.3257 396.717 11.893" stroke="#5E5AD6" strokeWidth="15" strokeLinecap="round" />
+    </svg>
   )
 }
 

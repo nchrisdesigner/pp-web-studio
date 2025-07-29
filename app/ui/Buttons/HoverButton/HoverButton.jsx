@@ -1,52 +1,36 @@
-'use client'
-import { useState } from "react"
+
+
 import styles from './hoverbutton.module.css'
 import { PiCopy } from "react-icons/pi"
 import { ImCheckmark2 } from "react-icons/im"
 import Letter from "../../Letter/Letter"
+import Link from 'next/link'
 
 const HoverButton = () => {
-  const [isCopied, setIsCopied] = useState(false)
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('nchrisdeveloper@gmail.com')
-    setIsCopied(true)
-  }
   return (
     <>
-      {/* <div className={styles.hovermeTextContainer}>
+      <div className={styles.hovermeTextContainer}>
         <h4 className={styles.hovermeText}>(Hover Me)</h4>
-      </div> */}
+      </div>
+
       <div className={styles.buttonContainer}>
-        <button onClick={handleCopy} className={styles.button}>
-          {/* 
+        <Link href='#' className={styles.button}>
+          
           <div className={styles.icon}>
             <span className={`${styles.textIcon} ${styles.hide}`}>Visual Trigger</span>
-            <span>
-
-              
+            <span>  
+            <span><ImCheckmark2 /></span>
             </span>
-          </div> */}
+          </div>
 
           <span className={styles.title}>
-            <span>{isCopied ? <ImCheckmark2 /> : <PiCopy />}</span>
+                  Kopy email
             <span>
-              {isCopied
-                ?
-                (<>
-                  Email <Letter>k</Letter>opied
-                </>)
-                :
-                (<>
-                  <Letter>k</Letter>opy email
-                </>)}
             </span>
-
-
-
           </span>
 
-          {/* <div className={`${styles.paddingLeft} ${styles.hide}`}>
+          <div className={`${styles.paddingLeft} ${styles.hide}`}>
             <div className={styles.paddingLeftLine}>
               <span className={styles.paddingLeftText}>Breathing Room / Left</span>
             </div>
@@ -64,8 +48,8 @@ const HoverButton = () => {
 
           <div className={`${styles.border} ${styles.hide}`}>
             <span className={styles.borderText} >Smooth Corners</span>
-          </div> */}
-        </button>
+          </div>
+        </Link>
       </div>
     </>
   )

@@ -20,3 +20,11 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+.icon{
+  font-size: 2rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
