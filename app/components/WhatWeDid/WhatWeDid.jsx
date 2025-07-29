@@ -2,6 +2,7 @@ import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import styles from './whatwedid.module.css'
 import { projects } from '@/app/data/data'
 import Project from './components/Project/Project'
+import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 
 const WhatWeDid = () => {
   return (
@@ -24,11 +25,7 @@ const WhatWeDid = () => {
           </div>
         </div>
 
-        <h3 className={styles.secondaryTitle}>
-          <span className="purple">Just True Stories.</span> Designed with authenticity and a fresh perspective.
-        </h3>
-
-
+        <TertiaryTitle color='#222'><span className="purple">Just True Stories.</span> Designed with authenticity and a fresh perspective. </TertiaryTitle>
       </div>
     </section>
   )

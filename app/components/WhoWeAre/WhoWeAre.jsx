@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Letter from '@/app/ui/Letter/Letter'
 import { Anton } from 'next/font/google'
+import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 
 const anton = Anton({
   weight: ['400'],
@@ -12,7 +13,7 @@ const anton = Anton({
 
 const variants = {
   initial: { opacity: 0, x: -15 },
-  whileInView: { opacity: 1, x: 0 },
+  whileInView: { opacity: 1, x: 5 },
   transition: { duration: 0.1 }
 }
 
@@ -26,12 +27,18 @@ const WhoWeAre = () => {
           <h2 className={`${anton.className} ${styles.title}`}>
             <Letter textSize="title">K</Letter>REATIVE THINKERS, PROBLEM SOLVERS, GAME CHANGERS
           </h2>
-          <motion.h4 variants={variants} initial='initial'
+          <motion.div
+            variants={variants}
+            initial='initial'
             whileInView='whileInView'
             transition={{
               duration: 0.1,
               delay: 0.3
-            }} className={styles.secondary}>We <Letter textSize='title'>K</Letter>o-strategize. We <Letter textSize='title'>K</Letter>o-Design. We <Letter textSize='title'>K</Letter>o-win.</motion.h4>
+            }}>
+
+            <TertiaryTitle>CLIENT IS A BAD, BAD WORD. WE PREFER, PARTNER-IN-<Letter textSize='title'>K</Letter>REATION STORYTELLERS</TertiaryTitle>
+          </motion.div>
+         
 
           <div className={`${styles.gridContainer}`}>
             <div className={styles.lineSVG}>

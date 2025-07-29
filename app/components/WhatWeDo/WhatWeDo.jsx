@@ -3,6 +3,7 @@ import styles from './whatwedo.module.css'
 import Card from './components/Service/Service'
 import { services } from '@/app/data/data'
 import Letter from '@/app/ui/Letter/Letter'
+import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 
 
 const WhatWeDo = () => {
@@ -23,7 +24,7 @@ const WhatWeDo = () => {
           </div>
         </div>
         
-        <h3 className={styles.secondaryTitle}>No <Letter>K</Letter>ookie-<Letter>K</Letter>utter solutions here. &nbsp; <span className="purple"> Every project gets our full attention</span></h3>
+        <TertiaryTitle>No <Letter>K</Letter>ookie-<Letter>K</Letter>utter solutions here. &nbsp; <span className="purple"> Every project gets our full attention</span></TertiaryTitle>
       </div>
 
     </section>
