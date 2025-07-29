@@ -38,11 +38,12 @@
 }
 
 .textContainer h2 {
-  font-size: 2.4rem;
-  font-size: clamp(2rem, 1.6327rem + 0.8365vw, 2.3438rem);
+  font-size: clamp(1.8rem, 1.5rem + 0.8365vw, 2rem);
   font-weight: 700;
   line-height: 1;
+  letter-spacing: -0.01em;
   grid-row: 2/3;
+  text-transform: uppercase;
 }
 
 .textContainer h3 {
