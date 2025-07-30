@@ -1,8 +1,8 @@
 .title{
-  font-size: clamp(3.2rem, 2.3783rem + 4.6087vw, 6.25rem);
+  font-size: clamp(4rem, 3rem + 5.2vw, 9.6rem);
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: -0.03em;
+
 }

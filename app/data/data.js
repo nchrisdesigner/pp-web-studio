@@ -2,7 +2,7 @@ import { SiJordan } from "react-icons/si"
 import { MdOutlineBrandingWatermark } from "react-icons/md"
 import { BiImage } from "react-icons/bi"
 import { HiOutlineBolt } from "react-icons/hi2"
-import { MdOutlineRocketLaunch } from "react-icons/md"
+import { LuRocket } from "react-icons/lu"
 import { BiShoppingBag } from "react-icons/bi"
 import { BsCameraVideo } from "react-icons/bs"
 import { PiDroneFill } from "react-icons/pi"
@@ -290,19 +290,19 @@ export const webDesignPricing = [
     miniText: "(Take your online presence to the next level)",
     price: '3600€+',
     features: [
-      "Next.js + Framer Motion",
+      "Next.js + GSAP",
       "Photoshop, Illustrator, Midjourney",
       "Custom animations and interactive elements",
+      "Fully Customized",
       "High Speed Performance",
       "Best SEO Optimization",
-      "Fully Customized"
     ]
   },
   {
     id: 2,
     title: 'BASIC',
     secondTitle: 'MOST POPULAR',
-    icon: <MdOutlineRocketLaunch />,
+    icon: <LuRocket />,
     desc: 'Best for Small Business',
     miniText: "(Upgrade your online presence)",
     price: '1800€+',

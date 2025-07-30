@@ -5,39 +5,6 @@
   view-timeline: --container;
 }
 
-.animationText{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  justify-content: center;
-  margin-top: 1.6rem;
-}
-
-.animationText h2 {
-	/* visibility:hidden; */
-	padding:0;
-	font-size: clamp(4rem, 2rem + 7vw, 9.6rem);   
-  line-height: 1.05;
-	display:flex;
-  align-items: center;
-  overflow:hidden;
-  letter-spacing: 0.03em;
-  text-wrap: balance;
-}
-
-.animationText h2 div{
-  position: relative;
-	display:inline-block;
-}
-
-.animationText h2 div::before {
-	position:absolute;
-	top:0;
-	left:0;
-	content:attr(data-char);
-	transform:translateY(-100%);
-}
-
 .gridContainer{
   display: grid;
   grid-template-columns: 1fr;
@@ -55,41 +22,6 @@
   text-wrap: balance;
   color: var(--purple);
   color: #5e5cd640;
-}
-
-.text{
-  font-size: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
-  font-size: clamp(1.5rem, 0.9315rem + 0.7423vw, 1.5625rem);
-  line-height: 1.5;
-  text-wrap: balance;
-  margin: 0 auto 1.6rem auto;
-  width: min(100%, 85ch);
-}
-
-.animatedTitle{
-  animation: animateTitle;
-  animation-timeline: --container;
-}
-
-.secondaryTitle{
-  font-size: clamp(1.4rem, 1.1548rem + 0.5261vw, 1.5625rem);
-  text-align: center;
-  color: var(--white);
-  color: #000;
-  text-transform: uppercase;
-  line-height: 1.25;
-}
-
-@keyframes animateTitle{
-  0%,
-  40%{
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-  70%{
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media screen and (width < 480px){

@@ -36,9 +36,12 @@ const WhoWeAre = () => {
               delay: 0.3
             }}>
 
-            <TertiaryTitle>CLIENT IS A BAD, BAD WORD. WE PREFER, PARTNER-IN-<Letter textSize='title'>K</Letter>REATION STORYTELLERS</TertiaryTitle>
+            <TertiaryTitle>
+              CLIENT IS A BAD, BAD WORD. WE PREFER, < br />
+              PARTNER-IN-<Letter textSize='title'>K</Letter>REATION STORYTELLERS
+            </TertiaryTitle>
           </motion.div>
-         
+
 
           <div className={`${styles.gridContainer}`}>
             <div className={styles.lineSVG}>

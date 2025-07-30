@@ -3,6 +3,7 @@
   padding-bottom: 12rem;
   background: var(--dark-purple);
   background: #0a0023;
+    background: var(--dark-bg);
   view-timeline: --container;
 }
 
@@ -22,7 +23,8 @@
 
 .feature {
   background: #260462;
-  border: 1px solid var(--dark-purple);
+  background: #101010;
+  border: 1px dashed var(--purple);
   padding: 4rem 2.4rem;
   display: flex;
   flex-direction: column;
@@ -68,7 +70,7 @@
   font-size: 30rem;
   font-weight: 700;
   color: var(--purple);
-  opacity: .4;
+  opacity: .2;
   position: absolute;
   top: -65%;
   right: 0;
@@ -76,17 +78,18 @@
 }
 
 .feature h3 {
-  font-size: clamp(1.62rem, 1.3973rem + 1.1135vw, 2.2rem);
+  font-size: clamp(1.6rem, 1.35rem + 1.1vw, 2rem);
   z-index: 10;
   transition: .3s ease;
+  text-transform: uppercase;
 }
 
 .feature p {
-  font-size: clamp(1.2rem, 1.1669rem + 0.4654vw, 1.6rem);
+  font-size: clamp(1.2rem, 1.1669rem + 0.4654vw, 1.4rem);
   line-height: 1.35;
   text-wrap: pretty;
   z-index: 10;
-  color: #ffffffc5;
+  color: #ffffff;
   ;
 }
 

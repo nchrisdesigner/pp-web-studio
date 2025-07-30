@@ -9,19 +9,17 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from '@gsap/react'
 import { SplitText } from "gsap/SplitText"
-import { MotionPathPlugin } from 'gsap/all'
-
-
 gsap.registerPlugin(SplitText)
 gsap.registerPlugin(ScrollTrigger)
-gsap.registerPlugin(MotionPathPlugin)
 gsap.registerPlugin(useGSAP)
 
 import { ImRocket } from "react-icons/im"
-import { ImUnlocked } from "react-icons/im";
-import { Anton } from 'next/font/google'
 import Letter from '@/app/ui/Letter/Letter'
-import TextPath from '../Intro/components/TextPath/TextPath'
+import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
+import DarkButton from '@/app/ui/Buttons/DarkButton/DarkButton'
+
+import { Anton } from 'next/font/google'
+import CubeText from './components/3DCube/CubeText'
 
 const anton = Anton({
   weight: ['400'],
@@ -34,12 +32,7 @@ const Hero = () => {
   const iconRef = useRef()
   const textRef = useRef()
 
-  useGSAP(() => {
 
-    const animation = gsap.fromTo(".textCube h2",
-      { x: 400, xPercent: 0 },
-      { x: 0, xPercent: -100, duration: 8, ease: "none", stagger: 0.87, repeat: -1 })
-  }, { scope: containerRef })
 
   useGSAP(() => {
     gsap.set("h1 div", { yPercent: -100 })
@@ -137,27 +130,22 @@ const Hero = () => {
 
           </div>
 
-          <div>
+          <div className={styles.textContentContainer}>
             <Paragraph color='white' align='left'>
               Your business needs more than just a logo and a social feed. Your website is where your brand shows up — open 24/7, ready to grab attention anytime. If you’re not online, you’re invisible to the people looking for you.
             </Paragraph>
-            <Paragraph color='white' align='left' ><span className='bold-text purple'>Why make it easier for your competitors?</span></Paragraph>
+
+            <TertiaryTitle>Why make it easier for your competitors? <span className='bold-text purple'> Stand out or stay behind.</span></TertiaryTitle>
+
+            <DarkButton id="#pricing-web">
+              <span>Unlock Your <Letter textSize='title' >K</Letter>oncept</span>
+            </DarkButton>
           </div>
-          <a href="#pricing-web" className={styles.btn}>
-            <ImUnlocked /> Unlock Your <Letter textSize='title' >K</Letter>oncept
-          </a>
+
         </div>
 
-        <div className="cubeContainer">
-          <div className="textCube fancy">
-            <div className="face front">
-              <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
-            </div>
-            <div className="face side">
-              <h2 className={anton.className}>PEOPLE IGNORE DESIGN THAT IGNORES PEOPLE</h2>
-            </div>
-          </div>
-        </div>
+        <CubeText />
+
 
       </div>
     </header>

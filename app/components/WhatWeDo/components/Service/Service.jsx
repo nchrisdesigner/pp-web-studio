@@ -2,10 +2,8 @@
 import { motion } from "motion/react"
 import styles from './service.module.css'
 import { useState } from 'react'
-import { GoArrowUpLeft } from "react-icons/go"
 import { BiRightArrowAlt } from "react-icons/bi"
 import Link from 'next/link'
-
 import { GiCardboardBoxClosed } from "react-icons/gi"
 import { GiCardboardBox } from "react-icons/gi"
 
