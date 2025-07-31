@@ -290,7 +290,7 @@ export const webDesignPricing = [
     miniText: "(Take your online presence to the next level)",
     price: '3600€+',
     features: [
-      "Next.js + GSAP",
+      "Built on Next.js + GSAP",
       "Photoshop, Illustrator, Midjourney",
       "Custom animations and interactive elements",
       "Fully Customized",
@@ -307,7 +307,7 @@ export const webDesignPricing = [
     miniText: "(Upgrade your online presence)",
     price: '1800€+',
     features: [
-      "Wordpress",
+      "Built on Wordpress",
       "Photoshop, Illustrator, Midjourney",
       "Basic Animations",
       "High Speed Performance and SEO",
@@ -323,7 +323,7 @@ export const webDesignPricing = [
     miniText: "(Increase sales and conversions)",
     price: '2800€+',
     features: [
-      "Wordpress + WooCommerce",
+      "Built on Wordpress + WooCommerce",
       "Photoshop, Illustrator, Midjourney",
       "High Speed Performance",
       "Best SEO Optimization",
@@ -336,18 +336,18 @@ export const webDesignPricing = [
 export const videoMotionFeatures = [
   {
     id: 1,
-    title: 'Visual Demonstration',
-    desc: 'Videos allow you to demonstrate your products or services in action, showcasing their features and benefits more effectively than text descriptions. This can help potential customers understand and appreciate your offerings, leading to higher purchase rates.'
+    title: 'Show What You’re Made Of',
+    desc: 'Show, don’t tell. Videos put your products in action — clear, simple, and real. People see exactly what you offer and why it matters, making them way more likely to buy.'
   },
   {
     id: 2,
-    title: 'Emotional Connection',
-    desc: 'Videos can evoke emotions through storytelling, music, and visuals, creating a deeper emotional connection with your audience. This connection can lead to increased loyalty and a stronger brand affinity.'
+    title: 'Make Them Feel It',
+    desc: 'Good video pulls at the heartstrings. Through story, sound, and sight, it makes your audience feel something — turning viewers into loyal fans.'
   },
   {
     id: 3,
-    title: 'Showcases Professionalism',
-    desc: 'Brands that invest in high-quality video production demonstrate a commitment to professionalism and excellence. This attention to detail reflects a strong brand identity and reassures customers of the brand\'s reliability and dedication to delivering superior products or services.'
+    title: 'Show You Mean Business',
+    desc: 'High-quality video says you mean business. It shows you care about the details, stand out from the crowd, and builds trust before you even say a word.'
   },
 ]
 

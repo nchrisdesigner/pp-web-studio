@@ -166,3 +166,10 @@
     stroke-dashoffset: var(--stroke-dashoffset);
   }
 }
+
+
+.scribble{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}

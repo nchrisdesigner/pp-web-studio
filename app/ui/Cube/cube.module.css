@@ -53,7 +53,7 @@
   -webkit-text-stroke-color: var(--white);
   text-shadow: 0 0 30px hsl(241, 60%, 60%), 0 0 10px hsl(241, 85%, 64%);
   padding: 1.6rem;
-  border: 1px solid var(--purple);
+  border: 1px dashed var(--purple);
 }
 
 .front {

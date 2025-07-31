@@ -121,6 +121,7 @@
   border-radius: 1px;
   margin: 0 .8rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
   display: flex;
   justify-content: flex-start;
 }

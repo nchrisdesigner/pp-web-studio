@@ -3,6 +3,7 @@ import { videoMotionFeatures } from '@/app/data/data'
 import Cube from '@/app/ui/Cube/Cube'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 
 import { Anton } from 'next/font/google'
 
@@ -16,10 +17,13 @@ const InfoSection = () => {
     <section className={styles.sectionContainer}>
       <div className='container'>
         <div className={`${styles.titleContainer}`}>
-          <MiniTitle align='center'>VIDEOS EVOKE EMOTIONS</MiniTitle>
-          <h2 className={`${anton.className} ${styles.title}`}>STUNNING ANIMATING VIDEOS</h2>
+          <MiniTitle align='center'>ANIMATIONS MADE TO GRAB ATTENTION</MiniTitle>
+          <h2 className={`${anton.className} ${styles.title}`}>VIDEOS THAT MAKE YOU STOP AND WATCH</h2>
           <Paragraph align='center' color='white' >
-            By investing in video motion, animation, and videography, you create dynamic and memorable content <span className="bold-text"> that can significantly boost profitability,</span> drive traffic, and foster stronger connections with your audience.</Paragraph>
+
+            <strong>Put some motion behind your message.</strong>  Video, animation, and storytelling bring your brand to life in a way people connect with and remember. It gets more eyes, more clikks, and builds trust that lasts.
+            
+            </Paragraph>
         </div>
 
         <div className={styles.featuresContainer}>
@@ -34,14 +38,15 @@ const InfoSection = () => {
                     {title}
                   </h3>
                   <p>{desc}</p>
+                  <span>{id}</span>
                 </div>
               )
             })}
           </div>
         </div>
 
-        <p
-          className={styles.promiseTitle}>Your project deserves more than design — <span className="yellow bold-text">it’s a story waiting to be told.</span></p>
+        <TertiaryTitle align='center'>Your project deserves more than design. <strong className="purple"> it’s a story that needs to be seen and remembered.</strong></TertiaryTitle>
+
       </div>
     </section>
   )

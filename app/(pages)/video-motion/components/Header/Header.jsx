@@ -7,6 +7,7 @@ import { motion } from "motion/react"
 // import Icon from '@/app/ui/Icon/Icon'
 
 import { Anton } from 'next/font/google'
+import PurpleButton from '@/app/ui/Buttons/PurpleButton/PurpleButton'
 const anton = Anton({
   weight: ['400'],
   subsets: ['latin'],
@@ -58,7 +59,7 @@ const Header = () => {
             WE MOVE BRANDS</h1>
           <Paragraph color='white'>
 
-            In a busy world, video gets eyes on you right away. It tells your story quick and clear — no extra fluff, just feeling. With the right visuals, people get your message instantly and, more important, they remember it. When it’s done right, video connects with people and gets them to take action. 
+            In a busy world,<strong> video gets eyes on you right away.</strong>  It tells your story quick and clear — no extra fluff, just feeling. With the right visuals, people get your message instantly and, more important, they remember it. When it’s done right, video connects with people and gets them to take action. 
           </Paragraph>
           <div className={styles.shapeContainer}>
             <motion.svg
@@ -82,9 +83,8 @@ const Header = () => {
             </motion.svg>
           </div>
           <div className={styles.btnContainer}>
-            <a href="#video-pricing" className={styles.btn}>
-              Zoom Into Plans<MdOutlineZoomInMap className={styles.icon} />
-            </a>
+
+            <PurpleButton id='#video-pricing' icon={<MdOutlineZoomInMap/>}>Zoom Into Plans</PurpleButton>
           </div>
         </div>
       </div>
