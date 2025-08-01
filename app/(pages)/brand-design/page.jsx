@@ -15,7 +15,7 @@ const VideoMotionPage = () => {
     <>
       <Header />
       <TellYourStory />
-      <TheRealMVP />
+      {/* <TheRealMVP /> */}
       <Pricing />
       <AnimatedSection />
     </>
