@@ -11,20 +11,23 @@
 }
 
 .pricing{
-  border: 1px solid var(--purple);
+  border: 1px dashed var(--purple);
   display: grid;
   grid-template-columns: 45fr 55fr;
   min-height: 20rem;
-  padding: 1.6rem .8rem;
+  /* padding: 1.6rem .8rem; */
   gap: 1.4rem;
 }
 
 .textContainer{
+  padding: 1.6rem 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.2rem;
   align-items: flex-start;
+  background: hsla(262, 92%, 10%, 1);
+  /* background: var(--dark-bg); */
 }
 
 .pricingTitle{
@@ -51,9 +54,22 @@
   color: var(--purple);
 }
 
+.pricingDesc {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.pricingDesc h4{
+  color: var(--white);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
 .desc{
-  font-size: clamp(1.3rem, 1.1548rem + 0.5261vw, 1.6rem);
+  font-size: clamp(1.2rem, 1.1548rem + 0.4261vw, 1.4rem);
   line-height: 1.5;
+  color: vaR(--white);
 }
 
 .price{
@@ -62,13 +78,14 @@
 }
 
 .features{
+  padding: 1.6rem .8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 1.2rem;
 }
 
-.whatIncludes{
+.whatYouGet{
   font-size: 1.4rem;
   padding-bottom: .8rem;
 }
@@ -93,8 +110,8 @@
   .feature{
     grid-template-columns: 5fr 90fr;
   }
-  .whatIncludes{
-    border-bottom: 1px solid var(--purple);
+  .whatYouGet{
+    border-bottom: 1px dashed var(--purple);
   }
 }
 

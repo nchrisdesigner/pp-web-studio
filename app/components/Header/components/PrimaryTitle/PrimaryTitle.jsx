@@ -10,14 +10,10 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin"
 
 gsap.registerPlugin(DrawSVGPlugin)
 
-
 import Letter from '@/app/ui/Letter/Letter'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { Anton } from 'next/font/google'
-import PurpleButton from '@/app/ui/Buttons/PurpleButton/PurpleButton'
-import HoverButton from "@/app/ui/Buttons/HoverButton/HoverButton"
-
 
 const anton = Anton({
   weight: ['400'],
@@ -33,23 +29,6 @@ const textVariants = {
     transition: {
       // delay: 1.1,
       ease: 'easeOut',
-      type: 'spring'
-    }
-  }
-}
-
-const miniTitleVariants = {
-  hidden: {
-    opacity: 0,
-    y: 10
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      delay: 1.5,
-      ease: 'easeIn',
       type: 'spring'
     }
   }

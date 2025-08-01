@@ -354,26 +354,29 @@ export const videoMotionFeatures = [
 export const videoMotionPricing = [
   {
     id: 1,
-    title: 'ANIMATED PROMO VIDEO',
-    desc: 'Dynamic promotional video with logo, illustrations and text animations.',
+    title: 'ANIMATED VIDEO',
+    miniTitle: 'Make your brand move',
+    // desc: 'Dynamic promotional video with logo, illustrations and text animations.',
+    desc: 'A short animated video that brings your logo and message to life.',
     price: '400€+',
     icon: <MdOutlineAnimation />,
     features: [
-      'Animation video to attract audience’s attention',
-      'Increase brand awareness and customer engagement',
-      'Suitable for online marketing campaigns',
+      'Helps you stand out on social media or websites',
+      'Increase brand awareness and visibility ',
+      'Includes your logo, graphics, and bold text animations',
       'Up to 30 seconds',
     ]
   },
   {
     id: 2,
     title: 'PRESENTATIONAL VIDEO',
-    desc: 'Detailed explainer video to present your brand, your services and your products in a professional way.',
+    miniTitle: 'Let people see who you are',
+    desc: 'A clean, professional video that shows what your business is all about.',
     price: '600€+',
     icon: <BsCameraVideo />,
     features: [
       'Ideal for showcasing facilities, products or services',
-      'Boost credibility and trust',
+      'Strengthens credibility with a professional look and tone',
       'Professional cameras, lighting and script',
       'Up to 60-90 seconds',
     ]
@@ -381,11 +384,12 @@ export const videoMotionPricing = [
   {
     id: 3,
     title: 'DRONE VIDEO',
-    desc: 'Video production including aerial footage with drone cameras.',
+    miniTitle: 'Show the bigger picture',
+    desc: 'Aerial footage that adds cinematic scale and visual interest.',
     price: '800€+',
     icon: <PiDroneFill />,
     features: [
-      'Stunning visuals and unique perspectives',
+      'Professional drone footage and unique perspectives',
       'Highlight expansive landscapes, facilities or events',
       'Cinematic viewing experience',
       'Up to 45 seconds',
