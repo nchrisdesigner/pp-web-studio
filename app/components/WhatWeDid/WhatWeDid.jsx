@@ -10,7 +10,7 @@ const WhatWeDid = () => {
       <div className="container">
 
         <TitleContainer miniTitle='WHAT WE DID' title='SUCCESS STORIES'>
-          <span className='bold-text'>Our portfolio speaks for itself.</span> We don’t just design — we deliver. From websites that drive real growth to branding and videos that make people stop and pay attention, our work gets results you can see. Sales go up. Bookings increase. Brands get noticed. Simple as that.
+         <strong> Our portfolio speaks for itself.</strong> We don’t just design — we deliver. From websites that drive real growth to branding and videos that make people stop and pay attention, our work gets results you can see. Sales go up. Bookings increase. Brands get noticed. Simple as that.
         </TitleContainer>
 
         <div className={styles.projects}>

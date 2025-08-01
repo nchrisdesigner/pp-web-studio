@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="container">
 
         <TitleContainer align='center' miniTitle='WHY WAIT ?' title='STOP BEING AVERAGE'>
-          We believe in simplicity and meaningful dialogues because the best ideas don’t come from checkboxes, they come from honest conversations. <span className="bold-text"> Your unique story deserves a human touch</span> - it’s not just a project, but a collaborative journey.
+          We believe in simplicity and meaningful dialogues because the best ideas don’t come from checkboxes, they come from honest conversations. <strong> Your unique story deserves a human touch</strong> - it’s not just a project, but a collaborative journey.
         </TitleContainer>
         <ContactButton />
       </div>
