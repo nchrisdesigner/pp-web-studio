@@ -14,5 +14,6 @@
 }
 
 .rotatingHeader h1:nth-child(2){
+  text-align: center;
   color: var(--purple);
 }
