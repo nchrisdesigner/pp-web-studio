@@ -1,0 +1,18 @@
+.featuresContainer {
+  padding: 4.8rem 2.4rem;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .8rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (width < 900px) { 
+  .featuresContainer {
+    padding: 3.2rem 0rem;
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,16 @@
+.pricingsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: min(100%, 126rem);
+  margin: 3.2rem auto 4.8rem auto;
+  gap: 2.4rem;
+}
+
+
+@media screen and (width < 950px) {
+  .pricingsContainer {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+}

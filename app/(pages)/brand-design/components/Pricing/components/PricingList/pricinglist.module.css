@@ -1,0 +1,9 @@
+.pricingContainer{
+  padding-top: 6.4rem;
+  padding-bottom: 4.8rem;
+  display: grid;
+  width: min(100%, 128rem);
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.4rem;
+  color: var(--white);
+}

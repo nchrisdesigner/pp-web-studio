@@ -1,0 +1,122 @@
+.feature {
+  background: #260462;
+  background: #101010;
+  border: 1px dashed var(--purple);
+  padding: 4rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  transition: all .3s ease-out;
+}
+
+.feature span {
+  font-size: 30rem;
+  font-weight: 800;
+  color: var(--purple);
+  opacity: .2;
+  position: absolute;
+  top: -65%;
+  right: 0;
+  transform: rotate(15deg);
+}
+
+.feature h3 {
+  font-size: clamp(1.6rem, 1.35rem + 1.1vw, 2rem);
+  z-index: 10;
+  transition: .3s ease;
+  text-transform: uppercase;
+}
+
+.feature p {
+  font-size: clamp(1.2rem, 1.1669rem + 0.4654vw, 1.4rem);
+  line-height: 1.35;
+  text-wrap: pretty;
+  z-index: 10;
+  color: #b6b6b6;
+  
+}
+
+@media screen and (width < 900px) {
+  .feature{
+    min-height: 21rem;
+  }
+}
+
+@media screen and (width > 1380px) {
+  
+
+  /* Feature one */
+  .feature:nth-of-type(1) {
+    animation: animateFeatureOne;
+    animation-timeline: --container;
+    animation-range-start: 20%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes animateFeatureOne {
+    0% {
+      transform: translateX(-6rem) translateY(-9.2rem);
+    }
+
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  /* Feature two */
+  .feature:nth-of-type(2) {
+    animation: animateFeatureTwo;
+    animation-timeline: --container;
+    animation-range-start: 25%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes animateFeatureTwo {
+    0% {
+      transform: translateX(7rem) translateY(-9.4rem);
+    }
+
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  /* Feature three */
+  .feature:nth-of-type(3) {
+    animation: animateFeatureThree;
+    animation-timeline: --container;
+    animation-range-start: 30%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes animateFeatureThree {
+    0% {
+      transform: translateX(-8rem) translateY(8.6rem);
+    }
+
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  /* Feature four */
+  .feature:nth-of-type(4) {
+    animation: animateFeatureFour;
+    animation-timeline: --container;
+    animation-range-start: 25%;
+    animation-range-end: 50%;
+  }
+
+  @keyframes animateFeatureFour {
+    0% {
+      transform: translateX(6rem) translateY(9.6rem);
+    }
+
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+}

@@ -30,7 +30,7 @@ const Header = () => {
           className={styles.textContainer}>
           <h4 className={styles.secondaryTitle}>what other people say about you </h4>
           <h2 className={`${anton.className} ${styles.title}`}>YOUR ONLINE SIGNATURE</h2>
-          <p className={styles.paragraph}>Strong branding isn’t just a nice-to-have — it’s the foundation of trust, recognition, and loyalty.<span className="bold-text"> It tells people who you are, what you stand for, and why they should choose you.</span>
+          <p className={styles.paragraph}>Strong branding isn’t just a nice-to-have. It’s your story, your vibe, your promise. <span className="bold-text"> Because when people know who you are and what you stand for, choosing you becomes a no-brainer.</span>
           </p>
 
           <h3 className={styles.secondary}>

@@ -21,8 +21,8 @@
 }
 
 .button:hover {
-  /* transform: scale(.9) translateZ(0); */
-  /* transform-origin: center; */
+  transform: scale(.9) translateZ(0);
+  transform-origin: center;
 }
 
 .button:focus {

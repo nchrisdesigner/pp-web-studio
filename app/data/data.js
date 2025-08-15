@@ -218,42 +218,43 @@ export const brandIdentityPricing = [
     id: 1,
     title: 'LOGO DESIGN',
     icon: <SiJordan />,
-    desc: 'Creation of a Visual Identity.',
+    desc: 'Craft a distinctive logo that embodies your brand’s personality.',
     price: '500€+',
     features: [
-      "3 initial logo concepts",
-      "1 round of revisions",
-      "High Resolution Files(JPEG,PNG,PDF)",
+      "3 unique logo concepts tailored to your brand",
+      "1 round of revisions to refine your favorite concept",
+      "High-resolution files ready for web and print (JPEG, PNG, PDF)",
     ]
   },
   {
     id: 2,
     title: 'GRAPHICS DESIGN',
     icon: <BiImage />,
-    desc: 'Visual assets aligned with brand aesthetics.',
+    desc: 'Custom visual assets that enhance your brand identity across platforms.',
     price: '800€+',
     features: [
-      "10 Custom graphics and images",
-      "1 round of revisions",
-      "High Resolution Files(JPEG,PNG,PDF)",
+      "10 original graphics aligned with your brand style",
+      "1 round of revisions to perfect the visuals",
+      "High-resolution files ready for web and print (JPEG, PNG, PDF)",
     ]
   },
   {
     id: 3,
     title: 'BRAND DESIGN',
     icon: <MdOutlineBrandingWatermark />,
-    desc: 'Comprehensive brand identity design.',
+    desc: 'A full brand identity package to make your business stand out.',
     price: '1500€+',
     features: [
-      "Logo Design",
-      "10 Custom graphics and images",
-      "Business card",
-      "Social media branding kit (x6 IG Post)",
-      "2 rounds of revisions",
-      "High Resolution Files(JPEG,PNG,PDF)",
+      "Logo design tailored to your brand vision",
+      "10 custom graphics and images for marketing use",
+      "Business card design for a professional look",
+      "Social media branding kit (6 IG posts included)",
+      "2 rounds of revisions for a polished result",
+      "High-resolution files ready for web and print (JPEG, PNG, PDF)",
     ]
   },
 ]
+
 
 // Web Design
 
@@ -290,13 +291,14 @@ export const webDesignPricing = [
     miniText: "(Take your online presence to the next level)",
     price: '3600€+',
     features: [
-      "Built on Next.js + GSAP",
-      "Photoshop, Illustrator, Midjourney",
-      "Custom animations and interactive elements",
+      "Custom-built on Next.js + GSAP",
+      "Enterprise-grade, custom experiences and complex builds",
+      "Advanced animations and interactive experiences",
       "Fully Customized",
-      "High Speed Performance",
-      "Best SEO Optimization",
-    ]
+      "Campaigns, product launches, and storytelling sites",
+      "Premium SEO and performance optimization",
+    ],
+    idealFor: 'High-traffic brands needing advanced performance'
   },
   {
     id: 2,
@@ -307,12 +309,12 @@ export const webDesignPricing = [
     miniText: "(Upgrade your online presence)",
     price: '1800€+',
     features: [
-      "Built on Wordpress",
-      "Photoshop, Illustrator, Midjourney",
-      "Basic Animations",
+      "Fast, clean WordPress site with modern design",
+      "Quick to launch with essential features ready",
+      "Solid SEO to get found without breaking the budget",
       "High Speed Performance and SEO",
     ],
-    idealFor: 'Ideal for attracting new clients'
+    idealFor: 'Ambitious brands seeking more clients & growth'
   },
   {
     id: 3,
@@ -323,12 +325,13 @@ export const webDesignPricing = [
     miniText: "(Increase sales and conversions)",
     price: '2800€+',
     features: [
-      "Built on Wordpress + WooCommerce",
-      "Photoshop, Illustrator, Midjourney",
-      "High Speed Performance",
-      "Best SEO Optimization",
+      "WooCommerce store built for sales",
+      "SEO that drives traffic and repeat customers",
+      "Easy management for products, stock, and orders",
+      "Optimized product pages to boost conversions",
       "Client-Centered Approach"
-    ]
+    ],
+    idealFor: 'Growing stores needing better UX & conversion'
   },
 ]
 
