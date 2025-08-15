@@ -10,7 +10,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SplitText } from 'gsap/all'
-gsap.registerPlugin(ScrollTrigger,SplitText)
+gsap.registerPlugin(ScrollTrigger, SplitText)
 // gsap.registerPlugin(useGSAP)
 
 
@@ -64,49 +64,47 @@ const TellYourStory = () => {
   const containerRef = useRef()
 
   useGSAP(() => {
-    const splittedText = SplitText.create(textRef.current, {type: 'lines', linesClass:'paragraph-line'})   
+    const splittedText = SplitText.create(textRef.current, { type: 'words, lines', linesClass: 'paragraph-line' })
+
     const tl = gsap.timeline()
     tl
-    .fromTo(splittedText.lines, {
-      opacity:0
-    },{
-      opacity:1,
-      stagger:0.8,
-      ease:"power1.in",
-      scrollTrigger:{
-        trigger: containerRef.current,
-        start:"20% center",
-        markers:true
-      }
+      .to(titleRef.current, {
+        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+        duration: 2,
+        ease: "circ.inOut",
+      })
+      .from(splittedText.words, {
+        yPercent: 300,
+        rotate: 3,
+        ease: "power1.inOut",
+        duration: 1,
+        stagger: 0.01,
+      })
+
+    ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: "20% 60%",
+      animation: tl
     })
 
 
-    // timeline.fromTo(
-    //   titleRef.current, {
-    //   clipPath: "polygon(50% 1%, 50% 0, 50% 100%, 50% 100%)"
-    // },{
-    //   clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
-    //   transformOrigin: "center center",
-    //   duration:2
-    // })
   })
 
   return (
     <section ref={containerRef} className={styles.sectionContainer}>
       <div className='container'>
-        {pantones.map((pantone) => {
+        {/* {pantones.map((pantone) => {
           return (
             <Pantone key={pantone.id} {...pantone} />
           )
-        })}
+        })} */}
 
         <div>
 
-          {/* <MiniTitle align='center'>DESIGNED TO LAST</MiniTitle> */}
+          <MiniTitle align='center'>SEEN ONCE, REMEMBERED FOREVER</MiniTitle>
           <Title color='#111111' align='center' >
-            <span className='relative'>
+            <span className='relative high-line-height'>
               YOUR BRAND DESERVES TO BE REMEMBERED
-
               <span ref={titleRef} className={styles.absoluteMiniTitle}>DESIGNED TO LAST</span>
             </span>
 

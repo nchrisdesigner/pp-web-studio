@@ -102,6 +102,11 @@ a {
 
 .paragraph-line{
   overflow: hidden;
+  white-space: nowrap;
+}
+
+.high-line-height{
+  line-height: 1.25!important;
 }
 
 .block-element {

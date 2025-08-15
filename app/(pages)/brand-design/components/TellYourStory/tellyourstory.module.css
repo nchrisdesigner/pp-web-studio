@@ -34,8 +34,11 @@
   white-space: nowrap;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%) rotate(-7.5deg);
-  padding: .6rem;
+  transform: translate(-50%,-50%) rotate(-5deg);
+  /* clip-path: polygon(50% 1%, 50% 0, 50% 100%, 50% 100%); */
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  border: .5rem solid #fff;
+  padding: .6rem .8rem;
   font-size: clamp(3.2rem, 1rem + 4vw, 4.8rem);
 }
 
