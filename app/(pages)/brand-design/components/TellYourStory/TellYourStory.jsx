@@ -1,11 +1,18 @@
-
+'use client'
 import styles from './tellyourstory.module.css'
-import TitleContainer from '@/app/ui/TitleContainer/TitleContainer'
 import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 import Pantone from '@/app/ui/Pantone/Pantone'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Title from '@/app/ui/Title/Title'
 import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { SplitText } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger,SplitText)
+// gsap.registerPlugin(useGSAP)
+
 
 
 const pantones = [
@@ -52,36 +59,68 @@ const pantones = [
 ]
 
 const TellYourStory = () => {
+  const titleRef = useRef()
+  const textRef = useRef()
+  const containerRef = useRef()
+
+  useGSAP(() => {
+    const splittedText = SplitText.create(textRef.current, {type: 'lines', linesClass:'paragraph-line'})   
+    const tl = gsap.timeline()
+    tl
+    .fromTo(splittedText.lines, {
+      opacity:0
+    },{
+      opacity:1,
+      stagger:0.8,
+      ease:"power1.in",
+      scrollTrigger:{
+        trigger: containerRef.current,
+        start:"20% center",
+        markers:true
+      }
+    })
+
+
+    // timeline.fromTo(
+    //   titleRef.current, {
+    //   clipPath: "polygon(50% 1%, 50% 0, 50% 100%, 50% 100%)"
+    // },{
+    //   clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+    //   transformOrigin: "center center",
+    //   duration:2
+    // })
+  })
+
   return (
-    <section className={styles.sectionContainer}>
+    <section ref={containerRef} className={styles.sectionContainer}>
       <div className='container'>
-        {/* {pantones.map((pantone) => {
+        {pantones.map((pantone) => {
           return (
             <Pantone key={pantone.id} {...pantone} />
           )
-        })} */}
-
-        {/* <TitleContainer align='center' miniTitle='DESIGNED TO LAST' title='YOUR BRAND DESERVES TO BE REMEMBERED'>
-          <strong>Your story is unique — your brand should reflect that.</strong> It’s more than just a logo. It starts with the smallest details: the curves of a letter, the spacing between lines, the colors that define your presence. Every detail works together to show who you are and what you do. That’s the power of intentional design.
-        </TitleContainer> */}
+        })}
 
         <div>
-          <MiniTitle align='center'>DESIGNED TO LAST</MiniTitle>
+
+          {/* <MiniTitle align='center'>DESIGNED TO LAST</MiniTitle> */}
           <Title color='#111111' align='center' >
-            YOUR BRAND DESERVES TO BE&nbsp;
-            <span className='relative'>REMEMBERED
-              <span className={styles.xHeight}>X-HEIGHT</span>
+            <span className='relative'>
+              YOUR BRAND DESERVES TO BE REMEMBERED
+
+              <span ref={titleRef} className={styles.absoluteMiniTitle}>DESIGNED TO LAST</span>
             </span>
 
           </Title>
-          <Paragraph align='center' color='#222222' >
+          {/* <Paragraph  align='center' color='#222222' >
             <strong>Your story is unique — your brand should reflect that.</strong> It’s more than just a logo. It starts with the smallest details: the curves of a letter, the spacing between lines, the colors that define your presence. Every detail works together to show who you are and what you do. That’s the power of intentional design.
-          </Paragraph>
+          </Paragraph> */}
+
+          <p ref={textRef} className={styles.paragraph}><strong>Your story is unique — your brand should reflect that.</strong> It’s more than just a logo. It starts with the smallest details: the curves of a letter, the spacing between lines, the colors that define your presence. Every detail works together to show who you are and what you do. That’s the power of intentional design.</p>
         </div>
 
 
         <TertiaryTitle color='#111' align='center'>
-          We don’t decorate — <span className="purple">we design with purpose.</span>
+          We don’t decorate. <span className="purple">we design with purpose.</span>
         </TertiaryTitle>
 
       </div>

@@ -100,6 +100,10 @@ a {
   gap: 2rem;
 }
 
+.paragraph-line{
+  overflow: hidden;
+}
+
 .block-element {
   display: block;
 }
