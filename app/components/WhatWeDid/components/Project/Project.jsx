@@ -1,5 +1,5 @@
 import styles from './project.module.css'
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6"
 import Image from 'next/image'
 import Link from 'next/link'
 import Tag from '../Tag/Tag';
@@ -23,7 +23,8 @@ const Project = ({ id, title, subtitle, desc, url, logo, tags }) => {
           &&
           <Link href={url}>
             <span className={styles.visitLink} >
-              Visit Site <IoIosArrowRoundForward className={styles.icon} />
+              Visit Site 
+              <FaArrowUpRightFromSquare className={styles.icon} />
             </span>
           </Link>
 

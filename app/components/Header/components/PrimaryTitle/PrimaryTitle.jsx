@@ -43,7 +43,7 @@ const PrimaryTitle = () => {
         <span className='block-element'>
           WE SOLVE&nbsp;
           <span className='faint-text relative'>
-            {/* <Scribble /> */}
+            {/* <Smudge /> */}
             PROBLEMS
           </span>
         </span>
@@ -70,13 +70,13 @@ const PrimaryTitle = () => {
 
 export default PrimaryTitle
 
-// const Smudge = () => {
-//   return (
-//     <svg className={styles.smudge} width="406" height="36" viewBox="0 0 406 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-//       <path className={styles.svgClass} d="M8.70966 27.2071C120.597 8.91137 233.052 5.17311 345.624 12.2245C361.316 13.2074 377.207 14.8046 392.971 13.9068C394.84 13.8004 395.541 13.3257 396.717 11.893" stroke="#5E5AD6" strokeWidth="15" strokeLinecap="round" />
-//     </svg>
-//   )
-// }
+const Smudge = () => {
+  return (
+    <svg className={styles.smudge} width="406" height="36" viewBox="0 0 406 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path className={styles.svgClass} d="M8.70966 27.2071C120.597 8.91137 233.052 5.17311 345.624 12.2245C361.316 13.2074 377.207 14.8046 392.971 13.9068C394.84 13.8004 395.541 13.3257 396.717 11.893" stroke="#5E5AD6" strokeWidth="15" strokeLinecap="round" />
+    </svg>
+  )
+}
 const Scribble = () => {
   const svgRef = useRef()
 

@@ -35,8 +35,8 @@ const Footer = () => {
         </div> */}
 
         <div className={styles.footerLogoContainer}>
-          <h2 className={`${anton.className} ${styles.footerLogo}`}>PixelPerfekt</h2>
-          <p>We solve problems through remarkable design</p>
+          <h2 className={`${anton.className} ${styles.footerLogo}`}>PixelPerfe<Letter textSize='title'>K</Letter>t</h2>
+          <p>We solve problems through <Letter textSize='title'>K</Letter>reativitity</p>
         </div>
 
       </div>

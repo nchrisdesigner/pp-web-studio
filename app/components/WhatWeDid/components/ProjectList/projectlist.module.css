@@ -1,0 +1,46 @@
+.projectsContainer{
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.6rem;
+  row-gap: 2.4rem;
+}
+
+.projectContainer:nth-of-type(even){
+  animation: animateProjectEven ease-in-out;
+  animation-timeline: view();
+  animation-range: entry;
+}
+.projectContainer:nth-of-type(odd){
+  animation: animateProjectOdd ease-in-out;
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+@keyframes animateProjectEven{
+  from{
+    transform: scale(0.75);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+@keyframes animateProjectOdd{
+  from{
+    transform: scale(0.75);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+
+
+@media screen and (width < 900px){
+  .projectsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.6rem;
+    row-gap: 2.4rem;
+  }
+}
