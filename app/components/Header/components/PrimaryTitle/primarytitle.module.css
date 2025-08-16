@@ -47,6 +47,11 @@
   transform: translateY(-50%) scaleX(1.8);
 }
 
+.smudge path{
+  width: 100%;
+
+}
+
 @media screen and (width < 380px){
   .smudge {
   transform: translate(-50%) scaleX(1.5);
