@@ -1,7 +1,6 @@
 .sectionContainer{
   background:  hsl(241, 60%, 7%);
-  padding-top: 4.8rem;
-  padding-bottom: 4.8rem;
+  padding: 4.8rem 0;
 }
 
 .pricingContainer{

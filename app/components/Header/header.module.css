@@ -1,12 +1,10 @@
 .headerContainer{
-  /* height: min(100vh, 1100px); */
   min-height: 100dvh;
   position: relative;
   overflow: hidden ;
   padding: 10rem .8rem;
   background-color: var(--black);
 }
-
 
 @media screen and (width < 800px) {
   .headerContainer{

@@ -5,10 +5,8 @@ import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 const Header = () => {
   return (
     <header className={styles.headerContainer}>
-        <div>
           <SecondaryTitle color='white' align='center' >WE DON'T JUST DESIGN WEBSITES</SecondaryTitle>
           <PrimaryTitle />
-        </div>
     </header>
   )
 }
