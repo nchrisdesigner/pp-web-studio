@@ -3,25 +3,3 @@
   padding: 4.8rem 0;
 }
 
-.pricingContainer{
-  padding-top: 6.4rem;
-  padding-bottom: 4.8rem;
-  display: grid;
-  width: min(100%, 128rem);
-  grid-template-columns: repeat(3,1fr);
-  gap: 2.4rem;
-  color: var(--white);
-}
-
-
-@media screen and (width < 1100px){
-  .pricingContainer{
-    padding-top: 4.8rem;
-    padding-bottom: 2.4rem;
-    display: grid;
-    width: min(100%, 128rem);
-    grid-template-columns: 1fr;
-    gap: 2.4rem;
-    color: var(--white);
-  }
-}
