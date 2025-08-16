@@ -71,7 +71,7 @@
 
 
 .footerLogo {
-  font-size: clamp(5.76rem, 1.5227rem + 14vw, 19.5313rem);
+  font-size: clamp(5.6rem, 1.5227rem + 13vw, 19.5313rem);
   line-height: 1;
 }
 

@@ -46,7 +46,6 @@ const PrimaryTitle = () => {
           clipPath: "inset(0 100% 0 0)",
           duration: .5,
           delay:.5,
-          ease: "circ.inOut"
         }
       )
       .from(

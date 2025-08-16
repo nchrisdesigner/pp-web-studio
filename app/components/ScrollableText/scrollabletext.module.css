@@ -73,3 +73,11 @@
     text-align: left;
   }
 }
+
+@media screen and (width< 340px) {
+
+  .containerLeft h2,
+  .containerRight h2 {
+    font-size: 5.6rem;
+  }
+}

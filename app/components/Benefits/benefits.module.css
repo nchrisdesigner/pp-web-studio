@@ -21,7 +21,8 @@
 }
 
 .textContainer h2 {
-  font-size: clamp(5.6rem, 4.5rem + 7vw, 9.6rem);;
+  font-size: clamp(5.6rem, 4.5rem + 7vw, 9.6rem);
+  ;
   line-height: 1.2;
   color: var(--white);
 }
@@ -36,7 +37,14 @@
 .textContainer p {
   color: var(--white);
   font-size: 1.4rem;
-  width: 38ch;
+  width: min(38ch, 100%);
+}
+
+@media screen and (width < 340px){
+  .textContainer p {
+  width: min(38ch, 100%);
+}
+
 }
 
 
@@ -45,11 +53,25 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.4rem;
-    height: 150vh;
+    gap: 5.6rem;
+    /* height: 150vh; */
   }
 
   .stickyTitle {
     position: relative;
   }
+}
+
+@media screen and (width < 380px) {
+  .textContainer h2 {
+    font-size: clamp(4.8rem, 4rem + 7vw, 8rem);
+    line-height: 1.2;
+    color: var(--white);
+  }
+  .textContainer h3 {
+  color: var(--purple);
+  letter-spacing: 0.2em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
 }

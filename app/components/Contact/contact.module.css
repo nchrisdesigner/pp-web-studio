@@ -5,6 +5,23 @@
     background: var(--white);
 }
 
+.title{
+  font-size: clamp(5.2rem, 4rem + 7.5vw, 9.6rem);
+  max-width: 20ch;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-wrap: pretty;
+  position: relative;
+}
+
+
+@media screen and (width > 1712px){
+  .title{
+    font-size: 12.8rem;
+    max-width: 20ch;
+  }
+}
+
 .btn{
   margin: 1rem auto;
   padding: 1.2rem 3.6rem;

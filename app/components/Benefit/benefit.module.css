@@ -1,9 +1,9 @@
 .lineSection{
   display: grid;
   align-items: center;
-  grid-template-columns: 18fr 2fr 80fr;
+  grid-template-columns: 20fr 2fr 78fr;
   gap: 2.4rem;
-  padding: 3vw;
+  padding: 1.2rem;
   border-bottom:1px dashed var(--purple);
 }
 
@@ -34,9 +34,9 @@
 }
 
 .titleContainer h4{
-  font-size: clamp(1.5rem, 1.2609rem + 1.1957vw, 2.7344rem);
+  font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.8em);
 }
 
 .titleContainer p{
-  font-size: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
+  font-size: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.6rem);
 }

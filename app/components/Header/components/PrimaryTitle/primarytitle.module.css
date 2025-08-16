@@ -40,11 +40,17 @@
 
 .smudge {
   position: absolute;
-  width: 100%;
+  width: 90%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   top: 50%;
-  left: 0;
-  transform: translateY(-50%) scaleX(1.8);
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(1.7);
+}
+
+@media screen and (width < 380px){
+  .smudge {
+  transform: translate(-50%, -50%) scaleX(1.5);
+}
 }
 
 @property --stroke-dashoffset {
