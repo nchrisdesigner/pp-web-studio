@@ -53,7 +53,7 @@ const Intro = () => {
           </div>
 
           <Paragraph align='center' >
-            <span className="bold-text purple-highlight">If your business isn’t online, you’re missing out.</span> A website means your doors are always open, <span className='semibold-text'>ready to answer questions, </span> <span className='semibold-text'>showcase your services,</span> and <span className='semibold-text'>solve your customers’ problems</span> at the click of a button. A well-designed website is your most powerful tool, building trust, providing vital information, and connecting with potential clients before you even speak a word. </Paragraph>
+            If your business isn’t online,<span className="bold-text purple-highlight"> you’re missing out.</span> A website means your doors are always open, <span className='semibold-text'>ready to answer questions, </span> <span className='semibold-text'>showcase your services,</span> and <span className='semibold-text'>solve your customers’ problems</span> at the click of a button. A well-designed website is your most powerful tool, building trust, providing vital information, and connecting with potential clients before you even speak a word. </Paragraph>
         </div>
         <div ref={tertiaryTitleRef}>
           <TertiaryTitle color="#222" align="center">Every moment offline is a missed opportunity. <span className="bold-text purple">Let’s change that.</span></TertiaryTitle>

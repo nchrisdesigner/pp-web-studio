@@ -4,3 +4,9 @@
   opacity: .05;
   color: var(--purple);
 }
+
+@media screen and (width < 500px){
+  .svgContainer{
+    display: none;
+  }
+}
