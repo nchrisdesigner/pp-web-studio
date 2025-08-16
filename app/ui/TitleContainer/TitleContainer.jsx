@@ -1,5 +1,5 @@
 import MiniTitle from '../MiniTitle/MiniTitle'
-import Paragraph from '../Paragraph/Paragraph'
+import Paragraph from '../TextComponents/Paragraph/Paragraph'
 import Title from '../Title/Title'
 import styles from './titlecontainer.module.css'
 

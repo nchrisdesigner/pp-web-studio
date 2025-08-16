@@ -1,5 +1,5 @@
 'use client'
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import Paragraph from '@/app/ui/TextComponents/Paragraph/Paragraph'
 import styles from './header.module.css'
 import { MdOutlineZoomInMap } from "react-icons/md"
 import { motion } from "motion/react"

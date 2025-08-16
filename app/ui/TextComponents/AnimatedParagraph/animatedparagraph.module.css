@@ -1,0 +1,8 @@
+.paragraph{
+  font-size: clamp(1.4rem, 0.9315rem + 0.7423vw, 1.5625rem);
+  line-height: 1.5;
+  width: min(75ch ,100%);
+  margin: 2.4rem auto 4rem auto;
+  text-align: center;
+  color: var(--text-color);
+}

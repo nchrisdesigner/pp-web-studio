@@ -14,6 +14,7 @@ import Letter from '@/app/ui/Letter/Letter'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { Anton } from 'next/font/google'
+import AnimatedParagraph from "@/app/ui/TextComponents/AnimatedParagraph/AnimatedParagraph"
 
 const anton = Anton({
   weight: ['400'],
@@ -52,7 +53,7 @@ const PrimaryTitle = () => {
         </div>
 
       </h1>
-
+{/* 
       <motion.div
         variants={textVariants}
         initial='hidden'
@@ -61,7 +62,12 @@ const PrimaryTitle = () => {
           We’re a <Letter textSize="paragraph">K</Letter>reative web design studio based in Greece, designing beautiful and distinctive work for brands that <span className='bold-text'>dare to stand out.</span>
         </p>
 
-      </motion.div>
+        
+      </motion.div> */}
+      <AnimatedParagraph color='#ffffff'>
+          We’re a <Letter textSize="paragraph">K</Letter>reative web design studio based in Greece, designing beautiful and distinctive work for brands that <span className='bold-text'>dare to stand out.</span>
+        </AnimatedParagraph>
+
 
       <DarkButton id='#projects' icon={<MdBolt />}>View Our Work</DarkButton>
     </div>

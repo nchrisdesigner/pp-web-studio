@@ -2,7 +2,7 @@ import styles from './pricing.module.css'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import PricingTitle from '@/app/ui/PricingTitle/PricingTitle'
 import ContactButton from '@/app/ui/Buttons/ContactButton/ContactButton'
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import Paragraph from '@/app/ui/TextComponents/Paragraph/Paragraph'
 import Letter from '@/app/ui/Letter/Letter'
 import PricingList from './components/PricingList/PricingList'
 

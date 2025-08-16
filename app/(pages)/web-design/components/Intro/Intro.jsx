@@ -10,7 +10,7 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import Paragraph from '@/app/ui/TextComponents/Paragraph/Paragraph'
 gsap.registerPlugin(ScrollTrigger)
 
 const anton = Anton({

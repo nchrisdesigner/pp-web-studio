@@ -4,14 +4,15 @@ import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 import Pantone from '@/app/ui/Pantone/Pantone'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
 import Title from '@/app/ui/Title/Title'
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import Paragraph from '@/app/ui/TextComponents/Paragraph/Paragraph'
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { SplitText } from 'gsap/all'
+import AnimatedParagraph from '@/app/ui/TextComponents/AnimatedParagraph/AnimatedParagraph'
 gsap.registerPlugin(ScrollTrigger, SplitText)
-// gsap.registerPlugin(useGSAP)
+
 
 
 
@@ -114,6 +115,10 @@ const TellYourStory = () => {
           </Paragraph> */}
 
           <p ref={textRef} className={styles.paragraph}><strong>Your story is unique — your brand should reflect that.</strong> It’s more than just a logo. It starts with the smallest details: the curves of a letter, the spacing between lines, the colors that define your presence. Every detail works together to show who you are and what you do. That’s the power of intentional design.</p>
+
+          <AnimatedParagraph>
+            <strong>Your story is unique — your brand should reflect that.</strong> It’s more than just a logo. It starts with the smallest details: the curves of a letter, the spacing between lines, the colors that define your presence. Every detail works together to show who you are and what you do. That’s the power of intentional design.
+          </AnimatedParagraph>
         </div>
 
 

@@ -2,7 +2,7 @@ import styles from './infosection.module.css'
 import { videoMotionFeatures } from '@/app/data/data'
 import Cube from '@/app/ui/Cube/Cube'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import Paragraph from '@/app/ui/TextComponents/Paragraph/Paragraph'
 import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 
 import { Anton } from 'next/font/google'

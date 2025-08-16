@@ -1,7 +1,7 @@
 'use client'
 import SecondaryTitle from '@/app/ui/SecondaryTitle/SecondaryTitle'
 import styles from './hero.module.css'
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import Paragraph from '@/app/ui/TextComponents/Paragraph/Paragraph'
 
 import { useRef } from 'react'
 

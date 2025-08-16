@@ -1,6 +1,6 @@
 import styles from './features.module.css'
 import MiniTitle from '@/app/ui/MiniTitle/MiniTitle'
-import Paragraph from '@/app/ui/Paragraph/Paragraph'
+import Paragraph from '@/app/ui/TextComponents/Paragraph/Paragraph'
 import TertiaryTitle from '@/app/ui/TertiaryTitle/TertiaryTitle'
 
 import { Anton } from 'next/font/google'
