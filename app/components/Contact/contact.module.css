@@ -7,9 +7,10 @@
 
 .title{
   font-size: clamp(5.2rem, 4rem + 7.5vw, 9.6rem);
-  max-width: 20ch;
+  /* max-width: 20ch; */
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem auto;
+  text-align:center;
   text-wrap: pretty;
   position: relative;
 }
